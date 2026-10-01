@@ -30,7 +30,7 @@ Indice dei corsi completati, workshop e percorsi formativi specialistici.
 - [[8 - Object - Oriented Programming]]
 
 ## Harvard CS50’s Artificial Intelligence
-- [[05 - Blog/Corsi/CS50’s Artificial Intelligence with Python/1 - Search]]
+- [[Lorenzo/04 - Blog/Corsi/CS50’s Artificial Intelligence with Python/1 - Search]]
 
 ## Back To Focus
 - [[01 l'Attenzione - il Bene Piu Prezioso del Xxi Secolo]]

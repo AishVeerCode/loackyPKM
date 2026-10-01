@@ -126,4 +126,4 @@ Il problema reale è che la **popolazione generale** non sempre sa distinguere t
 ## Collegamenti
 
 - **Macro Area**: [[Tech & AI]] · [[Society MOC]]
-- **Note Correlate**: [[Intelligenza Artificiale]] · [[Democratizzazione della Conoscenza]] · [[Large Language Model]] · [[Salute Digitale]] · [[ChatGPT]] · [[Gemini]]
+- **Note Correlate**: [[Intelligenza Artificiale]] · [[Democratizzazione della Conoscenza]] · [[Large Language Model]] · [[Salute Digitale]] · [[ChatGPT]] · [[GEMINI]]

@@ -6,7 +6,7 @@ tags:
   - raw
 area: ""
 ---
-[[Home MOC|Home]] / [[03 - Inbox|Inbox]] / [[99 - Meta/Archive/Semantic Versioning]]
+[[Home MOC|Home]] / [[03 - Inbox|Inbox]] / [[Lorenzo/99 - Meta/Archive/Semantic Versioning]]
 
 # Semantic Versioning
 

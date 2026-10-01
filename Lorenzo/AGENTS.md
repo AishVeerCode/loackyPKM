@@ -2,13 +2,18 @@
 status: permanent
 type: concept
 area: tech
-related: ["[[Home]]", "[[Gemini]]", "[[Vault Health Dashboard]]"]
+related:
+  - "[[Home]]"
+  - "[[GEMINI]]"
+  - "[[Vault Health Dashboard]]"
 source: original
-title: "Agents"
-date: '2026-08-24'
+title: Agents
+date: 2026-08-24
 updated: 2026-08-25T00:10
-tags: [meta/system, tech/ai]
-summary: "AI Second Brain — Obsidian PKM & Digital Garden system architecture, skills definition, and runtime conventions."
+tags:
+  - meta/system
+  - tech/ai
+summary: AI Second Brain — Obsidian PKM & Digital Garden system architecture, skills definition, and runtime conventions.
 ---
 
 <!-- GSD:project-start source:PROJECT.md -->

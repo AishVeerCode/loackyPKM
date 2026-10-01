@@ -11,7 +11,7 @@ updated: 2026-07-19T02:09
 tags: []
 summary: "Artificial Intelligence (AI) covers a range of techniques that appear as sentient behavior by the computer. For example, AI is used to recognize faces in photographs on your social media, beat the ..."
 ---
-[[Home MOC|Home]] / [[Blog]] / [[1 - Search]]
+[[Home MOC|Home]] / [[Blog]] / [[Lorenzo/04 - Blog/Corsi/CS50’s Artificial Intelligence with Python/1 - Search]]
 
 ## Artificial Intelligence
 

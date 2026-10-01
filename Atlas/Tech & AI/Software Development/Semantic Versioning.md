@@ -11,7 +11,7 @@ updated: 2026-08-31T00:20
 tags: [tech/programming, tech/standards]
 summary: "Semantic Versioning 2.0.0 formalizza l'evoluzione del software mediante MAJOR.MINOR.PATCH, garantendo la gestione deterministica delle dipendenze e delle breaking change."
 ---
-[[Home MOC|Home]] / [[Tech & AI]] / [[Semantic Versioning]]
+[[Home MOC|Home]] / [[Tech & AI]] / [[Atlas/Tech & AI/Software Development/Semantic Versioning]]
 
 # Semantic Versioning
 

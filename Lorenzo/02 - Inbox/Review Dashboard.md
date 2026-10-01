@@ -38,7 +38,7 @@ summary: "Dashboard di revisione GTD per l'approvazione o scarto delle note in I
 - 2026-08-30 20:32 | [ERROR_DISMISSED] | [[Raw Note 2026-08-30 20-30.md]] -> DISMISSED
 - 2026-08-30 20:34 | [REJECTED] | [[Fisica 2 ~ Prof Marco Mazzeo]] -> PURGED
 - 2026-08-30 22:29 | [REJECTED] | [[Il Lato Oscuro di TikTok Che Ti Nascondono - con i TheShow]] -> PURGED
-- 2026-08-31 00:15 | [APPROVED] | [[99 - Meta/Archive/Semantic Versioning]] -> 02 - Atlas/Tech & AI/Raw Note 2026 - 08 - 31 00 - 07.md (source: original)
-- 2026-08-31 00:20 | [APPROVED] | [[99 - Meta/Archive/Semantic Versioning]] -> 02 - Atlas/Tech & AI/Raw Note 2026 - 08 - 31 00 - 07.md (source: original)
+- 2026-08-31 00:15 | [APPROVED] | [[Lorenzo/99 - Meta/Archive/Semantic Versioning]] -> 02 - Atlas/Tech & AI/Raw Note 2026 - 08 - 31 00 - 07.md (source: original)
+- 2026-08-31 00:20 | [APPROVED] | [[Lorenzo/99 - Meta/Archive/Semantic Versioning]] -> 02 - Atlas/Tech & AI/Raw Note 2026 - 08 - 31 00 - 07.md (source: original)
 - 2026-08-31 23:30 | [APPROVED] | [[Il Lato Oscuro di TikTok Che Ti Nascondono - con i TheShow]] -> 02 - Atlas/Tech & AI/Il Lato Oscuro di TikTok Che Ti Nascondono - con i TheShow.md (source: https://youtu.be/mkGGOxEPV-Q)
 - 2026-08-31 23:58 | [REJECTED] | [[HTTPS - Github Com - ZyphrZero - Termy]] -> PURGED

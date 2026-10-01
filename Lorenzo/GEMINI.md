@@ -11,7 +11,7 @@ updated: 2026-08-29T16:00
 tags: [meta/system, tech/ai]
 summary: "Memoria di sistema e system prompt permanente per l'assistente AI Gemini operante nel Vault Obsidian (Second Brain)."
 ---
-[[Home|Home]] / [[Meta]] / [[Gemini]]
+[[Home|Home]] / [[Meta]] / [[GEMINI]]
 
 # Gemini System Memory & Prompt — Second Brain (Obsidian Vault)
 

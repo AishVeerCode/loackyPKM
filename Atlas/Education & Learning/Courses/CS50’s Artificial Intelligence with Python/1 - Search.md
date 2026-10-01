@@ -11,7 +11,7 @@ tags: []
 summary: "Artificial Intelligence (AI) covers a range of techniques that appear as sentient behavior by the computer. For example, AI is used to recognize faces in photographs on your social media, beat the ..."
 video_url: "https://www.youtube.com/watch?v=2wM6_PuBIxY"
 ---
-[[Home MOC|Home]] / [[Education & Learning]] / [[1 - Search]]
+[[Home MOC|Home]] / [[Education & Learning]] / [[Atlas/Education & Learning/Courses/CS50’s Artificial Intelligence with Python/1 - Search]]
 
 ## Artificial Intelligence
 
