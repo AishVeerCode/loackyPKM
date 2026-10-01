@@ -9,6 +9,7 @@ date: '2026-07-17'
 updated: 2026-07-17T22:25
 tags: [tech/youtube, tech/transcript, tech/ai, tech/sanità, tech/democratizzazione, tech/accesso, tech/dsa, tech/salute-mentale, tech/legale]
 summary: "Video URL: https://youtu.be/KGlkNmKLEWs"
+video_url: "https://youtu.be/KGlkNmKLEWs"
 ---
 [[Home MOC|Home]] / [[Tech & AI]] / [[La Gente Chiede Tutto Alle AI Perche Non Ha Scelta]]
 

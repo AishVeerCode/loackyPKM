@@ -10,6 +10,7 @@ date: '2026-08-25'
 updated: 2026-08-25T23:48
 tags: [mentality/health, mentality/routine, tech/video, tech/transcript]
 summary: "Trattazione scientifica approfondita sul dentifricio: struttura dell'idrossiapatite, biochimica della demineralizzazione acida, formazione dello scudo di fluoroapatite e igiene orale."
+video_url: "https://youtu.be/LEN55dyOKw8"
 ---
 [[Home MOC|Home]] / [[Personal Growth & Health]] / [[A Cosa Serve Davvero il Dentifricio Come il Fluoro Protegge i Denti|Raw Note 2026 - 08 - 25 23 - 30]]
 

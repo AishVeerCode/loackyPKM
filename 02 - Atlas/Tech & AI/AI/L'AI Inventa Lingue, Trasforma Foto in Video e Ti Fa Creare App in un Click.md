@@ -9,6 +9,7 @@ date: '2025-02-07'
 updated: 2026-07-07T01:20
 tags: [tech/video, tech/youtube]
 summary: "Ogni giorno c'è una notizia, con aspettative di nuove notizie ogni mattina, come ad esempio un'ipotetica invasione [(00:00:14)](https://www.youtube.com/watch?v=rQBzbMBxSJg&t=14s)"
+video_url: "https://www.youtube.com/watch?v=rQBzbMBxSJg"
 ---
 [[Home MOC|Home]] / [[Tech & AI]] / [[L'AI Inventa Lingue, Trasforma Foto in Video e Ti Fa Creare App in un Click]]
 

@@ -9,6 +9,7 @@ date: '2025-04-03'
 updated: 2026-05-22T18:26
 tags: [tech/video, tech/youtube]
 summary: "Il vibe coding è un metodo di programmazione che utilizza strumenti basati su IA per scrivere codice in modo collaborativo e iterativo. L’idea è di lasciare che l’IA generi gran parte del codice, m..."
+video_url: "https://www.youtube.com/watch?v=v7UcVPO4y3c"
 ---
 [[Home MOC|Home]] / [[Tech & AI]] / [[Vibe Coding]]
 

@@ -9,6 +9,7 @@ date: '2025-07-12'
 updated: 2026-05-24T21:56
 tags: []
 summary: "Artificial Intelligence (AI) covers a range of techniques that appear as sentient behavior by the computer. For example, AI is used to recognize faces in photographs on your social media, beat the ..."
+video_url: "https://www.youtube.com/watch?v=2wM6_PuBIxY"
 ---
 [[Home MOC|Home]] / [[Education & Learning]] / [[1 - Search]]
 

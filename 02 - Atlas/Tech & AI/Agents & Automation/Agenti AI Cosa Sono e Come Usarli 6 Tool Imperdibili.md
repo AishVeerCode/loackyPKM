@@ -9,6 +9,7 @@ date: '2025-02-06'
 updated: 2026-07-07T01:20
 tags: [tech/video, tech/youtube]
 summary: "Il 2025 è considerato l'anno degli agenti AI, con un'uscita di nuovi agenti ogni 2 minuti [(00:00:08)](https://www.youtube.com/watch?v=J2qSEL1Wcqs&t=8s)"
+video_url: "https://www.youtube.com/watch?v=J2qSEL1Wcqs"
 ---
 [[Home MOC|Home]] / [[Tech & AI]] / [[Agenti AI Cosa Sono e Come Usarli 6 Tool Imperdibili]]
 

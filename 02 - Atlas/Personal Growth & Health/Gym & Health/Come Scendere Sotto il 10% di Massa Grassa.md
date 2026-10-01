@@ -10,6 +10,7 @@ date: '2026-08-29'
 updated: 2026-08-29T02:39
 tags: [mentality/fitness, mentality/nutrizione, mentality/bodybuilding]
 summary: "Strategia metabolica e nutrizionale per superare lo stallo di definizione e scendere sotto il 10% di body fat tramite rialzi calorici ciclici."
+video_url: "https://youtube.com/watch?v=come-scendere-sotto-10-bodyfat"
 ---
 [[Home MOC|Home]] / [[Personal Growth & Health]] / [[Come Scendere Sotto il 10% di Massa Grassa]]
 

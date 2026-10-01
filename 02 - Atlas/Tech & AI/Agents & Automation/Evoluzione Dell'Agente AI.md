@@ -105,4 +105,4 @@ Questo permette di combinare la potenza del calcolo parallelo con la resistenza 
 ---
 ## Collegamenti
 - [[L'Evoluzione del Vibe Coding]]
-- [[Conferenza AI 29-10-2025]]
+- [[Conferenza AI 29 - 10 - 2025]]

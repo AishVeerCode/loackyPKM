@@ -9,6 +9,7 @@ date: '2026-08-29'
 updated: 2026-08-29T02:39
 tags: [mentality/habits, education/study-methods, mentality/video]
 summary: "Analisi critica di ADC sul 'Dopamine Load': neuroscienza della dopamina come anticipazione, fallacie dell'AI slop e reali strategie di studio efficace."
+video_url: "https://youtu.be/JMqUahdF5Sc"
 ---
 [[Home MOC|Home]] / [[Personal Growth & Health]] / [[Dopamine Load - Geniale o Pura Fuffa Reaction]]
 

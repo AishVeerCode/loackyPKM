@@ -9,6 +9,7 @@ date: '2026-07-18'
 updated: 2026-07-18T15:06
 tags: [tech/agent, tech/architecture, tech/memory, tech/technology]
 summary: "Video URL: https://youtu.be/QQEgIo4Juxg"
+video_url: "https://youtu.be/QQEgIo4Juxg"
 ---
 [[Home MOC|Home]] / [[Tech & AI]] / [[Hermes Agent|Hermes Agent - l'Evoluzione dei Sistemi Agenti a Memoria Distillata e Auto - Miglioramento]]
 

@@ -10,7 +10,7 @@ updated: 2026-05-22T18:24
 tags: [calendar/daily]
 summary: "Diario giornaliero e tracciamento delle attività del 20250123."
 ---
-[[Home MOC|Home]] / [[Atlas]] / [[DailyNote - 20250123|Dailynote - 20250123]]
+[[Home MOC|Home]] / [[Calendar]] / [[DailyNote - 20250123|Dailynote - 20250123]]
 
 # DAILY NOTE
 ## giovedì, gennaio 23º, 2025

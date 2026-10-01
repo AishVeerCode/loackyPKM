@@ -9,6 +9,7 @@ date: '2026-08-30'
 updated: 2026-08-31T23:30
 tags: [tech/ai, tech/video]
 summary: "L'architettura dei video brevi induce dipendenza neurocognitiva e cicli autosovvertenti, degradando l'attenzione e premiando chi preserva il consumo long-form."
+video_url: "https://youtu.be/mkGGOxEPV-Q"
 ---
 [[Home MOC|Home]] / [[Personal Growth & Health]] / [[Il Lato Oscuro di TikTok Che Ti Nascondono - con i TheShow]]
 

@@ -9,6 +9,7 @@ date: '2026-07-18'
 updated: 2026-07-19T02:04
 tags: [mentality/youtube, tech/transcript, mentality/productivity, mentality/self-improvement, tech/ai, mentality/telos]
 summary: "Video URL: https://youtu.be/3BXE0e3QZ4U"
+video_url: "https://youtu.be/3BXE0e3QZ4U"
 ---
 [[Home MOC|Home]] / [[Personal Growth & Health]] / [[Il File Telos|Il File Telos - Hacking Personale e Red Teaming Emozionale Tramite AI]]
 

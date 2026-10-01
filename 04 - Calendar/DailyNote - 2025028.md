@@ -10,7 +10,7 @@ updated: 2026-05-22T18:24
 tags: [calendar/daily]
 summary: "Diario giornaliero e tracciamento delle attività del del giorno."
 ---
-[[Home MOC|Home]] / [[Atlas]] / [[DailyNote - 2025028|Dailynote - 2025028]]
+[[Home MOC|Home]] / [[Calendar]] / [[DailyNote - 2025028|Dailynote - 2025028]]
 
 # DAILY NOTE
 ## sabato, febbraio 8º, 2025

@@ -10,6 +10,7 @@ date: '2026-08-25'
 updated: 2026-08-25T23:48
 tags: [tech/ai, tech/geopolitics, tech/surveillance, tech/big-data]
 summary: "Analisi approfondita di Palantir: architettura software (Gotham, Foundry, Apollo, AIP), origini in PayPal e CIA, polizia predittiva, ideologia e rischi democratici."
+video_url: "https://youtu.be/HXFmhEYcnTw"
 ---
 [[Home MOC|Home]] / [[Tech & AI]] / [[Palantir - Cosa Fa l'Azienda Che Aiuta i Governi e Perche e Preoccupante]]
 

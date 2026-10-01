@@ -9,6 +9,7 @@ date: '2025-01-22'
 updated: 2026-07-07T01:20
 tags: [finance/video, finance/finance, finance/youtube]
 summary: "L'[Evasione fiscale](https://it.wikipedia.org/wiki/Evasionefiscale) non può essere legale, ma l'elusione fiscale può essere un [Comportamento](https://it.wikipedia.org/wiki/Comportamento) lecito pe..."
+video_url: "https://www.youtube.com/watch?v=d9ijOR5_LTk"
 ---
 [[Home MOC|Home]] / [[Finanza MOC|Finance]] / [[Come Evadere il Fisco Legalmente]]
 

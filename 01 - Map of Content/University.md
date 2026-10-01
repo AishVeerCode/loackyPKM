@@ -27,6 +27,20 @@ Mappa concettuale relativa all'orientamento universitario, alla Laurea Triennale
 
 ---
 
+## Corsi Universitari (1° Anno — 1° Semestre)
+
+### Fondamenti di Matematica
+- [[Lezione 1 - Logica delle Proposizioni e dei Predicati]]
+- [[Lezione 2 - Teoria Assiomatica degli Insiemi]]
+- [[Lezione 3 - Relazioni e Funzioni I]]
+- [[Lezione 4 - Funzioni II Proprieta e Invertibilita]]
+- [[Lezione 5 - i Numeri Reali e Assioma di Completezza]]
+
+### Probabilità e Statistica
+- [[Introduzione al Calcolo delle Probabilita]]
+
+---
+
 ## Collegamenti
 - [[Home|Home]]
 - [[Education & Learning|Education & Learning]]

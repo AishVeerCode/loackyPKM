@@ -25,9 +25,9 @@ Indice dei corsi completati, workshop e percorsi formativi specialistici.
 - [[3 - Exceptions]]
 - [[4 - Libraries]]
 - [[5 - Unit Tests]]
-- [[6 - File I-o]]
+- [[6 - File i - O]]
 - [[7 - Regular Expressions]]
-- [[8 - Object-Oriented Programming]]
+- [[8 - Object - Oriented Programming]]
 
 ## Harvard CS50’s Artificial Intelligence
 - [[05 - Blog/Corsi/CS50’s Artificial Intelligence with Python/1 - Search]]

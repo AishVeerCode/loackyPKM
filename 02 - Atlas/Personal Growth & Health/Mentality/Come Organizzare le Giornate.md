@@ -9,6 +9,7 @@ date: '2026-07-19'
 updated: 2026-07-19T11:28
 tags: [mentality/youtube, tech/transcript, mentality/mindset, mentality/productivity, mentality/time-management]
 summary: "Video URL: https://youtu.be/zMxxEDaO0QM"
+video_url: "https://youtu.be/zMxxEDaO0QM"
 ---
 [[Home MOC|Home]] / [[Personal Growth & Health]] / [[Come Organizzare le Giornate|Come Organizzare le Giornate - Guida Pratica al Time Blocking]]
 

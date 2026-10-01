@@ -10,6 +10,7 @@ date: '2026-08-25'
 updated: 2026-08-25T23:48
 tags: [finance/video, finance/funds, finance/etf, finance/investments]
 summary: "Analisi strutturale e gestionale delle differenze tra fondi comuni ed ETF: meccanismi di negoziazione, gestione attiva vs passiva, tracking error e benchmark."
+video_url: "https://youtu.be/nEDQ31eYj9k"
 ---
 [[Home MOC|Home]] / [[Finanza MOC|Finance]] / [[Le Vere Differenze Tra Fondi e Etf]]
 

@@ -11,7 +11,7 @@ updated: 2026-08-31T23:58
 tags: [meta/dashboard, meta/gtd]
 summary: "Dashboard di revisione GTD per l'approvazione o scarto delle note in Inbox."
 ---
-[[Home MOC|Home]] / [[Atlas]] / [[Review Dashboard]]
+[[Home MOC|Home]] / [[Inbox]] / [[Review Dashboard]]
 
 # 📥 Inbox Review Dashboard
 

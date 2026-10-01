@@ -9,6 +9,7 @@ date: '2026-07-19'
 updated: 2026-07-19T11:38
 tags: [mentality/youtube, tech/transcript, mentality/mindset, mentality/problem-solving, mentality/root-cause-analysis]
 summary: "Video URL: https://youtu.be/isAcbfMsHZs"
+video_url: "https://youtu.be/isAcbfMsHZs"
 ---
 [[Home MOC|Home]] / [[Personal Growth & Health]] / [[Pseudo Problemi e la Tecnica dei 5 Perche|Pseudo Problemi e la Tecnica dei 5 Perché]]
 

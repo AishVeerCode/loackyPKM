@@ -9,6 +9,7 @@ date: '2026-07-17'
 updated: 2026-07-17T00:01
 tags: [mentality/youtube, tech/transcript, mentality/mindset, mentality/philosophy]
 summary: "Video URL: https://youtu.be/FCzZZTBrSpA"
+video_url: "https://youtu.be/FCzZZTBrSpA"
 ---
 [[Home MOC|Home]] / [[Personal Growth & Health]] / [[5 Libri per Svegliarti|Ti Senti Bloccato Nella Vita 5 Libri per Svegliarti]]
 

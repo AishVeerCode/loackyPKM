@@ -9,6 +9,7 @@ date: '2026-07-17'
 updated: 2026-07-17T00:05
 tags: [tech/youtube, tech/transcript, tech/tech]
 summary: "Video URL: https://youtu.be/UUkdab6HatQ"
+video_url: "https://youtu.be/UUkdab6HatQ"
 ---
 [[Home MOC|Home]] / [[Education & Learning]] / [[Come Tornare a Leggere Libri|Perche Non Riusciamo Piu a Leggere Libri e Come Tornare a Farlo]]
 

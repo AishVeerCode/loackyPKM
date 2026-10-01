@@ -10,6 +10,7 @@ date: '2026-08-29'
 updated: 2026-08-29T02:39
 tags: [tech/ai, tech/rag, video/tech, tech/llm]
 summary: "Analisi comparativa delle 3 strategie di retrieval per sistemi RAG: Sparse (BM25), Dense (embedding vettoriali) e Hybrid (RRF), con benchmark e trade-off."
+video_url: "https://youtu.be/r0Dciuq0knU"
 ---
 [[Home MOC|Home]] / [[Tech & AI]] / [[Top 3 RAG Retrieval Strategies - Sparse, Dense, & Hybrid Explained]]
 

@@ -10,7 +10,7 @@ updated: 2025-10-29T11:28
 tags: [tech/tech, tech/ai, tech/conference]
 summary: "figlio della Disanto"
 ---
-[[Home MOC|Home]] / [[Tech & AI]] / [[Conferenza AI 29-10-2025|Conferenza AI 29 - 10 - 2025]]
+[[Home MOC|Home]] / [[Tech & AI]] / [[Conferenza AI 29 - 10 - 2025]]
 
 # Conferenza AI 29-10-2025
 

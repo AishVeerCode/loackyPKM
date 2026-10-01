@@ -25,7 +25,7 @@ Mappa dei concetti cardine su modelli di linguaggio, sistemi multi-agente e work
 - [[Evoluzione Dell'Agente AI]]
 - [[Costruire Knowledge Base per AI con LLM Wiki]]
 - [[La Commoditizzazione Dell'Intelligenza Artificiale e la Guerra Dell'Hardware]]
-- [[Conferenza AI 29-10-2025]]
+- [[Conferenza AI 29 - 10 - 2025]]
 - [[Antigravity AI CLI Personal Agent]]
 - [[Ds4]]
 - [[La Gente Chiede Tutto Alle AI Perche Non Ha Scelta]]

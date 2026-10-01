@@ -9,6 +9,7 @@ date: '2025-01-21'
 updated: 2026-07-07T01:20
 tags: [mentality/self-environment, mentality/video, mentality/youtube]
 summary: "La motivazione, l'ispirazione, la carica, l'energia, la potenza, la resistenza, la disciplina e l'autocontrollo sono tutte espressioni che si trovano al centro del mondo del self-help e dell'autoai..."
+video_url: "https://www.youtube.com/watch?v=uQl0gby0M_k"
 ---
 [[Home MOC|Home]] / [[Personal Growth & Health]] / [[David Goggins - Analisi]]
 

@@ -10,6 +10,7 @@ date: '2026-08-25'
 updated: 2026-08-25T20:28
 tags: [finance/investment, finance/market-history, finance/psychology, tech/video, tech/transcript]
 summary: "Analisi approfondita sui quattro pilastri dell'investimento di William Bernstein, le lezioni della storia dei mercati di Ben Carlson e la discrepanza tra backtest teorici e la realta emotiva dei crolli finanziari."
+video_url: "https://youtu.be/vi0BYzyWnFg"
 ---
 [[Home MOC|Home]] / [[Finanza MOC|Finance]] / [[La Bugia del Questa Volta e Diverso - Vivere un Crollo e un'Altra Storia]]
 
