@@ -6,7 +6,7 @@ related: ["[[Home MOC]]", "[[Review Dashboard]]"]
 source: original
 title: "Vault Health Dashboard"
 date: '2026-10-01'
-updated: 2026-10-01T15:49
+updated: 2026-10-01T16:31
 tags: [meta/dashboard, meta/health]
 summary: "Pannello di controllo statico del Second Brain: monitoraggio dello stato di salute, note in staging, bozze del blog e diagnostica del grafo."
 ---
@@ -16,17 +16,17 @@ summary: "Pannello di controllo statico del Second Brain: monitoraggio dello sta
 
 Pannello di controllo in **puro Markdown statico** per monitorare la salute del Vault, le note in staging e l'integrità del grafo semantico.
 
-*Ultimo aggiornamento:* `2026-10-01 15:49`
+*Ultimo aggiornamento:* `2026-10-01 16:31`
 
 ---
 
 ## Metriche Generali del Vault
-- **Note Totali:** 156
+- **Note Totali:** 160
 - **Note in Staging (Inbox):** 1
 - **Bozze Blog:** 3
 - **Note Orfane:** 2
 - **Link Interrotti:** 7
-- **Forward-Links Pianificati:** 2635
+- **Forward-Links Pianificati:** 2638
 - **Collisioni Omonime (Note Duplicate):** 2
 
 ---
@@ -52,16 +52,16 @@ Pannello di controllo in **puro Markdown statico** per monitorare la salute del 
 ## Note Modificate di Recente
 | Nota | Ultima Modifica | Area |
 |---|---|---|
+| [[University]] | 2026-10-01 16:31 | tech |
+| [[Lezione 3 - Stringhe Metodi e Slicing]] | 2026-10-01 16:31 | education |
+| [[Lezione 2 - Variabili Assegnazione Input e Output]] | 2026-10-01 16:30 | education |
+| [[Lezione 1 - Introduzione a Python ed Espressioni Numeriche]] | 2026-10-01 16:29 | education |
+| [[research-memo]] | 2026-10-01 15:49 | N/D |
 | [[Properties]] | 2026-10-01 15:49 | tech |
 | [[Embeds]] | 2026-10-01 15:49 | tech |
 | [[Callouts]] | 2026-10-01 15:49 | tech |
 | [[Functions Reference]] | 2026-10-01 15:49 | tech |
 | [[EXAMPLES]] | 2026-10-01 15:49 | tech |
-| [[Examples]] | 2026-10-01 15:49 | tech |
-| [[SKILL]] | 2026-10-01 15:49 | tech |
-| [[Bmo]] | 2026-10-01 15:49 | tech |
-| [[Skill]] | 2026-10-01 15:49 | tech |
-| [[8 Object - Oriented Programming]] | 2026-10-01 15:49 | education |
 
 
 ---

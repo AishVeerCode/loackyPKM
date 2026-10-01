@@ -39,6 +39,11 @@ Mappa concettuale relativa all'orientamento universitario, alla Laurea Triennale
 ### Probabilità e Statistica
 - [[Introduzione al Calcolo delle Probabilita]]
 
+### Introduzione alla Programmazione
+- [[Lezione 1 - Introduzione a Python ed Espressioni Numeriche]]
+- [[Lezione 2 - Variabili Assegnazione Input e Output]]
+- [[Lezione 3 - Stringhe Metodi e Slicing]]
+
 ---
 
 ## Collegamenti
