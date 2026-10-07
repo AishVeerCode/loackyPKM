@@ -2,12 +2,12 @@
 status: permanent
 type: lecture
 area: education
-related: ["[[Lezione 6 - Valore Assoluto e Numeri Naturali]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]"]
+related: ["[[Lezione 6 - Valore Assoluto e Numeri Naturali]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]", "[[Lecture 02 - Cantor's Theory of Cardinality]]", "[[Lecture 06 - The Uncountability of the Real Numbers]]", "[[Lecture 08 - The Squeeze Theorem and Operations with Convergent Sequences]]"]
 aliases: ["Lezione 7", "Fondamenti di Matematica Lezione 7", "N, Z e Q"]
 source: Lezione 7.pdf
 title: "Lezione 7 - Insiemi Numerici N Z e Q"
 date: '2026-10-07'
-updated: 2026-10-07T17:50
+updated: 2026-10-07T19:30
 tags: [education/university, education/matematica, education/lecture]
 summary: "Buon ordinamento di N, divisione euclidea, ricorrenza, disuguaglianza di Bernoulli, anello Z, campo ordinato Q, irrazionalita di radice di 2 e incompletezza di Q."
 ---
@@ -219,3 +219,46 @@ Entrambi i casi conducono a una contraddizione. Dunque $\sup_{\mathbb{Q}} A$ non
 Data la necessità di calcolare radici non razionali, si definisce per $a \ge 0$ e $u_0 > 0$ la successione ricorsiva:
 $$u_{n+1} = \frac{1}{2}\left(u_n + \frac{a}{u_n}\right)$$
 Tale successione costruisce per ricorrenza una sequenza razionale convergente a $\sqrt{a}$ nel completamento reale $\mathbb{R}$.
+
+---
+
+## Integrazione Analisi 1 & Real Analysis: Cardinalità di Cantor e Studio di Convergenza della Ricorrenza di Erone
+
+In **Analisi Matematica 1** e nelle lezioni [[Lecture 02 - Cantor's Theory of Cardinality]], [[Lecture 06 - The Uncountability of the Real Numbers]] e [[Lecture 08 - The Squeeze Theorem and Operations with Convergent Sequences]], la distinzione algebrica tra $\mathbb{N}, \mathbb{Z}, \mathbb{Q}$ e $\mathbb{R}$ si trasforma in una discrepanza quantitativa di ordine superiore, mentre le successioni ricorsive come quella di Erone diventano la palestra tipica per applicare il Teorema di Convergenza Monotona.
+
+### 1. Teoria della Cardinalità: Numerabilità di $\mathbb{Q}$ vs Non-Numerabilità di $\mathbb{R}$
+All'esame orale di Analisi 1 viene frequentemente richiesta la dimostrazione che i numeri razionali sono infiniti numerabili, mentre i numeri reali formano un infinito di ordine superiore:
+
+- **Numerabilità di $\mathbb{Z}$ e di $\mathbb{N} \times \mathbb{N}$ (da [[Lecture 02 - Cantor's Theory of Cardinality]]):**
+  - $\mathbb{Z} \sim \mathbb{N}$ tramite la biezione che alterna positivi e negativi: $f(n) = n/2$ se pari, $-(n-1)/2$ se dispari.
+  - $\mathbb{N} \times \mathbb{N} \sim \mathbb{N}$ tramite l'argomento diagonale di Cantor che enumera le coppie ordinate per diagonali finite $D_k = \{(m, n) \mid m + n = k\}$.
+- **Teorema: L'insieme dei numeri razionali $\mathbb{Q}$ è numerabile ($|\mathbb{Q}| = \aleph_0$).**
+  *Dimostrazione:* Ogni razionale positivo si scrive univocamente come frazione ridotta ai minimi termini $\frac{m}{n}$ con $(m, n) \in \mathbb{N}^* \times \mathbb{N}^*$. La mappa $f(m/n) = (m, n)$ è iniettiva da $\mathbb{Q}^+$ in $\mathbb{N} \times \mathbb{N}$. Poiché $\mathbb{N} \times \mathbb{N}$ è numerabile e ogni sottoinsieme di un numerabile è numerabile, $\mathbb{Q}^+$ è numerabile. Poiché $\mathbb{Q} = (-\mathbb{Q}^+) \cup \{0\} \cup \mathbb{Q}^+$ è unione finita di insiemi numerabili, $\mathbb{Q}$ è numerabile.
+
+<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>L'Argomento Diagonale di Cantor per la Non-Numerabilità di $\mathbb{R}$ (da [[Lecture 06 - The Uncountability of the Real Numbers]]):</b></font></mark>
+L'intervallo reale $]0, 1[$ (e di conseguenza $\mathbb{R}$) non è numerabile:
+Supponiamo per assurdo di poter elencare tutti i reali di $]0, 1[$ in una successione $x_1, x_2, x_3, \dots$ con espansione decimale $x_n = 0.d_{n1} d_{n2} d_{n3} \dots$
+Costruiamo il numero reale $y = 0.a_1 a_2 a_3 \dots$ modificando le cifre sulla diagonale principale:
+$$a_n = \begin{cases} 4 & \text{se } d_{nn} \neq 4 \\ 5 & \text{se } d_{nn} = 4 \end{cases}$$
+Per ogni $n \in \mathbb{N}$, l'$n$-esima cifra di $y$ differisce dall'$n$-esima cifra di $x_n$, quindi $y \neq x_n$. Dunque $y \in ]0, 1[$ non è presente nell'elenco, contraddicendo l'esaustività della lista! Dunque $|\mathbb{R}| = \mathfrak{c} > \aleph_0$.
+
+> [!IMPORTANT] Sovrabbondanza degli Irrazionali
+> Poiché $\mathbb{R} = \mathbb{Q} \cup (\mathbb{R} \setminus \mathbb{Q})$, se gli irrazionali fossero numerabili $\mathbb{R}$ sarebbe l'unione di due numerabili e quindi risulterebbe numerabile.
+> Ne consegue che **$\mathbb{R} \setminus \mathbb{Q}$ è non numerabile**. La "quasi totalità" dei numeri reali è costituita da numeri irrazionali (e trascendenti).
+
+### 2. Studio Rigoroso di Convergenza della Successione di Erone (da [[Lecture 08 - The Squeeze Theorem and Operations with Convergent Sequences]])
+La successione di Erone $u_{n+1} = \frac{1}{2}\left(u_n + \frac{a}{u_n}\right)$ con $a > 0, u_0 > 0$ è il prototipo d'esame per le successioni definite per ricorrenza:
+
+1. **Limitazione Inferiore:** Per ogni $n \ge 1$, calcoliamo:
+   $$u_{n+1}^2 - a = \frac{1}{4}\left(u_n + \frac{a}{u_n}\right)^2 - a = \frac{u_n^2 + 2a + a^2/u_n^2 - 4a}{4} = \frac{(u_n^2 - a)^2}{4u_n^2} \ge 0$$
+   Ne segue $u_{n+1}^2 \ge a \implies u_{n+1} \ge \sqrt{a}$ per ogni $n \ge 0$. Dunque la successione è limitata inferiormente da $\sqrt{a}$ a partire dal primo passo.
+2. **Monotonia Decrescente:** Calcoliamo la differenza tra termini successivi per $n \ge 1$:
+   $$u_{n+1} - u_n = \frac{1}{2}\left(u_n + \frac{a}{u_n}\right) - u_n = \frac{a - u_n^2}{2u_n}$$
+   Poiché $u_n^2 \ge a$ e $u_n > 0$, il numeratore $a - u_n^2 \le 0$, da cui $u_{n+1} \le u_n$. La successione è **monotona decrescente** per $n \ge 1$.
+3. **Esistenza del Limite (MCT):** Essendo decrescente e inferiormente limitata da $\sqrt{a}$, per il **Teorema di Convergenza Monotona** esiste finito il limite reale:
+   $$L = \lim_{n \to \infty} u_n \ge \sqrt{a} > 0$$
+4. **Calcolo del Limite:** Passando al limite per $n \to \infty$ in ambo i membri della relazione di ricorrenza (sfruttando l'algebra dei limiti):
+   $$L = \frac{1}{2}\left(L + \frac{a}{L}\right) \iff 2L = L + \frac{a}{L} \iff L = \frac{a}{L} \iff L^2 = a$$
+   Poiché $L > 0$, l'unica soluzione ammissibile è $L = \sqrt{a}$.
+La successione converge a $\sqrt{a}$ con convergenza quadratica (metodo delle tangenti di Newton).
+

@@ -2,12 +2,12 @@
 status: permanent
 type: lecture
 area: education
-related: ["[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]"]
+related: ["[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]", "[[Lecture 08 - The Squeeze Theorem and Operations with Convergent Sequences]]", "[[Lecture 09 - Limsup, Liminf, and the Bolzano-Weierstrass Theorem]]", "[[Lecture 16 - Extreme Value Theorem and Bolzano's Intermediate Value Theorem]]"]
 aliases: ["Lezione 9", "Fondamenti di Matematica Lezione 9", "Funzioni Reali Parte 1"]
 source: Lezione 9.pdf
 title: "Lezione 9 - Funzioni Reali ed Estremi"
 date: '2026-10-07'
-updated: 2026-10-07T17:50
+updated: 2026-10-07T19:30
 tags: [education/university, education/matematica, education/lecture]
 summary: "Struttura di anello ordinato e reticolare di R^A, limitatezza di funzioni reali, estremo superiore e inferiore, punti di massimo e minimo globale e successioni."
 ---
@@ -207,3 +207,57 @@ Essendo una successione reale un'applicazione $a: \mathbb{N} \to \mathbb{R}$, le
 $$\sup_{n \in \mathbb{N}} a_n = \lambda \iff \begin{cases} \text{1)} & \forall n \in \mathbb{N}: a_n \le \lambda \\ \text{2)} & \forall \varepsilon > 0, \; \exists n \in \mathbb{N} : a_n > \lambda - \varepsilon \end{cases}$$
 
 $$\inf_{n \in \mathbb{N}} a_n = \lambda \iff \begin{cases} \text{1)} & \forall n \in \mathbb{N}: \lambda \le a_n \\ \text{2)} & \forall \varepsilon > 0, \; \exists n \in \mathbb{N} : a_n < \lambda + \varepsilon \end{cases}$$
+
+---
+
+## Integrazione Analisi 1 & Real Analysis: Teorema di Weierstrass, Monotonia e Limiti Estremi (Limsup e Liminf)
+
+In **Analisi Matematica 1** e nelle lezioni [[Lecture 08 - The Squeeze Theorem and Operations with Convergent Sequences]], [[Lecture 09 - Limsup, Liminf, and the Bolzano-Weierstrass Theorem]] e [[Lecture 16 - Extreme Value Theorem and Bolzano's Intermediate Value Theorem]], la teoria degli estremi di funzioni reali si trasforma da pura analisi statica di insiemi numerici in uno dei pilastri fondamentali dell'ottimizzazione e del calcolo differenziale.
+
+### 1. Il Teorema di Weierstrass sui Valori Estremi (EVT) (da [[Lecture 16 - Extreme Value Theorem and Bolzano's Intermediate Value Theorem]])
+Come visto nella lezione, un insieme limitato non ammette necessariamente massimo o minimo (ad esempio l'immagine della funzione arcotangente $\mathrm{arctg}(\mathbb{R}) = ]-\pi/2, \pi/2[$ non ammette né massimo né minimo).
+La domanda cardinale dell'orale di Analisi 1 è: *Quali condizioni geometriche e analitiche garantiscono che una funzione reale ammetta certamente massimo e minimo assoluti?*
+
+<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema di Weierstrass (Extreme Value Theorem):</b></font></mark>
+Sia $f: [a, b] \to \mathbb{R}$ una funzione definita su un intervallo **chiuso e limitato (compatto)**. Se $f$ è **continua** su $[a, b]$, allora $f$ ammette **massimo globale e minimo globale**:
+$$\exists x_{\min}, x_{\max} \in [a, b] \quad \text{tali che} \quad f(x_{\min}) \le f(x) \le f(x_{\max}) \quad \forall x \in [a, b]$$
+ovvero l'immagine $f([a, b])$ ammette sia massimo che minimo: $\max_{[a, b]} f = f(x_{\max})$ e $\min_{[a, b]} f = f(x_{\min})$.
+
+*Dimostrazione tramite Bolzano-Weierstrass (Casey Rodriguez, Lecture 16):*
+1. **Limitatezza dell'Immagine:** Si dimostra che $f([a, b])$ è limitata. Se fosse illimitata superiormente, per ogni $n \in \mathbb{N}$ esisterebbe $x_n \in [a, b]$ con $f(x_n) > n$. Essendo $(x_n)$ una successione limitata in $[a, b]$, per il Teorema di Bolzano-Weierstrass (da [[Lecture 09 - Limsup, Liminf, and the Bolzano-Weierstrass Theorem]]) esiste una sottosuccessione convergente $x_{n_k} \to x_0 \in [a, b]$. Per continuità di $f$, $f(x_{n_k}) \to f(x_0) \in \mathbb{R}$, contraddicendo $f(x_{n_k}) > n_k \to +\infty$.
+2. **Esistenza del Punto di Massimo:** Poiché $f([a, b])$ è superiormente limitata, per l'Assioma di Completezza di $\mathbb{R}$ esiste finito $M := \sup_{[a, b]} f$.
+   Per la caratterizzazione dell'estremo superiore, per ogni $n \ge 1$ esiste un punto $x_n \in [a, b]$ tale che:
+   $$M - \frac{1}{n} < f(x_n) \le M$$
+   Per il Teorema del Confronto (Carabinieri), $\lim_{n \to \infty} f(x_n) = M$.
+   Applicando nuovamente Bolzano-Weierstrass alla successione $(x_n)$, estraiamo una sottosuccessione convergente $x_{n_k} \to x_{\max} \in [a, b]$.
+   Poiché $f$ è continua in $x_{\max}$:
+   $$f(x_{\max}) = \lim_{k \to \infty} f(x_{n_k}) = M$$
+   Il valore $M$ appartiene all'immagine: $M = \max_{[a, b]} f$ e $x_{\max} \in \mathrm{argmax}_{[a, b]} f$. Analogamente per il minimo.
+
+> [!WARNING] Essenzialità delle Ipotesi di Weierstrass
+> Se cade anche solo una delle ipotesi, il teorema crolla:
+> - **Dominio non chiuso:** $f(x) = x$ su $]0, 1[$ è continua e limitata, ma non ha né $\max$ né $\min$.
+> - **Dominio non limitato:** $f(x) = \mathrm{arctg}(x)$ su $\mathbb{R}$ (chiuso ma illimitato) non ha né $\max$ né $\min$.
+> - **Funzione non continua:** $f(x) = x$ per $x \in [0, 1[$ e $f(1) = 0$ su $[0, 1]$ non ammette massimo.
+
+### 2. Teorema di Convergenza Monotona e Identificazione del Limite (da [[Lecture 08 - The Squeeze Theorem and Operations with Convergent Sequences]])
+Nel passaggio dal discreto al continuo, l'estremo superiore e inferiore governano la dinamica asintotica delle successioni monotone:
+
+**Teorema di Convergenza Monotona (MCT):**
+1. Se $(a_n)$ è monotona crescente ($a_n \le a_{n+1}$):
+   $$\lim_{n \to \infty} a_n = \sup_{n \in \mathbb{N}} a_n$$
+2. Se $(a_n)$ è monotona decrescente ($a_n \ge a_{n+1}$):
+   $$\lim_{n \to \infty} a_n = \inf_{n \in \mathbb{N}} a_n$$
+
+Ciò stabilisce che per una successione monotona calcolare il limite dinamico o calcolare l'estremo statico dell'insieme immagine è la stessa identica operazione.
+
+### 3. Limite Superiore ($\limsup$) e Limite Inferiore ($\liminf$) come Estremi Asintotici (da [[Lecture 09 - Limsup, Liminf, and the Bolzano-Weierstrass Theorem]])
+Quando una successione o funzione oscilla e non ammette limite ordinario (come $a_n = (-1)^n$), gli estremi delle "code" eliminano l'influenza dei primi $k$ termini transitori:
+
+- **Definizioni:**
+  $$\limsup_{n \to \infty} a_n := \lim_{k \to \infty} \left(\sup_{n \ge k} a_n\right), \qquad \liminf_{n \to \infty} a_n := \lim_{k \to \infty} \left(\inf_{n \ge k} a_n\right)$$
+- **Proprietà Cardine d'Esame:**
+  1. $\limsup a_n$ è il **massimo limite** raggiungibile da qualsiasi sottosuccessione convergente; $\liminf a_n$ è il **minimo limite**.
+  2. **Criterio di Convergenza:** La successione converge se e solo se $\liminf a_n = \limsup a_n = L$, nel qual caso $\lim a_n = L$.
+  3. Nel Criterio della Radice di Cauchy per le serie numeriche (da [[Lecture 12 - Ratio, Root, and Alternating Series Tests]]) e nel raggio di convergenza di Hadamard per le serie di potenze (da [[Lecture 25 - Power Series and the Weierstrass Approximation Theorem]]), la condizione di sommabilità si esprime rigorosamente tramite il limite superiore: $\limsup_{n \to \infty} \sqrt[n]{|a_n|} < 1$.
+

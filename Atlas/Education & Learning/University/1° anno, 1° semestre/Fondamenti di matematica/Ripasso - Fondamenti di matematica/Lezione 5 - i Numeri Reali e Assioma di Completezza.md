@@ -2,12 +2,12 @@
 status: permanent
 type: lecture
 area: education
-related: ["[[Lezione 2 - Teoria Assiomatica degli Insiemi]]", "[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]"]
+related: ["[[Lezione 2 - Teoria Assiomatica degli Insiemi]]", "[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lecture 03 - Cantor's Remarkable Theorem and the Least Upper Bound Property]]", "[[Lecture 04 - The Characterization of the Real Numbers]]", "[[Lecture 05 - The Archimedean Property, Density of the Rationals, and Absolute Value]]", "[[Lecture 10 - Completeness of Real Numbers and Infinite Series]]"]
 aliases: ["Lezione 5", "Fondamenti di Matematica Lezione 5"]
 source: Lezione 5.pdf
 title: "Lezione 5 - i Numeri Reali e Assioma di Completezza"
 date: '2026-10-01'
-updated: 2026-10-01T15:38
+updated: 2026-10-07T19:30
 tags: [education/university, education/matematica, education/lecture]
 summary: "Costruzione assiomatica di R come campo totalmente ordinato e completo, assiomi di Dedekind, estremo superiore e inferiore, caratterizzazione ed elementi separatori."
 ---
@@ -176,3 +176,57 @@ Allora:
 $$\sup A \le \inf B$$
 e ogni numero reale $\lambda \in [\sup A, \inf B]$ è un <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>elemento separatore</b></font></mark> per le due classi, soddisfacendo:
 $$\forall a \in A, \forall b \in B: a \le \lambda \le b$$
+
+---
+
+## Integrazione Analisi 1 & Real Analysis: Incompletezza di Q, Rete delle Equivalenze e Costruzione di R
+
+In **Analisi Matematica 1** e nelle lezioni [[Lecture 03 - Cantor's Remarkable Theorem and the Least Upper Bound Property]], [[Lecture 04 - The Characterization of the Real Numbers]], [[Lecture 05 - The Archimedean Property, Density of the Rationals, and Absolute Value]] e [[Lecture 10 - Completeness of Real Numbers and Infinite Series]], l'assioma di completezza (LUB property) rappresenta lo spartiacque assoluto tra l'algebra elementare e il calcolo infinitesimale.
+
+### 1. Dimostrazione Rigorosa dell'Incompletezza di $\mathbb{Q}$ (da [[Lecture 04 - The Characterization of the Real Numbers]])
+Perché $\mathbb{Q}$ non basta per fare analisi? Nel corso MIT 18.100A, Casey Rodriguez dimostra in modo costruttivo l'incompletezza di $\mathbb{Q}$ considerando l'insieme:
+$$E := \{q \in \mathbb{Q} \mid q > 0 \land q^2 < 2\}$$
+
+1. $E$ è non vuoto ($1 \in E$) ed è superiormente limitato in $\mathbb{Q}$ (ad esempio $2$ è un maggiorante, poiché per $q > 2$ si ha $q^2 > 4 > 2$).
+2. Supponiamo per assurdo che esista $s = \sup_{\mathbb{Q}} E \in \mathbb{Q}$. Per la legge di tricotomia si hanno tre alternative mutuamente esclusive: $s^2 < 2$, $s^2 = 2$ oppure $s^2 > 2$.
+   - **Caso $s^2 = 2$:** Impossibile, poiché $\sqrt{2}$ non è un numero razionale (dimostrato in [[Lezione 7 - Insiemi Numerici N Z e Q]]).
+   - **Caso $s^2 < 2$:** Consideriamo il numero razionale:
+     $$q := s + \frac{2 - s^2}{s + 2} = \frac{2s + 2}{s + 2} \in \mathbb{Q}$$
+     Poiché $s^2 < 2$, si ha $2 - s^2 > 0 \implies q > s$. Calcolando il quadrato:
+     $$q^2 - 2 = \left(\frac{2s + 2}{s + 2}\right)^2 - 2 = \frac{4s^2 + 8s + 4 - 2(s^2 + 4s + 4)}{(s + 2)^2} = \frac{2(s^2 - 2)}{(s + 2)^2} < 0$$
+     Dunque $q^2 < 2$, il che implica che $q \in E$. Ma $q > s$, contraddicendo il fatto che $s$ sia un maggiorante di $E$!
+   - **Caso $s^2 > 2$:** Consideriamo lo stesso numero razionale $q = \frac{2s + 2}{s + 2}$.
+     Poiché $s^2 > 2$, si ha $2 - s^2 < 0 \implies q < s$. Dall'identità algebrica precedente:
+     $$q^2 - 2 = \frac{2(s^2 - 2)}{(s + 2)^2} > 0 \implies q^2 > 2$$
+     Questo mostra che $q$ è ancora un maggiorante per $E$. Ma $q < s$, contraddicendo il fatto che $s$ sia il *minimo* maggiorante di $E$!
+In tutti i casi si perviene a una contraddizione: **$E$ non ammette estremo superiore in $\mathbb{Q}$**. $\mathbb{Q}$ è "pieno di buchi".
+
+### 2. La Ragnatela delle Equivalenze della Completezza di $\mathbb{R}$
+Uno dei temi orali più nobili di Analisi 1 è la perfetta equivalenza logica delle diverse formulazioni della continuità del continuo reale:
+
+```
+           [Assioma di Dedekind (LUB Property)]
+                     ▲           │
+                     │           ▼
+[Teorema di Convergenza Monotona] ◄─► [Intervalli Inscatolati di Cantor]
+                     ▲                        │
+                     │                        ▼
+       [Teorema di Bolzano-Weierstrass] ◄───► [Completezza Metrica di Cauchy]
+```
+
+1. **Assioma dell'Estremo Superiore (LUB Property):** Ogni insieme non vuoto e superiormente limitato ammette $\sup \in \mathbb{R}$.
+2. **Teorema degli Intervalli Inscatolati di Cantor (da [[Lecture 03 - Cantor's Remarkable Theorem and the Least Upper Bound Property]]):** Se $[a_1, b_1] \supseteq [a_2, b_2] \supseteq \dots$ è una successione di intervalli chiusi e limitati con $\lim (b_n - a_n) = 0$, la loro intersezione $\bigcap_{n=1}^\infty [a_n, b_n]$ contiene esattamente un unico punto reale $x \in \mathbb{R}$.
+3. **Teorema di Convergenza Monotona (MCT, da [[Lecture 08 - The Squeeze Theorem and Operations with Convergent Sequences]]):** Ogni successione monotona e limitata converge in $\mathbb{R}$.
+4. **Teorema di Bolzano-Weierstrass (da [[Lecture 09 - Limsup, Liminf, and the Bolzano-Weierstrass Theorem]]):** Ogni successione limitata in $\mathbb{R}$ ammette una sottosuccessione convergente.
+5. **Completezza di Cauchy (da [[Lecture 10 - Completeness of Real Numbers and Infinite Series]]):** Ogni successione di Cauchy converge in $\mathbb{R}$.
+
+In qualsiasi campo ordinato archimedeo, queste 5 proprietà sono **mutuamente equivalenti**.
+
+### 3. La Proprietà di Archimede come Conseguenza della Completezza (da [[Lecture 05 - The Archimedean Property, Density of the Rationals, and Absolute Value]])
+All'esame di Analisi 1 viene spesso richiesto di dimostrare perché i numeri naturali $\mathbb{N}$ non sono limitati superiormente a partire dall'Assioma di Completezza:
+- Se per assurdo $\mathbb{N}$ fosse superiormente limitato, esisterebbe $L = \sup \mathbb{N} \in \mathbb{R}$.
+- Fissato $\varepsilon = 1 > 0$, per la caratterizzazione dell'estremo superiore deve esistere $n \in \mathbb{N}$ tale che $n > L - 1$.
+- Sommando $1$ ad ambo i membri: $n + 1 > L$.
+- Ma $n + 1 \in \mathbb{N}$ (essendo $\mathbb{N}$ induttivo), il che contraddice l'ipotesi che $L$ sia un maggiorante per $\mathbb{N}$.
+Dunque $\mathbb{N}$ non è superiormente limitato in $\mathbb{R}$ (**Proprietà di Archimede**).
+

@@ -2,16 +2,16 @@
 status: permanent
 type: lecture
 area: education
-related: ["[[Lezione 1 - Logica delle Proposizioni e dei Predicati]]", "[[Lezione 3 - Relazioni e Funzioni I]]"]
+related: ["[[Lezione 1 - Logica delle Proposizioni e dei Predicati]]", "[[Lezione 3 - Relazioni e Funzioni I]]", "[[Lecture 01 - Sets, Set Operations and Mathematical Induction]]", "[[Lecture 03 - Cantor's Remarkable Theorem and the Least Upper Bound Property]]", "[[Lecture 06 - The Uncountability of the Real Numbers]]"]
 aliases: ["Lezione 2", "Fondamenti di Matematica Lezione 2"]
 source: Lezione 2.pdf
 title: "Lezione 2 - Teoria Assiomatica degli Insiemi"
 date: '2026-10-01'
-updated: 2026-10-01T15:38
+updated: 2026-10-07T19:30
 tags: [education/university, education/matematica, education/lecture]
 summary: "Fondamenti assiomatici di Zermelo-Fraenkel con assiomi di estensionalità, specificazione, unione, parti, costruzione dei numeri naturali e assioma della scelta."
 ---
-4[[Home MOC|Home]] / [[Education & Learning]] / [[Lezione 2 - Teoria Assiomatica degli Insiemi]]
+[[Home MOC|Home]] / [[Education & Learning]] / [[Lezione 2 - Teoria Assiomatica degli Insiemi]]
 
 # Lezione 2 - Teoria Assiomatica degli Insiemi
 
@@ -180,3 +180,47 @@ Allora esiste un insieme $X \subseteq \bigcup \mathcal{F}$ tale che, per ogni $A
 $$|A \cap X| = 1 \quad \forall A \in \mathcal{F}$$
 
 L'insieme $X$ effettua una "scelta" di un singolo rappresentante per ciascun insieme della famiglia. Mentre per famiglie finite la scelta è banale conseguenza della logica dei predicati, per famiglie infinite questo principio richiede un postulato dedicato, indispensabile per dimostrare teoremi cardine dell'analisi e dell'algebra (esistenza di basi negli spazi vettoriali infiniti, compattezza topologica, teorema di Hahn-Banach).
+
+---
+
+## Integrazione Analisi 1 & Real Analysis: Insiemi delle Parti, Teorema di Cantor e Dualità Topologica
+
+In **Analisi Matematica 1** e nello sviluppo sistematico di [[Lecture 01 - Sets, Set Operations and Mathematical Induction]] e [[Lecture 03 - Cantor's Remarkable Theorem and the Least Upper Bound Property]], la teoria degli insiemi fornisce gli strumenti per classificare la grandezza degli spazi e manipolare famiglie infinite di intervalli aperti e chiusi.
+
+### 1. Il Teorema di Cantor sull'Insieme delle Parti ($|A| < |\mathcal{P}(A)|$)
+Mentre per insiemi finiti di cardinalità $n$ si ha $|\mathcal{P}(A)| = 2^n > n$, Georg Cantor estese questo dislivello a qualsiasi insieme infinito, formulando uno dei risultati più profondi dell'analisi dei fondamenti (esposto in [[Lecture 03 - Cantor's Remarkable Theorem and the Least Upper Bound Property]]):
+
+<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema di Cantor:</b></font></mark> Per ogni insieme $A$, non esiste alcuna funzione suriettiva da $A$ su $\mathcal{P}(A)$. Di conseguenza, la cardinalità di $\mathcal{P}(A)$ è strettamente maggiore di quella di $A$:
+$$|A| < |\mathcal{P}(A)|$$
+
+*Dimostrazione (Metodo Diagonale di Cantor):*
+Sia $f: A \to \mathcal{P}(A)$ una generica funzione. Per dimostrare che $f$ non è suriettiva, dobbiamo esibire un sottoinsieme $B \subseteq A$ che non appartiene all'immagine di $f$ (cioè $B \neq f(x)$ per ogni $x \in A$).
+Costruiamo l'**insieme diagonale di Cantor**:
+$$B := \{x \in A \mid x \notin f(x)\} \subseteq A$$
+Poiché $B \subseteq A$, per definizione di insieme potenza si ha $B \in \mathcal{P}(A)$.
+Supponiamo per assurdo che $f$ sia suriettiva; allora esisterebbe un elemento $b \in A$ tale che $f(b) = B$.
+Chiediamoci se $b \in B$:
+- Se $b \in B$, per la definizione di $B$ deve risultare $b \notin f(b) = B$, contraddizione.
+- Se $b \notin B$, per la condizione di appartenenza a $B$ deve valere $b \in f(b) = B$, contraddizione.
+In entrambi i casi si giunge a un'incoerenza logica irrisolvibile. Dunque nessun elemento $b \in A$ può avere $B$ come immagine, provando che $f$ non è suriettiva.
+
+> [!IMPORTANT] Conseguenza per l'Orale di Analisi 1
+> Il Teorema di Cantor dimostra due fatti capitali:
+> 1. **Non esiste l'insieme di tutti gli insiemi:** se esistesse un insieme universale $U$, si avrebbe $\mathcal{P}(U) \subseteq U$, da cui $|\mathcal{P}(U)| \le |U|$, violando il teorema di Cantor.
+> 2. **Esistono infiniti ordini di infinito:** applicando ricorsivamente l'insieme delle parti ai numeri naturali si ottiene una catena infinita di cardinalità strettamente crescenti:
+>    $$|\mathbb{N}| < |\mathcal{P}(\mathbb{N})| = |\mathbb{R}| < |\mathcal{P}(\mathbb{R})| < |\mathcal{P}(\mathcal{P}(\mathbb{R}))| < \dots$$
+
+### 2. Leggi di De Morgan per Famiglie Arbitrarie e Dualità Topologica
+Nello studio della retta reale $\mathbb{R}$, le operazioni insiemistiche non si limitano a coppie di insiemi, ma coinvolgono famiglie infinite indicizzate (come le unioni di intervalli aperti che definiscono gli insiemi aperti). Le leggi di De Morgan generalizzate (analizzate in [[Lecture 01 - Sets, Set Operations and Mathematical Induction]]) stabiliscono:
+
+$$\left(\bigcup_{i \in I} A_i\right)^c = \bigcap_{i \in I} A_i^c, \qquad \left(\bigcap_{i \in I} A_i\right)^c = \bigcup_{i \in I} A_i^c$$
+
+In Analisi 1, un insieme $C \subseteq \mathbb{R}$ è definito **chiuso** se e solo se il suo complementare $C^c = \mathbb{R} \setminus C$ è un insieme **aperto**. Dalle leggi di De Morgan discendono direttamente due proprietà topologiche fondamentali:
+- Poiché l'unione arbitraria di insiemi aperti è aperta, il complementare $\left(\bigcup_{i \in I} A_i\right)^c = \bigcap_{i \in I} A_i^c$ dimostra che **l'intersezione arbitraria di insiemi chiusi è sempre chiusa**.
+- Poiché l'intersezione finita di aperti è aperta, **l'unione finita di chiusi è chiusa**.
+
+### 3. Il Ruolo dell'Assioma della Scelta (AC) in Analisi 1
+All'esame di Analisi 1 non viene richiesta la teoria formale di Zermelo-Fraenkel, ma il docente si aspetta che lo studente riconosca dove l'Assioma della Scelta entra in gioco. In particolare, la sua variante debole, l'**Assioma della Scelta Numerabile (Countable Choice)**, viene impiegata sistematicamente:
+- Nel dimostrare l'equivalenza tra la definizione $\varepsilon-\delta$ di limite di funzione e la definizione per successioni (Heine): se $f(x) \not\to L$, per ogni $n \in \mathbb{N}$ si sceglie un punto $x_n$ tale che $|x_n - x_0| < 1/n$ ma $|f(x_n) - L| \ge \varepsilon_0$ (trattato in [[Lecture 14 - Limits of Functions in Terms of Sequences and Continuity]]).
+- Nell'estrazione di sottosuccessioni convergenti nel Teorema di Bolzano-Weierstrass (trattato in [[Lecture 09 - Limsup, Liminf, and the Bolzano-Weierstrass Theorem]]).
+

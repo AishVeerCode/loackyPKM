@@ -2,12 +2,12 @@
 status: permanent
 type: lecture
 area: education
-related: ["[[Lezione 3 - Relazioni e Funzioni I]]", "[[Lezione 5 - i Numeri Reali e Assioma di Completezza]]"]
+related: ["[[Lezione 3 - Relazioni e Funzioni I]]", "[[Lezione 5 - i Numeri Reali e Assioma di Completezza]]", "[[Lecture 02 - Cantor's Theory of Cardinality]]", "[[Lecture 16 - Extreme Value Theorem and Bolzano's Intermediate Value Theorem]]", "[[Lecture 19 - Differentiation Rules, Rolle's and Mean Value Theorem]]"]
 aliases: ["Lezione 4", "Fondamenti di Matematica Lezione 4"]
 source: Lezione 4.pdf
 title: "Lezione 4 - Funzioni II Proprieta e Invertibilita"
 date: '2026-10-01'
-updated: 2026-10-01T15:38
+updated: 2026-10-07T19:30
 tags: [education/university, education/matematica, education/lecture]
 summary: "Studio sistematico di iniettività, suriettività, bigettività, composizione funzionale, teorema di invertibilità, simmetria del grafico e isometrie."
 ---
@@ -183,3 +183,50 @@ $$f^{-1}: f(A) \to A, \quad f^{-1}(y) = x \iff f(x) = y$$
 la quale soddisfa le relazioni:
 $$f^{-1} \circ f = i_A \quad \text{e} \quad f \circ f^{-1} = j_{f(A)}$$
 dove $j_{f(A)}: f(A) \to B$ è l'immersione canonica di $f(A)$ in $B$.
+
+---
+
+## Integrazione Analisi 1 & Real Analysis: Monotonia, Continuità e Derivabilità della Funzione Inversa
+
+In **Analisi Matematica 1** e nelle lezioni [[Lecture 02 - Cantor's Theory of Cardinality]], [[Lecture 16 - Extreme Value Theorem and Bolzano's Intermediate Value Theorem]] e [[Lecture 19 - Differentiation Rules, Rolle's and Mean Value Theorem]], l'invertibilità delle funzioni reali costituisce uno dei capitoli più ricchi di teoremi operativi per il calcolo differenziale e per la teoria della cardinalità.
+
+### 1. Monotonia Stretta come Criterio Operativo di Iniettività
+Negli esercizi d'esame di Analisi 1, verificare l'iniettività mediante la definizione algebrica $f(x_1) = f(x_2) \implies x_1 = x_2$ è spesso proibitivo per funzioni trascendenti complesse. Si ricorre al legame fondamentale tra ordine e iniettività:
+
+- **Proposizione:** Sia $f: I \to \mathbb{R}$ definita su un intervallo $I \subseteq \mathbb{R}$. Se $f$ è **strettamente monotona** (strettamente crescente o strettamente decrescente), allora $f$ è **iniettiva** su $I$.
+  *Dimostrazione:* Siano $x_1, x_2 \in I$ con $x_1 \neq x_2$. Poiché l'ordine su $\mathbb{R}$ è totale, si ha $x_1 < x_2$ oppure $x_2 < x_1$. Se $f$ è strettamente crescente, $x_1 < x_2 \implies f(x_1) < f(x_2)$, da cui $f(x_1) \neq f(x_2)$.
+- **Criterio Differenziale (da [[Lecture 19 - Differentiation Rules, Rolle's and Mean Value Theorem]]):** Se $f$ è derivabile su $I$ e la sua derivata prima è strettamente positiva ($f'(x) > 0$) quasi ovunque su $I$ (senza annullarsi su sottointervalli), per il Teorema del Valor Medio di Lagrange $f$ è strettamente crescente e dunque **globalmente iniettiva e invertibile sull'immagine**.
+
+### 2. Teorema di Continuità della Funzione Inversa (da [[Lecture 16 - Extreme Value Theorem and Bolzano's Intermediate Value Theorem]])
+All'esame orale, una domanda teorica classica è: *Se una funzione continua è invertibile, la sua inversa è automaticamente continua?*
+La risposta è affermativa purché il dominio sia un **intervallo**:
+
+<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema della Funzione Inversa Continua:</b></font></mark>
+Sia $I \subseteq \mathbb{R}$ un intervallo e sia $f: I \to \mathbb{R}$ continua e strettamente monotona. Allora:
+1. L'immagine $J = f(I)$ è un intervallo (in virtù del Teorema dei Valori Intermedi di Bolzano - IVT).
+2. L'applicazione $f: I \to J$ è una bigezione.
+3. La funzione inversa $f^{-1}: J \to I$ è **continua** su tutto $J$ e possiede la **stessa monotonia** di $f$.
+
+> [!TIP] Rilevanza per le Funzioni Trascendenti
+> Questo teorema garantisce a priori la continuità di tutte le funzioni inverse standard del calcolo:
+> - $\ln: ]0, +\infty[ \to \mathbb{R}$ come inversa di $\exp(x)$
+> - $\arcsin: [-1, 1] \to [-\pi/2, \pi/2]$ come inversa di $\sin|_{[-\pi/2, \pi/2]}$
+> - $\arctan: \mathbb{R} \to ]-\pi/2, \pi/2[$ come inversa di $\tan|_{]-\pi/2, \pi/2[}$
+> - $\sqrt[n]{x}$ su $[0, +\infty[$ come inversa delle potenze pari $x^n$.
+
+### 3. Teorema di Derivabilità della Funzione Inversa (da [[Lecture 19 - Differentiation Rules, Rolle's and Mean Value Theorem]])
+Se $f$ è differenziabile, la pendenza della retta tangente al grafico di $f^{-1}$ si ottiene reciprocando la derivata di $f$:
+
+**Teorema:** Sia $f: I \to J$ invertibile e continua, derivabile nel punto $x_0 \in I$. Se $f'(x_0) \neq 0$, allora $f^{-1}$ è derivabile nel punto corrispondente $y_0 = f(x_0) \in J$ e vale:
+$$(f^{-1})'(y_0) = \frac{1}{f'(x_0)} = \frac{1}{f'(f^{-1}(y_0))}$$
+
+*Esempio d'esame (Derivata dell'Arcotangente):*
+Posto $y = \tan x$ per $x \in ]-\pi/2, \pi/2[$, si ha $x = \arctan y$. Poiché $(\tan x)' = 1 + \tan^2 x$:
+$$(\arctan)'(y) = \frac{1}{\tan'(x)} = \frac{1}{1 + \tan^2 x} = \frac{1}{1 + y^2}$$
+
+### 4. Biezioni e la Teoria della Cardinalità di Cantor (da [[Lecture 02 - Cantor's Theory of Cardinality]])
+Nella visione di Georg Cantor, le funzioni bigettive diventano il metro universale per confrontare la "dimensione" degli insiemi infiniti:
+- Due insiemi $A$ e $B$ hanno la stessa **cardinalità** (o sono equipotenti, $A \sim B$) se e solo se esiste una bigezione $f: A \to B$.
+- Un insieme è **infinito numerabile** se ammette una bigezione con $\mathbb{N}$ ($A \sim \mathbb{N}$).
+- L'esistenza di una bigezione esplicita tra $\mathbb{R}$ e l'intervallo limitato $]-1, 1[$ (ad esempio tramite l'omeomorfismo $f(x) = \frac{x}{\sqrt{1 + x^2}}$ con inversa $f^{-1}(y) = \frac{y}{\sqrt{1 - y^2}}$) dimostra che la retta reale infinita ha la stessa identica cardinalità di un segmento compresso.
+

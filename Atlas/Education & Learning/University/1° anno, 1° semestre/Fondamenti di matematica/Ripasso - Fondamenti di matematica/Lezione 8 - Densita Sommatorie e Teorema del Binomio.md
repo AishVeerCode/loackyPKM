@@ -2,12 +2,12 @@
 status: permanent
 type: lecture
 area: education
-related: ["[[Lezione 7 - Insiemi Numerici N Z e Q]]", "[[Lezione 9 - Funzioni Reali ed Estremi]]"]
+related: ["[[Lezione 7 - Insiemi Numerici N Z e Q]]", "[[Lezione 9 - Funzioni Reali ed Estremi]]", "[[Lecture 05 - The Archimedean Property, Density of the Rationals, and Absolute Value]]", "[[Lecture 10 - Completeness of Real Numbers and Infinite Series]]", "[[Lecture 15 - Continuity of Sine and Cosine and Dirichlet's Function]]"]
 aliases: ["Lezione 8", "Fondamenti di Matematica Lezione 8"]
 source: Lezione 8.pdf
 title: "Lezione 8 - Densita Sommatorie e Teorema del Binomio"
 date: '2026-10-07'
-updated: 2026-10-07T17:50
+updated: 2026-10-07T19:30
 tags: [education/university, education/matematica, education/lecture]
 summary: "Proprieta archimedea, densita dei numeri razionali e irrazionali, calcolo delle sommatorie notevoli, combinatoria, triangolo di Tartaglia e teorema del binomio."
 ---
@@ -249,3 +249,53 @@ $$\sum_{k=0}^n \binom{n}{k} = 2^n$$
 *Dimostrazione:* Basta porre $a = 1$ e $b = 1$ nel Teorema del Binomio:
 $$(1 + 1)^n = 2^n = \sum_{k=0}^n \binom{n}{k} 1^{n-k} 1^k = \sum_{k=0}^n \binom{n}{k}$$
 Poiché ogni sottoinsieme di un insieme di $n$ elementi ha cardinalità $k \in \{0, \dots, n\}$, la somma dei coefficienti rappresenta esattamente la cardinalità dell'insieme delle parti $\mathcal{P}(A)$, confermando che $|\mathcal{P}(A)| = 2^{|A|}$.
+
+---
+
+## Integrazione Analisi 1 & Real Analysis: Funzioni Patologiche di Densità, Serie Geometrica e Limite Fondamentale di e
+
+In **Analisi Matematica 1** e nelle lezioni [[Lecture 05 - The Archimedean Property, Density of the Rationals, and Absolute Value]], [[Lecture 07 - Convergent Sequences of Real Numbers]], [[Lecture 10 - Completeness of Real Numbers and Infinite Series]], [[Lecture 15 - Continuity of Sine and Cosine and Dirichlet's Function]] e [[Lecture 21 - The Riemann Integral of a Continuous Function]], la densità di $\mathbb{Q}$ e di $\mathbb{R} \setminus \mathbb{Q}$ e le sommatorie notevoli formano il substrato indispensabile per costruire controesempi ed eseguire stime asintotiche.
+
+### 1. Densità e Funzioni Patologiche: Dirichlet e Thomae (da [[Lecture 15 - Continuity of Sine and Cosine and Dirichlet's Function]])
+La coesistenza densa di razionali e irrazionali in ogni intervallo arbitrariamente piccolo genera funzioni con comportamenti analitici singolari, frequentemente chieste negli orali di Analisi 1:
+
+<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>La Funzione di Dirichlet:</b></font></mark>
+$$D(x) = \begin{cases} 1 & \text{se } x \in \mathbb{Q} \\ 0 & \text{se } x \in \mathbb{R} \setminus \mathbb{Q} \end{cases}$$
+1. **Discontinuità Ovunque:** Fissato un qualsiasi $x_0 \in \mathbb{R}$ e qualsiasi raggio $\delta > 0$, l'intorno $]x_0 - \delta, x_0 + \delta[$ contiene sia numeri razionali (in cui $D(x) = 1$) sia numeri irrazionali (in cui $D(x) = 0$). Scegliendo $\varepsilon = 1/2$, non esiste alcun $\delta$ che mantenga $|D(x) - D(x_0)| < 1/2$. Dunque $D(x)$ è **discontinua in ogni punto di $\mathbb{R}$** e non ammette limite per alcun $x \to x_0$.
+2. **Non-Integrabilità secondo Riemann (da [[Lecture 21 - The Riemann Integral of a Continuous Function]]):**
+   Su qualsiasi intervallo $[a, b]$, per ogni partizione $P$:
+   - L'estremo superiore su ogni sottointervallo è $M_i = \sup D([x_{i-1}, x_i]) = 1$, quindi la somma superiore di Darboux è $U(D, P) = \sum 1 \cdot \Delta x_i = b - a$.
+   - L'estremo inferiore è $m_i = \inf D([x_{i-1}, x_i]) = 0$, quindi la somma inferiore di Darboux è $L(D, P) = \sum 0 \cdot \Delta x_i = 0$.
+   Poiché $\overline{\int}_a^b D = b - a \neq 0 = \underline{\int}_a^b D$, la funzione di Dirichlet **non è integrabile secondo Riemann**.
+
+<mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>La Funzione di Thomae (o Funzione Righello):</b></font></mark>
+$$f(x) = \begin{cases} \frac{1}{q} & \text{se } x = \frac{p}{q} \in \mathbb{Q} \text{ ridotta ai minimi termini } (q \ge 1) \\ 0 & \text{se } x \in \mathbb{R} \setminus \mathbb{Q} \end{cases}$$
+Applicando la densità e la proprietà archimedea, si dimostra che la funzione di Thomae è **continua in tutti i punti irrazionali** e **discontinua in tutti i punti razionali**, ed è inoltre integrabile secondo Riemann con integrale nullo.
+
+### 2. Dalla Somma Geometrica Finita alla Serie Geometrica (da [[Lecture 10 - Completeness of Real Numbers and Infinite Series]])
+La formula algebrica della somma geometrica $S_n = \sum_{k=0}^n q^k = \frac{1 - q^{n+1}}{1 - q}$ per $q \neq 1$ costituisce la genesi della prima serie infinita del calcolo:
+
+Passando al limite per $n \to \infty$:
+- Se $|q| < 1$, allora $q^{n+1} \to 0$, per cui:
+  $$\sum_{k=0}^\infty q^k = \lim_{n \to \infty} \frac{1 - q^{n+1}}{1 - q} = \frac{1}{1 - q}$$
+- Se $q \ge 1$, la serie diverge a $+\infty$ (per $q = 1$, $S_n = n + 1 \to +\infty$).
+- Se $q \le -1$, la serie è indeterminata (oscilla finemente o diverge).
+
+> [!TIP] Serie Modello per il Confronto Asintotico
+> La serie geometrica è il termine di paragone per eccellenza: il Criterio del Rapporto e il Criterio della Radice di Cauchy (trattati in [[Lecture 12 - Ratio, Root, and Alternating Series Tests]]) e il calcolo del raggio di convergenza delle serie di potenze (trattato in [[Lecture 25 - Power Series and the Weierstrass Approximation Theorem]]) funzionano confrontando asintoticamente la serie data con una serie geometrica di ragione $r < 1$.
+
+### 3. Il Teorema del Binomio e la Costruzione del Numero $e$ (da [[Lecture 07 - Convergent Sequences of Real Numbers]])
+La convergenza della successione fondamentale che definisce la base dei logaritmi naturali:
+$$e := \lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n$$
+si dimostra rigorosamente applicando il Teorema del Binomio di Newton:
+
+$$\begin{aligned}
+a_n = \left(1 + \frac{1}{n}\right)^n &= \sum_{k=0}^n \binom{n}{k} \frac{1}{n^k} = \sum_{k=0}^n \frac{n(n-1)\cdots(n-k+1)}{k! \, n^k} \\
+&= 1 + 1 + \sum_{k=2}^n \frac{1}{k!} \left(1 - \frac{1}{n}\right)\left(1 - \frac{2}{n}\right)\cdots\left(1 - \frac{k-1}{n}\right)
+\end{aligned}$$
+
+1. **Monotonia Stretta:** Al crescere di $n$, ogni termine $\left(1 - \frac{j}{n}\right)$ cresce, e la somma contiene un termine positivo in più. Quindi $a_n < a_{n+1}$ per ogni $n \ge 1$ (strettamente crescente).
+2. **Limitatezza Superiore:** Poiché $\left(1 - \frac{j}{n}\right) < 1$ e $k! \ge 2^{k-1}$ per $k \ge 1$:
+   $$a_n < 1 + 1 + \sum_{k=2}^n \frac{1}{k!} < 2 + \sum_{k=2}^n \frac{1}{2^{k-1}} = 2 + \left(1 - \frac{1}{2^{n-1}}\right) < 3$$
+Per il **Teorema di Convergenza Monotona** (da [[Lecture 08 - The Squeeze Theorem and Operations with Convergent Sequences]]), la successione ammette limite finito compreso tra $2$ e $3$, denotato con $e \approx 2.71828\dots$
+

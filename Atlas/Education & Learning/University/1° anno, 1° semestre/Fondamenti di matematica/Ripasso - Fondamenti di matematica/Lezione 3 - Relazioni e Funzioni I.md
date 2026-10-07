@@ -2,12 +2,12 @@
 status: permanent
 type: lecture
 area: education
-related: ["[[Lezione 2 - Teoria Assiomatica degli Insiemi]]", "[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]"]
+related: ["[[Lezione 2 - Teoria Assiomatica degli Insiemi]]", "[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lecture 04 - The Characterization of the Real Numbers]]", "[[Lecture 07 - Convergent Sequences of Real Numbers]]", "[[Lecture 14 - Limits of Functions in Terms of Sequences and Continuity]]"]
 aliases: ["Lezione 3", "Fondamenti di Matematica Lezione 3"]
 source: Lezione 3.pdf
 title: "Lezione 3 - Relazioni e Funzioni I"
 date: '2026-10-01'
-updated: 2026-10-01T15:38
+updated: 2026-10-07T19:30
 tags: [education/university, education/matematica, education/lecture]
 summary: "Definizione insiemistica di coppie ordinate di Kuratowski, prodotto cartesiano, relazioni binarie, funzioni come terne, immagine e controimmagine."
 ---
@@ -152,3 +152,45 @@ In forma di terna: $f|_X = (X, B, R|_X)$, dove $R|_X = \{(x, y) \in R \mid x \in
 - **Famiglia di parti:** Una funzione $F: I \to \mathcal{P}(A)$ è detta famiglia di parti di $A$, denotata con $(F_i)_{i \in I}$. L'unione e l'intersezione generalizzata della famiglia assumono la forma:
   $$\bigcup_{i \in I} F_i = \{x \in A \mid (\exists i \in I)(x \in F_i)\}$$
   $$\bigcap_{i \in I} F_i = \{x \in A \mid (\forall i \in I)(x \in F_i)\}$$
+
+---
+
+## Integrazione Analisi 1 & Real Analysis: Relazioni Strutturali, Continuità Topologica e Successioni
+
+In **Analisi Matematica 1** e nella trattazione di [[Lecture 04 - The Characterization of the Real Numbers]], [[Lecture 07 - Convergent Sequences of Real Numbers]] e [[Lecture 14 - Limits of Functions in Terms of Sequences and Continuity]], i concetti di relazione binaria e di funzione costituiscono l'infrastruttura formale con cui si costruiscono gli insiemi numerici e si formalizzano le nozioni di limite e continuità.
+
+### 1. Relazioni di Equivalenza e Costruzione Rigorosa di $\mathbb{Q}$ ed $\mathbb{R}$
+Una relazione binaria $\sim$ su un insieme $X$ è detta di **equivalenza** se è riflessiva ($x \sim x$), simmetrica ($x \sim y \implies y \sim x$) e transitiva ($x \sim y \land y \sim z \implies x \sim z$). L'insieme quoziente $X / \sim$ partiziona $X$ in classi disgiunte:
+1. **Costruzione dei Numeri Razionali $\mathbb{Q}$:**
+   Sul prodotto cartesiano $\mathbb{Z} \times \mathbb{N}^*$ si definisce la relazione:
+   $$(m, n) \sim (p, q) \iff mq = np$$
+   Ogni frazione $\frac{m}{n}$ è la classe di equivalenza $[(m, n)]_\sim$ di tutte le coppie che rappresentano lo stesso rapporto.
+2. **Costruzione di Cauchy dei Numeri Reali $\mathbb{R}$ (da [[Lecture 10 - Completeness of Real Numbers and Infinite Series]]):**
+   Sia $\mathcal{C}$ lo spazio di tutte le successioni di Cauchy a valori in $\mathbb{Q}$. Si definisce l'equivalenza:
+   $$(x_n) \sim (y_n) \iff \lim_{n \to \infty} |x_n - y_n| = 0$$
+   Il campo reale $\mathbb{R}$ è canonicamente isomorfo all'insieme quoziente $\mathcal{C} / \sim$.
+
+### 2. Relazioni d'Ordine Totale su $\mathbb{R}$ e Tricotomia
+Una relazione $\le$ è un **ordine parziale** se è riflessiva, antisimmetrica e transitiva. Si dice **ordine totale** (o lineare) se per ogni coppia vale la tricotomia: $x < y \lor x = y \lor x > y$.
+- L'ordinamento su $\mathbb{R}$ è totale, consentendo la partizione di intervalli e la nozione di estremo superiore ed inferiore (trattata in [[Lecture 04 - The Characterization of the Real Numbers]]).
+- Al contrario, lo spazio funzionale $\mathbb{R}^A$ (o il campo complesso $\mathbb{C}$) ammette unicamente un ordinamento parziale puntuale: due funzioni i cui grafici si incrociano non sono confrontabili.
+
+### 3. La Controimmagine come Definizione Topologica della Continuità
+Nell'algebra delle funzioni, mentre l'immagine diretta $f$ distrugge parzialmente la struttura booleana ($f(X_1 \cap X_2) \neq f(X_1) \cap f(X_2)$ in assenza di iniettività), la **controimmagine preserva rigorosamente tutte le operazioni**:
+$$f^{-1}(Y_1 \cup Y_2) = f^{-1}(Y_1) \cup f^{-1}(Y_2)$$
+$$f^{-1}(Y_1 \cap Y_2) = f^{-1}(Y_1) \cap f^{-1}(Y_2)$$
+$$f^{-1}(B \setminus Y) = A \setminus f^{-1}(Y)$$
+
+<mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Caratterizzazione Topologica della Continuità (da [[Lecture 14 - Limits of Functions in Terms of Sequences and Continuity]]):</b></font></mark>
+Una funzione $f: \mathbb{R} \to \mathbb{R}$ è continua su $\mathbb{R}$ se e solo se **la controimmagine di ogni insieme aperto è un insieme aperto**:
+$$\forall V \subseteq \mathbb{R} \text{ aperto} \implies f^{-1}(V) \text{ è aperto in } \mathbb{R}$$
+
+*Dimostrazione dell'equivalenza con la definizione $\varepsilon-\delta$:*
+- $(\implies)$ Sia $V$ aperto e $x_0 \in f^{-1}(V)$, ovvero $f(x_0) \in V$. Poiché $V$ è aperto, esiste un intorno aperto $]f(x_0) - \varepsilon, f(x_0) + \varepsilon[ \subseteq V$. Per la continuità $\varepsilon-\delta$ in $x_0$, esiste $\delta > 0$ tale che se $|x - x_0| < \delta$, allora $|f(x) - f(x_0)| < \varepsilon$. Dunque $]x_0 - \delta, x_0 + \delta[ \subseteq f^{-1}(V)$, provando che $f^{-1}(V)$ è aperto.
+- $(\impliedby)$ Dato $\varepsilon > 0$, l'intervallo $V = ]f(x_0) - \varepsilon, f(x_0) + \varepsilon[$ è aperto. La sua controimmagine $f^{-1}(V)$ è aperta e contiene $x_0$, dunque contiene un intorno aperto $]x_0 - \delta, x_0 + \delta[$, riottenendo la condizione metrica $\varepsilon-\delta$.
+
+### 4. Le Successioni come Funzioni da $\mathbb{N}$ in $\mathbb{R}$
+In Analisi 1, una successione reale non è una lista intuitiva di valori, ma formalmente un'applicazione:
+$$a: \mathbb{N} \to \mathbb{R}, \qquad n \mapsto a_n$$
+L'insieme di indici è $I = \mathbb{N}$. Una **sottosuccessione** (introdotta in [[Lecture 09 - Limsup, Liminf, and the Bolzano-Weierstrass Theorem]]) è la composizione $a \circ \sigma$ con una funzione d'indici strettamente crescente $\sigma: \mathbb{N} \to \mathbb{N}$ ($\sigma(k) = n_k$ con $n_1 < n_2 < \dots$).
+
