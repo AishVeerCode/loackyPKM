@@ -35,6 +35,10 @@ Mappa concettuale relativa all'orientamento universitario, alla Laurea Triennale
 - [[Lezione 3 - Relazioni e Funzioni I]]
 - [[Lezione 4 - Funzioni II Proprieta e Invertibilita]]
 - [[Lezione 5 - i Numeri Reali e Assioma di Completezza]]
+- [[Lezione 6 - Valore Assoluto e Numeri Naturali]]
+- [[Lezione 7 - Insiemi Numerici N Z e Q]]
+- [[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]
+- [[Lezione 9 - Funzioni Reali ed Estremi]]
 
 ### Probabilità e Statistica
 - [[Introduzione al Calcolo delle Probabilita]]

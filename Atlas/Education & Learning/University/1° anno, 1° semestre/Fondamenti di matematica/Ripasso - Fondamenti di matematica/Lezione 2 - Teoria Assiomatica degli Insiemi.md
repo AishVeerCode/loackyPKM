@@ -11,7 +11,7 @@ updated: 2026-10-01T15:38
 tags: [education/university, education/matematica, education/lecture]
 summary: "Fondamenti assiomatici di Zermelo-Fraenkel con assiomi di estensionalità, specificazione, unione, parti, costruzione dei numeri naturali e assioma della scelta."
 ---
-[[Home MOC|Home]] / [[Education & Learning]] / [[Lezione 2 - Teoria Assiomatica degli Insiemi]]
+4[[Home MOC|Home]] / [[Education & Learning]] / [[Lezione 2 - Teoria Assiomatica degli Insiemi]]
 
 # Lezione 2 - Teoria Assiomatica degli Insiemi
 
