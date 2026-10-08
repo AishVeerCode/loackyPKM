@@ -69,7 +69,7 @@ $$f \le g \stackrel{\text{def}}{\iff} \forall x \in A: f(x) \le g(x)$$
 
 La relazione $\le$ soddisfa gli assiomi di ordine parziale:
 - **O1 Riflessività:** $\forall f \in \mathbb{R}^A: f \le f$.
-- **O2 Antisimetria:** $\forall f, g \in \mathbb{R}^A: f \le g \land g \le f \implies f = g$.
+- **O2 Antisimmetria:** $\forall f, g \in \mathbb{R}^A: f \le g \land g \le f \implies f = g$.
 - **O3 Transitività:** $\forall f, g, h \in \mathbb{R}^A: f \le g \land g \le h \implies f \le h$.
 
 > [!IMPORTANT] Non Totalità dell'Ordine Funzionale
