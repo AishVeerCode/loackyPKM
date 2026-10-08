@@ -44,9 +44,11 @@ Mappa concettuale relativa all'orientamento universitario, alla Laurea Triennale
 - [[Introduzione al Calcolo delle Probabilita]]
 
 ### Introduzione alla Programmazione
+- [[Lezione 0 - Rappresentazione dei Caratteri e Dati Multimediali]]
 - [[Lezione 1 - Introduzione a Python ed Espressioni Numeriche]]
 - [[Lezione 2 - Variabili Assegnazione Input e Output]]
 - [[Lezione 3 - Stringhe Metodi e Slicing]]
+- [[Lezione 4 - Ciclo For Sequenze e Variabili Accumulatore]]
 
 ---
 

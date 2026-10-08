@@ -2,7 +2,7 @@
 status: permanent
 type: lecture
 area: education
-related: ["[[Lezione 2 - Variabili Assegnazione Input e Output]]", "[[University]]"]
+related: ["[[Lezione 0 - Rappresentazione dei Caratteri e Dati Multimediali]]", "[[Lezione 2 - Variabili Assegnazione Input e Output]]", "[[University]]"]
 aliases: ["Lezione 1", "Introduzione a Python", "Intro"]
 source: Intro_Lezione1.ipynb
 title: "Lezione 1 - Introduzione a Python ed Espressioni Numeriche"

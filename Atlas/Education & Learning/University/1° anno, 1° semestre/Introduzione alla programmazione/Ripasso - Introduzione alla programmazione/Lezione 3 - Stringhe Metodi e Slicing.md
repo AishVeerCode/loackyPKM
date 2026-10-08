@@ -2,7 +2,7 @@
 status: permanent
 type: lecture
 area: education
-related: ["[[Lezione 2 - Variabili Assegnazione Input e Output]]", "[[University]]"]
+related: ["[[Lezione 2 - Variabili Assegnazione Input e Output]]", "[[Lezione 4 - Ciclo For Sequenze e Variabili Accumulatore]]", "[[University]]"]
 aliases: ["Lezione 3", "Stringhe", "Stringhe e Slicing"]
 source: Stringhe_Lezione3.ipynb
 title: "Lezione 3 - Stringhe Metodi e Slicing"
