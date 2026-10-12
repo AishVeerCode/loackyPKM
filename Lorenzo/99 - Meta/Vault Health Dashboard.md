@@ -49,7 +49,7 @@ Pannello di controllo in **puro Markdown statico** per monitorare la salute del 
 | [[University]] | 2026-10-08 18:42 | tech |
 | [[Corsi]] | 2026-10-07 19:12 | tech |
 | [[Audit Report - 2026 - 08 - 30]] | 2026-10-01 16:43 | meta |
-| [[1 - Search]] | 2026-10-01 16:43 | education |
+| [[Lorenzo/04 - Blog/Corsi/CS50’s Artificial Intelligence with Python/1 - Search]] | 2026-10-01 16:43 | education |
 | [[Review Dashboard]] | 2026-10-01 16:41 | meta |
 | [[8 Object - Oriented Programming]] | 2026-10-01 15:49 | education |
 | [[6 File i - O]] | 2026-10-01 15:49 | education |
