@@ -2,12 +2,12 @@
 status: permanent
 type: lecture
 area: education
-related: ["[[Lezione 3 - Stringhe Metodi e Slicing]]", "[[University]]"]
+related: ["[[Lezione 3 - Stringhe Metodi e Slicing]]", "[[Lezione 5 - Condizioni e Istruzione If]]", "[[University]]"]
 aliases: ["Lezione 4", "Ciclo For", "Iterazione e Accumulatori"]
 source: For_Lezione4.ipynb
 title: "Lezione 4 - Ciclo For Sequenze e Variabili Accumulatore"
 date: '2026-10-08'
-updated: 2026-10-08T18:36
+updated: 2026-10-13T17:30
 tags: [education/university, education/programming, education/python, education/lecture]
 summary: "Analisi approfondita dell'istruzione for in Python: iterazione su stringhe e liste, confronto con il C, range e slicing, schemi di scansione e pattern ad accumulatore."
 ---

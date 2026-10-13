@@ -6,7 +6,7 @@ related: []
 source: original
 title: "University MOC"
 date: '2026-08-24'
-updated: 2026-08-24T21:38
+updated: 2026-10-13T17:30
 tags: [tech/moc, education/university, tech/engineering]
 summary: "Indice e mappa concettuale per University MOC."
 ---
@@ -39,16 +39,21 @@ Mappa concettuale relativa all'orientamento universitario, alla Laurea Triennale
 - [[Lezione 7 - Insiemi Numerici N Z e Q]]
 - [[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]
 - [[Lezione 9 - Funzioni Reali ed Estremi]]
+- [[Lezione 10 - Funzioni Reali II e Funzioni Elementari I]]
+- [[Lezione 11 - Funzioni Reali Elementari II]]
+- [[Lezione 12 - Limiti I Retta Reale Ampliata e Definizione]]
 
 ### Probabilità e Statistica
 - [[Introduzione al Calcolo delle Probabilita]]
 
 ### Introduzione alla Programmazione
+- [[Sistemi di Numerazione Binaria e Interi con Segno]]
 - [[Lezione 0 - Rappresentazione dei Caratteri e Dati Multimediali]]
 - [[Lezione 1 - Introduzione a Python ed Espressioni Numeriche]]
 - [[Lezione 2 - Variabili Assegnazione Input e Output]]
 - [[Lezione 3 - Stringhe Metodi e Slicing]]
 - [[Lezione 4 - Ciclo For Sequenze e Variabili Accumulatore]]
+- [[Lezione 5 - Condizioni e Istruzione If]]
 
 ---
 

@@ -2,12 +2,12 @@
 status: permanent
 type: lecture
 area: education
-related: ["[[Lezione 1 - Introduzione a Python ed Espressioni Numeriche]]", "[[University]]"]
+related: ["[[Sistemi di Numerazione Binaria e Interi con Segno]]", "[[Lezione 1 - Introduzione a Python ed Espressioni Numeriche]]", "[[University]]"]
 aliases: ["Lezione 0", "Rappresentazione dei Caratteri", "Codifica ASCII e Unicode"]
 source: RappresentazioneCaratteri.pdf
 title: "Lezione 0 - Rappresentazione dei Caratteri e Dati Multimediali"
 date: '2026-10-08'
-updated: 2026-10-08T18:36
+updated: 2026-10-13T17:30
 tags: [education/university, education/programming, education/computer-science, education/lecture]
 summary: "Studio dei fondamenti della codifica dell'informazione: dal binario puro ad ASCII, ISO-8859-1 e Unicode UTF-8, fino ai modelli per audio, raster PPM e grafica vettoriale."
 ---

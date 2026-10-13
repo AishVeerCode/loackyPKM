@@ -2,12 +2,12 @@
 status: permanent
 type: lecture
 area: education
-related: ["[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]", "[[Lecture 08 - The Squeeze Theorem and Operations with Convergent Sequences]]", "[[Lecture 09 - Limsup, Liminf, and the Bolzano-Weierstrass Theorem]]", "[[Lecture 16 - Extreme Value Theorem and Bolzano's Intermediate Value Theorem]]"]
+related: ["[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]", "[[Lezione 10 - Funzioni Reali II e Funzioni Elementari I]]", "[[University]]"]
 aliases: ["Lezione 9", "Fondamenti di Matematica Lezione 9", "Funzioni Reali Parte 1"]
 source: Lezione 9.pdf
 title: "Lezione 9 - Funzioni Reali ed Estremi"
 date: '2026-10-07'
-updated: 2026-10-07T19:30
+updated: 2026-10-13T17:30
 tags: [education/university, education/matematica, education/lecture]
 summary: "Struttura di anello ordinato e reticolare di R^A, limitatezza di funzioni reali, estremo superiore e inferiore, punti di massimo e minimo globale e successioni."
 ---
