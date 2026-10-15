@@ -183,6 +183,9 @@ run_loop() {
             fi
         fi
 
+        # University Courses Auto-Sync (Fondamenti di Matematica & Introduzione alla Programmazione)
+        "$PYTHON_BIN" "$SCRIPT_DIR/university_sync.py" --scan >> "$LOG_FILE" 2>&1
+
         # Obsidian Launch Integration (Non-stealing single notification per session)
         if pgrep -x "Obsidian" >/dev/null 2>&1; then
             if [ -f "$DASHBOARD_FILE" ] && grep -q "\- \[ \]" "$DASHBOARD_FILE" && [ ! -f "$OPENED_FLAG" ]; then
@@ -302,8 +305,17 @@ case "${1:-run}" in
     install-service)
         install_service
         ;;
+    sync-courses)
+        "$PYTHON_BIN" "$SCRIPT_DIR/university_sync.py" --scan
+        ;;
+    watch-courses)
+        "$PYTHON_BIN" "$SCRIPT_DIR/university_sync.py" --watch
+        ;;
+    status-courses)
+        "$PYTHON_BIN" "$SCRIPT_DIR/university_sync.py" --status
+        ;;
     *)
-        echo "Usage: $0 {start|stop|status|restart|run|install-service}"
+        echo "Usage: $0 {start|stop|status|restart|run|install-service|sync-courses|watch-courses|status-courses}"
         exit 1
         ;;
 esac
