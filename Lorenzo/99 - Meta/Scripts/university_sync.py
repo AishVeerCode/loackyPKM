@@ -572,8 +572,6 @@ def scan_courses(force: bool = False) -> int:
     if processed_count > 0:
         save_state(state)
         log(f"Scansione completata: {processed_count} nuovi file processati.")
-    else:
-        log("Scansione completata: nessun nuovo file da processare.")
 
     return processed_count
 

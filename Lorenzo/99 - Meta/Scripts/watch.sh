@@ -6,7 +6,11 @@
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 VAULT_PATH="$(cd "$SCRIPT_DIR/../.." && pwd)"
 VAULT_NAME="$(basename "$VAULT_PATH")"
-INBOX_PATH="$VAULT_PATH/03 - Inbox"
+if [ -d "$VAULT_PATH/02 - Inbox" ]; then
+    INBOX_PATH="$VAULT_PATH/02 - Inbox"
+else
+    INBOX_PATH="$VAULT_PATH/03 - Inbox"
+fi
 DASHBOARD_FILE="$INBOX_PATH/Review Dashboard.md"
 LOG_DIR="$VAULT_PATH/99 - Meta/logs"
 LOG_FILE="$LOG_DIR/watch.log"
