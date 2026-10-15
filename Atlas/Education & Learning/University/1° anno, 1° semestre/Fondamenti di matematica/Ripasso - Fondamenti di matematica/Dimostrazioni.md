@@ -2,20 +2,20 @@
 status: permanent
 type: summary
 area: education
-related: ["[[Lezione 1 - Logica delle Proposizioni e dei Predicati]]", "[[Lezione 2 - Teoria Assiomatica degli Insiemi]]", "[[Lezione 3 - Relazioni e Funzioni I]]", "[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lezione 5 - i Numeri Reali e Assioma di Completezza]]", "[[Lezione 6 - Valore Assoluto e Numeri Naturali]]", "[[Lezione 7 - Insiemi Numerici N Z e Q]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]", "[[Lezione 9 - Funzioni Reali ed Estremi]]", "[[Lezione 10 - Funzioni Reali II e Funzioni Elementari I]]", "[[Lezione 11 - Funzioni Reali Elementari II]]", "[[Lezione 12 - Limiti I Retta Reale Ampliata e Definizione]]", "[[Lezione 13 - Limiti II Restrizioni Limiti Laterali e Successioni]]", "[[Assiomi, proposizioni ecc...]]", "[[University]]"]
-aliases: ["Dimostrazioni", "Dimostrazioni Fondamenti di Matematica", "Raccolta Dimostrazioni Lezioni 1-13"]
-source: ["Lezione 1.pdf", "Lezione 2.pdf", "Lezione 3.pdf", "Lezione 4.pdf", "Lezione 5.pdf", "Lezione 6.pdf", "Lezione 7.pdf", "Lezione 8.pdf", "Lezione 9.pdf", "Lezione 10.pdf", "Lezione 11.pdf", "Lezione 12.pdf", "Lezione 13.pdf"]
+related: ["[[Lezione 1 - Logica delle Proposizioni e dei Predicati]]", "[[Lezione 2 - Teoria Assiomatica degli Insiemi]]", "[[Lezione 3 - Relazioni e Funzioni I]]", "[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lezione 5 - i Numeri Reali e Assioma di Completezza]]", "[[Lezione 6 - Valore Assoluto e Numeri Naturali]]", "[[Lezione 7 - Insiemi Numerici N Z e Q]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]", "[[Lezione 9 - Funzioni Reali ed Estremi]]", "[[Lezione 10 - Funzioni Reali II e Funzioni Elementari I]]", "[[Lezione 11 - Funzioni Reali Elementari II]]", "[[Lezione 12 - Limiti I Retta Reale Ampliata e Definizione]]", "[[Lezione 13 - Limiti II Restrizioni Limiti Laterali e Successioni]]", "[[Lezione 14 - Limiti di Successioni e Proprieta Locali]]", "[[Assiomi, proposizioni ecc...]]", "[[University]]"]
+aliases: ["Dimostrazioni", "Dimostrazioni Fondamenti di Matematica", "Raccolta Dimostrazioni Lezioni 1-14"]
+source: ["Lezione 1.pdf", "Lezione 2.pdf", "Lezione 3.pdf", "Lezione 4.pdf", "Lezione 5.pdf", "Lezione 6.pdf", "Lezione 7.pdf", "Lezione 8.pdf", "Lezione 9.pdf", "Lezione 10.pdf", "Lezione 11.pdf", "Lezione 12.pdf", "Lezione 13.pdf", "Lezione 14.pdf"]
 title: "Dimostrazioni"
 date: '2026-10-15'
-updated: '2026-10-15T19:00'
+updated: '2026-10-15T19:50'
 tags: [education/university, education/matematica, education/dimostrazioni]
-summary: "Compendio integrale e rigoroso di tutte le dimostrazioni matematiche svolte nel corso di Fondamenti di Matematica dalla Lezione 1 alla Lezione 13."
+summary: "Compendio integrale e rigoroso di tutte le dimostrazioni matematiche svolte nel corso di Fondamenti di Matematica dalla Lezione 1 alla Lezione 14."
 ---
 [[Home MOC|Home]] / [[Education & Learning]] / [[University]] / [[Dimostrazioni]]
 
 # Dimostrazioni
 
-Raccolta esaustiva di tutte le dimostrazioni analitiche e algebriche svolte nelle Lezioni da 1 a 13 del corso di Fondamenti di Matematica, articolate con passaggi logico-deduttivi formali, esplicitazione delle ipotesi e verifica delle tesi.
+Raccolta esaustiva di tutte le dimostrazioni analitiche e algebriche svolte nelle Lezioni da 1 a 14 del corso di Fondamenti di Matematica, articolate con passaggi logico-deduttivi formali, esplicitazione delle ipotesi e verifica delle tesi.
 
 ---
 
@@ -157,10 +157,10 @@ In entrambi i casi si ottiene $x = a$ e $y = b$. $\blacksquare$
 - **Dimostrazione $(1 \implies 2)$:**
   Supponiamo che esista $g: B \to A$ tale che $g(f(x)) = x$ per ogni $x \in A$ e $f(g(y)) = y$ per ogni $y \in B$.
   - *Iniettività:* Siano $x_1, x_2 \in A$ con $f(x_1) = f(x_2)$. Applicando la funzione $g$ ad ambo i membri:
-    $$g(f(x_1)) = g(f(x_2))$$
+  $$g(f(x_1)) = g(f(x_2))$$
     Essendo $g(f(x)) = x$, otteniamo $x_1 = x_2$. Quindi $f$ è iniettiva.
   - *Suriettività:* Sia $y \in B$ un elemento arbitrario. Poniamo $x = g(y) \in A$. Applicando $f$:
-    $$f(x) = f(g(y)) = y$$
+  $$f(x) = f(g(y)) = y$$
     Abbiamo trovato un elemento $x \in A$ la cui immagine tramite $f$ è $y$. Dunque $f$ è suriettiva.
   Essendo iniettiva e suriettiva, $f$ è bigettiva.
 
@@ -245,7 +245,7 @@ Dunque $-\lambda$ è il massimo dei minoranti di $B$, ovvero $\inf B = -\sup(-B)
   - Dalla condizione (1), $M$ è un maggiorante di $A$.
   - Supponiamo per assurdo che esista un maggiorante $M'$ strettamente minore di $M$, ossia $M' < M$.
   - Poniamo $\varepsilon = M - M' > 0$. Per la condizione (2), in corrispondenza di tale $\varepsilon$ esiste un elemento $a \in A$ tale che:
-    $$a > M - \varepsilon = M - (M - M') = M'$$
+  $$a > M - \varepsilon = M - (M - M') = M'$$
   - Ma $a > M'$ contraddice l'ipotesi che $M'$ sia un maggiorante per $A$.
   - Pertanto nessun numero strettamente minore di $M$ è un maggiorante: $M$ è il minimo dei maggioranti, ossia $M = \sup A$. $\blacksquare$
 
@@ -401,14 +401,14 @@ L'assurdo dimostra che $\sqrt{2} \notin \mathbb{Q}$. $\blacksquare$
    Poiché $\sqrt{2}$ è irrazionale, non può essere $\lambda^2 = 2$. Rimangono due casi:
    - **Caso $\lambda^2 < 2$:**
      Costruiamo un elemento di $A$ strettamente maggiore di $\lambda$. Scegliamo un intero $n \ge 1$ tale che:
-     $$\left(\lambda + \frac{1}{n}\right)^2 < 2$$
+  $$\left(\lambda + \frac{1}{n}\right)^2 < 2$$
      Sviluppando: $\left(\lambda + \frac{1}{n}\right)^2 = \lambda^2 + \frac{2\lambda}{n} + \frac{1}{n^2} \le \lambda^2 + \frac{2\lambda + 1}{n}$.
      Basta imporre $\lambda^2 + \frac{2\lambda+1}{n} < 2 \iff \frac{2\lambda+1}{n} < 2 - \lambda^2 \iff n > \frac{2\lambda+1}{2 - \lambda^2}$.
      Per la proprietà archimedea, tale $n \in \mathbb{N}^*$ esiste. Allora $\lambda + \frac{1}{n} \in \mathbb{Q}$, $\left(\lambda + \frac{1}{n}\right)^2 < 2 \implies \lambda + \frac{1}{n} \in A$.
      Ma $\lambda + \frac{1}{n} > \lambda$, il che contraddice il fatto che $\lambda$ sia un maggiorante di $A$.
    - **Caso $\lambda^2 > 2$:**
      Costruiamo un maggiorante di $A$ strettamente minore di $\lambda$. Cerchiamo $n \in \mathbb{N}^*$ tale che:
-     $$\left(\lambda - \frac{1}{n}\right)^2 > 2$$
+  $$\left(\lambda - \frac{1}{n}\right)^2 > 2$$
      Sviluppando: $\left(\lambda - \frac{1}{n}\right)^2 = \lambda^2 - \frac{2\lambda}{n} + \frac{1}{n^2} > \lambda^2 - \frac{2\lambda}{n}$.
      Basta imporre $\lambda^2 - \frac{2\lambda}{n} > 2 \iff \frac{2\lambda}{n} < \lambda^2 - 2 \iff n > \frac{2\lambda}{\lambda^2 - 2}$.
      Tale $n$ esiste per la proprietà archimedea. Dunque per ogni $x \in A$, $x^2 < 2 < \left(\lambda - \frac{1}{n}\right)^2 \implies x < \lambda - \frac{1}{n}$.
@@ -694,3 +694,221 @@ Distinguiamo tre casi:
   $$\lim_{n \to +\infty} \sqrt[n]{a} = \lim_{n \to +\infty} \sqrt[n]{\frac{1}{b}} = \lim_{n \to +\infty} \frac{1}{\sqrt[n]{b}} = \frac{1}{1} = 1$$
 
 In tutti i casi il limite vale $1$. $\blacksquare$
+
+
+---
+
+---
+
+## Lezione 14: Limiti di Successioni e Proprietà Locali
+
+### Proposizione 1.1: Carattere Locale del Limite di Successioni
+>[!important] Enunciato
+>Siano $(a_n)_{n \in \mathbb{N}}$ e $(b_n)_{n \in \mathbb{N}}$ due successioni di numeri reali e supponiamo che esista un indice $\nu_0 \in \mathbb{N}$ tale che $\forall n > \nu_0 \implies a_n = b_n$. Allora:
+>$$\lim_{n \to +\infty} a_n = \ell \iff \lim_{n \to +\infty} b_n = \ell$$
+
+**Dimostrazione:**
+Assumiamo che $\lim_{n \to +\infty} a_n = \ell \in \overline{\mathbb{R}}$.
+Sia $V \in \mathcal{U}(\ell)$ un intorno arbitrario di $\ell$. Per la definizione topologica di limite, esiste un indice $\nu_1 \in \mathbb{N}$ tale che:
+$$\forall n > \nu_1 \implies a_n \in V$$
+Poniamo $\nu = \max\{\nu_0, \nu_1\} \in \mathbb{N}$. Per ogni $n > \nu$ si verificano simultaneamente:
+- $n > \nu_0 \implies b_n = a_n$
+- $n > \nu_1 \implies a_n \in V$
+Ne consegue che per ogni $n > \nu$ si ha $b_n \in V$, il che dimostra che $\lim_{n \to +\infty} b_n = \ell$.
+L'implicazione inversa segue per simmetria scambiando i ruoli di $a_n$ e $b_n$. $\blacksquare$
+
+### Proposizione 1.2: Ogni Successione Convergente è Limitata
+>[!important] Enunciato
+>Sia $(a_n)_{n \in \mathbb{N}}$ una successione reale convergente ad un limite finito $\ell \in \mathbb{R}$. Allora $(a_n)_{n \in \mathbb{N}}$ è limitata in $\mathbb{R}$:
+>$$\exists C > 0 : \forall n \in \mathbb{N}, \quad |a_n| \le C$$
+
+**Dimostrazione:**
+Sia $\lim_{n \to +\infty} a_n = \ell \in \mathbb{R}$.
+Applichiamo la definizione metrica di convergenza ponendo la scelta convenzionale $\varepsilon = 1 > 0$.
+In corrispondenza di tale $\varepsilon$, esiste un indice soglia $\nu \in \mathbb{N}$ tale che:
+$$\forall n > \nu \implies |a_n - \ell| < 1$$
+Sfruttando la disuguaglianza triangolare inversa:
+$$|a_n| = |(a_n - \ell) + \ell| \le |a_n - \ell| + |\ell| < 1 + |\ell|, \quad \forall n > \nu$$
+I termini della successione con indice $n > \nu$ sono quindi tutti uniformemente maggiorati dal numero reale $1 + |\ell|$.
+I termini rimanenti $a_0, a_1, \dots, a_\nu$ costituiscono un insieme finito di $\nu + 1$ elementi. Definiamo la costante reale:
+$$C = \max\left\{|a_0|, |a_1|, \dots, |a_\nu|, \, 1 + |\ell|\right\} \in \mathbb{R}$$
+Verifichiamo che $|a_n| \le C$ per ogni $n \in \mathbb{N}$:
+- Se $n \le \nu$, allora $|a_n| \le \max\{|a_0|, \dots, |a_\nu|\} \le C$;
+- Se $n > \nu$, allora $|a_n| < 1 + |\ell| \le C$.
+In ogni caso, per ogni $n \in \mathbb{N}$ si ha $|a_n| \le C$, provando che la successione è globalmente limitata. $\blacksquare$
+
+### Proposizione 1.3: Divergenza e Illimitatezza
+>[!important] Enunciato
+>1. Ogni successione numerica divergente positivamente ($\lim_{n \to +\infty} a_n = +\infty$) non è limitata superiormente: $\sup_{n \in \mathbb{N}} a_n = +\infty$.
+>2. Ogni successione numerica divergente negativamente ($\lim_{n \to +\infty} a_n = -\infty$) non è limitata inferiormente: $\inf_{n \in \mathbb{N}} a_n = -\infty$.
+
+**Dimostrazione (Punto 1):**
+Per verificare l'illimitatezza superiore occorre dimostrare che per ogni $M \in \mathbb{R}$ esiste un termine $a_n$ tale che $a_n > M$.
+Fissiamo arbitrariamente $M \in \mathbb{R}$. Poiché per ipotesi $\lim_{n \to +\infty} a_n = +\infty$, applicando la definizione di divergenza positiva in corrispondenza del valore $M$, esiste un indice $\nu \in \mathbb{N}$ tale che:
+$$\forall n \in \mathbb{N}, \quad n > \nu \implies a_n > M$$
+Dunque non solo esiste un termine maggiore di $M$, ma ne esistono infiniti (tutti quelli con indice $n > \nu$). Poiché $M$ era generico, nessun numero reale può fare da maggiorante per l'insieme $\{a_n : n \in \mathbb{N}\}$, che risulta pertanto non limitato superiormente.
+La dimostrazione del punto (2) è perfettamente analoga fissando un arbitrario minorante $-M \in \mathbb{R}$. $\blacksquare$
+
+### Lemma 2.3: Crescita dell'Indice per Sottosuccessioni
+>[!important] Enunciato
+>Sia $(n_k)_{k \in \mathbb{N}}$ una successione strettamente crescente di numeri naturali. Allora:
+>$$\forall k \in \mathbb{N}, \quad n_k \ge k$$
+
+**Dimostrazione per Induzione su $k$:**
+- *Base dell'induzione ($k = 0$):* Poiché per definizione $(n_k)_{k \in \mathbb{N}} \subset \mathbb{N}$, si ha $n_0 \in \mathbb{N}$, da cui banalmente $n_0 \ge 0$.
+- *Passo induttivo ($k \implies k + 1$):* Assumiamo per ipotesi induttiva che la disuguaglianza sia verificata per l'indice $k$, ossia $n_k \ge k$.
+  Poiché la successione degli indici $(n_k)$ è strettamente crescente, si ha:
+  $$n_{k+1} > n_k$$
+  Trattandosi di numeri interi naturali, la condizione $n_{k+1} > n_k$ equivale a:
+  $$n_{k+1} \ge n_k + 1$$
+  Sfruttando l'ipotesi induttiva $n_k \ge k$:
+  $$n_{k+1} \ge n_k + 1 \ge k + 1$$
+  La proprietà risulta verificata per $k + 1$.
+Per il Principio di Induzione Matematica, la disuguaglianza $n_k \ge k$ è valida per ogni $k \in \mathbb{N}$. $\blacksquare$
+
+### Teorema 2.5: Invarianza del Limite per Sottosuccessioni
+>[!important] Enunciato
+>Sia $(a_n)_{n \in \mathbb{N}}$ una successione di numeri reali e $(a_{n_k})_{k \in \mathbb{N}}$ una sua sottosuccessione. Se $(a_n)$ è regolare con limite $\lim_{n \to +\infty} a_n = \ell \in \overline{\mathbb{R}}$, allora anche la sottosuccessione $(a_{n_k})_{k \in \mathbb{N}}$ è regolare e ammette lo stesso limite:
+>$$\lim_{k \to +\infty} a_{n_k} = \ell$$
+
+**Dimostrazione:**
+Sia $\lim_{n \to +\infty} a_n = \ell \in \overline{\mathbb{R}}$ e sia $V \in \mathcal{U}(\ell)$ un intorno arbitrario di $\ell$.
+Per la definizione topologica di limite applicata alla successione principale, esiste un indice soglia $\nu \in \mathbb{N}$ tale che:
+$$\forall n \in \mathbb{N}, \quad n > \nu \implies a_n \in V$$
+Consideriamo ora la successione degli indici $(n_k)_{k \in \mathbb{N}}$. Per il Lemma 2.3, sappiamo che per ogni $k \in \mathbb{N}$ vale la disuguaglianza $n_k \ge k$.
+Di conseguenza, se scegliamo $k > \nu$, otteniamo:
+$$n_k \ge k > \nu \implies a_{n_k} \in V$$
+Abbiamo così dimostrato che per ogni intorno $V \in \mathcal{U}(\ell)$ esiste l'indice soglia $\nu \in \mathbb{N}$ tale che per ogni $k > \nu$ si ha $a_{n_k} \in V$.
+Ciò verifica esattamente la definizione di limite per la successione estratta, provando che $\lim_{k \to +\infty} a_{n_k} = \ell$. $\blacksquare$
+
+### Proposizione 2.9: Limite della Successione Geometrica $q^n$
+>[!important] Enunciato
+>Sia $q \in \mathbb{R}$. La successione geometrica $a_n = q^n$ soddisfa:
+>$$\lim_{n \to +\infty} q^n = \begin{cases} +\infty & \text{se } q > 1 \\ 1 & \text{se } q = 1 \\ 0 & \text{se } |q| < 1 \\ \text{non regolare} & \text{se } q \le -1 \end{cases}$$
+
+**Dimostrazione:**
+- **Caso $q = 1$:** La successione è costante: $q^n = 1^n = 1$ per ogni $n \in \mathbb{N}$. Quindi $\lim_{n \to +\infty} q^n = 1$.
+- **Caso $q > 1$:** Poniamo $a = q - 1 > 0$, da cui $q = 1 + a$. Poiché $a > 0 \ge -1$, possiamo applicare la Disuguaglianza di Bernoulli:
+  $$q^n = (1 + a)^n \ge 1 + na$$
+  Fissiamo un arbitrario $M \in \mathbb{R}$. Vogliamo che $q^n > M$. È sufficiente richiedere:
+  $$1 + na > M \iff na > M - 1 \iff n > \frac{M - 1}{a}$$
+  Per la Proprietà di Archimede, scegliendo $\nu = \max\left\{0, \lfloor \frac{M - 1}{a} \rfloor + 1\right\}$, per ogni $n > \nu$ risulta $q^n > M$. Dunque $\lim_{n \to +\infty} q^n = +\infty$.
+- **Caso $|q| < 1$:**
+  - Se $q = 0$, $0^n = 0$ per $n \ge 1$, limite $0$.
+  - Se $0 < |q| < 1$, poniamo $b = \frac{1}{|q|} > 1$. Per il punto precedente, $\lim_{n \to +\infty} b^n = \lim_{n \to +\infty} \left(\frac{1}{|q|}\right)^n = +\infty$.
+    Applicando il teorema sul reciproco del limite di un infinito:
+  $$\lim_{n \to +\infty} |q|^n = \lim_{n \to +\infty} \frac{1}{(1/|q|)^n} = \frac{1}{+\infty} = 0$$
+    Dato che $\lim |a_n| = 0 \iff \lim a_n = 0$, ne segue che $\lim_{n \to +\infty} q^n = 0$.
+- **Caso $q = -1$:** $q^n = (-1)^n$. Consideriamo le sottosuccessioni dei pari e dei dispari:
+  $$a_{2k} = (-1)^{2k} = 1 \to 1, \quad a_{2k+1} = (-1)^{2k+1} = -1 \to -1$$
+  Poiché ammette due sottosuccessioni con limiti differenti ($1 \ne -1$), per il Teorema 2.5 la successione non ammette limite.
+- **Caso $q < -1$:** Consideriamo le due sottosuccessioni:
+  - Termini con indice pari: $a_{2k} = q^{2k} = (q^2)^k$. Poiché $q < -1$, si ha $q^2 > 1$. Dal caso $q > 1$ già dimostrato, $\lim_{k \to +\infty} (q^2)^k = +\infty$.
+  - Termini con indice dispari: $a_{2k+1} = q \cdot q^{2k} = q (q^2)^k$. Poiché $q < 0$ e $(q^2)^k \to +\infty$, per la regola dei segni del prodotto $\lim_{k \to +\infty} a_{2k+1} = -\infty$.
+  Dato che le sottosuccessioni divergono a limiti distinti ($+\infty \ne -\infty$), la successione non è regolare. $\blacksquare$
+
+### Teorema 2.10: Convergenza da Termini Pari e Dispari
+>[!important] Enunciato
+>Sia $(a_n)_{n \in \mathbb{N}}$ una successione reale. Se la sottosuccessione dei termini pari e quella dei termini dispari convergono allo stesso limite $\ell \in \overline{\mathbb{R}}$, ossia:
+>$$\lim_{k \to +\infty} a_{2k} = \ell \quad \land \quad \lim_{k \to +\infty} a_{2k+1} = \ell$$
+>allora l'intera successione converge allo stesso limite:
+>$$\lim_{n \to +\infty} a_n = \ell$$
+
+**Dimostrazione:**
+Sia $V \in \mathcal{U}(\ell)$ un intorno arbitrario di $\ell$.
+- Poiché $\lim_{k \to +\infty} a_{2k} = \ell$, per definizione di limite esiste un indice $\nu_1 \in \mathbb{N}$ tale che:
+  $$\forall k \in \mathbb{N}, \quad k > \nu_1 \implies a_{2k} \in V$$
+- Poiché $\lim_{k \to +\infty} a_{2k+1} = \ell$, esiste un indice $\nu_2 \in \mathbb{N}$ tale che:
+  $$\forall k \in \mathbb{N}, \quad k > \nu_2 \implies a_{2k+1} \in V$$
+Definiamo la soglia globale $\nu = \max\{2\nu_1, \, 2\nu_2 + 1\} \in \mathbb{N}$.
+Sia ora $n \in \mathbb{N}$ un generico indice con $n > \nu$:
+- Se $n$ è un numero pari, allora $n = 2k$ per un opportuno $k \in \mathbb{N}$. Dalla condizione $n > \nu \ge 2\nu_1$ segue $2k > 2\nu_1 \implies k > \nu_1$, da cui $a_n = a_{2k} \in V$.
+- Se $n$ è un numero dispari, allora $n = 2k + 1$ per un opportuno $k \in \mathbb{N}$. Dalla condizione $n > \nu \ge 2\nu_2 + 1$ segue $2k + 1 > 2\nu_2 + 1 \implies k > \nu_2$, da cui $a_n = a_{2k+1} \in V$.
+In entrambi i casi (essendo ogni numero naturale pari o dispari), per ogni $n > \nu$ risulta $a_n \in V$.
+Ciò dimostra che $\lim_{n \to +\infty} a_n = \ell$. $\blacksquare$
+
+### Proposizione 3.3: Intersezione Finita di Proprietà Locali
+>[!important] Enunciato
+>Siano $P_1(x)$ e $P_2(x)$ due proprietà definite in $A \subseteq \mathbb{R}$ e sia $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $A$. Se $P_1(x)$ è vera definitivamente in un intorno di $x_0$ e $P_2(x)$ è vera definitivamente in un intorno di $x_0$, allora anche la proprietà congiunta $P_1(x) \land P_2(x)$ è vera definitivamente in un intorno di $x_0$.
+
+**Dimostrazione:**
+Per ipotesi di validità locale, esistono due intorni $U_1, U_2 \in \mathcal{U}(x_0)$ tali che:
+$$\forall x \in U_1 \cap (A \setminus \{x_0\}) \implies P_1(x) \text{ è vera}$$
+$$\forall x \in U_2 \cap (A \setminus \{x_0\}) \implies P_2(x) \text{ è vera}$$
+Poniamo $U = U_1 \cap U_2$. Per le proprietà topologiche degli intorni, l'intersezione di due intorni di un punto $x_0$ è ancora un intorno di $x_0$, quindi $U \in \mathcal{U}(x_0)$.
+Sia ora $x \in U \cap (A \setminus \{x_0\})$. Poiché $x \in U_1$ e contemporaneamente $x \in U_2$:
+- $x \in U_1 \cap (A \setminus \{x_0\}) \implies P_1(x)$ è vera;
+- $x \in U_2 \cap (A \setminus \{x_0\}) \implies P_2(x)$ è vera.
+Dunque in ogni punto dell'intorno $U \cap (A \setminus \{x_0\})$ le due proprietà sono simultaneamente verificate: $P_1(x) \land P_2(x)$ è vera. $\blacksquare$
+
+### Proposizione 3.5: Limite del Valore Assoluto
+>[!important] Enunciato
+>Sia $f: A \to \mathbb{R}$, $\ell \in \mathbb{R}$ e $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $A$. Allora:
+>$$\lim_{x \to x_0} f(x) = \ell \implies \lim_{x \to x_0} |f(x)| = |\ell|$$
+
+**Dimostrazione:**
+Ricordiamo la Disuguaglianza Triangolare Inversa: per ogni $u, v \in \mathbb{R}$ vale:
+$$\big| |u| - |v| \big| \le |u - v|$$
+Scegliendo $u = f(x)$ e $v = \ell$, per ogni $x \in A$ risulta:
+$$\big| |f(x)| - |\ell| \big| \le |f(x) - \ell|$$
+Sia ora fissato un arbitrario $\varepsilon > 0$. Poiché per ipotesi $\lim_{x \to x_0} f(x) = \ell$, per la definizione metrica di limite esiste un intorno $U \in \mathcal{U}(x_0)$ tale che:
+$$\forall x \in U \cap (A \setminus \{x_0\}) \implies |f(x) - \ell| < \varepsilon$$
+Concatenando con la disuguaglianza triangolare inversa:
+$$\forall x \in U \cap (A \setminus \{x_0\}) \implies \big| |f(x)| - |\ell| \big| \le |f(x) - \ell| < \varepsilon$$
+Questo dimostra formalmente che $\lim_{x \to x_0} |f(x)| = |\ell|$. $\blacksquare$
+
+### Proposizione 3.6: Limitatezza Locale di una Funzione Convergente
+>[!important] Enunciato
+>Se $f: A \to \mathbb{R}$ ammette limite finito $\lim_{x \to x_0} f(x) = \ell \in \mathbb{R}$, allora $f$ è limitata in un intorno di $x_0$:
+>$$\exists U \in \mathcal{U}(x_0) : \forall x \in U \cap (A \setminus \{x_0\}) \implies |f(x)| \le 1 + |\ell|$$
+
+**Dimostrazione:**
+Poniamo nella definizione metrica di limite $\varepsilon = 1 > 0$. Poiché $\lim_{x \to x_0} f(x) = \ell$, esiste un intorno $U \in \mathcal{U}(x_0)$ tale che per ogni $x \in U \cap (A \setminus \{x_0\})$ si ha $|f(x) - \ell| < 1$.
+Scriviamo $f(x) = (f(x) - \ell) + \ell$. Applicando la disuguaglianza triangolare standard:
+$$|f(x)| = |(f(x) - \ell) + \ell| \le |f(x) - \ell| + |\ell| < 1 + |\ell|$$
+Posto $M = 1 + |\ell| \in \mathbb{R}$, risulta $|f(x)| \le M$ per ogni $x \in U \cap (A \setminus \{x_0\})$, dimostrando che $f$ è localmente limitata in $U$. $\blacksquare$
+
+### Teorema 3.8: Algebra dei Limiti Finiti
+>[!important] Enunciato
+>Siano $f, g: A \to \mathbb{R}$ e sia $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $A$. Supponiamo che $\lim_{x \to x_0} f(x) = \ell \in \mathbb{R}$ e $\lim_{x \to x_0} g(x) = m \in \mathbb{R}$. Allora:
+>1. $\lim_{x \to x_0} (f + g)(x) = \ell + m$
+>2. $\lim_{x \to x_0} (f \cdot g)(x) = \ell \cdot m$
+>3. Se $m \ne 0$ e $g(x) \ne 0$ definitivamente in un intorno di $x_0$, allora $\lim_{x \to x_0} \left(\frac{f}{g}\right)(x) = \frac{\ell}{m}$
+
+**Dimostrazione:**
+
+**1. Limite della Somma:**
+Fissiamo arbitrariamente $\varepsilon > 0$. Dalla disuguaglianza triangolare:
+$$|(f + g)(x) - (\ell + m)| = |(f(x) - \ell) + (g(x) - m)| \le |f(x) - \ell| + |g(x) - m|$$
+Applicando la definizione di limite a $f$ e $g$ con tolleranza $\frac{\varepsilon}{2} > 0$, esistono due intorni $U_1, U_2 \in \mathcal{U}(x_0)$ tali che:
+- $\forall x \in U_1 \cap A_{x_0} \implies |f(x) - \ell| < \frac{\varepsilon}{2}$
+- $\forall x \in U_2 \cap A_{x_0} \implies |g(x) - m| < \frac{\varepsilon}{2}$
+Per la Proposizione 3.3, nell'intorno comune $U = U_1 \cap U_2 \in \mathcal{U}(x_0)$ entrambe le proprietà valgono simultaneamente. Sommando membro a membro:
+$$\forall x \in U \cap A_{x_0} \implies |(f + g)(x) - (\ell + m)| \le |f(x) - \ell| + |g(x) - m| < \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon$$
+Ciò prova che $\lim_{x \to x_0} (f + g)(x) = \ell + m$. $\blacksquare$
+
+**2. Limite del Prodotto:**
+Fissiamo $\varepsilon > 0$. Manipoliamo algebricamente la differenza aggiungendo e sottraendo il termine misto $f(x)m$:
+$$|(f \cdot g)(x) - \ell m| = |f(x)g(x) - f(x)m + f(x)m - \ell m| \le |f(x)||g(x) - m| + |m||f(x) - \ell|$$
+Per la Proposizione 3.6, la convergenza di $f$ assicura l'esistenza di un intorno $U_0 \in \mathcal{U}(x_0)$ in cui $|f(x)| \le 1 + |\ell|$. Quindi su tale intorno:
+$$|(f \cdot g)(x) - \ell m| \le (1 + |\ell|)|g(x) - m| + (|m| + 1)|f(x) - \ell|$$
+Poniamo:
+$$\varepsilon_1 = \frac{\varepsilon}{2(|m| + 1)} > 0, \quad \varepsilon_2 = \frac{\varepsilon}{2(1 + |\ell|)} > 0$$
+Per definizione di limite, esistono $U_1, U_2 \in \mathcal{U}(x_0)$ tali che $|f(x) - \ell| < \varepsilon_1$ su $U_1 \cap A_{x_0}$ e $|g(x) - m| < \varepsilon_2$ su $U_2 \cap A_{x_0}$.
+Nell'intorno intersezione $U = U_0 \cap U_1 \cap U_2 \in \mathcal{U}(x_0)$:
+$$|(f \cdot g)(x) - \ell m| < (1 + |\ell|)\frac{\varepsilon}{2(1 + |\ell|)} + (|m| + 1)\frac{\varepsilon}{2(|m| + 1)} = \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon$$
+Ciò prova che $\lim_{x \to x_0} (f \cdot g)(x) = \ell m$. $\blacksquare$
+
+**3. Limite del Quoziente:**
+Poiché $\frac{f}{g} = f \cdot \frac{1}{g}$, grazie al punto (2) è sufficiente dimostrare che $\lim_{x \to x_0} \frac{1}{g(x)} = \frac{1}{m}$.
+Notiamo che:
+$$\left|\frac{1}{g(x)} - \frac{1}{m}\right| = \left|\frac{m - g(x)}{g(x)m}\right| = \frac{|g(x) - m|}{|g(x)||m|}$$
+Poiché $m \ne 0$, per la Proposizione 3.5 $\lim_{x \to x_0} |g(x)| = |m| > 0$. Per il Teorema della permanenza del segno (con $\varepsilon = \frac{|m|}{2}$), esiste un intorno $U_0 \in \mathcal{U}(x_0)$ in cui:
+$$|g(x)| > \frac{|m|}{2} \implies \frac{1}{|g(x)|} < \frac{2}{|m|}$$
+Sostituendo nella maggiorazione per ogni $x \in U_0 \cap A_{x_0}$:
+$$\left|\frac{1}{g(x)} - \frac{1}{m}\right| \le \frac{2}{|m|^2}|g(x) - m|$$
+Fissato $\varepsilon > 0$, sia $\varepsilon_3 = \frac{\varepsilon |m|^2}{2} > 0$. Esiste un intorno $U_1 \in \mathcal{U}(x_0)$ in cui $|g(x) - m| < \varepsilon_3$.
+Nell'intorno $U = U_0 \cap U_1$:
+$$\left|\frac{1}{g(x)} - \frac{1}{m}\right| < \frac{2}{|m|^2} \frac{\varepsilon |m|^2}{2} = \varepsilon$$
+Dunque $\lim_{x \to x_0} \frac{1}{g(x)} = \frac{1}{m}$. Infine, applicando la regola del prodotto:
+$$\lim_{x \to x_0} \left(\frac{f}{g}\right)(x) = \lim_{x \to x_0} \left(f(x) \cdot \frac{1}{g(x)}\right) = \ell \cdot \frac{1}{m} = \frac{\ell}{m} \quad \blacksquare$$

@@ -2,21 +2,24 @@
 """
 university_sync.py - Motore di sincronizzazione automatica per dispense e lezioni universitarie.
 
-Funzionalità:
+Funzionalità & Garanzie di Qualità:
 1. Fondamenti di matematica:
-   - Monitora la cartella 'Fondamenti di matematica'.
-   - Quando viene aggiunto un file (es. Lezione X.pdf):
-     a) Crea una nota di riassunto dettagliata in 'Ripasso - Fondamenti di matematica/'.
-     b) Estrae tutte le dimostrazioni e le aggiunge a 'Dimostrazioni.md'.
-     c) Estrae tutti gli assiomi, proposizioni, teoremi, definizioni e li aggiunge a 'Assiomi, proposizioni ecc....md'.
-     
+   - Monitora 'Fondamenti di matematica'.
+   - Filtra metadati e OCR spuri (e-mail CNR, affiliazioni docenti, piè di pagina, numerazioni isolate).
+   - Normalizza la matematica in sintassi LaTeX standard ($formula$ e $$display$$).
+   - Crea note di riassunto dettagliate in 'Ripasso - Fondamenti di matematica/' con 10 campi YAML.
+   - Aggiunge le dimostrazioni a 'Dimostrazioni.md' formattate con callout [!IMPORTANT] e chiusura $\\blacksquare$.
+   - Aggiunge definizioni, teoremi e proposizioni a 'Assiomi, proposizioni ecc....md' con tag HTML rigorosamente chiusi.
+   - Garantisce che NESSUNA riga $$display$$ sia mai indentata con spazi (prevenendo blocchi di codice non compilati).
+   - Aggiorna automaticamente i metadati frontmatter (source, related, summary, updated).
+
 2. Introduzione alla programmazione:
-   - Monitora la cartella 'Introduzione alla programmazione'.
-   - Se il file è '.ipynb':
-     a) Crea una nota di riassunto dettagliata in 'Ripasso - Introduzione alla programmazione/'.
-     b) Estrae tutti i comandi di codice e li aggiunge a 'Comandi.md' (esclusivamente codice, senza spiegazioni).
-   - Se il file è '.pdf':
-     a) Crea una sintesi molto concisa (informazioni fondamentali) e la aggiunge a 'Teoria di programmazione.md'.
+   - File .ipynb: crea nota di riassunto ed estrae SOLO codice Python puro in 'Comandi.md'.
+   - File .pdf: estrae concetti essenziali e sintetici in 'Teoria di programmazione.md'.
+
+3. Validazione automatica post-elaborazione:
+   - Ogni file scritto viene controllato e auto-risanato istantaneamente da 'validate_and_heal_file'.
+   - Invia notifiche banner native su macOS per ogni file completato.
 
 Utilizzo:
   python3 university_sync.py --scan          # Scansiona e processa nuovi file una tantum
@@ -72,6 +75,18 @@ def log(msg: str):
         f.write(formatted + "\n")
 
 
+def send_macos_notification(title: str, message: str):
+    """Invia una notifica banner nativa su macOS."""
+    try:
+        import subprocess
+        clean_title = title.replace('"', '\\"')
+        clean_msg = message.replace('"', '\\"')
+        cmd = f'display notification "{clean_msg}" with title "{clean_title}"'
+        subprocess.run(["osascript", "-e", cmd], check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    except Exception as e:
+        log(f"Impossibile inviare notifica di sistema: {e}")
+
+
 def compute_file_hash(path: Path) -> str:
     """Calcola l'hash SHA-256 di un file."""
     hasher = hashlib.sha256()
@@ -100,7 +115,7 @@ def save_state(state: dict):
 
 
 def extract_pdf_text(pdf_path: Path) -> str:
-    """Estrae l'intero testo da un file PDF."""
+    """Estrae il testo da un file PDF con pypdf."""
     if not pypdf:
         raise RuntimeError("Modulo pypdf non disponibile. Installa pypdf con 'pip install pypdf'.")
     reader = pypdf.PdfReader(str(pdf_path))
@@ -111,34 +126,91 @@ def extract_pdf_text(pdf_path: Path) -> str:
     return "\n".join(pages_text)
 
 
-def seed_current_files():
-    """Registra tutti i file attuali nello stato come già processati."""
-    state = load_state()
-    count = 0
-    # Fondamenti
-    if FONDAMENTI_DIR.exists():
-        for p in FONDAMENTI_DIR.glob("*.pdf"):
-            rel = p.name
-            if rel not in state["fondamenti"]:
-                state["fondamenti"][rel] = {
-                    "hash": compute_file_hash(p),
-                    "processed_at": datetime.now().isoformat(),
-                    "size": p.stat().st_size
-                }
-                count += 1
-    # Programmazione
-    if PROG_DIR.exists():
-        for p in list(PROG_DIR.glob("*.ipynb")) + list(PROG_DIR.glob("*.pdf")):
-            rel = p.name
-            if rel not in state["programmazione"]:
-                state["programmazione"][rel] = {
-                    "hash": compute_file_hash(p),
-                    "processed_at": datetime.now().isoformat(),
-                    "size": p.stat().st_size
-                }
-                count += 1
-    save_state(state)
-    log(f"Inizializzazione completata: {count} file contrassegnati come già processati.")
+def clean_math_text(text: str) -> str:
+    """Rimuove metadati accademici, numeri di pagina isolati e normalizza simboli matematici."""
+    lines = text.splitlines()
+    cleaned_lines = []
+
+    skip_patterns = [
+        r"IAC-CNR",
+        r"DIAG,\s*Sapienza",
+        r"giovanni\.franzina@cnr\.it",
+        r"saverio\.salzo@uniroma1\.it",
+        r"^[*†]",
+        r"^\s*\d+\s*$",
+        r"^\s*Sapienza\s+Universit",
+        r"^\s*Corso\s+di\s+Laurea",
+    ]
+    skip_re = re.compile("|".join(skip_patterns), re.IGNORECASE)
+
+    for line in lines:
+        if skip_re.search(line):
+            continue
+        cleaned_lines.append(line)
+
+    joined = "\n".join(cleaned_lines)
+    # Rimuove la sillabazione con a capo (es. "succes-\nsione" -> "successione")
+    joined = re.sub(r"(\b\w+)-\s*\n\s*(\w+\b)", r"\1\2", joined)
+
+    # Normalizzazione dei simboli greci e operatori matematici in LaTeX
+    replacements = [
+        (r"(\b|(?<=\s))ν0(\b|(?=\s))", r"\\nu_0"),
+        (r"(\b|(?<=\s))ν(\b|(?=\s))", r"\\nu"),
+        (r"(\b|(?<=\s))ℓ(\b|(?=\s))", r"\\ell"),
+        (r"(\b|(?<=\s))ε(\b|(?=\s))", r"\\varepsilon"),
+        (r"(\b|(?<=\s))λ(\b|(?=\s))", r"\\lambda"),
+        (r"(\b|(?<=\s))δ(\b|(?=\s))", r"\\delta"),
+        (r"(\b|(?<=\s))∀", r"\\forall "),
+        (r"(\b|(?<=\s))∃", r"\\exists "),
+        (r"(\b|(?<=\s))∈", r"\\in "),
+        (r"(\b|(?<=\s))∉", r"\\notin "),
+        (r"(\b|(?<=\s))⇒", r"\\implies "),
+        (r"(\b|(?<=\s))⇐", r"\\impliedby "),
+        (r"(\b|(?<=\s))⇔", r"\\iff "),
+        (r"(\b|(?<=\s))≥", r"\\ge "),
+        (r"(\b|(?<=\s))≤", r"\\le "),
+        (r"(\b|(?<=\s))≠", r"\\ne "),
+        (r"(\b|(?<=\s))→", r"\\to "),
+    ]
+    for pat, rep in replacements:
+        joined = re.sub(pat, rep, joined)
+
+    return joined
+
+
+def validate_and_heal_file(file_path: Path) -> bool:
+    """Verifica e corregge automaticamente tag HTML malformati e righe $$ indentate."""
+    if not file_path.exists():
+        return False
+    try:
+        with open(file_path, "r", encoding="utf-8") as f:
+            content = f.read()
+
+        # 1. Correggi i tag <b> con terminazione errata :**
+        content = re.sub(r"<b>([^<]+?):?\*\*</font></mark>", r"<b>\1:</b></font></mark>", content)
+
+        # 2. Rimuovi qualsiasi indentazione prima di $$ per evitare <pre><code>
+        lines = content.splitlines()
+        fixed_lines = []
+        for line in lines:
+            stripped = line.strip()
+            if stripped.startswith("$$"):
+                fixed_lines.append(stripped)
+            else:
+                fixed_lines.append(line)
+
+        healed = "\n".join(fixed_lines).strip() + "\n"
+
+        if healed != content:
+            with open(file_path, "w", encoding="utf-8") as f:
+                f.write(healed)
+            log(f"[VALIDATION] Auto-risanato file: {file_path.name}")
+        else:
+            log(f"[VALIDATION OK] File già perfettamente conforme: {file_path.name}")
+        return True
+    except Exception as e:
+        log(f"Errore durante la validazione di {file_path.name}: {e}")
+        return False
 
 
 # ==============================================================================
@@ -146,20 +218,22 @@ def seed_current_files():
 # ==============================================================================
 
 def process_fondamenti_file(pdf_path: Path) -> bool:
-    """Processa un nuovo file in Fondamenti di matematica."""
+    """Processa un nuovo file in Fondamenti di matematica con filtri e validazioni rigorose."""
     log(f"Inizio elaborazione Fondamenti: {pdf_path.name}")
     try:
-        text = extract_pdf_text(pdf_path)
+        raw_text = extract_pdf_text(pdf_path)
     except Exception as e:
         log(f"Errore estrazione PDF {pdf_path.name}: {e}")
         return False
 
-    bname = pdf_path.stem  # es. "Lezione 14"
+    cleaned_text = clean_math_text(raw_text)
+
+    bname = pdf_path.stem  # es. "Lezione 15"
     match = re.search(r"Lezione\s*(\d+)", bname, re.IGNORECASE)
     lez_num = match.group(1) if match else bname
 
-    # Cerca il titolo principale nella prima pagina/prime righe
-    lines = [l.strip() for l in text.splitlines() if l.strip()]
+    # Individuazione del titolo della lezione
+    lines = [l.strip() for l in cleaned_text.splitlines() if l.strip()]
     titolo = bname
     for l in lines[:15]:
         if "Lezione" in l and (":" in l or "-" in l):
@@ -172,29 +246,33 @@ def process_fondamenti_file(pdf_path: Path) -> bool:
     full_title = f"Lezione {lez_num} - {titolo}" if match and not titolo.startswith("Lezione") else titolo
     safe_title = re.sub(r'[\\/*?:"<>|]', "", full_title)
 
-    # 1. Parsing di teoremi, assiomi, definizioni, proposizioni e dimostrazioni
-    items = parse_math_items(text)
+    # 1. Parsing strutturato di elementi teorici e dimostrazioni
+    items = parse_math_items(cleaned_text)
 
     # 2. Creazione della nota di riassunto dettagliata in Ripasso
     summary_note_path = FONDAMENTI_RIPASSO / f"{safe_title}.md"
-    create_fondamenti_summary_note(summary_note_path, full_title, lez_num, pdf_path.name, items, text)
-    log(f"Creata nota di riassunto: {summary_note_path.name}")
+    create_fondamenti_summary_note(summary_note_path, full_title, lez_num, pdf_path.name, items, cleaned_text)
+    validate_and_heal_file(summary_note_path)
+    log(f"Creata e validata nota di riassunto: {summary_note_path.name}")
 
     # 3. Aggiornamento di Dimostrazioni.md
     if items["dimostrazioni"]:
-        append_to_dimostrazioni(full_title, items["dimostrazioni"])
+        append_to_dimostrazioni(full_title, items["dimostrazioni"], lez_num, pdf_path.name, safe_title)
+        validate_and_heal_file(DIMOSTRAZIONI_FILE)
         log(f"Aggiunte {len(items['dimostrazioni'])} dimostrazioni a Dimostrazioni.md")
 
     # 4. Aggiornamento di Assiomi, proposizioni ecc....md
     if items["teoria"]:
-        append_to_assiomi(full_title, items["teoria"])
+        append_to_assiomi(full_title, items["teoria"], lez_num, pdf_path.name, safe_title)
+        validate_and_heal_file(ASSIOMI_FILE)
         log(f"Aggiunti {len(items['teoria'])} enunciati teorici a Assiomi, proposizioni ecc....md")
 
+    send_macos_notification("Fondamenti di Matematica", f"{pdf_path.name} elaborato con successo! Riassunto e note master verificati.")
     return True
 
 
 def parse_math_items(text: str) -> dict:
-    """Estrae definizioni, assiomi, proposizioni, teoremi e dimostrazioni dal testo."""
+    """Estrae definizioni, assiomi, proposizioni, teoremi e dimostrazioni dal testo normalizzato."""
     lines = text.splitlines()
     teoria = []
     dimostrazioni = []
@@ -203,7 +281,6 @@ def parse_math_items(text: str) -> dict:
     current_title = ""
     current_content = []
 
-    # Regex per riconoscere le dichiarazioni formali
     pattern = re.compile(
         r"^(Assioma|Definizione|Teorema|Proposizione|Prop\.|Lemma|Corollario|Dimostrazione|Dim\.)\s*([0-9\.]*)?\s*[:\.\-]?\s*(.*)",
         re.IGNORECASE
@@ -213,7 +290,6 @@ def parse_math_items(text: str) -> dict:
         stripped = line.strip()
         m = pattern.match(stripped)
         if m:
-            # Salva l'elemento precedente
             if current_type:
                 block_text = "\n".join(current_content).strip()
                 if "dimostrazione" in current_type.lower() or "dim." in current_type.lower():
@@ -240,7 +316,6 @@ def parse_math_items(text: str) -> dict:
             if current_type:
                 current_content.append(line)
 
-    # Ultimo elemento
     if current_type and current_content:
         block_text = "\n".join(current_content).strip()
         if "dimostrazione" in current_type.lower() or "dim." in current_type.lower():
@@ -260,11 +335,10 @@ def parse_math_items(text: str) -> dict:
 
 
 def create_fondamenti_summary_note(target_path: Path, title: str, lez_num: str, source_pdf: str, items: dict, full_text: str):
-    """Genera la nota completa di riassunto in Markdown."""
+    """Genera la nota completa di riassunto in Markdown secondo gli standard del Vault."""
     now_date = datetime.now().strftime("%Y-%m-%d")
     now_time = datetime.now().strftime("%Y-%m-%dT%H:%M")
 
-    # Sintesi esecutiva
     first_paragraphs = [p.strip() for p in full_text.split("\n\n") if len(p.strip()) > 80]
     exec_summary = first_paragraphs[0][:190] if first_paragraphs else f"Trattazione approfondita e analisi formale della Lezione {lez_num} di Fondamenti di Matematica."
     if not exec_summary.endswith("."):
@@ -294,49 +368,82 @@ summary: "{exec_summary}"
 """
     if items["teoria"]:
         for item in items["teoria"]:
-            content += f"\n### {item['title']}\n"
-            content += f"{item['content']}\n"
+            content += f"\n> [!IMPORTANT] {item['title']}\n"
+            content += f"> {item['content']}\n\n"
     else:
-        # Fallback se il parser non ha intercettato etichette formali
         content += f"\n### Contenuto Principale\n"
         sample_paragraphs = [p for p in full_text.split("\n\n") if len(p.strip()) > 50][:8]
-        content += "\n\n".join(sample_paragraphs) + "\n"
+        content += "\n\n".join(sample_paragraphs) + "\n\n"
 
     if items["dimostrazioni"]:
         content += f"\n## Dimostrazioni Trattate nella Lezione\n"
         for dim in items["dimostrazioni"]:
             content += f"\n### {dim['title']}\n"
-            content += f"{dim['content']}\n\n$$\\blacksquare$$\n"
+            content += f"> [!NOTE] Enunciato e Passaggi\n"
+            content += f"> {dim['content']}\n\n$$\\blacksquare$$\n"
 
     with open(target_path, "w", encoding="utf-8") as f:
-        f.write(content)
+        f.write(content.strip() + "\n")
 
 
-def append_to_dimostrazioni(lecture_title: str, proofs: list):
-    """Aggiunge le nuove dimostrazioni in Dimostrazioni.md."""
+def update_master_frontmatter(file_path: Path, new_pdf: str, new_note: str, lez_num: str):
+    """Aggiorna i campi source, related, updated e summary nel frontmatter di un file master."""
+    if not file_path.exists():
+        return
+    with open(file_path, "r", encoding="utf-8") as f:
+        text = f.read()
+
+    now_time = datetime.now().strftime("%Y-%m-%dT%H:%M")
+
+    # Aggiorna updated
+    text = re.sub(r"updated:\s*'[^']*'", f"updated: '{now_time}'", text)
+
+    # Aggiorna source se manca
+    if new_pdf not in text and 'source: [' in text:
+        text = re.sub(r'(source:\s*\[[^\]]*)\]', rf'\1, "{new_pdf}"]', text)
+
+    # Aggiorna related se manca
+    if f"[[{new_note}]]" not in text and 'related: [' in text:
+        text = re.sub(r'(related:\s*\[[^\]]*)\]', rf'\1, "[[{new_note}]]"]', text)
+
+    # Aggiorna summary con l'ultima lezione
+    text = re.sub(r"dalla Lezione 1 alla Lezione \d+", f"dalla Lezione 1 alla Lezione {lez_num}", text)
+    text = re.sub(r"svolte nelle Lezioni da 1 a \d+", f"svolte nelle Lezioni da 1 a {lez_num}", text)
+
+    with open(file_path, "w", encoding="utf-8") as f:
+        f.write(text)
+
+
+def append_to_dimostrazioni(lecture_title: str, proofs: list, lez_num: str, pdf_name: str, note_title: str):
+    """Aggiunge le dimostrazioni a Dimostrazioni.md con formattazione a prova di errore."""
     if not DIMOSTRAZIONI_FILE.exists():
         return
 
     with open(DIMOSTRAZIONI_FILE, "r", encoding="utf-8") as f:
         existing = f.read()
 
-    # Evita duplicati della stessa sezione
     sec_header = f"## {lecture_title}"
     if sec_header in existing:
         log(f"Sezione '{sec_header}' già presente in Dimostrazioni.md, salto l'append.")
         return
 
+    update_master_frontmatter(DIMOSTRAZIONI_FILE, pdf_name, note_title, lez_num)
+
     new_section = f"\n\n---\n\n## {lecture_title}\n"
     for p in proofs:
         new_section += f"\n### {p['title']}\n"
-        new_section += f"{p['content']}\n\n$$\\blacksquare$$\n"
+        new_section += f"> [!IMPORTANT] Enunciato\n"
+        new_section += f"> {p['content']}\n\n"
+        new_section += f"**Dimostrazione:**\n"
+        new_section += f"{p['content']}\n\n"
+        new_section += f"$$\\blacksquare$$\n"
 
     with open(DIMOSTRAZIONI_FILE, "a", encoding="utf-8") as f:
         f.write(new_section)
 
 
-def append_to_assiomi(lecture_title: str, items: list):
-    """Aggiunge i nuovi assiomi, proposizioni, teoremi in Assiomi, proposizioni ecc....md."""
+def append_to_assiomi(lecture_title: str, items: list, lez_num: str, pdf_name: str, note_title: str):
+    """Aggiunge definizioni e teoremi ad Assiomi, proposizioni ecc....md con tag rigorosamente chiusi."""
     if not ASSIOMI_FILE.exists():
         return
 
@@ -348,10 +455,22 @@ def append_to_assiomi(lecture_title: str, items: list):
         log(f"Sezione '{sec_header}' già presente in Assiomi, proposizioni ecc....md, salto l'append.")
         return
 
+    update_master_frontmatter(ASSIOMI_FILE, pdf_name, note_title, lez_num)
+
+    definizioni = [it for it in items if "definizione" in it["title"].lower()]
+    teoremi = [it for it in items if "definizione" not in it["title"].lower()]
+
     new_section = f"\n\n---\n\n## {lecture_title}\n"
-    for item in items:
-        new_section += f"\n### {item['title']}\n"
-        new_section += f"{item['content']}\n"
+
+    if definizioni:
+        new_section += "\n### Definizioni\n"
+        for d in definizioni:
+            new_section += f"- <mark style=\"background:rgba(255, 193, 69, 0.32)\"><font color=\"#cc8800\"><b>{d['title']}:</b></font></mark> {d['content']}\n"
+
+    if teoremi:
+        new_section += "\n### Teoremi e Proposizioni\n"
+        for t in teoremi:
+            new_section += f"- <mark style=\"background:rgba(255, 193, 69, 0.32)\"><font color=\"#cc8800\"><b>{t['title']}:</b></font></mark> {t['content']}\n"
 
     with open(ASSIOMI_FILE, "a", encoding="utf-8") as f:
         f.write(new_section)
@@ -376,7 +495,7 @@ def process_prog_file(file_path: Path) -> bool:
 
 
 def process_prog_notebook(nb_path: Path) -> bool:
-    """Processa un file .ipynb: nota riassunto e append a Comandi.md."""
+    """Processa un file .ipynb: crea nota di riassunto ed estrae SOLO codice in Comandi.md."""
     try:
         with open(nb_path, "r", encoding="utf-8") as f:
             nb = json.load(f)
@@ -390,7 +509,6 @@ def process_prog_notebook(nb_path: Path) -> bool:
     title = f"Lezione {lez_num} - {bname}" if match and not bname.lower().startswith("lezione") else bname
     safe_title = re.sub(r'[\\/*?:"<>|]', "", title)
 
-    # Estrazione celle
     code_snippets = []
     markdown_texts = []
 
@@ -404,16 +522,17 @@ def process_prog_notebook(nb_path: Path) -> bool:
         elif ctype == "markdown":
             markdown_texts.append(src)
 
-    # 1. Crea la nota dettagliata di riassunto in Ripasso
     summary_path = PROG_RIPASSO / f"{safe_title}.md"
     create_prog_summary_note(summary_path, title, lez_num, nb_path.name, markdown_texts, code_snippets)
+    validate_and_heal_file(summary_path)
     log(f"Creata nota riassunto notebook: {summary_path.name}")
 
-    # 2. Aggiunge i comandi di codice a Comandi.md (rigorosamente SOLO codice)
     if code_snippets:
-        append_to_comandi(title, code_snippets)
+        append_to_comandi(title, code_snippets, lez_num, nb_path.name)
+        validate_and_heal_file(COMANDI_FILE)
         log(f"Aggiunti {len(code_snippets)} blocchi di codice a Comandi.md")
 
+    send_macos_notification("Introduzione alla Programmazione", f"{nb_path.name} elaborato con successo! Riassunto e Comandi.md aggiornati.")
     return True
 
 
@@ -441,25 +560,25 @@ summary: "{exec_summary}"
 # {title}
 
 ## Sintesi Esecutiva
-La sessione presenta lo sviluppo pratico e concettuale relativo agli argomenti di <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>{title}</b></font></mark>, illustrando la sintassi, le strutture di controllo, l'organizzazione logica e le funzioni utilizzate.
+Panoramica completa, sintassi ed esempi pratici svolti nel notebook `{source_nb}` per il corso di Introduzione alla Programmazione.
 
-## Teoria e Concetti Guida
+## Concetti Chiave e Teoria
 """
     if md_texts:
         for md in md_texts[:10]:
             content += f"\n{md}\n"
     else:
-        content += "\nTrattazione basata sull'applicazione diretta del codice e dei costrutti del linguaggio Python.\n"
+        content += f"\nEsercitazione pratica incentrata sullo sviluppo di algoritmi in Python e manipolazione delle strutture dati.\n"
 
-    content += "\n## Costrutti ed Esempi Esecutivi di Codice\n"
-    for i, code in enumerate(code_snippets[:12]):
+    content += "\n## Esempi di Codice Principali\n"
+    for code in code_snippets[:12]:
         content += f"\n```python\n{code}\n```\n"
 
     with open(target_path, "w", encoding="utf-8") as f:
-        f.write(content)
+        f.write(content.strip() + "\n")
 
 
-def append_to_comandi(title: str, code_snippets: list):
+def append_to_comandi(title: str, code_snippets: list, lez_num: str, source_nb: str):
     """Aggiunge a Comandi.md ESCLUSIVAMENTE blocchi di codice Python senza spiegazioni."""
     if not COMANDI_FILE.exists():
         return
@@ -472,9 +591,10 @@ def append_to_comandi(title: str, code_snippets: list):
         log(f"Sezione '{sec_header}' già presente in Comandi.md, salto l'append.")
         return
 
+    update_master_frontmatter(COMANDI_FILE, source_nb, title, lez_num)
+
     new_section = f"\n\n---\n\n## {title}\n"
     for code in code_snippets:
-        # Rimuoviamo commenti prolissi mantenendo puro codice
         clean_code = re.sub(r'#.*', '', code).strip()
         if clean_code:
             new_section += f"\n```python\n{clean_code}\n```\n"
@@ -488,14 +608,17 @@ def append_to_comandi(title: str, code_snippets: list):
 def process_prog_pdf(pdf_path: Path) -> bool:
     """Processa un file .pdf in Introduzione alla programmazione: sintesi in Teoria di programmazione.md."""
     try:
-        text = extract_pdf_text(pdf_path)
+        raw_text = extract_pdf_text(pdf_path)
     except Exception as e:
         log(f"Errore estrazione PDF {pdf_path.name}: {e}")
         return False
 
+    cleaned_text = clean_math_text(raw_text)
     bname = pdf_path.stem
-    append_to_teoria_programmazione(bname, pdf_path.name, text)
-    log(f"Aggiunta sintesi teorica essenziale a Teoria di programmazione.md per {pdf_path.name}")
+    append_to_teoria_programmazione(bname, pdf_path.name, cleaned_text)
+    validate_and_heal_file(TEORIA_PROG_FILE)
+    log(f"Aggiunta sintesi teorica a Teoria di programmazione.md per {pdf_path.name}")
+    send_macos_notification("Introduzione alla Programmazione", f"{pdf_path.name} elaborato! Sintesi aggiunta in Teoria di programmazione.md.")
     return True
 
 
@@ -512,7 +635,8 @@ def append_to_teoria_programmazione(title: str, source_pdf: str, text: str):
         log(f"Sezione '{sec_header}' già presente in Teoria di programmazione.md, salto l'append.")
         return
 
-    # Estrazione punti salienti e concetti chiave
+    update_master_frontmatter(TEORIA_PROG_FILE, source_pdf, title, "N/D")
+
     lines = [l.strip() for l in text.splitlines() if l.strip()]
     bullet_points = []
     for l in lines:
@@ -533,6 +657,34 @@ def append_to_teoria_programmazione(title: str, source_pdf: str, text: str):
 # ==============================================================================
 # SCAN & WATCH ENGINE
 # ==============================================================================
+
+def seed_current_files():
+    """Registra tutti i file attuali nello stato come già processati."""
+    state = load_state()
+    count = 0
+    if FONDAMENTI_DIR.exists():
+        for p in FONDAMENTI_DIR.glob("*.pdf"):
+            rel = p.name
+            if rel not in state["fondamenti"]:
+                state["fondamenti"][rel] = {
+                    "hash": compute_file_hash(p),
+                    "processed_at": datetime.now().isoformat(),
+                    "size": p.stat().st_size
+                }
+                count += 1
+    if PROG_DIR.exists():
+        for p in list(PROG_DIR.glob("*.ipynb")) + list(PROG_DIR.glob("*.pdf")):
+            rel = p.name
+            if rel not in state["programmazione"]:
+                state["programmazione"][rel] = {
+                    "hash": compute_file_hash(p),
+                    "processed_at": datetime.now().isoformat(),
+                    "size": p.stat().st_size
+                }
+                count += 1
+    save_state(state)
+    log(f"Inizializzazione completata: {count} file contrassegnati come già processati.")
+
 
 def scan_courses(force: bool = False) -> int:
     """Scansiona entrambe le cartelle dei corsi e processa eventuali nuovi file."""
@@ -571,7 +723,7 @@ def scan_courses(force: bool = False) -> int:
 
     if processed_count > 0:
         save_state(state)
-        log(f"Scansione completata: {processed_count} nuovi file processati.")
+        log(f"Scansione completata: {processed_count} nuovi file processati con successo.")
 
     return processed_count
 
@@ -640,7 +792,6 @@ def main():
     elif args.scan:
         scan_courses(force=args.force)
     else:
-        # Default: scan
         scan_courses(force=args.force)
 
 
