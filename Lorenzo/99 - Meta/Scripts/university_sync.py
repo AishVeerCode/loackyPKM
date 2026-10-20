@@ -22,8 +22,7 @@ Funzionalità & Garanzie di Qualità:
    - Invia notifiche banner native su macOS per ogni file completato.
 
 Utilizzo:
-  python3 university_sync.py --scan          # Scansiona e processa nuovi file una tantum
-  python3 university_sync.py --watch         # Avvia il demone watcher continuo
+  python3 university_sync.py --scan          # Scansiona e processa nuovi file su richiesta
   python3 university_sync.py --file <path>   # Processa un singolo file specificato
   python3 university_sync.py --status        # Mostra lo stato dei file processati
   python3 university_sync.py --seed          # Inizializza lo stato con i file già processati
@@ -728,19 +727,6 @@ def scan_courses(force: bool = False) -> int:
     return processed_count
 
 
-def watch_courses(interval: float = 3.0):
-    """Demone di monitoraggio continuo per le cartelle dei corsi."""
-    log(f"Avvio del demone watcher corsi (intervallo {interval}s)...")
-    log(f"Cartelle monitorate:\n  - {FONDAMENTI_DIR}\n  - {PROG_DIR}")
-
-    try:
-        while True:
-            scan_courses()
-            time.sleep(interval)
-    except KeyboardInterrupt:
-        log("Watcher corsi interrotto dall'utente.")
-
-
 def print_status():
     """Visualizza lo stato dei file processati."""
     state = load_state()
@@ -762,9 +748,8 @@ def print_status():
 
 
 def main():
-    parser = argparse.ArgumentParser(description="University Course Auto-Sync Engine per loackyPKM")
-    parser.add_argument("--scan", action="store_true", help="Scansiona le cartelle e processa nuovi file")
-    parser.add_argument("--watch", action="store_true", help="Esegui come demone watcher in background")
+    parser = argparse.ArgumentParser(description="University Course Sync Engine per loackyPKM")
+    parser.add_argument("--scan", action="store_true", help="Scansiona le cartelle e processa nuovi file su richiesta")
     parser.add_argument("--seed", action="store_true", help="Contrassegna tutti i file attuali come già processati")
     parser.add_argument("--status", action="store_true", help="Mostra lo stato dei file sincronizzati")
     parser.add_argument("--file", type=str, help="Processa un file specifico")
@@ -787,12 +772,10 @@ def main():
             process_prog_file(p)
         else:
             log(f"Percorso non riconosciuto per alcun corso noto: {p}")
-    elif args.watch:
-        watch_courses()
     elif args.scan:
         scan_courses(force=args.force)
     else:
-        scan_courses(force=args.force)
+        print_status()
 
 
 if __name__ == "__main__":

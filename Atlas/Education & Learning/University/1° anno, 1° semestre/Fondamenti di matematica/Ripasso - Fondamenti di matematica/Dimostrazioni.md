@@ -2,12 +2,12 @@
 status: permanent
 type: summary
 area: education
-related: ["[[Lezione 1 - Logica delle Proposizioni e dei Predicati]]", "[[Lezione 2 - Teoria Assiomatica degli Insiemi]]", "[[Lezione 3 - Relazioni e Funzioni I]]", "[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lezione 5 - i Numeri Reali e Assioma di Completezza]]", "[[Lezione 6 - Valore Assoluto e Numeri Naturali]]", "[[Lezione 7 - Insiemi Numerici N Z e Q]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]", "[[Lezione 9 - Funzioni Reali ed Estremi]]", "[[Lezione 10 - Funzioni Reali II e Funzioni Elementari I]]", "[[Lezione 11 - Funzioni Reali Elementari II]]", "[[Lezione 12 - Limiti I Retta Reale Ampliata e Definizione]]", "[[Lezione 13 - Limiti II Restrizioni Limiti Laterali e Successioni]]", "[[Lezione 14 - Limiti di Successioni e Proprieta Locali]]", "[[Lezione 15 - 15 Proprietà dei limiti]]", "[[Assiomi, proposizioni ecc...]]", "[[University]]"]
+related: ["[[Lezione 1 - Logica delle Proposizioni e dei Predicati]]", "[[Lezione 2 - Teoria Assiomatica degli Insiemi]]", "[[Lezione 3 - Relazioni e Funzioni I]]", "[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lezione 5 - i Numeri Reali e Assioma di Completezza]]", "[[Lezione 6 - Valore Assoluto e Numeri Naturali]]", "[[Lezione 7 - Insiemi Numerici N Z e Q]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]", "[[Lezione 9 - Funzioni Reali ed Estremi]]", "[[Lezione 10 - Funzioni Reali II e Funzioni Elementari I]]", "[[Lezione 11 - Funzioni Reali Elementari II]]", "[[Lezione 12 - Limiti I Retta Reale Ampliata e Definizione]]", "[[Lezione 13 - Limiti II Restrizioni Limiti Laterali e Successioni]]", "[[Lezione 14 - Limiti di Successioni e Proprieta Locali]]", "[[Lezione 15 - Proprieta dei Limiti]]", "[[Assiomi, proposizioni ecc...]]", "[[University]]"]
 aliases: ["Dimostrazioni", "Dimostrazioni Fondamenti di Matematica", "Raccolta Dimostrazioni Lezioni 1-15"]
 source: ["Lezione 1.pdf", "Lezione 2.pdf", "Lezione 3.pdf", "Lezione 4.pdf", "Lezione 5.pdf", "Lezione 6.pdf", "Lezione 7.pdf", "Lezione 8.pdf", "Lezione 9.pdf", "Lezione 10.pdf", "Lezione 11.pdf", "Lezione 12.pdf", "Lezione 13.pdf", "Lezione 14.pdf", "Lezione 15.pdf"]
 title: "Dimostrazioni"
 date: '2026-10-15'
-updated: '2026-10-20T20:22'
+updated: '2026-10-20T20:42'
 tags: [education/university, education/matematica, education/dimostrazioni]
 summary: "Compendio integrale e rigoroso di tutte le dimostrazioni matematiche svolte nel corso di Fondamenti di Matematica dalla Lezione 1 alla Lezione 15."
 ---
@@ -916,1128 +916,215 @@ $$\lim_{x \to x_0} \left(\frac{f}{g}\right)(x) = \lim_{x \to x_0} \left(f(x) \cd
 
 ---
 
-## Lezione 15 - 15: Proprietà dei limiti
+## Lezione 15: Proprietà dei Limiti
 
-### Dimostrazione .: Per ipotesiℓ,m\in  R eℓ>m . Possiamo sicuramente scegliere due intorniV1
-> [!IMPORTANT] Enunciato
-> e V2, rispettivamente diℓ e m in modo che
-V1∩V2 =∅ e V1\ge V2 (sono separati).
-In altre termini si ha
-\forall y1\in V1,∀y2\in V2 : y1 >y 2. (1)
-Allora, dato che per ipotesif (x)→\ell e g(x)→m per x\to x0, si deve avere
-f (x)∈V1 in un intorno dix0 e g(x)∈V2 in un intorno dix0.
-Allora risulta che
-f (x)∈V1 e g(x)∈V2 simultaneamente in un intorno dix0
-e quindi, per la (1), che
-f (x)>g (x) in un intorno dix0.
-Osservazione 2.2. Il teorema precedente afferma che
-\ell>m \implies f (x)>g (x) in un intorno dix0.
-Notiamo invece che
-\ell\ge m ̸⇒ f (x)≥g(x) in un intorno dix0.
-In particolare può accadere cheℓ = m senza che sia necessariamentef (x)≤ g(x) o g(x)≤
-f (x) in un intorno dix0. Per example si può prenderef (x) = x e g(x) =−x e x0 = 0.
+### Esempio 1.1: Limiti di Monomi, Polinomi e Funzioni Razionali
+>[!important] Enunciato
+>1. **(Monomio):** Siano $a \in \mathbb{R}$, $n \in \mathbb{N}$ e $x_0 \in \mathbb{R}$. Allora:
+>$$\lim_{x \to x_0} a x^n = a x_0^n$$
+>2. **(Polinomio):** Per ogni funzione polinomiale $P: \mathbb{R} \to \mathbb{R}$, $P(x) = a_n x^n + a_{n-1} x^{n-1} + \dots + a_1 x + a_0$ con $a_k \in \mathbb{R}$ ($k = 0, \dots, n$), e per ogni $x_0 \in \mathbb{R}$, vale:
+>$$\lim_{x \to x_0} P(x) = a_n x_0^n + a_{n-1} x_0^{n-1} + \dots + a_1 x_0 + a_0 = P(x_0)$$
+>3. **(Funzione Razionale):** Siano $P(x)$ e $Q(x)$ due polinomi e sia $f: A \to \mathbb{R}$, $f(x) = \frac{P(x)}{Q(x)}$ definita su $A = \mathbb{R} \setminus \{x_1, \dots, x_m\}$, dove $x_i$ sono gli zeri di $Q(x)$. Per ogni $x_0 \in A$:
+>$$\lim_{x \to x_0} \frac{P(x)}{Q(x)} = \frac{P(x_0)}{Q(x_0)}$$
 
 **Dimostrazione:**
-e V2, rispettivamente diℓ e m in modo che
-V1∩V2 =∅ e V1\ge V2 (sono separati).
-In altre termini si ha
-\forall y1\in V1,∀y2\in V2 : y1 >y 2. (1)
-Allora, dato che per ipotesif (x)→\ell e g(x)→m per x\to x0, si deve avere
-f (x)∈V1 in un intorno dix0 e g(x)∈V2 in un intorno dix0.
-Allora risulta che
-f (x)∈V1 e g(x)∈V2 simultaneamente in un intorno dix0
-e quindi, per la (1), che
-f (x)>g (x) in un intorno dix0.
-Osservazione 2.2. Il teorema precedente afferma che
-\ell>m \implies f (x)>g (x) in un intorno dix0.
-Notiamo invece che
-\ell\ge m ̸⇒ f (x)≥g(x) in un intorno dix0.
-In particolare può accadere cheℓ = m senza che sia necessariamentef (x)≤ g(x) o g(x)≤
-f (x) in un intorno dix0. Per example si può prenderef (x) = x e g(x) =−x e x0 = 0.
+- **1. Monomio (per induzione su $n \in \mathbb{N}$):**
+  - *Base induttiva ($n = 0$):* La tesi è vera perché la funzione $x \mapsto a x^0 = a$ è costante, e il limite di una costante è la costante stessa: $\lim_{x \to x_0} a x^0 = a = a x_0^0$.
+  - *Passo induttivo ($n \implies n + 1$):* Supponiamo che la tesi sia vera per $n$, ossia $\lim_{x \to x_0} a x^n = a x_0^n$. Poiché:
+$$a x^{n+1} = (a x^n) \cdot x$$
+  ed essendo $\lim_{x \to x_0} x = x_0$, dal Teorema sul prodotto dei limiti segue:
+$$\lim_{x \to x_0} a x^{n+1} = \left(\lim_{x \to x_0} a x^n\right) \left(\lim_{x \to x_0} x\right) = a x_0^n \cdot x_0 = a x_0^{n+1}$$
+- **2. Polinomio:** Poiché $P(x) = \sum_{k=0}^n a_k x^k$ è una somma finita di monomi del tipo considerato al punto (1), applicando il Teorema sulla somma dei limiti si ottiene $\lim_{x \to x_0} P(x) = \sum_{k=0}^n a_k x_0^k = P(x_0)$.
+- **3. Funzione Razionale:** Se $x_0 \in A = \mathbb{R} \setminus \{x_1, \dots, x_m\}$, dal punto (2) segue che $\lim_{x \to x_0} P(x) = P(x_0)$ e $\lim_{x \to x_0} Q(x) = Q(x_0) \ne 0$. Applicando il Teorema sul limite del rapporto si ha:
+$$\lim_{x \to x_0} \frac{P(x)}{Q(x)} = \frac{P(x_0)}{Q(x_0)} \quad \blacksquare$$
 
-$$\blacksquare$$
-
-### Dimostrazione .: Consegue dal teorema precedente se si sceglieg≡\lambda.
-> [!IMPORTANT] Enunciato
-> 
+### Teorema 2.1: Teorema della Permanenza delle Disuguaglianze
+>[!important] Enunciato
+>Sia $A \subset \mathbb{R}$ e sia $x_0 \in \overline{\mathbb{R}}$ un punto di accumulazione per $A$ in $\overline{\mathbb{R}}$. Siano $f: A \to \mathbb{R}$ e $g: A \to \mathbb{R}$ due funzioni e supponiamo che:
+>$$\lim_{x \to x_0} f(x) = \ell \in \overline{\mathbb{R}} \quad \text{e} \quad \lim_{x \to x_0} g(x) = m \in \overline{\mathbb{R}}$$
+>Allora:
+>$$\ell > m \implies f(x) > g(x) \text{ in un intorno di } x_0$$
 
 **Dimostrazione:**
+Per ipotesi $\ell, m \in \overline{\mathbb{R}}$ e $\ell > m$. Per la proprietà di separazione di $\overline{\mathbb{R}}$, possiamo scegliere due intorni $V_1 \in \mathcal{U}(\ell)$ e $V_2 \in \mathcal{U}(m)$, rispettivamente di $\ell$ e $m$, in modo che siano disgiunti e separati:
+$$V_1 \cap V_2 = \emptyset \quad \text{e} \quad V_1 \ge V_2 \quad \text{(sono separati)}$$
+In altri termini, vale la relazione d'ordine stretta tra ogni coppia di elementi dei due intorni:
+$$\forall y_1 \in V_1, \, \forall y_2 \in V_2 : \quad y_1 > y_2 \tag{1}$$
+Poiché per ipotesi $f(x) \to \ell$ e $g(x) \to m$ per $x \to x_0$, per la definizione topologica di limite si deve avere:
+$$f(x) \in V_1 \text{ in un intorno di } x_0 \quad \text{e} \quad g(x) \in V_2 \text{ in un intorno di } x_0$$
+Per la proprietà di intersezione di due proprietà locali (Proposizione 3.3 della Lezione 14), risulta che:
+$$f(x) \in V_1 \quad \text{e} \quad g(x) \in V_2 \quad \text{simultaneamente in un intorno di } x_0$$
+Di conseguenza, applicando la $(1)$ con $y_1 = f(x)$ e $y_2 = g(x)$, si conclude che:
+$$f(x) > g(x) \text{ in un intorno di } x_0 \quad \blacksquare$$
 
-
-$$\blacksquare$$
-
-### Dimostrazione .: Consegue dal teorema precedente conλ = 0.
-> [!IMPORTANT] Enunciato
-> 
-
-**Dimostrazione:**
-
-
-$$\blacksquare$$
-
-### Dimostrazione .: Supponiamo che f (x)≤ g(x) in un intorno dix0. La dimostrazione procede per assurdo. Se fosse \ell > m, per il teorema della permanenza delle disuguaglianze
-> [!IMPORTANT] Enunciato
-> (Teorema 2.1) si avrebbe
-f (x)>g (x) in un intorno dix0.
-Ma stiamo supponendo chef (x)≤ g(x) in un intorno dix0 e quindi (prendendo come al
-solito l’intersezione degli intorni) si arriverebbe a
-f (x)≤g(x) e f (x)>g (x) simultaneamente in un intorno dix0.
-E questo produce una contraddizione, dato che un numero reale non può essere simultaneamente minore o uguale e strettamente maggiore di un altro numero reale.
-Osservazione 2.6. Notiamo che
-f (x)<g (x) in un intorno dix0 ̸⇒ \ell<m.
-Quindi si prolunga la disuguaglianza “≤” ma non la “<”. Per example risulta
-\forall x\in  ]− 1, 1[\{0} : x2 <|x|,
-ma lim
-x\to 0
-x2 = 0 = lim
-x\to 0
-|x|.
-Figura 1: In Italia il Teorema 2.7 è comunemente chiamatoTeorema dei carabinieri.
+### Corollario 2.3: Confronto Locale con una Costante
+>[!important] Enunciato
+>Sia $A \subset \mathbb{R}$ e sia $x_0 \in \overline{\mathbb{R}}$ un punto di accumulazione per $A$ in $\overline{\mathbb{R}}$. Siano $f: A \to \mathbb{R}$ e $\lambda \in \mathbb{R}$ e supponiamo che $\lim_{x \to x_0} f(x) = \ell \in \overline{\mathbb{R}}$. Allora:
+>$$\ell > \lambda \text{ (risp. } \ell < \lambda\text{)} \implies f(x) > \lambda \text{ (risp. } f(x) < \lambda\text{) in un intorno di } x_0$$
 
 **Dimostrazione:**
-(Teorema 2.1) si avrebbe
-f (x)>g (x) in un intorno dix0.
-Ma stiamo supponendo chef (x)≤ g(x) in un intorno dix0 e quindi (prendendo come al
-solito l’intersezione degli intorni) si arriverebbe a
-f (x)≤g(x) e f (x)>g (x) simultaneamente in un intorno dix0.
-E questo produce una contraddizione, dato che un numero reale non può essere simultaneamente minore o uguale e strettamente maggiore di un altro numero reale.
-Osservazione 2.6. Notiamo che
-f (x)<g (x) in un intorno dix0 ̸⇒ \ell<m.
-Quindi si prolunga la disuguaglianza “≤” ma non la “<”. Per example risulta
-\forall x\in  ]− 1, 1[\{0} : x2 <|x|,
-ma lim
-x\to 0
-x2 = 0 = lim
-x\to 0
-|x|.
-Figura 1: In Italia il Teorema 2.7 è comunemente chiamatoTeorema dei carabinieri.
+Consegue direttamente dal Teorema 2.1 (della permanenza delle disuguaglianze) scegliendo come seconda funzione la funzione costante $g(x) \equiv \lambda$, il cui limite per $x \to x_0$ è $m = \lambda$. $\blacksquare$
 
-$$\blacksquare$$
-
-### Dimostrazione .: Sia V un intorno diℓ. Si deve provare cheg(x)∈ V in un intorno dix0.
-> [!IMPORTANT] Enunciato
-> Osserviamo preliminarmente che, essendoV un intervallo diR, vale che
-y1,y 2\in V e y1\le y2 \implies  [y1,y 2]⊂V. (2)
-Iniziamo ora la dimostrazione. Dall’ipotesi b) si ha
-f (x)∈V in un intorno dix0 e h(x)∈V in un intorno dix0.
-Inoltre, per l’ipotesi a), si ha anche che
-f (x)≤g(x)≤h(x) in un intorno dix0.
-Perciò, possiamo affermare che
-
-
-
-f (x)∈V
-h(x)∈V
-f (x)≤g(x)≤h(x)
-sono simultaneamente vere in un intorno dix0.
-Allora, ricordando la (2), si può concludere cheg(x)∈V in un intorno dix0.
-Osservazione 2.8. Nel Teorema 2.7 seℓ = +∞ si può fare a meno della funzioneh (basta
-un solo carabiniere!), cioè è sufficiente chiedere che
-• f (x)≤g(x) in un intorno dix0.
-Infatti seV = ]β, +∞] è un intorno di+∞, allora
-f (x)∈ ]β, +∞] in un intorno dix0.
-Quindi (
-f (x)≤g(x)
-f (x)∈ ]β, +∞] simultaneamente in un intorno dix0.
-Ma allora si hag(x)∈V in un intorno dix0. Allo stesso modo si vede che se nel Teorema 2.7,
-\ell =−∞, si può fare a meno dif e si può chiedere soltanto che
-• g(x)≤h(x) in un intorno dix0.
+### Corollario 2.4: Teorema della Permanenza del Segno
+>[!important] Enunciato
+>Sia $A \subset \mathbb{R}$ e $f: A \to \mathbb{R}$. Sia $x_0 \in \overline{\mathbb{R}}$ un punto di accumulazione per $A$. Supponiamo che $\lim_{x \to x_0} f(x) = \ell \in \overline{\mathbb{R}}$. Allora:
+>$$\ell > 0 \text{ (risp. } \ell < 0\text{)} \implies f(x) > 0 \text{ (risp. } f(x) < 0\text{) in un intorno di } x_0$$
 
 **Dimostrazione:**
-Osserviamo preliminarmente che, essendoV un intervallo diR, vale che
-y1,y 2\in V e y1\le y2 \implies  [y1,y 2]⊂V. (2)
-Iniziamo ora la dimostrazione. Dall’ipotesi b) si ha
-f (x)∈V in un intorno dix0 e h(x)∈V in un intorno dix0.
-Inoltre, per l’ipotesi a), si ha anche che
-f (x)≤g(x)≤h(x) in un intorno dix0.
-Perciò, possiamo affermare che
-
-
-
-f (x)∈V
-h(x)∈V
-f (x)≤g(x)≤h(x)
-sono simultaneamente vere in un intorno dix0.
-Allora, ricordando la (2), si può concludere cheg(x)∈V in un intorno dix0.
-Osservazione 2.8. Nel Teorema 2.7 seℓ = +∞ si può fare a meno della funzioneh (basta
-un solo carabiniere!), cioè è sufficiente chiedere che
-• f (x)≤g(x) in un intorno dix0.
-Infatti seV = ]β, +∞] è un intorno di+∞, allora
-f (x)∈ ]β, +∞] in un intorno dix0.
-Quindi (
-f (x)≤g(x)
-f (x)∈ ]β, +∞] simultaneamente in un intorno dix0.
-Ma allora si hag(x)∈V in un intorno dix0. Allo stesso modo si vede che se nel Teorema 2.7,
-\ell =−∞, si può fare a meno dif e si può chiedere soltanto che
-• g(x)≤h(x) in un intorno dix0.
+Consegue immediatamente dal Corollario 2.3 ponendo $\lambda = 0$. $\blacksquare$
 
-$$\blacksquare$$
-
-### Dimostrazione .: Supponiamo che limx\to x0g(x) = 0. Evidentemente si ha
-> [!IMPORTANT] Enunciato
-> −g(x)≤f (x)≤g(x) in un intorno dix0.
-Perciò, essendo anchelimx\to x0−g(x) = 0, dal Teorema 2.7 seguelimx\to x0f (x) = 0.
-Esempio 2.10. Proviamo che
-lim
-x\to 0
-senx = 0, lim
-x\to 0
-cosx = 1, e lim
-x\to 0
-senx
-x = 1. (3)
-A tal fine si nota prima di tutto che vale
-\forall x\in  ]0,π/ 2[: sen x<x< tgx = senx
-cosx. (4)
-Queste disuguaglianze sono giustificate in Figura 16.2 con un ragionamento geometrico.
-Adesso dalla prima disuguaglianza di (4), tenendo conto chesenx è una funzione dispari, si
-ha
-x\in  ]−π/2, 0[⇒ −x\in  ]0,π/ 2[⇒ sen(−x)<−x \implies  −senx|{z}
-<0
-<− x|{z}
-<0
-\implies  |senx|<|x|.
-Perciò, dato chesenx è positivo perx\in  ]0,π/ 2[, si ha
-\forall x\in  ]−π/2,π/ 2[\{0} : | senx|<|x|. (5)
-Figura 2: Circonferenza trigonometrica (di raggio 1). Giustificazione della disuguaglianza
-sen(x) < x <tg(x), valida per ognix\in  ]0,π/ 2[. Tenendo conto che il segmentoOA ha
-lunghezza 1, si riconosce che l’area del triangolo OAB è (senx)/2 (senx è l’altezza del
-triangolo), l’area del settore circolareOAB è x/2 e l’area del triangoloOAC è tg(x)/2. La
-tesi segue quindi dal fatto che il triangoloOAB è contenuto nel settore circolareOAB che
-a sua volta è contenuto nel triangoloOAC.
-Allora, essendo limx\to 0|x| = 0, dal corollario 2.9 segue chelimx\to 0 senx = 0 e la prima di (3)
-è provata. Per quanto riguarda la seconda, ricordiamo la formula di duplicazione del coseno
-cos 2α = 1− 2 sen2α, da cui segue che
-cosx = 1− 2 sen2x
-2.
-Consideriamo quindi il terminesen2(x/2). Dalla (5) si ottiene
-\forall x\in  ]−π,π [\{0} : sen 2x
-2 =
-
-
-
-senx
-
-
-
-
-<
-
-
-
-x
-
-
-
-
-= x2
-4 .
-Perciò, essendolimx\to 0x2/4 = 0, ancoradalcorollario2.9otteniamoche limx\to 0 sen2(x/2) = 0
-e quindi per il Teorema sulle operazioni sui limiti
-cosx = 1− 2 sen2x
-2| {z }
-↓ 0
-\to  1− 2· 0 = 1 per x\to  0.
-Infine proviamo l’ultimo limite (notevole) in (3). Notiamo preliminarmente che per quanto
-già provato, si ha
-\to  0
-z}|{senx
-x|{z}
-\to  0
-per x\to  0.
-Si tratta perciò di una forma indeterminata(0/0). Proviamo quindi che il limite del rapporto
-esiste e vale1. Dalla (4), segue (dividendo persenx e facendo i reciproci)
-\forall x\in  ]0,π/ 2[: 1 < x
-senx < 1
-cosx \implies  cosx< senx
-x < 1.
-Adesso, ricordando che il coseno è pari e il seno è dispari si ha
-x\in  ]−π/2, 0[⇒ −x\in  ]0,π/ 2[⇒ cos(−x)< sen(−x)
-−x =− senx
-−x < 1 \implies  cosx< senx
-x < 1.
-In definitiva risulta
-\forall x\in  ]−π/2,π/ 2[\{0} : cos x< senx
-x < 1.
-Allora, per quanto già provato (cosx\to  1 per x\to  0), dal teorema dei carabinieri segue che
-lim
-x\to 0
-senx
-x = 1.
-Esercizio 2.11. Verificare mediante la definizione di limite che
-lim
-x\to +∞
-ax +b =
-(
-+∞ se a> 0
-−∞ se a< 0 e lim
-x\to −∞
-ax +b =
-(
-−∞ se a> 0
-+∞ se a< 0.
-Esempio 2.12. Sia n\in  N con n\ge  1. Allora
-lim
-x\to +∞
-xn = +∞ e lim
-x\to −∞
-xn =
-(
-+∞ se n è pari
-−∞ se n è dispari.
-Infatti, dalla disuguaglianza di Bernoulli, segue che
-\forall x\in  R+ : xn = (1 + x− 1)n\ge  1 +n(x− 1)
-o in altri termini
-xn\ge  1 +n(x− 1) in un intorno di+∞.
-Dato chelimx\to +∞ 1 +n(x− 1) = +∞ (si veda l’Esercizio 2.11), allora per l’Osservazione 2.8,
-si halimx\to +∞xn = +∞. Vediamo il casox\to −∞ . Sen è pari, sempre dalla disuguaglianza
-di Bernoulli, si ha
-\forall x\in  R− : xn = (−x)n\ge  1 +n(−x− 1) = 1−n(x + 1),
-cioè
-xn\ge  1−n(x + 1) in un intorno di−∞.
-Allora, dato chelimx\to −∞ 1−n(x + 1) = +∞ (vedi Esercizio 2.11), sempre dall’Osservazione 2.8 segue chelimx\to −∞xn = +∞. Sen è dispari, si ha
-\forall x\in  R− : −xn = (−x)n\ge  1 +n(−x− 1) = 1−n(x + 1),
-cioè
-xn\le − 1 +n(x + 1) in un intorno di−∞.
-Come prima, dato chelimx\to −∞−1 +n(x + 1) =−∞ (vedi Esercizio 2.11), l’Osservazione 2.8
-implica che limx\to −∞xn =−∞.
+### Corollario 2.5: Teorema di Prolungamento delle Disuguaglianze
+>[!important] Enunciato
+>Sia $A \subset \mathbb{R}$ e sia $x_0 \in \overline{\mathbb{R}}$ un punto di accumulazione per $A$ in $\overline{\mathbb{R}}$. Siano $f: A \to \mathbb{R}$ e $g: A \to \mathbb{R}$ due funzioni e supponiamo che $\lim_{x \to x_0} f(x) = \ell \in \overline{\mathbb{R}}$ e $\lim_{x \to x_0} g(x) = m \in \overline{\mathbb{R}}$. Allora:
+>$$f(x) \le g(x) \text{ in un intorno di } x_0 \implies \ell \le m$$
 
 **Dimostrazione:**
-−g(x)≤f (x)≤g(x) in un intorno dix0.
-Perciò, essendo anchelimx\to x0−g(x) = 0, dal Teorema 2.7 seguelimx\to x0f (x) = 0.
-Esempio 2.10. Proviamo che
-lim
-x\to 0
-senx = 0, lim
-x\to 0
-cosx = 1, e lim
-x\to 0
-senx
-x = 1. (3)
-A tal fine si nota prima di tutto che vale
-\forall x\in  ]0,π/ 2[: sen x<x< tgx = senx
-cosx. (4)
-Queste disuguaglianze sono giustificate in Figura 16.2 con un ragionamento geometrico.
-Adesso dalla prima disuguaglianza di (4), tenendo conto chesenx è una funzione dispari, si
-ha
-x\in  ]−π/2, 0[⇒ −x\in  ]0,π/ 2[⇒ sen(−x)<−x \implies  −senx|{z}
-<0
-<− x|{z}
-<0
-\implies  |senx|<|x|.
-Perciò, dato chesenx è positivo perx\in  ]0,π/ 2[, si ha
-\forall x\in  ]−π/2,π/ 2[\{0} : | senx|<|x|. (5)
-Figura 2: Circonferenza trigonometrica (di raggio 1). Giustificazione della disuguaglianza
-sen(x) < x <tg(x), valida per ognix\in  ]0,π/ 2[. Tenendo conto che il segmentoOA ha
-lunghezza 1, si riconosce che l’area del triangolo OAB è (senx)/2 (senx è l’altezza del
-triangolo), l’area del settore circolareOAB è x/2 e l’area del triangoloOAC è tg(x)/2. La
-tesi segue quindi dal fatto che il triangoloOAB è contenuto nel settore circolareOAB che
-a sua volta è contenuto nel triangoloOAC.
-Allora, essendo limx\to 0|x| = 0, dal corollario 2.9 segue chelimx\to 0 senx = 0 e la prima di (3)
-è provata. Per quanto riguarda la seconda, ricordiamo la formula di duplicazione del coseno
-cos 2α = 1− 2 sen2α, da cui segue che
-cosx = 1− 2 sen2x
-2.
-Consideriamo quindi il terminesen2(x/2). Dalla (5) si ottiene
-\forall x\in  ]−π,π [\{0} : sen 2x
-2 =
+Supponiamo che $f(x) \le g(x)$ in un intorno di $x_0$. La dimostrazione procede **per assurdo**: supponiamo che la tesi sia falsa, ovvero che sia $\ell > m$.
+Per il Teorema della permanenza delle disuguaglianze (Teorema 2.1), da $\ell > m$ si avrebbe:
+$$f(x) > g(x) \text{ in un intorno di } x_0$$
+Ma per ipotesi stiamo supponendo che $f(x) \le g(x)$ in un intorno di $x_0$; prendendo l'intersezione dei due intorni si arriverebbe a:
+$$f(x) \le g(x) \quad \text{e} \quad f(x) > g(x) \quad \text{simultaneamente in un intorno di } x_0$$
+Questo produce una contraddizione, dato che un numero reale non può essere simultaneamente minore o uguale e strettamente maggiore di un altro numero reale. Pertanto deve necessariamente valere $\ell \le m$. $\blacksquare$
 
-
-
-senx
-
-
-
-
-<
-
-
-
-x
-
-
-
-
-= x2
-4 .
-Perciò, essendolimx\to 0x2/4 = 0, ancoradalcorollario2.9otteniamoche limx\to 0 sen2(x/2) = 0
-e quindi per il Teorema sulle operazioni sui limiti
-cosx = 1− 2 sen2x
-2| {z }
-↓ 0
-\to  1− 2· 0 = 1 per x\to  0.
-Infine proviamo l’ultimo limite (notevole) in (3). Notiamo preliminarmente che per quanto
-già provato, si ha
-\to  0
-z}|{senx
-x|{z}
-\to  0
-per x\to  0.
-Si tratta perciò di una forma indeterminata(0/0). Proviamo quindi che il limite del rapporto
-esiste e vale1. Dalla (4), segue (dividendo persenx e facendo i reciproci)
-\forall x\in  ]0,π/ 2[: 1 < x
-senx < 1
-cosx \implies  cosx< senx
-x < 1.
-Adesso, ricordando che il coseno è pari e il seno è dispari si ha
-x\in  ]−π/2, 0[⇒ −x\in  ]0,π/ 2[⇒ cos(−x)< sen(−x)
-−x =− senx
-−x < 1 \implies  cosx< senx
-x < 1.
-In definitiva risulta
-\forall x\in  ]−π/2,π/ 2[\{0} : cos x< senx
-x < 1.
-Allora, per quanto già provato (cosx\to  1 per x\to  0), dal teorema dei carabinieri segue che
-lim
-x\to 0
-senx
-x = 1.
-Esercizio 2.11. Verificare mediante la definizione di limite che
-lim
-x\to +∞
-ax +b =
-(
-+∞ se a> 0
-−∞ se a< 0 e lim
-x\to −∞
-ax +b =
-(
-−∞ se a> 0
-+∞ se a< 0.
-Esempio 2.12. Sia n\in  N con n\ge  1. Allora
-lim
-x\to +∞
-xn = +∞ e lim
-x\to −∞
-xn =
-(
-+∞ se n è pari
-−∞ se n è dispari.
-Infatti, dalla disuguaglianza di Bernoulli, segue che
-\forall x\in  R+ : xn = (1 + x− 1)n\ge  1 +n(x− 1)
-o in altri termini
-xn\ge  1 +n(x− 1) in un intorno di+∞.
-Dato chelimx\to +∞ 1 +n(x− 1) = +∞ (si veda l’Esercizio 2.11), allora per l’Osservazione 2.8,
-si halimx\to +∞xn = +∞. Vediamo il casox\to −∞ . Sen è pari, sempre dalla disuguaglianza
-di Bernoulli, si ha
-\forall x\in  R− : xn = (−x)n\ge  1 +n(−x− 1) = 1−n(x + 1),
-cioè
-xn\ge  1−n(x + 1) in un intorno di−∞.
-Allora, dato chelimx\to −∞ 1−n(x + 1) = +∞ (vedi Esercizio 2.11), sempre dall’Osservazione 2.8 segue chelimx\to −∞xn = +∞. Sen è dispari, si ha
-\forall x\in  R− : −xn = (−x)n\ge  1 +n(−x− 1) = 1−n(x + 1),
-cioè
-xn\le − 1 +n(x + 1) in un intorno di−∞.
-Come prima, dato chelimx\to −∞−1 +n(x + 1) =−∞ (vedi Esercizio 2.11), l’Osservazione 2.8
-implica che limx\to −∞xn =−∞.
-
-$$\blacksquare$$
-
-### Dimostrazione .: Per ipotesi, esisteC >0 tale che
-> [!IMPORTANT] Enunciato
-> |g(x)|≤ C in un intorno dix0
-e quindi
-|f (x)g(x)|≤ C|f (x)| in un intorno dix0.
-Alloradatoche limx\to x0C|f (x)| =C·0 = 0, dalcorollario2.9, siha limx\to x0f (x)g(x) = 0.
-Esempio 2.14. Abbiamo visto chelim
-x\to 0
-x2 = 0. Allora dal corollario 2.13 si ha che
-lim
-x\to 0
-x2 sen 1
-x = 0,
-perché la funzionesen(1/x) è limitata.
-Domande di autovalutazione.
-1. Quale delle seguenti corrisponde alla definizione dilimx\to −2f (x) =−4?
-1.∀\delta >0\exists \varepsilon> 0 tale che\forall x\in  R : 0 <|x + 2|<\delta \implies |f (x) + 4|<\varepsilon .
-2.∀\varepsilon> 0\exists \delta >0 tale che\forall x\in  R : 0 <|x + 2|<\delta \implies |f (x) + 4|<\varepsilon .
-3.∀\varepsilon> 0\exists \delta >0 tale che\forall x\in  R : 0 <|x− 2|<\delta \implies |f (x)− 4|<\varepsilon .
-4.∀\varepsilon> 0\exists \delta >0 and\exists x\in  R tale che 0<|x + 2|<\delta \implies |f (x) + 4|<\varepsilon .
-2. Quale delle seguenti corrisponde alla definizione dilimx\to −∞f (x) = +∞?
-1.∀β >0\exists α> 0 tale che\forall x\in  R : x>α \implies f (x)>β .
-2.∀β >0\exists α> 0 tale che\forall x\in  R : x< −α\implies f (x)<−β.
-3.∀α> 0\exists β >0 tale che\forall x\in  R : x< −α\implies f (x)>β .
-4.∀β >0\exists α> 0 tale che\forall x\in  R : x< −α\implies f (x)>β .
-3. Se limx\to 2f (x) = 5, quale delle seguenti è vera?
-1. f (x)> 2 nell’intervallo ]1, 3[
-2. f (x)> 4.99 in un intorno di2
-3. f (x) = 5 in un intorno di2
-4. nessuna delle precedenti
-2.1 Operazioni con i limiti in R
+### Teorema 2.7: Teorema del Confronto (o della Convergenza Obbligata o dei Carabinieri)
+>[!important] Enunciato
+>Sia $A \subset \mathbb{R}$ e sia $x_0 \in \overline{\mathbb{R}}$ un punto di accumulazione per $A$ in $\overline{\mathbb{R}}$. Siano $f, g, h: A \to \mathbb{R}$ tre funzioni definite in $A$ a valori in $\mathbb{R}$ e supponiamo che:
+>1. $f(x) \le g(x) \le h(x)$ in un intorno di $x_0$;
+>2. $\lim_{x \to x_0} f(x) = \ell$ e $\lim_{x \to x_0} h(x) = \ell$, con $\ell \in \overline{\mathbb{R}}$.
+>
+>Allora:
+>$$\lim_{x \to x_0} g(x) = \ell$$
 
 **Dimostrazione:**
-|g(x)|≤ C in un intorno dix0
-e quindi
-|f (x)g(x)|≤ C|f (x)| in un intorno dix0.
-Alloradatoche limx\to x0C|f (x)| =C·0 = 0, dalcorollario2.9, siha limx\to x0f (x)g(x) = 0.
-Esempio 2.14. Abbiamo visto chelim
-x\to 0
-x2 = 0. Allora dal corollario 2.13 si ha che
-lim
-x\to 0
-x2 sen 1
-x = 0,
-perché la funzionesen(1/x) è limitata.
-Domande di autovalutazione.
-1. Quale delle seguenti corrisponde alla definizione dilimx\to −2f (x) =−4?
-1.∀\delta >0\exists \varepsilon> 0 tale che\forall x\in  R : 0 <|x + 2|<\delta \implies |f (x) + 4|<\varepsilon .
-2.∀\varepsilon> 0\exists \delta >0 tale che\forall x\in  R : 0 <|x + 2|<\delta \implies |f (x) + 4|<\varepsilon .
-3.∀\varepsilon> 0\exists \delta >0 tale che\forall x\in  R : 0 <|x− 2|<\delta \implies |f (x)− 4|<\varepsilon .
-4.∀\varepsilon> 0\exists \delta >0 and\exists x\in  R tale che 0<|x + 2|<\delta \implies |f (x) + 4|<\varepsilon .
-2. Quale delle seguenti corrisponde alla definizione dilimx\to −∞f (x) = +∞?
-1.∀β >0\exists α> 0 tale che\forall x\in  R : x>α \implies f (x)>β .
-2.∀β >0\exists α> 0 tale che\forall x\in  R : x< −α\implies f (x)<−β.
-3.∀α> 0\exists β >0 tale che\forall x\in  R : x< −α\implies f (x)>β .
-4.∀β >0\exists α> 0 tale che\forall x\in  R : x< −α\implies f (x)>β .
-3. Se limx\to 2f (x) = 5, quale delle seguenti è vera?
-1. f (x)> 2 nell’intervallo ]1, 3[
-2. f (x)> 4.99 in un intorno di2
-3. f (x) = 5 in un intorno di2
-4. nessuna delle precedenti
-2.1 Operazioni con i limiti in R
+Sia $V \in \mathcal{U}(\ell)$ un intorno arbitrario di $\ell$. Dobbiamo provare che $g(x) \in V$ in un intorno di $x_0$.
+Osserviamo preliminarmente che, essendo $V$ un intervallo di $\overline{\mathbb{R}}$, vale la proprietà di convessità:
+$$y_1, y_2 \in V \quad \text{e} \quad y_1 \le y_2 \implies [y_1, y_2] \subset V \tag{2}$$
+Dall'ipotesi (2) segue che:
+$$f(x) \in V \text{ in un intorno di } x_0 \quad \text{e} \quad h(x) \in V \text{ in un intorno di } x_0$$
+Inoltre, per l'ipotesi (1), si ha $f(x) \le g(x) \le h(x)$ in un intorno di $x_0$.
+Perciò, intersecando i tre intorni, possiamo affermare che le tre condizioni:
+$$\begin{cases} f(x) \in V \\ h(x) \in V \\ f(x) \le g(x) \le h(x) \end{cases}$$
+sono simultaneamente vere in un intorno di $x_0$.
+Allora, poiché $g(x) \in [f(x), h(x)]$ con $f(x), h(x) \in V$, ricordando la $(2)$ si conclude che $g(x) \in V$ in un intorno di $x_0$, ossia $\lim_{x \to x_0} g(x) = \ell$.
+- **Caso particolare per $\ell = +\infty$ (Osservazione 2.8):** Basta la sola condizione $f(x) \le g(x)$ in un intorno di $x_0$ con $\lim_{x \to x_0} f(x) = +\infty$. Infatti, se $V = ]\beta, +\infty]$ è un intorno di $+\infty$, allora $f(x) \in ]\beta, +\infty]$ e $f(x) \le g(x)$ valgono simultaneamente in un intorno di $x_0$, implicando $g(x) \in ]\beta, +\infty] = V$. Analogamente, per $\ell = -\infty$, basta $g(x) \le h(x)$ con $h(x) \to -\infty$. $\blacksquare$
 
-$$\blacksquare$$
-
-### Dimostrazione .: Proviamo solo la prima (la seconda si prova in modo simile). Supponiamo
-> [!IMPORTANT] Enunciato
-> che \ell >−∞. Allora si può scegliereλ\in  R con \lambda < ℓe, per il primo corollario del teorema
-della permanenza delle disuguaglianze, si ha che
-\lambda<f (x) in un intorno dix0.
+### Corollario 2.9: Maggiorazione in Valore Assoluto con Funzione Infinitesima
+>[!important] Enunciato
+>Sia $A \subset \mathbb{R}$ e sia $x_0 \in \overline{\mathbb{R}}$ un punto di accumulazione per $A$. Siano $f: A \to \mathbb{R}$ e $g: A \to \mathbb{R}$ due funzioni e supponiamo che:
+>$$|f(x)| \le g(x) \text{ in un intorno di } x_0$$
+>Allora si ha:
+>$$\lim_{x \to x_0} g(x) = 0 \implies \lim_{x \to x_0} f(x) = 0$$
 
 **Dimostrazione:**
-che \ell >−∞. Allora si può scegliereλ\in  R con \lambda < ℓe, per il primo corollario del teorema
-della permanenza delle disuguaglianze, si ha che
-\lambda<f (x) in un intorno dix0.
+Supponiamo che $\lim_{x \to x_0} g(x) = 0$. Dalla proprietà del valore assoluto, la disuguaglianza $|f(x)| \le g(x)$ equivale a:
+$$-g(x) \le f(x) \le g(x) \text{ in un intorno di } x_0$$
+Poiché anche $\lim_{x \to x_0} (-g(x)) = 0$, dal Teorema 2.7 (dei carabinieri) segue immediatamente $\lim_{x \to x_0} f(x) = 0$. $\blacksquare$
 
-$$\blacksquare$$
-
-### Dimostrazione .: Proviamo la (i) soltanto. Siaβ >0. Dobbiamo provare che
-> [!IMPORTANT] Enunciato
-> f (x) +g(x)>β in un intorno dix0.
-Per ipotesi si ha che esisteλ\in  R tale che
-g(x)≥\lambda in un intorno dix0.
-Poi, essendof (x)→ +∞ per x\to  +∞, si può soddisfare la seguente
-f (x)>β −\lambda in un intorno dix0.
-Allora, si ha che
-g(x)≥\lambda e f (x)>β −\lambda sono simultaneamente vere in un intorno dix0
-e quindi sommandole si ha chef (x) +g(x)>β in un intorno dix0.
-Osservazione 2.17. Se limx\to x0f (x) = \ell\in {−∞, +∞} e limx\to x0g(x) = m\in  R, allora dal
+### Esempio 2.10: Limiti Trigonometrici Fondamentali e Limite Notevole $\frac{\sin x}{x}$
+>[!important] Enunciato
+>Valgono i seguenti limiti fondamentali per $x \to 0$:
+>$$\lim_{x \to 0} \sin x = 0, \qquad \lim_{x \to 0} \cos x = 1, \qquad \lim_{x \to 0} \frac{\sin x}{x} = 1$$
 
 **Dimostrazione:**
-f (x) +g(x)>β in un intorno dix0.
-Per ipotesi si ha che esisteλ\in  R tale che
-g(x)≥\lambda in un intorno dix0.
-Poi, essendof (x)→ +∞ per x\to  +∞, si può soddisfare la seguente
-f (x)>β −\lambda in un intorno dix0.
-Allora, si ha che
-g(x)≥\lambda e f (x)>β −\lambda sono simultaneamente vere in un intorno dix0
-e quindi sommandole si ha chef (x) +g(x)>β in un intorno dix0.
-Osservazione 2.17. Se limx\to x0f (x) = \ell\in {−∞, +∞} e limx\to x0g(x) = m\in  R, allora dal
+1. **Disuguaglianza geometrica preliminare:** Sulla circonferenza trigonometrica di centro $O$ e raggio $OA = 1$, per ogni $x \in ]0, \pi/2[$ il triangolo $OAB$ (di area $\frac{\sin x}{2}$) è contenuto nel settore circolare $OAB$ (di area $\frac{x}{2}$), che a sua volta è contenuto nel triangolo rettangolo $OAC$ (di area $\frac{\tan x}{2}$). Moltiplicando per $2$ le aree si ottiene:
+$$\forall x \in ]0, \pi/2[ : \quad \sin x < x < \tan x = \frac{\sin x}{\cos x} \tag{4}$$
+2. **Prova di $\lim_{x \to 0} \sin x = 0$:** Dalla prima disuguaglianza di $(4)$, tenendo conto che $\sin x$ è dispari, per $x \in ]-\pi/2, 0[$ si ha $-x \in ]0, \pi/2[$ e quindi:
+$$\sin(-x) < -x \implies \underbrace{-\sin x}_{< 0} < \underbrace{-x}_{< 0} \implies |\sin x| < |x|$$
+Unendo il caso $x \in ]0, \pi/2[$ (in cui $\sin x > 0$), vale:
+$$\forall x \in ]-\pi/2, \pi/2[ \setminus \{0\} : \quad |\sin x| < |x| \tag{5}$$
+Essendo $\lim_{x \to 0} |x| = 0$, dal Corollario 2.9 segue $\lim_{x \to 0} \sin x = 0$.
+3. **Prova di $\lim_{x \to 0} \cos x = 1$:** Dalla formula di duplicazione del coseno $\cos 2\alpha = 1 - 2\sin^2\alpha$ (con $\alpha = x/2$) segue $\cos x = 1 - 2\sin^2\frac{x}{2}$. Dalla $(5)$ si ottiene:
+$$\forall x \in ]-\pi, \pi[ \setminus \{0\} : \quad 0 \le \sin^2\frac{x}{2} = \left|\sin\frac{x}{2}\right|^2 < \left|\frac{x}{2}\right|^2 = \frac{x^2}{4}$$
+Poiché $\lim_{x \to 0} \frac{x^2}{4} = 0$, dal Corollario 2.9 segue $\lim_{x \to 0} \sin^2\frac{x}{2} = 0$. Per il Teorema sulle operazioni sui limiti:
+$$\lim_{x \to 0} \cos x = \lim_{x \to 0} \left(1 - 2\sin^2\frac{x}{2}\right) = 1 - 2 \cdot 0 = 1$$
+4. **Prova di $\lim_{x \to 0} \frac{\sin x}{x} = 1$:** Il limite si presenta nella forma indeterminata $\frac{0}{0}$. Dalla $(4)$, dividendo per $\sin x > 0$ per ogni $x \in ]0, \pi/2[$ e passando ai reciproci:
+$$\forall x \in ]0, \pi/2[ : \quad 1 < \frac{x}{\sin x} < \frac{1}{\cos x} \implies \cos x < \frac{\sin x}{x} < 1$$
+Poiché $\cos x$ è pari e $\sin x$ è dispari, per ogni $x \in ]-\pi/2, 0[$ si ha $-x \in ]0, \pi/2[$ e dunque:
+$$\cos(-x) < \frac{\sin(-x)}{-x} = \frac{-\sin x}{-x} < 1 \implies \cos x < \frac{\sin x}{x} < 1$$
+In definitiva:
+$$\forall x \in ]-\pi/2, \pi/2[ \setminus \{0\} : \quad \cos x < \frac{\sin x}{x} < 1$$
+Poiché $\lim_{x \to 0} \cos x = 1$ e $\lim_{x \to 0} 1 = 1$, per il Teorema dei carabinieri (Teorema 2.7) segue $\lim_{x \to 0} \frac{\sin x}{x} = 1$. $\blacksquare$
 
-$$\blacksquare$$
-
-### Dimostrazione .: (i): Consideriamo solo il casom\in  ]0, +∞] (l’altro si prova allo stesso modo).
-> [!IMPORTANT] Enunciato
-> Sia β > 0 e siaλ\in  R tale che 0 < \lambda < m. Allora, per il teorema della permanenza delle
-disuguaglianze, risulta che
-g(x)>\lambda in un intorno dix0.
-Poi, dato chelimx\to x0f (x) = +∞, si ha anche che
-f (x)> β
-\lambda in un intorno dix0.
-Allora, entrambe le condizioni sono vere simultaneamente in un intorno di x0 e quindi
-moltiplicando si ha chef (x)g(x)>β in un intorno dix0.
-(ii): Siaε> 0. Dobbiamo provare che
-
-
-
-
-
-f (x)
-
-
-
-
-<\varepsilon in un intorno dix0
-che chiaramente equivale a
-|f (x)|> 1
-\varepsilon in un intorno dix0.
-Allora
-lim
-x\to x0
-f (x) = +∞⇒ f (x)|{z}
->0
-> 1
-\varepsilon in un intorno dix0
-lim
-x\to x0
-f (x) =−∞⇒ f (x)|{z}
-<0
-<− 1
-\varepsilon in un intorno dix0
-\implies −f (x)> 1
-\varepsilon in un intorno dix0.
-Perciò, in ogni caso,|f (x)|> 1/\varepsilon in un intorno dix0.
-(iii): Siaβ >0. Allora per ipotesi
-|f (x)|< 1
-β in un intorno dix0 e f (x)> 0 in un intorno dix0.
-Allora, le due condizioni valgono simultaneamente in un intorno dix0 e quindi si ha
-0<f (x)< 1
-β in un intorno dix0\implies  1
-f (x) >β in un intorno dix0,
-che è quanto si voleva dimostrare.
-Osservazione 2.20. Come conseguenza del Teorema 2.19 possiamo estendere ulteriormente
-l’algebra di R facendo le seguenti convenzioni
-\forall m\in  R\{ 0} : (±∞)m =m(±∞) =
-(
-±∞ se m> 0
-∓∞ se m< 0
-e
-\forall m\in  R : m
-±∞ = 0 e 1
-0± =±∞,
-dove con 0+ (risp. 0−) intendiamo considerare il caso che il limite vale zero e la funzione è
-strettamente positiva (risp. strettamente negativa) in un intorno dix0. In questo modo si
-può dire che sef (x)→\ell\in  R eg(x)→m\in  R e (\ell,m )̸= (±∞, 0) e (\ell,m )̸= (0,±∞), allora
-lim
-x\to x0
-f (x)g(x) = ℓm
-e che seℓ e m non sono entrambi infiniti o entrambi zero allora
-lim
-x\to x0
-f (x)
-g(x) = \ell
-m.
-Anche le forme
-(±∞)· 0 = 0· (±∞), ±∞
-±∞, 0
-0.
-sono dette forme indeterminate.
-2 Esempi di operazioni sui limiti in R
-Esempio 2.1 (Forme indeterminate +∞−∞ ).
-(i) Consideriamo le seguenti coppie di funzioni
-(a) f (x) = 1
-x2, g (x) = x− 1
-x2
-(b) f (x) = 1
-x2, g (x) = 2x2− 1
-x2
-(c) f (x) = 1
-x4, g (x) =− 1
-x2
-(d) f (x) = 1
-x2, g (x) =− 1
-x4.
-Si verifica facilmente che in tutti i casi
-lim
-x\to 0
-f (x) = +∞, lim
-x\to 0
-g(x) =−∞.
-Mentre:
-• nel caso (a),limx\to 0f (x) +g(x) = lim x\to 0
-x non esiste,
-• nel caso (b),limx\to 0f (x) +g(x) = 2,
-• nel caso (c),
-lim
-x\to 0
-f (x) +g(x) = lim
-x\to 0
-1−x2
-x4 = lim
-x\to 0
-(1−x2) lim
-x\to 0
-x4 = 1· (+∞) = +∞
-• nel caso (d),
-lim
-x\to 0
-f (x) +g(x) = lim
-x\to 0
-x2− 1
-x4 = lim
-x\to 0
-(x2− 1) lim
-x\to 0
-x4 = (−1)· (+∞) =−∞.
-Esempio 2.2 (ancora forme indeterminate +∞−∞ ).
-(i) lim
-x\to +∞
-x3− 3x2 = lim
-x\to +∞
-x3
-
-1− 3
-x
-
-= +∞· 1 = +∞.
-(ii) Proviamo che
-lim
-x\to +∞
-(
-√
-x + 1−√x) = 0.
-Si può provare direttamente dalla definizioni di limite (oppure del teorema sui limiti
-delle funzioni monotone che vedremo in seguito) che
-lim
-x\to +∞
-√
-x + 1 = +∞ e lim
-x\to +∞
-√x = +∞.
-Perciò il limite appare come una forma indeterminata(+∞) + (−∞). Questa forma
-indeterminata si può risolvere razionalizzando il rapporto nel modo seguente
-√
-x + 1−√x = (√x + 1−√x)(√x + 1 +√x)√x + 1 +√x
-= 1√x + 1 +√x\to  1
-+∞ = 0, per x\to  +∞,
-dove si è applicata la (ii) del Teorema 2.5 della Lezione precedente.
-Limite di una funzione razionale per x\to ±∞
-Consideriamo il limite
-lim
-x\to ±∞
-P (x)
-Q(x) = lim
-x\to ±∞
-anxn +an−1xn−1 +··· +a1x +a0
-bmxm +bm−1xm−1 +··· +b1x +b0
-,
-dove m,n \in  N∗ e an e bm sono diversi da zero. Il dominio della funzione è un insieme del
-tipo A = R\{x1,...,x p} dove glixi sono gli zeri (distinti) diQ. Allora
-\forall x\in A\{ 0} : P (x)
-Q(x) = xn
-xm
-an + an−1
-x +··· + a1
-xn−1 + a0
-xn
-bm + bm−1
-x +··· + b1
-xm−1 + b0
-xm
-.
-Dato chean−k/xk\to  0 e bn−k/xk\to  0 per x\to ±∞ , si ha che
-an + an−1
-x +··· + a1
-xn−1 + a0
-xn
-bm + bm−1
-xm−1 +··· + b1
-xm−1 + b0
-xm
-\to  an
-bm
-\in  R∗ per x\to ±∞.
-Inoltre
-xn
-xm =
-
-
-
-xn−m se n>m
-1 se n =m
-xm−n se n<m.
-e quindi
-lim
-x\to +∞
-xn
-xm =
-
-
-
-+∞ se n>m
-1 se n =m
-0 se n<m
-e lim
-x\to −∞
-xn
-xm =
-
-
-
-+∞ se n>m e n−m è pari
-−∞ se n>m e n−m è dispari
-1 se n =m
-0 se n<m.
-In definitiva si ha
-lim
-x\to +∞
-P (x)
-Q(x) =
-
-
-
-an
-bm
-· (+∞) se n>m
-an
-bm
-se n =m
-0 se n<m.
-e lim
-x\to −∞
-P (x)
-Q(x) =
-
-
-
-an
-bm
-· (+∞) se n>m e n−m è pari
-an
-bm
-· (−∞) se n>m e n−m è dispari
-an
-bm
-se n =m
-0 se n<m.
-Esempio 2.3.
-(i) Calcolare il seguente limite
-lim
-x\to +∞
-3x3− 2x + 1
-−x4 + 2x2 +x.
-Allora
-3x3− 2x + 1
-−x4 + 2x2 +x = x3
-x4· 3− 2
-x2 + 1
-x3
-−1 + 2
-x2 + 1
-x3
-= 1
-x· 3− 2
-x2 + 1
-x3
-−1 + 2
-x2 + 1
-x3
-\to  0· (−3) = 0 per x\to  +∞.
-(ii) Calcolare il seguente limite
-lim
-x\to −∞
-−x4 + 2x2 +x
-3x3− 2x + 1 .
-Allora
-−x4 + 2x2 +x
-3x3− 2x + 1 = x4
-x3·−1 + 2
-x2 + 1
-x3
-3− 2
-x2 + 1
-x3
-=x·−1 + 2
-x2 + 1
-x3
-3− 2
-x2 + 1
-x3
-\to −∞·
-
-− 1
-
-= +∞ per x\to  +∞.
+### Esempio 2.12: Limiti della Funzione Potenza $x^n$ all'Infinito
+>[!important] Enunciato
+>Sia $n \in \mathbb{N}$ con $n \ge 1$. Allora:
+>$$\lim_{x \to +\infty} x^n = +\infty \qquad \text{e} \qquad \lim_{x \to -\infty} x^n = \begin{cases} +\infty & \text{se } n \text{ è pari} \\ -\infty & \text{se } n \text{ è dispari} \end{cases}$$
 
 **Dimostrazione:**
-Sia β > 0 e siaλ\in  R tale che 0 < \lambda < m. Allora, per il teorema della permanenza delle
-disuguaglianze, risulta che
-g(x)>\lambda in un intorno dix0.
-Poi, dato chelimx\to x0f (x) = +∞, si ha anche che
-f (x)> β
-\lambda in un intorno dix0.
-Allora, entrambe le condizioni sono vere simultaneamente in un intorno di x0 e quindi
-moltiplicando si ha chef (x)g(x)>β in un intorno dix0.
-(ii): Siaε> 0. Dobbiamo provare che
+- **Caso $x \to +\infty$:** Dalla disuguaglianza di Bernoulli, per ogni $x \in \mathbb{R}^+$ (ossia in un intorno di $+\infty$) vale:
+$$x^n = (1 + x - 1)^n \ge 1 + n(x - 1)$$
+Poiché $\lim_{x \to +\infty} [1 + n(x - 1)] = +\infty$ (essendo $n \ge 1 > 0$), per l'Osservazione 2.8 segue $\lim_{x \to +\infty} x^n = +\infty$.
+- **Caso $x \to -\infty$ con $n$ pari:** Per ogni $x \in \mathbb{R}^-$, si ha $-x > 0$ e dalla disuguaglianza di Bernoulli:
+$$x^n = (-x)^n \ge 1 + n(-x - 1) = 1 - n(x + 1) \quad \text{in un intorno di } -\infty$$
+Poiché $\lim_{x \to -\infty} [1 - n(x + 1)] = +\infty$, dall'Osservazione 2.8 segue $\lim_{x \to -\infty} x^n = +\infty$.
+- **Caso $x \to -\infty$ con $n$ dispari:** Per ogni $x \in \mathbb{R}^-$, si ha $-x^n = (-x)^n \ge 1 + n(-x - 1) = 1 - n(x + 1)$, ovvero:
+$$x^n \le -1 + n(x + 1) \quad \text{in un intorno di } -\infty$$
+Poiché $\lim_{x \to -\infty} [-1 + n(x + 1)] = -\infty$, l'Osservazione 2.8 implica $\lim_{x \to -\infty} x^n = -\infty$. $\blacksquare$
 
+### Corollario 2.13: Prodotto di una Funzione Infinitesima per una Limitata
+>[!important] Enunciato
+>Sia $A \subset \mathbb{R}$ e sia $x_0 \in \overline{\mathbb{R}}$ un punto di accumulazione per $A$. Siano $f: A \to \mathbb{R}$ e $g: A \to \mathbb{R}$ due funzioni tali che:
+>$$\lim_{x \to x_0} f(x) = 0 \quad \text{e} \quad g(x) \text{ è limitata in un intorno di } x_0$$
+>Allora:
+>$$\lim_{x \to x_0} f(x)g(x) = 0$$
 
+**Dimostrazione:**
+Per ipotesi esiste una costante $C > 0$ tale che:
+$$|g(x)| \le C \text{ in un intorno di } x_0$$
+Moltiplicando per $|f(x)| \ge 0$, si ottiene:
+$$|f(x)g(x)| \le C|f(x)| \text{ in un intorno di } x_0$$
+Poiché $\lim_{x \to x_0} C|f(x)| = C \cdot 0 = 0$, applicando il Corollario 2.9 segue $\lim_{x \to x_0} f(x)g(x) = 0$. $\blacksquare$
 
+### Proposizione 2.15: Limitatezza Unilaterale Locale
+>[!important] Enunciato
+>Sia $A \subset \mathbb{R}$, $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $A$ e $f: A \to \mathbb{R}$ con $\lim_{x \to x_0} f(x) = \ell \in \overline{\mathbb{R}}$. Allora:
+>1. Se $\ell > -\infty$, allora $f$ è limitata inferiormente in un intorno di $x_0$ ($\exists \lambda \in \mathbb{R} : \lambda \le f(x)$ in un intorno di $x_0$).
+>2. Se $\ell < +\infty$, allora $f$ è limitata superiormente in un intorno di $x_0$ ($\exists \lambda \in \mathbb{R} : f(x) \le \lambda$ in un intorno di $x_0$).
 
+**Dimostrazione:**
+Proviamo la (1) (la (2) si dimostra in modo del tutto analogo). Supponiamo che $\ell > -\infty$. Allora è possibile scegliere un numero reale $\lambda \in \mathbb{R}$ tale che $\lambda < \ell$. Per il primo corollario del teorema della permanenza delle disuguaglianze (Corollario 2.3), si ha:
+$$\lambda < f(x) \quad (\implies \lambda \le f(x)) \text{ in un intorno di } x_0 \quad \blacksquare$$
 
-f (x)
+### Teorema 2.16: Somma di Limiti Infiniti
+>[!important] Enunciato
+>Sia $A \subset \mathbb{R}$ e sia $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $A$. Siano $f: A \to \mathbb{R}$ e $g: A \to \mathbb{R}$ e supponiamo che $\lim_{x \to x_0} f(x) = \ell \in \{-\infty, +\infty\}$. Allora:
+>1. Se $\ell = +\infty$ e $g$ è limitata inferiormente in un intorno di $x_0$, allora $\lim_{x \to x_0} (f + g)(x) = +\infty$.
+>2. Se $\ell = -\infty$ e $g$ è limitata superiormente in un intorno di $x_0$, allora $\lim_{x \to x_0} (f + g)(x) = -\infty$.
 
+**Dimostrazione:**
+Proviamo la (1) (la (2) è analoga). Sia $\beta > 0$ fissato arbitrariamente. Dobbiamo provare che:
+$$f(x) + g(x) > \beta \text{ in un intorno di } x_0$$
+Per l'ipotesi che $g$ sia limitata inferiormente, esiste $\lambda \in \mathbb{R}$ tale che:
+$$g(x) \ge \lambda \text{ in un intorno di } x_0$$
+D'altra parte, poiché $\lim_{x \to x_0} f(x) = +\infty$, in corrispondenza della soglia reale $\beta - \lambda$ si ha:
+$$f(x) > \beta - \lambda \text{ in un intorno di } x_0$$
+Nell'intersezione dei due intorni le condizioni $g(x) \ge \lambda$ e $f(x) > \beta - \lambda$ sono simultaneamente vere; sommandole membro a membro si ottiene:
+$$f(x) + g(x) > (\beta - \lambda) + \lambda = \beta \text{ in un intorno di } x_0 \quad \blacksquare$$
 
+### Teorema 2.19: Prodotto di Limiti Infiniti e Passaggio al Reciproco
+>[!important] Enunciato
+>Sia $A \subset \mathbb{R}$, $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $A$, e siano $f, g: A \to \mathbb{R}$. Valgono le seguenti:
+>1. **(i)** Se $\lim_{x \to x_0} f(x) = +\infty$ (risp. $-\infty$) e $\lim_{x \to x_0} g(x) = m \in \overline{\mathbb{R}} \setminus \{0\}$, allora:
+>$$\lim_{x \to x_0} f(x)g(x) = \begin{cases} +\infty \text{ (risp. } -\infty\text{)} & \text{se } m > 0 \\ -\infty \text{ (risp. } +\infty\text{)} & \text{se } m < 0 \end{cases}$$
+>2. **(ii)** Se $\lim_{x \to x_0} f(x) = \pm\infty$, allora:
+>$$\lim_{x \to x_0} \frac{1}{f(x)} = 0$$
+>3. **(iii)** Se $\lim_{x \to x_0} f(x) = 0$ e $f(x) > 0$ (risp. $f(x) < 0$) in un intorno di $x_0$, allora:
+>$$\lim_{x \to x_0} \frac{1}{f(x)} = +\infty \quad \text{(risp. } -\infty\text{)}$$
 
-
-<\varepsilon in un intorno dix0
-che chiaramente equivale a
-|f (x)|> 1
-\varepsilon in un intorno dix0.
-Allora
-lim
-x\to x0
-f (x) = +∞⇒ f (x)|{z}
->0
-> 1
-\varepsilon in un intorno dix0
-lim
-x\to x0
-f (x) =−∞⇒ f (x)|{z}
-<0
-<− 1
-\varepsilon in un intorno dix0
-\implies −f (x)> 1
-\varepsilon in un intorno dix0.
-Perciò, in ogni caso,|f (x)|> 1/\varepsilon in un intorno dix0.
-(iii): Siaβ >0. Allora per ipotesi
-|f (x)|< 1
-β in un intorno dix0 e f (x)> 0 in un intorno dix0.
-Allora, le due condizioni valgono simultaneamente in un intorno dix0 e quindi si ha
-0<f (x)< 1
-β in un intorno dix0\implies  1
-f (x) >β in un intorno dix0,
-che è quanto si voleva dimostrare.
-Osservazione 2.20. Come conseguenza del Teorema 2.19 possiamo estendere ulteriormente
-l’algebra di R facendo le seguenti convenzioni
-\forall m\in  R\{ 0} : (±∞)m =m(±∞) =
-(
-±∞ se m> 0
-∓∞ se m< 0
-e
-\forall m\in  R : m
-±∞ = 0 e 1
-0± =±∞,
-dove con 0+ (risp. 0−) intendiamo considerare il caso che il limite vale zero e la funzione è
-strettamente positiva (risp. strettamente negativa) in un intorno dix0. In questo modo si
-può dire che sef (x)→\ell\in  R eg(x)→m\in  R e (\ell,m )̸= (±∞, 0) e (\ell,m )̸= (0,±∞), allora
-lim
-x\to x0
-f (x)g(x) = ℓm
-e che seℓ e m non sono entrambi infiniti o entrambi zero allora
-lim
-x\to x0
-f (x)
-g(x) = \ell
-m.
-Anche le forme
-(±∞)· 0 = 0· (±∞), ±∞
-±∞, 0
-0.
-sono dette forme indeterminate.
-2 Esempi di operazioni sui limiti in R
-Esempio 2.1 (Forme indeterminate +∞−∞ ).
-(i) Consideriamo le seguenti coppie di funzioni
-(a) f (x) = 1
-x2, g (x) = x− 1
-x2
-(b) f (x) = 1
-x2, g (x) = 2x2− 1
-x2
-(c) f (x) = 1
-x4, g (x) =− 1
-x2
-(d) f (x) = 1
-x2, g (x) =− 1
-x4.
-Si verifica facilmente che in tutti i casi
-lim
-x\to 0
-f (x) = +∞, lim
-x\to 0
-g(x) =−∞.
-Mentre:
-• nel caso (a),limx\to 0f (x) +g(x) = lim x\to 0
-x non esiste,
-• nel caso (b),limx\to 0f (x) +g(x) = 2,
-• nel caso (c),
-lim
-x\to 0
-f (x) +g(x) = lim
-x\to 0
-1−x2
-x4 = lim
-x\to 0
-(1−x2) lim
-x\to 0
-x4 = 1· (+∞) = +∞
-• nel caso (d),
-lim
-x\to 0
-f (x) +g(x) = lim
-x\to 0
-x2− 1
-x4 = lim
-x\to 0
-(x2− 1) lim
-x\to 0
-x4 = (−1)· (+∞) =−∞.
-Esempio 2.2 (ancora forme indeterminate +∞−∞ ).
-(i) lim
-x\to +∞
-x3− 3x2 = lim
-x\to +∞
-x3
-
-1− 3
-x
-
-= +∞· 1 = +∞.
-(ii) Proviamo che
-lim
-x\to +∞
-(
-√
-x + 1−√x) = 0.
-Si può provare direttamente dalla definizioni di limite (oppure del teorema sui limiti
-delle funzioni monotone che vedremo in seguito) che
-lim
-x\to +∞
-√
-x + 1 = +∞ e lim
-x\to +∞
-√x = +∞.
-Perciò il limite appare come una forma indeterminata(+∞) + (−∞). Questa forma
-indeterminata si può risolvere razionalizzando il rapporto nel modo seguente
-√
-x + 1−√x = (√x + 1−√x)(√x + 1 +√x)√x + 1 +√x
-= 1√x + 1 +√x\to  1
-+∞ = 0, per x\to  +∞,
-dove si è applicata la (ii) del Teorema 2.5 della Lezione precedente.
-Limite di una funzione razionale per x\to ±∞
-Consideriamo il limite
-lim
-x\to ±∞
-P (x)
-Q(x) = lim
-x\to ±∞
-anxn +an−1xn−1 +··· +a1x +a0
-bmxm +bm−1xm−1 +··· +b1x +b0
-,
-dove m,n \in  N∗ e an e bm sono diversi da zero. Il dominio della funzione è un insieme del
-tipo A = R\{x1,...,x p} dove glixi sono gli zeri (distinti) diQ. Allora
-\forall x\in A\{ 0} : P (x)
-Q(x) = xn
-xm
-an + an−1
-x +··· + a1
-xn−1 + a0
-xn
-bm + bm−1
-x +··· + b1
-xm−1 + b0
-xm
-.
-Dato chean−k/xk\to  0 e bn−k/xk\to  0 per x\to ±∞ , si ha che
-an + an−1
-x +··· + a1
-xn−1 + a0
-xn
-bm + bm−1
-xm−1 +··· + b1
-xm−1 + b0
-xm
-\to  an
-bm
-\in  R∗ per x\to ±∞.
-Inoltre
-xn
-xm =
-
-
-
-xn−m se n>m
-1 se n =m
-xm−n se n<m.
-e quindi
-lim
-x\to +∞
-xn
-xm =
-
-
-
-+∞ se n>m
-1 se n =m
-0 se n<m
-e lim
-x\to −∞
-xn
-xm =
-
-
-
-+∞ se n>m e n−m è pari
-−∞ se n>m e n−m è dispari
-1 se n =m
-0 se n<m.
-In definitiva si ha
-lim
-x\to +∞
-P (x)
-Q(x) =
-
-
-
-an
-bm
-· (+∞) se n>m
-an
-bm
-se n =m
-0 se n<m.
-e lim
-x\to −∞
-P (x)
-Q(x) =
-
-
-
-an
-bm
-· (+∞) se n>m e n−m è pari
-an
-bm
-· (−∞) se n>m e n−m è dispari
-an
-bm
-se n =m
-0 se n<m.
-Esempio 2.3.
-(i) Calcolare il seguente limite
-lim
-x\to +∞
-3x3− 2x + 1
-−x4 + 2x2 +x.
-Allora
-3x3− 2x + 1
-−x4 + 2x2 +x = x3
-x4· 3− 2
-x2 + 1
-x3
-−1 + 2
-x2 + 1
-x3
-= 1
-x· 3− 2
-x2 + 1
-x3
-−1 + 2
-x2 + 1
-x3
-\to  0· (−3) = 0 per x\to  +∞.
-(ii) Calcolare il seguente limite
-lim
-x\to −∞
-−x4 + 2x2 +x
-3x3− 2x + 1 .
-Allora
-−x4 + 2x2 +x
-3x3− 2x + 1 = x4
-x3·−1 + 2
-x2 + 1
-x3
-3− 2
-x2 + 1
-x3
-=x·−1 + 2
-x2 + 1
-x3
-3− 2
-x2 + 1
-x3
-\to −∞·
-
-− 1
-
-= +∞ per x\to  +∞.
-
-$$\blacksquare$$
+**Dimostrazione:**
+- **Prova di (i):** Consideriamo il caso $\lim_{x \to x_0} f(x) = +\infty$ e $m \in ]0, +\infty]$ (gli altri casi si provano allo stesso modo). Sia $\beta > 0$ e scegliamo $\lambda \in \mathbb{R}$ tale che $0 < \lambda < m$. Per il teorema della permanenza delle disuguaglianze (Corollario 2.3), risulta:
+$$g(x) > \lambda > 0 \text{ in un intorno di } x_0$$
+Inoltre, dato che $\lim_{x \to x_0} f(x) = +\infty$, in corrispondenza di $\frac{\beta}{\lambda} > 0$ si ha:
+$$f(x) > \frac{\beta}{\lambda} \text{ in un intorno di } x_0$$
+Allora entrambe le condizioni sono vere simultaneamente in un intorno di $x_0$ e, moltiplicando membro a membro (essendo quantità positive), si ha:
+$$f(x)g(x) > \frac{\beta}{\lambda} \cdot \lambda = \beta \text{ in un intorno di } x_0$$
+- **Prova di (ii):** Sia $\varepsilon > 0$. Dobbiamo provare che:
+$$\left|\frac{1}{f(x)}\right| < \varepsilon \text{ in un intorno di } x_0 \iff |f(x)| > \frac{1}{\varepsilon} \text{ in un intorno di } x_0$$
+  - Se $\lim_{x \to x_0} f(x) = +\infty \implies f(x) > \frac{1}{\varepsilon} > 0$ in un intorno di $x_0 \implies |f(x)| > \frac{1}{\varepsilon}$ in un intorno di $x_0$.
+  - Se $\lim_{x \to x_0} f(x) = -\infty \implies f(x) < -\frac{1}{\varepsilon} < 0$ in un intorno di $x_0 \implies |f(x)| = -f(x) > \frac{1}{\varepsilon}$ in un intorno di $x_0$.
+  Perciò, in ogni caso, $|f(x)| > \frac{1}{\varepsilon}$ in un intorno di $x_0$.
+- **Prova di (iii):** Sia $\beta > 0$ (caso $f(x) > 0$). Per ipotesi $\lim_{x \to x_0} f(x) = 0$, quindi:
+$$|f(x)| < \frac{1}{\beta} \text{ in un intorno di } x_0 \quad \text{e} \quad f(x) > 0 \text{ in un intorno di } x_0$$
+Le due condizioni valgono simultaneamente nell'intersezione degli intorni, da cui:
+$$0 < f(x) < \frac{1}{\beta} \text{ in un intorno di } x_0 \implies \frac{1}{f(x)} > \beta \text{ in un intorno di } x_0$$
+che dimostra $\lim_{x \to x_0} \frac{1}{f(x)} = +\infty$. $\blacksquare$

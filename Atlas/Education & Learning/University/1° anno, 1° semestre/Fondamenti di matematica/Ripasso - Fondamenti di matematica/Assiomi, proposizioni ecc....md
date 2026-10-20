@@ -2,12 +2,12 @@
 status: permanent
 type: summary
 area: education
-related: ["[[Lezione 1 - Logica delle Proposizioni e dei Predicati]]", "[[Lezione 2 - Teoria Assiomatica degli Insiemi]]", "[[Lezione 3 - Relazioni e Funzioni I]]", "[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lezione 5 - i Numeri Reali e Assioma di Completezza]]", "[[Lezione 6 - Valore Assoluto e Numeri Naturali]]", "[[Lezione 7 - Insiemi Numerici N Z e Q]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]", "[[Lezione 9 - Funzioni Reali ed Estremi]]", "[[Lezione 10 - Funzioni Reali II e Funzioni Elementari I]]", "[[Lezione 11 - Funzioni Reali Elementari II]]", "[[Lezione 12 - Limiti I Retta Reale Ampliata e Definizione]]", "[[Lezione 13 - Limiti II Restrizioni Limiti Laterali e Successioni]]", "[[Lezione 14 - Limiti di Successioni e Proprieta Locali]]", "[[Lezione 15 - 15 Proprietà dei limiti]]", "[[Dimostrazioni]]", "[[University]]"]
+related: ["[[Lezione 1 - Logica delle Proposizioni e dei Predicati]]", "[[Lezione 2 - Teoria Assiomatica degli Insiemi]]", "[[Lezione 3 - Relazioni e Funzioni I]]", "[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lezione 5 - i Numeri Reali e Assioma di Completezza]]", "[[Lezione 6 - Valore Assoluto e Numeri Naturali]]", "[[Lezione 7 - Insiemi Numerici N Z e Q]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]", "[[Lezione 9 - Funzioni Reali ed Estremi]]", "[[Lezione 10 - Funzioni Reali II e Funzioni Elementari I]]", "[[Lezione 11 - Funzioni Reali Elementari II]]", "[[Lezione 12 - Limiti I Retta Reale Ampliata e Definizione]]", "[[Lezione 13 - Limiti II Restrizioni Limiti Laterali e Successioni]]", "[[Lezione 14 - Limiti di Successioni e Proprieta Locali]]", "[[Lezione 15 - Proprieta dei Limiti]]", "[[Dimostrazioni]]", "[[University]]"]
 aliases: ["Assiomi, proposizioni ecc...", "Assiomi, Proposizioni ecc...", "Assiomi Proposizioni Definizioni", "Assiomi, proposizioni ecc...."]
 source: ["Lezione 1.pdf", "Lezione 2.pdf", "Lezione 3.pdf", "Lezione 4.pdf", "Lezione 5.pdf", "Lezione 6.pdf", "Lezione 7.pdf", "Lezione 8.pdf", "Lezione 9.pdf", "Lezione 10.pdf", "Lezione 11.pdf", "Lezione 12.pdf", "Lezione 13.pdf", "Lezione 14.pdf", "Lezione 15.pdf"]
 title: "Assiomi, Proposizioni, Definizioni e Teoremi"
 date: '2026-10-15'
-updated: '2026-10-20T20:22'
+updated: '2026-10-20T20:45'
 tags: [education/university, education/matematica, education/teoria]
 summary: "Repertorio sistematico di tutti gli assiomi, definizioni, proposizioni, teoremi, lemmi e corollari trattati nel corso di Fondamenti di Matematica dalla Lezione 1 alla Lezione 15."
 ---
@@ -15,7 +15,7 @@ summary: "Repertorio sistematico di tutti gli assiomi, definizioni, proposizioni
 
 # Assiomi, Proposizioni, Definizioni e Teoremi
 
-Quadro teorico integrale dei concetti primitivi, degli assiomi fondativi, delle definizioni formali, dei teoremi, delle proposizioni, dei lemmi e dei corollari svolti nelle Lezioni da 1 a 14 del corso di Fondamenti di Matematica.
+Quadro teorico integrale dei concetti primitivi, degli assiomi fondativi, delle definizioni formali, dei teoremi, delle proposizioni, dei lemmi e dei corollari svolti nelle Lezioni da 1 a 15 del corso di Fondamenti di Matematica.
 
 ---
 
@@ -533,143 +533,85 @@ $$\exists U \in \mathcal{U}(x_0) : \forall x \in (A \cap U) \setminus \{x_0\} \i
 
 ---
 
-## Lezione 15 - 15: Proprietà dei limiti
 
-### Teoremi e Proposizioni
-- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.1: (della permanenza delle disuguaglianze). Sia A⊂ R e x0\in  R un punto di:</b></font></mark> accumulazione perA in R. Sianof : A\to  R e g : A\to  R due funzioni e supponiamo che
-lim
-x\to x0
-f (x) = \ell\in  R e lim
-x\to x0
-g(x) = m\in  R.
-Allora
-\ell>m \implies f (x)>g (x) in un intorno dix0.
-- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Corollario 2.3.: Sia A ⊂ R e x0 \in  R un punto di accumulazione per A in R. Siano:</b></font></mark> f : A\to  R e \lambda\in  R e supponiamo chelimx\to x0f (x) = \ell\in  R. Allora
-\ell>\lambda (risp. \ell<\lambda ) \implies  f (x)>\lambda (risp. f (x)<\lambda ) in un intorno dix0.
-- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Corollario 2.4: (teorema della permanenza del segno). Sia A⊂ R e f : A\to  R. Siax0\in  R:</b></font></mark> un punto di accumulazione perA. Supponiamo che limx\to x0f (x) = \ell\in  R. Allora
-\ell> 0 (risp. \ell< 0) \implies  f (x)> 0 (risp. < 0) in un intorno dix0.
-- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Corollario 2.5: (teorema di prolungamento delle disuguaglianze). Sia A⊂ R e x0\in  R un:</b></font></mark> punto di accumulazione perA in R. Sianof : A\to  R eg : A\to  R due funzioni e supponiamo
-che limx\to x0f (x) = \ell e limx\to x0g(x) = m. Allora
-f (x)≤g(x) in un intorno dix0 \implies  \ell\le m.
-- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.7: (del confronto o della convergenza obbligata o dei carabinieri). Sia A⊂ R e:</b></font></mark> x0\in  R un punto di accumulazione perA in R. Siano f, g e h tre funzioni definite inA a
-valori in R e supponiamo che
-a) f (x)≤g(x)≤h(x) in un intorno dix0.
-b) lim
-x\to x0
-f (x) = \ell e lim
-x\to x0
-h(x) = \ell conℓ\in  R.
-Allora lim
-x\to x0
-g(x) = \ell.
-- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Corollario 2.9.: Sia A⊂ R e x0\in  R un punto di accumulazione perA. Sianof : A\to  R e:</b></font></mark> g : A\to  R due funzioni e supponiamo che
-|f (x)|≤ g(x) in un intorno dix0.
-Allora si ha
-lim
-x\to x0
-g(x) = 0 \implies  lim
-x\to x0
-f (x) = 0.
-- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Corollario 2.13.: Sia A⊂ R e x0\in  R un punto di accumulazione perA. Siano f : A\to  R:</b></font></mark> e g : A\to  R due funzioni e supponiamo che
-lim
-x\to x0
-f (x) = 0 e che g(x) è limitata in un intorno dix0.
-Allora lim
-x\to x0
-f (x)g(x) = 0.
-- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Proposizione 2.15.: Sia A⊂ R, x0 \in  R punto di accumulazione perA e f : A\to  R.:</b></font></mark> Supponiamo che limx\to x0f (x) = \ell\in  R. Allora valgono le seguenti affermazioni
-(i) Se \ell> −∞, alloraf è limitata inferiormente in un intorno dix0, cioè
-\exists \lambda\in  R tale cheλ\le f (x) in un intorno dix0.
-(ii) Se \ell< +∞, alloraf è limitata superiormente in un intorno dix0, cioè
-\exists \lambda\in  R tale chef (x)≤\lambda in un intorno dix0.
-- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.16: (somma di limiti infiniti). Sia A⊂ R e x0\in  R punto di accumulazione per:</b></font></mark> A. Sianof :A\to  R e g :A\to  R e supponiamo che
-lim
-x\to x0
-f (x) = \ell\in {−∞, +∞}.
-Valgono le seguenti proposizioni.
-(i) Se \ell = +∞ e g è limitata inferiormente in un intorno dix0, limx\to x0(f +g)(x) = \ell.
-(ii) Se \ell =−∞ e g è limitata superiormente in un intorno dix0, limx\to x0(f +g)(x) = \ell.
-Il contenuto di questo teorema possiamo schematizzarlo nel modo seguente
-f (x)|{z}
-↓
-+∞
-+g(x)|{z}
-l.i.
-\to  +∞ e f (x)|{z}
-↓
-−∞
-+g(x)|{z}
-l.s.
-\to −∞.
-Per esempio possiamo affermare chelimx\to 0
-x2 + sen(1/x) = +∞, perché la seconda funzione,
-anche se non ha limite, è limitata inferiormente.
-- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.16: e dalla Proposizione 2.15, segue che:</b></font></mark> 
-
-
-se \ell = +∞ e m> −∞, allora lim
-x\to x0
-f (x) +g(x) = +∞
-se \ell =−∞ e m< +∞, allora lim
-x\to x0
-f (x) +g(x) =−∞.
-Perciò, se si estende l’algebra diR su R ponendo, per convenzione,
-\forall m\in  R∪{ +∞} : (+ ∞) +m =m + (+∞) = +∞
-\forall m\in  R∪{−∞} : ( −∞) +m =m + (−∞) =−∞.
-possiamo dire che vale sempre
-lim
-x\to x0
-f (x) +g(x) = \ell +m
-con l’esclusione dei casi(\ell,m ) = (+∞,−∞) e (\ell,m ) = (−∞, +∞).
-In definitiva, sulla retta estesa dei numeri reali vale il seguente risultato.
-- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Corollario 2.18.: Supponiamo che limx\to x0f (x) = \ell\in  R e limx\to x0g(x) = m\in  R. Allora,:</b></font></mark> lim
-x\to x0
-f (x) +g(x) = \ell +m,
-con l’esclusione dei casi in cui uno traℓ e m sia +∞ e l’altro sia−∞.
-Notiamo che se la somma dei limitiℓ +m si presenta in una delle forme
-(+∞) + (−∞) o (−∞) + (+∞),
-allora non si può dire nulla sulla somma, nel senso che il limite della somma può essere reale,
-+∞,−∞ o anche non esistere. Per tale ragione tali forme vengono detteindeterminate.
-Consideriamo adesso il caso di moltiplicazione di limiti che possono essere infiniti.
-- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.19: (prodotto di limiti infiniti). Sia A⊂ R, x0\in  R punto di accumulazione per:</b></font></mark> A, ef :A\to  R e g :A\to  R. Valgono le seguenti.
-(i) Se limx\to x0f (x) = +∞ (risp.−∞) e limx\to x0g(x) = m\in  R\{ 0}, allora
-lim
-x\to x0
-f (x)g(x) =
-(
-+∞ (risp. −∞ ) se m> 0
-−∞ (risp. +∞) se m< 0.
-(ii) Se lim
-x\to x0
-f (x) =±∞, allora lim
-x\to x0
-f (x) = 0.
-(iii) Se lim
-x\to x0
-f (x) = 0 e f (x)> 0 (risp. < 0) in un intorno dix0, allora
-lim
-x\to x0
-f (x) = +∞ (risp. −∞ ).
-La (i) si può schematizzare come segue
-f (x)|{z}
-↓
-+∞
-g(x)|{z}
-↓
-±
-\to ±∞ e f (x)|{z}
-↓
-−∞
-g(x)|{z}
-↓
-±
-\to ∓∞.
-Mentre la (ii) e la (iii) rispettivamente con
-f (x)|{z}
-↓
-±∞
-\to  0 e 1
-f (x)|{z}
-↓
-0±
-\to ±∞
+## Lezione 15: Proprietà dei Limiti
+
+### Polinomi e Funzioni Razionali
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Proposizione (Esempio 1.1.i — Limite di un Monomio):</b></font></mark> Siano $a \in \mathbb{R}$, $n \in \mathbb{N}$ e $x_0 \in \mathbb{R}$. Allora:
+$$\lim_{x \to x_0} a x^n = a x_0^n$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione e Limite di una Funzione Polinomiale (Esempio 1.1.ii):</b></font></mark> Si chiama *funzione polinomiale* una funzione del tipo:
+$$P: \mathbb{R} \to \mathbb{R}, \quad P(x) = a_n x^n + a_{n-1} x^{n-1} + \dots + a_1 x + a_0$$
+dove $a_k \in \mathbb{R}$ per $k = 0, 1, \dots, n$. Per il teorema sulla somma dei limiti, per ogni $x_0 \in \mathbb{R}$ risulta:
+$$\lim_{x \to x_0} P(x) = a_n x_0^n + a_{n-1} x_0^{n-1} + \dots + a_1 x_0 + a_0 = P(x_0)$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione e Limite di una Funzione Razionale (Esempio 1.1.iii):</b></font></mark> Siano $P(x)$ e $Q(x)$ due polinomi e siano $x_1, \dots, x_m$ gli zeri reali di $Q(x)$. Si definisce *funzione razionale* la funzione:
+$$f: A \to \mathbb{R}, \quad f(x) = \frac{P(x)}{Q(x)}, \quad \text{con } A = \mathbb{R} \setminus \{x_1, \dots, x_m\}$$
+Per ogni punto del dominio $x_0 \in A$ (dove $Q(x_0) \ne 0$), per il teorema sul limite del rapporto vale:
+$$\lim_{x \to x_0} \frac{P(x)}{Q(x)} = \frac{P(x_0)}{Q(x_0)}$$
+
+### Limiti e Ordinamento
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.1 (Della Permanenza delle Disuguaglianze):</b></font></mark> Sia $A \subset \mathbb{R}$ e sia $x_0 \in \overline{\mathbb{R}}$ un punto di accumulazione per $A$ in $\overline{\mathbb{R}}$. Siano $f: A \to \mathbb{R}$ e $g: A \to \mathbb{R}$ due funzioni tali che:
+$$\lim_{x \to x_0} f(x) = \ell \in \overline{\mathbb{R}} \quad \text{e} \quad \lim_{x \to x_0} g(x) = m \in \overline{\mathbb{R}}$$
+Allora:
+$$\ell > m \implies f(x) > g(x) \text{ in un intorno di } x_0$$
+*(Osservazione 2.2: Non vale con la disuguaglianza debole, ossia $\ell \ge m \centernot\implies f(x) \ge g(x)$ in un intorno di $x_0$; ad esempio per $f(x) = x$, $g(x) = -x$ e $x_0 = 0$ si ha $\ell = m = 0$).*
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Corollario 2.3 (Confronto Locale con una Costante):</b></font></mark> Sia $A \subset \mathbb{R}$ e sia $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $A$ in $\overline{\mathbb{R}}$. Siano $f: A \to \mathbb{R}$ e $\lambda \in \mathbb{R}$ e supponiamo che $\lim_{x \to x_0} f(x) = \ell \in \overline{\mathbb{R}}$. Allora:
+$$\ell > \lambda \text{ (risp. } \ell < \lambda\text{)} \implies f(x) > \lambda \text{ (risp. } f(x) < \lambda\text{) in un intorno di } x_0$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Corollario 2.4 (Teorema della Permanenza del Segno):</b></font></mark> Sia $A \subset \mathbb{R}$, $f: A \to \mathbb{R}$ e $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $A$. Supponiamo che $\lim_{x \to x_0} f(x) = \ell \in \overline{\mathbb{R}}$. Allora:
+$$\ell > 0 \text{ (risp. } \ell < 0\text{)} \implies f(x) > 0 \text{ (risp. } f(x) < 0\text{) in un intorno di } x_0$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Corollario 2.5 (Teorema di Prolungamento delle Disuguaglianze):</b></font></mark> Sia $A \subset \mathbb{R}$ e sia $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $A$ in $\overline{\mathbb{R}}$. Siano $f, g: A \to \mathbb{R}$ due funzioni tali che $\lim_{x \to x_0} f(x) = \ell \in \overline{\mathbb{R}}$ e $\lim_{x \to x_0} g(x) = m \in \overline{\mathbb{R}}$. Allora:
+$$f(x) \le g(x) \text{ in un intorno di } x_0 \implies \ell \le m$$
+*(Osservazione 2.6: Si prolunga la disuguaglianza debole $\le$ ma non quella stretta $<$, ossia $f(x) < g(x) \centernot\implies \ell < m$; ad esempio $x^2 < |x|$ per $x \in ]-1, 1[ \setminus \{0\}$, ma $\lim_{x \to 0} x^2 = 0 = \lim_{x \to 0} |x|$).*
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.7 (Del Confronto / Della Convergenza Obbligata / Dei Carabinieri):</b></font></mark> Sia $A \subset \mathbb{R}$ e sia $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $A$ in $\overline{\mathbb{R}}$. Siano $f, g, h: A \to \mathbb{R}$ tre funzioni tali che:
+  - **a)** $f(x) \le g(x) \le h(x)$ in un intorno di $x_0$;
+  - **b)** $\lim_{x \to x_0} f(x) = \ell$ e $\lim_{x \to x_0} h(x) = \ell$, con $\ell \in \overline{\mathbb{R}}$.
+  Allora:
+$$\lim_{x \to x_0} g(x) = \ell$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Osservazione 2.8 (Confronto per Limiti Infiniti — Un Solo Carabiniere):</b></font></mark>
+  - Se $f(x) \le g(x)$ in un intorno di $x_0$ e $\lim_{x \to x_0} f(x) = +\infty$, allora $\lim_{x \to x_0} g(x) = +\infty$.
+  - Se $g(x) \le h(x)$ in un intorno di $x_0$ e $\lim_{x \to x_0} h(x) = -\infty$, allora $\lim_{x \to x_0} g(x) = -\infty$.
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Corollario 2.9 (Maggiorazione in Valore Assoluto con Funzione Infinitesima):</b></font></mark> Sia $A \subset \mathbb{R}$ e sia $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $A$. Siano $f, g: A \to \mathbb{R}$ tali che $|f(x)| \le g(x)$ in un intorno di $x_0$. Allora:
+$$\lim_{x \to x_0} g(x) = 0 \implies \lim_{x \to x_0} f(x) = 0$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Esempio 2.10 (Disuguaglianza Trigonometrica e Limite Notevole):</b></font></mark> Per ogni $x \in ]0, \pi/2[$ vale la disuguaglianza geometrica:
+$$\sin x < x < \tan x = \frac{\sin x}{\cos x}$$
+Da essa seguono per $x \in ]-\pi/2, \pi/2[ \setminus \{0\}$ le stime $|\sin x| < |x|$ e $\cos x < \frac{\sin x}{x} < 1$, da cui:
+$$\lim_{x \to 0} \sin x = 0, \qquad \lim_{x \to 0} \cos x = 1, \qquad \lim_{x \to 0} \frac{\sin x}{x} = 1$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Esempio 2.12 (Limiti della Potenza $x^n$ all'Infinito):</b></font></mark> Per ogni $n \in \mathbb{N}$ con $n \ge 1$:
+$$\lim_{x \to +\infty} x^n = +\infty \qquad \text{e} \qquad \lim_{x \to -\infty} x^n = \begin{cases} +\infty & \text{se } n \text{ è pari} \\ -\infty & \text{se } n \text{ è dispari} \end{cases}$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Corollario 2.13 (Prodotto di Infinitesima per Limitata):</b></font></mark> Sia $A \subset \mathbb{R}$ e sia $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $A$. Siano $f, g: A \to \mathbb{R}$ tali che $\lim_{x \to x_0} f(x) = 0$ e $g(x)$ sia limitata in un intorno di $x_0$. Allora:
+$$\lim_{x \to x_0} f(x)g(x) = 0$$
+
+### Operazioni con i Limiti in $\overline{\mathbb{R}}$ e Forme Indeterminate
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Proposizione 2.15 (Limitatezza Unilaterale Locale):</b></font></mark> Sia $A \subset \mathbb{R}$, $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $A$ e $f: A \to \mathbb{R}$ con $\lim_{x \to x_0} f(x) = \ell \in \overline{\mathbb{R}}$. Allora:
+  - **(i)** Se $\ell > -\infty$, allora $f$ è *limitata inferiormente* in un intorno di $x_0$ ($\exists \lambda \in \mathbb{R} : \lambda \le f(x)$ in un intorno di $x_0$).
+  - **(ii)** Se $\ell < +\infty$, allora $f$ è *limitata superiormente* in un intorno di $x_0$ ($\exists \lambda \in \mathbb{R} : f(x) \le \lambda$ in un intorno di $x_0$).
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.16 (Somma di Limiti Infiniti):</b></font></mark> Sia $A \subset \mathbb{R}$, $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $A$, e siano $f, g: A \to \mathbb{R}$ con $\lim_{x \to x_0} f(x) = \ell \in \{-\infty, +\infty\}$. Allora:
+  - **(i)** Se $\ell = +\infty$ e $g$ è limitata inferiormente in un intorno di $x_0$, allora $\lim_{x \to x_0} (f + g)(x) = +\infty$.
+  - **(ii)** Se $\ell = -\infty$ e $g$ è limitata superiormente in un intorno di $x_0$, allora $\lim_{x \to x_0} (f + g)(x) = -\infty$.
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Corollario 2.18 (Limite della Somma in $\overline{\mathbb{R}}$):</b></font></mark> Ponendo per convenzione $(+\infty) + m = +\infty$ per $m \in \mathbb{R} \cup \{+\infty\}$ e $(-\infty) + m = -\infty$ per $m \in \mathbb{R} \cup \{-\infty\}$, se $\lim_{x \to x_0} f(x) = \ell \in \overline{\mathbb{R}}$ e $\lim_{x \to x_0} g(x) = m \in \overline{\mathbb{R}}$, vale sempre:
+$$\lim_{x \to x_0} (f(x) + g(x)) = \ell + m$$
+**con l'esclusione** delle *forme indeterminate* $(+\infty) + (-\infty)$ e $(-\infty) + (+\infty)$.
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.19 (Prodotto di Limiti Infiniti e Passaggio al Reciproco):</b></font></mark> Sia $A \subset \mathbb{R}$, $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $A$, e siano $f, g: A \to \mathbb{R}$:
+  - **(i)** Se $\lim_{x \to x_0} f(x) = +\infty$ (risp. $-\infty$) e $\lim_{x \to x_0} g(x) = m \in \overline{\mathbb{R}} \setminus \{0\}$, allora:
+$$\lim_{x \to x_0} f(x)g(x) = \begin{cases} +\infty \text{ (risp. } -\infty\text{)} & \text{se } m > 0 \\ -\infty \text{ (risp. } +\infty\text{)} & \text{se } m < 0 \end{cases}$$
+  - **(ii)** Se $\lim_{x \to x_0} f(x) = \pm\infty$, allora $\lim_{x \to x_0} \frac{1}{f(x)} = 0$.
+  - **(iii)** Se $\lim_{x \to x_0} f(x) = 0$ e $f(x) > 0$ (risp. $f(x) < 0$) in un intorno di $x_0$, allora $\lim_{x \to x_0} \frac{1}{f(x)} = +\infty$ (risp. $-\infty$).
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Osservazione 2.20 (Algebra Estesa di $\overline{\mathbb{R}}$ e Forme Indeterminate):</b></font></mark> Con le convenzioni $(\pm\infty) \cdot m = \pm\infty$ per $m > 0$, $(\pm\infty) \cdot m = \mp\infty$ per $m < 0$, $\frac{m}{\pm\infty} = 0$ per $m \in \mathbb{R}$ e $\frac{1}{0^\pm} = \pm\infty$, valgono $\lim (fg) = \ell m$ e $\lim (f/g) = \ell/m$ al di fuori delle **forme indeterminate algebriche**:
+$$(+\infty) + (-\infty), \qquad (\pm\infty) \cdot 0, \qquad \frac{\pm\infty}{\pm\infty}, \qquad \frac{0}{0}$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Regola del Limite di una Funzione Razionale per $x \to \pm\infty$:</b></font></mark> Sia $\frac{P(x)}{Q(x)} = \frac{a_n x^n + \dots + a_0}{b_m x^m + \dots + b_0}$ con $n, m \in \mathbb{N}^*$ e $a_n, b_m \ne 0$. Allora:
+$$\lim_{x \to +\infty} \frac{P(x)}{Q(x)} = \begin{cases} \dfrac{a_n}{b_m} \cdot (+\infty) & \text{se } n > m \\[6pt] \dfrac{a_n}{b_m} & \text{se } n = m \\[6pt] 0 & \text{se } n < m \end{cases}, \qquad \lim_{x \to -\infty} \frac{P(x)}{Q(x)} = \begin{cases} \dfrac{a_n}{b_m} \cdot (+\infty) & \text{se } n > m \text{ e } n - m \text{ è pari} \\[6pt] \dfrac{a_n}{b_m} \cdot (-\infty) & \text{se } n > m \text{ e } n - m \text{ è dispari} \\[6pt] \dfrac{a_n}{b_m} & \text{se } n = m \\[6pt] 0 & \text{se } n < m \end{cases}$$
