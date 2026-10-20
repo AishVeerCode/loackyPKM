@@ -71,7 +71,7 @@ Sintesi compatta e schematica dei contenuti teorici estratti esclusivamente dai 
 ### Sistemi Posizionali e Basi Numeriche
 - <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Notazione Posizionale Pesata:</b></font></mark>
   Un numero espresso nella base $b$ con cifre $(c_{n-1} c_{n-2} \dots c_1 c_0)_b$ rappresenta la quantità:
-  $$\sum_{i=0}^{n-1} c_i \cdot b^i = c_{n-1} b^{n-1} + \dots + c_1 b^1 + c_0 b^0$$
+$$\sum_{i=0}^{n-1} c_i \cdot b^i = c_{n-1} b^{n-1} + \dots + c_1 b^1 + c_0 b^0$$
 - **Basi di Calcolo Principali:**
   - Base 2 (Binaria): cifre $\{0, 1\}$.
   - Base 10 (Decimale): cifre $\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}$.
@@ -82,7 +82,7 @@ Sintesi compatta e schematica dei contenuti teorici estratti esclusivamente dai 
   - $1\text{ MebiByte (MiB)} = 2^{20} = 1.048.576\text{ byte}$
   - $1\text{ GibiByte (GiB)} = 2^{30} \approx 1.07 \times 10^9\text{ byte}$
 - **Intervallo Numeri Senza Segno (Unsigned):** Con $n$ bit si rappresentano $2^n$ interi distinti:
-  $$[0, \, 2^n - 1]$$
+$$[0, \, 2^n - 1]$$
   *(Es. con 8 bit: $[0, 255]$; con 16 bit: $[0, 65.535]$)*.
 - **Conversione Decimale $\to$ Binario:** Algoritmo delle divisioni successive per 2 con lettura dei resti in ordine inverso (dall'ultimo all'iniziale).
 
@@ -97,7 +97,7 @@ Tre schemi fondamentali:
 
 ### Dettaglio Operativo sul Complemento a 2 (CP2)
 - <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Valore Decimale di un Numero in CP2:</b></font></mark>
-  $$\operatorname{Val}(b_{n-1} b_{n-2} \dots b_0) = - b_{n-1} \cdot 2^{n-1} + \sum_{i=0}^{n-2} b_i \cdot 2^i$$
+$$\operatorname{Val}(b_{n-1} b_{n-2} \dots b_0) = - b_{n-1} \cdot 2^{n-1} + \sum_{i=0}^{n-2} b_i \cdot 2^i$$
 - **Regola Pratica per Negare un Numero in CP2:**
   1. Invertire tutti i bit del numerale (operazione di complemento a uno: $0 \to 1$, $1 \to 0$).
   2. Sommare $1$ al risultato scartando l'eventuale riporto oltre l'$n$-esimo bit.

@@ -2,9 +2,9 @@
 status: permanent
 type: lecture
 area: education
-related: ["[[Lezione 5 - Condizioni e Istruzione If]]", "[[Lezione 4 - Ciclo For Sequenze e Variabili Accumulatore]]", "[[University]]"]
+related: ["[[Lezione 5 - Condizioni e Istruzione If]]", "[[Lezione 4 - Ciclo For Sequenze e Variabili Accumulatore]]", "[[Lezione 7 - Ciclo While Iterazioni Indefinite e Sentinella]]", "[[University]]"]
 aliases: ["Lezione 6", "Funzioni in Python", "Scope e Parametri", "Definizione di Funzioni"]
-source: Funzioni_base.ipynb
+source: "Lezione 6 - Funzioni.ipynb"
 title: "Lezione 6 - Funzioni Parametri Scope ed Esercizi Algoritmici"
 date: '2026-10-15'
 updated: 2026-10-15T09:00

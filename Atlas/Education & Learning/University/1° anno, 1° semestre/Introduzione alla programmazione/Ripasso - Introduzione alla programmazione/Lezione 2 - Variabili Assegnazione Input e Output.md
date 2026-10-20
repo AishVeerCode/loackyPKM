@@ -4,7 +4,7 @@ type: lecture
 area: education
 related: ["[[Lezione 1 - Introduzione a Python ed Espressioni Numeriche]]", "[[Lezione 3 - Stringhe Metodi e Slicing]]", "[[University]]"]
 aliases: ["Lezione 2", "Variabili Input e Output", "Variabili e Assegnazione"]
-source: Variabili_input_output_corretto_Lezione2.ipynb
+source: "Lezione 2 - Variabili.ipynb"
 title: "Lezione 2 - Variabili Assegnazione Input e Output"
 date: '2026-10-01'
 updated: 2026-10-01T16:30

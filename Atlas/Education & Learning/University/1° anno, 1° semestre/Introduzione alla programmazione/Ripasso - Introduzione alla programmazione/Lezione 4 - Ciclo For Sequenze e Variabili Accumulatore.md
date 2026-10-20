@@ -4,7 +4,7 @@ type: lecture
 area: education
 related: ["[[Lezione 3 - Stringhe Metodi e Slicing]]", "[[Lezione 5 - Condizioni e Istruzione If]]", "[[University]]"]
 aliases: ["Lezione 4", "Ciclo For", "Iterazione e Accumulatori"]
-source: For_Lezione4.ipynb
+source: "Lezione 4 - Ciclo 'for'.ipynb"
 title: "Lezione 4 - Ciclo For Sequenze e Variabili Accumulatore"
 date: '2026-10-08'
 updated: 2026-10-13T17:30
@@ -140,14 +140,14 @@ Creare manualmente elenchi estesi (ad esempio una lista di numeri da 1 a 100) co
 
 1. **Firma Monoparametrica `range(stop)`:**
    Genera tutti i numeri naturali interi compresi tra $0$ (incluso) e `stop` (**escluso**):
-   $$\{0, 1, 2, \dots, \text{stop}-1\}$$
+$$\{0, 1, 2, \dots, \text{stop}-1\}$$
    ```python
    list(range(5))  # Produce [0, 1, 2, 3, 4]
    ```
 
 2. **Firma Biparametrica `range(start, stop)`:**
    Genera gli interi compresi tra `start` (incluso) e `stop` (**escluso**):
-   $$\{\text{start}, \text{start}+1, \dots, \text{stop}-1\}$$
+$$\{\text{start}, \text{start}+1, \dots, \text{stop}-1\}$$
    ```python
    # Stampa dei numeri da 1 a 100 estremi inclusi
    for i in range(1, 101):

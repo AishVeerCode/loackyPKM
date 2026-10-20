@@ -77,44 +77,49 @@
     }
   },
   "programmazione": {
-    "Funzioni_base.ipynb": {
+    "Lezione 3 - Stringhe.ipynb": {
+      "hash": "ba729e576bfe957a6b13b236b7bdaefa12c6063ed67661b25542981434e6d0b9",
+      "processed_at": "2026-10-21T00:35:14.819439",
+      "size": 29863
+    },
+    "Lezione 6 - Funzioni.ipynb": {
       "hash": "652b9e9279b03a602a2f5e09bed0bcd487d8b046dc04a135ad54a72ba88ed219",
-      "processed_at": "2026-10-15T19:26:23.265370",
+      "processed_at": "2026-10-21T00:35:14.819699",
       "size": 31804
     },
-    "Intro_Lezione1.ipynb": {
-      "hash": "6503c3e9d898dedf0b4bbeda9ab125b374618587aaacdc15a6aa9fadd71858f8",
-      "processed_at": "2026-10-15T19:26:23.265598",
-      "size": 51878
+    "Lezione 7 - Ciclo 'while'.ipynb": {
+      "hash": "bfc995e102688b33971910803757ba97a640645e2778a3e34a482a6da0bc9183",
+      "processed_at": "2026-10-21T00:35:14.819921",
+      "size": 23851
     },
-    "If.ipynb": {
-      "hash": "c3fb5197c508e08ad2541e3c8053f26a1b5356f84d41c368253b144663330794",
-      "processed_at": "2026-10-15T19:26:23.265777",
-      "size": 28671
-    },
-    "For_Lezione4.ipynb": {
-      "hash": "cf82f56fdf7e16512c417b551ba84a9191843243f7f3fb7180538760a9c60003",
-      "processed_at": "2026-10-15T19:26:23.266043",
-      "size": 22046
-    },
-    "Variabili_input_output_corretto_Lezione2.ipynb": {
+    "Lezione 2 - Variabili.ipynb": {
       "hash": "5ba44d74b9ee933c3da9132ca89dd11f72637ccffe10dd0809e7a7bc28ac3237",
-      "processed_at": "2026-10-15T19:26:23.266528",
+      "processed_at": "2026-10-21T00:35:14.820301",
       "size": 111303
     },
-    "Stringhe_Lezione3.ipynb": {
-      "hash": "ba729e576bfe957a6b13b236b7bdaefa12c6063ed67661b25542981434e6d0b9",
-      "processed_at": "2026-10-15T19:26:23.266809",
-      "size": 29863
+    "Lezione 1 - Introduzione.ipynb": {
+      "hash": "6503c3e9d898dedf0b4bbeda9ab125b374618587aaacdc15a6aa9fadd71858f8",
+      "processed_at": "2026-10-21T00:35:14.820509",
+      "size": 51878
+    },
+    "Lezione 4 - Ciclo 'for'.ipynb": {
+      "hash": "cf82f56fdf7e16512c417b551ba84a9191843243f7f3fb7180538760a9c60003",
+      "processed_at": "2026-10-21T00:35:14.820703",
+      "size": 22046
+    },
+    "Lezione 5 - Commandi if.ipynb": {
+      "hash": "c3fb5197c508e08ad2541e3c8053f26a1b5356f84d41c368253b144663330794",
+      "processed_at": "2026-10-21T00:35:14.820888",
+      "size": 28671
     },
     "RappresentazioneCaratteri.pdf": {
       "hash": "112b419f1925b97de9f38d4ffa9e22cfa2e56fd707931a43e9976210c74176ad",
-      "processed_at": "2026-10-15T19:26:23.267819",
+      "processed_at": "2026-10-21T00:35:14.821912",
       "size": 662819
     },
     "Numeri Binari Interi.pdf": {
       "hash": "84763622c34fccc1c432208c38cff8862b05843f6945f89105c08ef7f8d73de7",
-      "processed_at": "2026-10-15T19:26:23.268885",
+      "processed_at": "2026-10-21T00:35:14.823016",
       "size": 827895
     }
   }

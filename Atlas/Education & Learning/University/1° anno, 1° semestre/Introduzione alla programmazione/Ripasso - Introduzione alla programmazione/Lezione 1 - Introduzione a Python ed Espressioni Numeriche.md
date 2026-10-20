@@ -4,7 +4,7 @@ type: lecture
 area: education
 related: ["[[Lezione 0 - Rappresentazione dei Caratteri e Dati Multimediali]]", "[[Lezione 2 - Variabili Assegnazione Input e Output]]", "[[University]]"]
 aliases: ["Lezione 1", "Introduzione a Python", "Intro"]
-source: Intro_Lezione1.ipynb
+source: "Lezione 1 - Introduzione.ipynb"
 title: "Lezione 1 - Introduzione a Python ed Espressioni Numeriche"
 date: '2026-10-01'
 updated: 2026-10-01T16:30

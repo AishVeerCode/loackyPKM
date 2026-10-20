@@ -4,7 +4,7 @@ type: lecture
 area: education
 related: ["[[Lezione 4 - Ciclo For Sequenze e Variabili Accumulatore]]", "[[Lezione 3 - Stringhe Metodi e Slicing]]", "[[University]]"]
 aliases: ["Lezione 5", "Condizioni e If", "Algebra Booleana in Python"]
-source: If.ipynb
+source: "Lezione 5 - Commandi if.ipynb"
 title: "Lezione 5 - Condizioni e Istruzione If"
 date: '2026-10-13'
 updated: 2026-10-13T17:30

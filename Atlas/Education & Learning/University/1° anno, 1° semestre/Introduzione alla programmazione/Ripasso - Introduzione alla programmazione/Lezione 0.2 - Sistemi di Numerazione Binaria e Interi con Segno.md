@@ -117,7 +117,7 @@ $$(1011)_{\text{CP2}} = 1 \cdot (-2^3) + 0 \cdot 2^2 + 1 \cdot 2^1 + 1 \cdot 2^0
 
 ### Proprietà Strutturali del CP2
 - **Intervallo di rappresentabilità:**
-  $$I_{\text{CP2}} = [-2^{n-1}, \, 2^{n-1} - 1]$$
+$$I_{\text{CP2}} = [-2^{n-1}, \, 2^{n-1} - 1]$$
   Per $n = 8$ bit: $[-128, +127]$. Per $n = 16$ bit: $[-32768, +32767]$.
 - **Unicità dello zero:** lo zero possiede una sola rappresentazione: $(0000\dots0)_{\text{CP2}}$.
 - **Asimmetria:** il minimo valore negativo non ha un corrispondente opposto positivo rappresentabile sugli stessi $n$ bit (es. con 8 bit, $-128$ esiste ma $+128$ richiede almeno 9 bit).
@@ -125,11 +125,11 @@ $$(1011)_{\text{CP2}} = 1 \cdot (-2^3) + 0 \cdot 2^2 + 1 \cdot 2^1 + 1 \cdot 2^0
 ### Algoritmi Operativi per la Negazione in CP2
 Dato un numero $x$, per determinare il numerale in CP2 di $-x$:
 1. **Regola analitica:** invertire tutti i bit di $x$ (NOT bit a bit) e sommare 1 al bit meno significativo:
-   $$-x = \overline{x} + 1$$
+$$-x = \overline{x} + 1$$
 2. **Algoritmo di scansione da destra (veloce):** procedendo da destra verso sinistra (da LSB a MSB), ricopiare inalterati tutti i bit fino al primo `1` compreso; invertire quindi tutti i bit rimanenti a sinistra.
    *Esempio su 8 bit per $x = 74 = 01001010_2$:*
    Il primo `1` da destra è alla seconda cifra (`...10`). Ricopiando `10` e invertendo i restanti bit (`010010` $\to$ `101101`), si ottiene:
-   $$-74 = 10110110_{\text{CP2}}$$
+$$-74 = 10110110_{\text{CP2}}$$
 
 ### Estensione del Segno (Sign Extension)
 Per rappresentare lo stesso numero in CP2 su un numero maggiore di bit ($m > n$), è sufficiente **replicare a sinistra il bit più significativo (MSB)**:
