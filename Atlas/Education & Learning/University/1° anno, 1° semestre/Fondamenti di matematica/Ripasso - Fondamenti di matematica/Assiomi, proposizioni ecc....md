@@ -2,14 +2,14 @@
 status: permanent
 type: summary
 area: education
-related: ["[[Lezione 1 - Logica delle Proposizioni e dei Predicati]]", "[[Lezione 2 - Teoria Assiomatica degli Insiemi]]", "[[Lezione 3 - Relazioni e Funzioni I]]", "[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lezione 5 - i Numeri Reali e Assioma di Completezza]]", "[[Lezione 6 - Valore Assoluto e Numeri Naturali]]", "[[Lezione 7 - Insiemi Numerici N Z e Q]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]", "[[Lezione 9 - Funzioni Reali ed Estremi]]", "[[Lezione 10 - Funzioni Reali II e Funzioni Elementari I]]", "[[Lezione 11 - Funzioni Reali Elementari II]]", "[[Lezione 12 - Limiti I Retta Reale Ampliata e Definizione]]", "[[Lezione 13 - Limiti II Restrizioni Limiti Laterali e Successioni]]", "[[Lezione 14 - Limiti di Successioni e Proprieta Locali]]", "[[Dimostrazioni]]", "[[University]]"]
+related: ["[[Lezione 1 - Logica delle Proposizioni e dei Predicati]]", "[[Lezione 2 - Teoria Assiomatica degli Insiemi]]", "[[Lezione 3 - Relazioni e Funzioni I]]", "[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lezione 5 - i Numeri Reali e Assioma di Completezza]]", "[[Lezione 6 - Valore Assoluto e Numeri Naturali]]", "[[Lezione 7 - Insiemi Numerici N Z e Q]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]", "[[Lezione 9 - Funzioni Reali ed Estremi]]", "[[Lezione 10 - Funzioni Reali II e Funzioni Elementari I]]", "[[Lezione 11 - Funzioni Reali Elementari II]]", "[[Lezione 12 - Limiti I Retta Reale Ampliata e Definizione]]", "[[Lezione 13 - Limiti II Restrizioni Limiti Laterali e Successioni]]", "[[Lezione 14 - Limiti di Successioni e Proprieta Locali]]", "[[Lezione 15 - 15 Proprietà dei limiti]]", "[[Dimostrazioni]]", "[[University]]"]
 aliases: ["Assiomi, proposizioni ecc...", "Assiomi, Proposizioni ecc...", "Assiomi Proposizioni Definizioni", "Assiomi, proposizioni ecc...."]
-source: ["Lezione 1.pdf", "Lezione 2.pdf", "Lezione 3.pdf", "Lezione 4.pdf", "Lezione 5.pdf", "Lezione 6.pdf", "Lezione 7.pdf", "Lezione 8.pdf", "Lezione 9.pdf", "Lezione 10.pdf", "Lezione 11.pdf", "Lezione 12.pdf", "Lezione 13.pdf", "Lezione 14.pdf"]
+source: ["Lezione 1.pdf", "Lezione 2.pdf", "Lezione 3.pdf", "Lezione 4.pdf", "Lezione 5.pdf", "Lezione 6.pdf", "Lezione 7.pdf", "Lezione 8.pdf", "Lezione 9.pdf", "Lezione 10.pdf", "Lezione 11.pdf", "Lezione 12.pdf", "Lezione 13.pdf", "Lezione 14.pdf", "Lezione 15.pdf"]
 title: "Assiomi, Proposizioni, Definizioni e Teoremi"
 date: '2026-10-15'
-updated: '2026-10-15T20:05'
+updated: '2026-10-20T20:22'
 tags: [education/university, education/matematica, education/teoria]
-summary: "Repertorio sistematico di tutti gli assiomi, definizioni, proposizioni, teoremi, lemmi e corollari trattati nel corso di Fondamenti di Matematica dalla Lezione 1 alla Lezione 14."
+summary: "Repertorio sistematico di tutti gli assiomi, definizioni, proposizioni, teoremi, lemmi e corollari trattati nel corso di Fondamenti di Matematica dalla Lezione 1 alla Lezione 15."
 ---
 [[Home MOC|Home]] / [[Education & Learning]] / [[University]] / [[Assiomi, proposizioni ecc...]]
 
@@ -529,3 +529,147 @@ $$\exists U \in \mathcal{U}(x_0) : \forall x \in (A \cap U) \setminus \{x_0\} \i
   1. **Somma:** $\lim_{x \to x_0} (f + g)(x) = \ell + m$
   2. **Prodotto:** $\lim_{x \to x_0} (f \cdot g)(x) = \ell \cdot m$
   3. **Quoziente:** Se $m \ne 0$ e $g(x) \ne 0$ definitivamente, $\lim_{x \to x_0} \left(\frac{f}{g}\right)(x) = \frac{\ell}{m}$
+
+
+---
+
+## Lezione 15 - 15: Proprietà dei limiti
+
+### Teoremi e Proposizioni
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.1: (della permanenza delle disuguaglianze). Sia A⊂ R e x0\in  R un punto di:</b></font></mark> accumulazione perA in R. Sianof : A\to  R e g : A\to  R due funzioni e supponiamo che
+lim
+x\to x0
+f (x) = \ell\in  R e lim
+x\to x0
+g(x) = m\in  R.
+Allora
+\ell>m \implies f (x)>g (x) in un intorno dix0.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Corollario 2.3.: Sia A ⊂ R e x0 \in  R un punto di accumulazione per A in R. Siano:</b></font></mark> f : A\to  R e \lambda\in  R e supponiamo chelimx\to x0f (x) = \ell\in  R. Allora
+\ell>\lambda (risp. \ell<\lambda ) \implies  f (x)>\lambda (risp. f (x)<\lambda ) in un intorno dix0.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Corollario 2.4: (teorema della permanenza del segno). Sia A⊂ R e f : A\to  R. Siax0\in  R:</b></font></mark> un punto di accumulazione perA. Supponiamo che limx\to x0f (x) = \ell\in  R. Allora
+\ell> 0 (risp. \ell< 0) \implies  f (x)> 0 (risp. < 0) in un intorno dix0.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Corollario 2.5: (teorema di prolungamento delle disuguaglianze). Sia A⊂ R e x0\in  R un:</b></font></mark> punto di accumulazione perA in R. Sianof : A\to  R eg : A\to  R due funzioni e supponiamo
+che limx\to x0f (x) = \ell e limx\to x0g(x) = m. Allora
+f (x)≤g(x) in un intorno dix0 \implies  \ell\le m.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.7: (del confronto o della convergenza obbligata o dei carabinieri). Sia A⊂ R e:</b></font></mark> x0\in  R un punto di accumulazione perA in R. Siano f, g e h tre funzioni definite inA a
+valori in R e supponiamo che
+a) f (x)≤g(x)≤h(x) in un intorno dix0.
+b) lim
+x\to x0
+f (x) = \ell e lim
+x\to x0
+h(x) = \ell conℓ\in  R.
+Allora lim
+x\to x0
+g(x) = \ell.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Corollario 2.9.: Sia A⊂ R e x0\in  R un punto di accumulazione perA. Sianof : A\to  R e:</b></font></mark> g : A\to  R due funzioni e supponiamo che
+|f (x)|≤ g(x) in un intorno dix0.
+Allora si ha
+lim
+x\to x0
+g(x) = 0 \implies  lim
+x\to x0
+f (x) = 0.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Corollario 2.13.: Sia A⊂ R e x0\in  R un punto di accumulazione perA. Siano f : A\to  R:</b></font></mark> e g : A\to  R due funzioni e supponiamo che
+lim
+x\to x0
+f (x) = 0 e che g(x) è limitata in un intorno dix0.
+Allora lim
+x\to x0
+f (x)g(x) = 0.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Proposizione 2.15.: Sia A⊂ R, x0 \in  R punto di accumulazione perA e f : A\to  R.:</b></font></mark> Supponiamo che limx\to x0f (x) = \ell\in  R. Allora valgono le seguenti affermazioni
+(i) Se \ell> −∞, alloraf è limitata inferiormente in un intorno dix0, cioè
+\exists \lambda\in  R tale cheλ\le f (x) in un intorno dix0.
+(ii) Se \ell< +∞, alloraf è limitata superiormente in un intorno dix0, cioè
+\exists \lambda\in  R tale chef (x)≤\lambda in un intorno dix0.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.16: (somma di limiti infiniti). Sia A⊂ R e x0\in  R punto di accumulazione per:</b></font></mark> A. Sianof :A\to  R e g :A\to  R e supponiamo che
+lim
+x\to x0
+f (x) = \ell\in {−∞, +∞}.
+Valgono le seguenti proposizioni.
+(i) Se \ell = +∞ e g è limitata inferiormente in un intorno dix0, limx\to x0(f +g)(x) = \ell.
+(ii) Se \ell =−∞ e g è limitata superiormente in un intorno dix0, limx\to x0(f +g)(x) = \ell.
+Il contenuto di questo teorema possiamo schematizzarlo nel modo seguente
+f (x)|{z}
+↓
++∞
++g(x)|{z}
+l.i.
+\to  +∞ e f (x)|{z}
+↓
+−∞
++g(x)|{z}
+l.s.
+\to −∞.
+Per esempio possiamo affermare chelimx\to 0
+x2 + sen(1/x) = +∞, perché la seconda funzione,
+anche se non ha limite, è limitata inferiormente.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.16: e dalla Proposizione 2.15, segue che:</b></font></mark> 
+
+
+se \ell = +∞ e m> −∞, allora lim
+x\to x0
+f (x) +g(x) = +∞
+se \ell =−∞ e m< +∞, allora lim
+x\to x0
+f (x) +g(x) =−∞.
+Perciò, se si estende l’algebra diR su R ponendo, per convenzione,
+\forall m\in  R∪{ +∞} : (+ ∞) +m =m + (+∞) = +∞
+\forall m\in  R∪{−∞} : ( −∞) +m =m + (−∞) =−∞.
+possiamo dire che vale sempre
+lim
+x\to x0
+f (x) +g(x) = \ell +m
+con l’esclusione dei casi(\ell,m ) = (+∞,−∞) e (\ell,m ) = (−∞, +∞).
+In definitiva, sulla retta estesa dei numeri reali vale il seguente risultato.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Corollario 2.18.: Supponiamo che limx\to x0f (x) = \ell\in  R e limx\to x0g(x) = m\in  R. Allora,:</b></font></mark> lim
+x\to x0
+f (x) +g(x) = \ell +m,
+con l’esclusione dei casi in cui uno traℓ e m sia +∞ e l’altro sia−∞.
+Notiamo che se la somma dei limitiℓ +m si presenta in una delle forme
+(+∞) + (−∞) o (−∞) + (+∞),
+allora non si può dire nulla sulla somma, nel senso che il limite della somma può essere reale,
++∞,−∞ o anche non esistere. Per tale ragione tali forme vengono detteindeterminate.
+Consideriamo adesso il caso di moltiplicazione di limiti che possono essere infiniti.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.19: (prodotto di limiti infiniti). Sia A⊂ R, x0\in  R punto di accumulazione per:</b></font></mark> A, ef :A\to  R e g :A\to  R. Valgono le seguenti.
+(i) Se limx\to x0f (x) = +∞ (risp.−∞) e limx\to x0g(x) = m\in  R\{ 0}, allora
+lim
+x\to x0
+f (x)g(x) =
+(
++∞ (risp. −∞ ) se m> 0
+−∞ (risp. +∞) se m< 0.
+(ii) Se lim
+x\to x0
+f (x) =±∞, allora lim
+x\to x0
+f (x) = 0.
+(iii) Se lim
+x\to x0
+f (x) = 0 e f (x)> 0 (risp. < 0) in un intorno dix0, allora
+lim
+x\to x0
+f (x) = +∞ (risp. −∞ ).
+La (i) si può schematizzare come segue
+f (x)|{z}
+↓
++∞
+g(x)|{z}
+↓
+±
+\to ±∞ e f (x)|{z}
+↓
+−∞
+g(x)|{z}
+↓
+±
+\to ∓∞.
+Mentre la (ii) e la (iii) rispettivamente con
+f (x)|{z}
+↓
+±∞
+\to  0 e 1
+f (x)|{z}
+↓
+0±
+\to ±∞

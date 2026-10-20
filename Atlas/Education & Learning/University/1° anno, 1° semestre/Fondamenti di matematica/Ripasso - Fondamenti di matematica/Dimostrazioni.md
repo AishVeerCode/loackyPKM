@@ -2,20 +2,20 @@
 status: permanent
 type: summary
 area: education
-related: ["[[Lezione 1 - Logica delle Proposizioni e dei Predicati]]", "[[Lezione 2 - Teoria Assiomatica degli Insiemi]]", "[[Lezione 3 - Relazioni e Funzioni I]]", "[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lezione 5 - i Numeri Reali e Assioma di Completezza]]", "[[Lezione 6 - Valore Assoluto e Numeri Naturali]]", "[[Lezione 7 - Insiemi Numerici N Z e Q]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]", "[[Lezione 9 - Funzioni Reali ed Estremi]]", "[[Lezione 10 - Funzioni Reali II e Funzioni Elementari I]]", "[[Lezione 11 - Funzioni Reali Elementari II]]", "[[Lezione 12 - Limiti I Retta Reale Ampliata e Definizione]]", "[[Lezione 13 - Limiti II Restrizioni Limiti Laterali e Successioni]]", "[[Lezione 14 - Limiti di Successioni e Proprieta Locali]]", "[[Assiomi, proposizioni ecc...]]", "[[University]]"]
-aliases: ["Dimostrazioni", "Dimostrazioni Fondamenti di Matematica", "Raccolta Dimostrazioni Lezioni 1-14"]
-source: ["Lezione 1.pdf", "Lezione 2.pdf", "Lezione 3.pdf", "Lezione 4.pdf", "Lezione 5.pdf", "Lezione 6.pdf", "Lezione 7.pdf", "Lezione 8.pdf", "Lezione 9.pdf", "Lezione 10.pdf", "Lezione 11.pdf", "Lezione 12.pdf", "Lezione 13.pdf", "Lezione 14.pdf"]
+related: ["[[Lezione 1 - Logica delle Proposizioni e dei Predicati]]", "[[Lezione 2 - Teoria Assiomatica degli Insiemi]]", "[[Lezione 3 - Relazioni e Funzioni I]]", "[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lezione 5 - i Numeri Reali e Assioma di Completezza]]", "[[Lezione 6 - Valore Assoluto e Numeri Naturali]]", "[[Lezione 7 - Insiemi Numerici N Z e Q]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]", "[[Lezione 9 - Funzioni Reali ed Estremi]]", "[[Lezione 10 - Funzioni Reali II e Funzioni Elementari I]]", "[[Lezione 11 - Funzioni Reali Elementari II]]", "[[Lezione 12 - Limiti I Retta Reale Ampliata e Definizione]]", "[[Lezione 13 - Limiti II Restrizioni Limiti Laterali e Successioni]]", "[[Lezione 14 - Limiti di Successioni e Proprieta Locali]]", "[[Lezione 15 - 15 Proprietà dei limiti]]", "[[Assiomi, proposizioni ecc...]]", "[[University]]"]
+aliases: ["Dimostrazioni", "Dimostrazioni Fondamenti di Matematica", "Raccolta Dimostrazioni Lezioni 1-15"]
+source: ["Lezione 1.pdf", "Lezione 2.pdf", "Lezione 3.pdf", "Lezione 4.pdf", "Lezione 5.pdf", "Lezione 6.pdf", "Lezione 7.pdf", "Lezione 8.pdf", "Lezione 9.pdf", "Lezione 10.pdf", "Lezione 11.pdf", "Lezione 12.pdf", "Lezione 13.pdf", "Lezione 14.pdf", "Lezione 15.pdf"]
 title: "Dimostrazioni"
 date: '2026-10-15'
-updated: '2026-10-15T19:50'
+updated: '2026-10-20T20:22'
 tags: [education/university, education/matematica, education/dimostrazioni]
-summary: "Compendio integrale e rigoroso di tutte le dimostrazioni matematiche svolte nel corso di Fondamenti di Matematica dalla Lezione 1 alla Lezione 14."
+summary: "Compendio integrale e rigoroso di tutte le dimostrazioni matematiche svolte nel corso di Fondamenti di Matematica dalla Lezione 1 alla Lezione 15."
 ---
 [[Home MOC|Home]] / [[Education & Learning]] / [[University]] / [[Dimostrazioni]]
 
 # Dimostrazioni
 
-Raccolta esaustiva di tutte le dimostrazioni analitiche e algebriche svolte nelle Lezioni da 1 a 14 del corso di Fondamenti di Matematica, articolate con passaggi logico-deduttivi formali, esplicitazione delle ipotesi e verifica delle tesi.
+Raccolta esaustiva di tutte le dimostrazioni analitiche e algebriche svolte nelle Lezioni da 1 a 15 del corso di Fondamenti di Matematica, articolate con passaggi logico-deduttivi formali, esplicitazione delle ipotesi e verifica delle tesi.
 
 ---
 
@@ -36,11 +36,11 @@ $$\neg Q(n) \implies \neg P(n)$$
 dove $\neg Q(n) \equiv n \text{ è dispari}$ e $\neg P(n) \equiv n^2 \text{ è dispari}$.
 1. Assumiamo vera la negazione della tesi $\neg Q(n)$: $n$ è dispari.
 2. Per definizione di intero dispari, esiste un intero $k \in \mathbb{N}$ tale che:
-   $$n = 2k + 1$$
+$$n = 2k + 1$$
 3. Calcoliamo il quadrato di $n$:
-   $$n^2 = (2k + 1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$$
+$$n^2 = (2k + 1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$$
 4. Poiché $k \in \mathbb{N}$, anche $m = 2k^2 + 2k \in \mathbb{N}$. Ne consegue:
-   $$n^2 = 2m + 1$$
+$$n^2 = 2m + 1$$
    il che prova che $n^2$ è un numero dispari ($\neg P(n)$ è vera).
 5. Essendo provata l'implicazione contronominale $\neg Q \implies \neg P$, risulta dimostrata l'implicazione diretta originaria $P \implies Q$. $\blacksquare$
 
@@ -125,18 +125,18 @@ Notiamo preliminarmente che $(x, x) = \{\{x\}, \{x, x\}\} = \{\{x\}, \{x\}\} = \
 Distinguiamo due casi mutuamente esclusivi:
 - **Caso 1: $x = y$.**
   In questo caso $(x, y) = \{\{x\}\}$. Poiché $\{\{a\}, \{a, b\}\} = \{\{x\}\}$, l'insieme a destra deve essere un singoletto il cui unico elemento è $\{x\}$. Ne segue che:
-  $$\{a\} = \{x\} \implies a = x$$
-  $$\{a, b\} = \{x\} \implies a = b = x$$
+$$\{a\} = \{x\} \implies a = x$$
+$$\{a, b\} = \{x\} \implies a = b = x$$
   Quindi $a = x$ e $b = x = y$, da cui $x = a \land y = b$.
 - **Caso 2: $x \ne y$.**
   In questo caso $\{\{x\}, \{x, y\}\}$ è un insieme costituito da due elementi distinti: il singoletto $\{x\}$ e la coppia non ordinata $\{x, y\}$ (avente due elementi).
   Poiché $\{\{a\}, \{a, b\}\} = \{\{x\}, \{x, y\}\}$, anche l'insieme a destra deve contenere un singoletto e una coppia di due elementi distinti.
   L'unico singoletto presente a destra è $\{a\}$, mentre a sinistra è $\{x\}$. Uguagliando i singoletti:
-  $$\{a\} = \{x\} \implies a = x$$
+$$\{a\} = \{x\} \implies a = x$$
   Uguagliando i rimanenti elementi (le coppie con due elementi):
-  $$\{a, b\} = \{x, y\}$$
+$$\{a, b\} = \{x, y\}$$
   Sostituendo $a = x$:
-  $$\{x, b\} = \{x, y\}$$
+$$\{x, b\} = \{x, y\}$$
   Dato che $y \in \{x, y\}$, deve risultare $y \in \{x, b\}$. Poiché per ipotesi del Caso 2 $y \ne x$, l'unica possibilità è $y = b$.
 
 In entrambi i casi si ottiene $x = a$ e $y = b$. $\blacksquare$
@@ -157,10 +157,10 @@ In entrambi i casi si ottiene $x = a$ e $y = b$. $\blacksquare$
 - **Dimostrazione $(1 \implies 2)$:**
   Supponiamo che esista $g: B \to A$ tale che $g(f(x)) = x$ per ogni $x \in A$ e $f(g(y)) = y$ per ogni $y \in B$.
   - *Iniettività:* Siano $x_1, x_2 \in A$ con $f(x_1) = f(x_2)$. Applicando la funzione $g$ ad ambo i membri:
-  $$g(f(x_1)) = g(f(x_2))$$
+$$g(f(x_1)) = g(f(x_2))$$
     Essendo $g(f(x)) = x$, otteniamo $x_1 = x_2$. Quindi $f$ è iniettiva.
   - *Suriettività:* Sia $y \in B$ un elemento arbitrario. Poniamo $x = g(y) \in A$. Applicando $f$:
-  $$f(x) = f(g(y)) = y$$
+$$f(x) = f(g(y)) = y$$
     Abbiamo trovato un elemento $x \in A$ la cui immagine tramite $f$ è $y$. Dunque $f$ è suriettiva.
   Essendo iniettiva e suriettiva, $f$ è bigettiva.
 
@@ -177,7 +177,7 @@ In entrambi i casi si ottiene $x = a$ e $y = b$. $\blacksquare$
 
 - **Dimostrazione dell'Unicità dell'Inversa:**
   Supponiamo che esistano due funzioni inverse $g_1, g_2: B \to A$ tali che $g_1 \circ f = i_A$ e $f \circ g_2 = i_B$. Sfruttando la proprietà associativa della composizione:
-  $$g_1 = g_1 \circ i_B = g_1 \circ (f \circ g_2) = (g_1 \circ f) \circ g_2 = i_A \circ g_2 = g_2$$
+$$g_1 = g_1 \circ i_B = g_1 \circ (f \circ g_2) = (g_1 \circ f) \circ g_2 = i_A \circ g_2 = g_2$$
   L'inversa è pertanto unica. $\blacksquare$
 
 ### Teorema sull'Inversa della Composizione
@@ -188,9 +188,9 @@ In entrambi i casi si ottiene $x = a$ e $y = b$. $\blacksquare$
 **Dimostrazione:**
 Per verificare che una funzione $h: C \to A$ è l'inversa di $g \circ f$, è sufficiente verificare che $h \circ (g \circ f) = i_A$ e $(g \circ f) \circ h = i_C$. Poniamo $h = f^{-1} \circ g^{-1}$:
 1. Composizione a sinistra:
-   $$(f^{-1} \circ g^{-1}) \circ (g \circ f) = f^{-1} \circ (g^{-1} \circ g) \circ f = f^{-1} \circ i_B \circ f = f^{-1} \circ f = i_A$$
+$$(f^{-1} \circ g^{-1}) \circ (g \circ f) = f^{-1} \circ (g^{-1} \circ g) \circ f = f^{-1} \circ i_B \circ f = f^{-1} \circ f = i_A$$
 2. Composizione a destra:
-   $$(g \circ f) \circ (f^{-1} \circ g^{-1}) = g \circ (f \circ f^{-1}) \circ g^{-1} = g \circ i_B \circ g^{-1} = g \circ g^{-1} = i_C$$
+$$(g \circ f) \circ (f^{-1} \circ g^{-1}) = g \circ (f \circ f^{-1}) \circ g^{-1} = g \circ i_B \circ g^{-1} = g \circ g^{-1} = i_C$$
 Per l'unicità dell'inversa, $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$. $\blacksquare$
 
 ---
@@ -205,9 +205,9 @@ Per l'unicità dell'inversa, $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$. $\blacksq
 **Dimostrazione:**
 - Se $x = 0$, $0 \cdot y = (0 + 0)y = 0 \cdot y + 0 \cdot y$. Sottraendo $0 \cdot y$ ad ambo i membri, si ottiene $0 = 0 \cdot y$. Analogamente per $y = 0$. Quindi $(x = 0 \lor y = 0) \implies xy = 0$.
 - Viceversa, sia $x \cdot y = 0$. Supponiamo che $x \ne 0$. Poiché $(\mathbb{R}, +, \cdot)$ è un campo, per l'Assioma M4 esiste l'inverso moltiplicativo $x^{-1} \in \mathbb{R}$. Moltiplicando ambo i membri per $x^{-1}$:
-  $$x^{-1} \cdot (x \cdot y) = x^{-1} \cdot 0$$
+$$x^{-1} \cdot (x \cdot y) = x^{-1} \cdot 0$$
   Applicando la proprietà associativa M2 a sinistra e la proprietà dello zero a destra:
-  $$(x^{-1} \cdot x) \cdot y = 0 \implies 1 \cdot y = 0 \implies y = 0$$
+$$(x^{-1} \cdot x) \cdot y = 0 \implies 1 \cdot y = 0 \implies y = 0$$
 Dunque, se $x \ne 0$, necessariamente $y = 0$, il che dimostra la disgiunzione $x = 0 \lor y = 0$. $\blacksquare$
 
 ### Teorema di Esistenza dell'Estremo Inferiore
@@ -221,10 +221,10 @@ $$-B = \{-b \in \mathbb{R} : b \in B\}$$
 1. Poiché $B \ne \emptyset$, anche $-B \ne \emptyset$.
 2. Essendo $B$ limitato inferiormente, esiste un minorante $m \in \mathbb{R}$ tale che $\forall b \in B, m \le b$.
 3. Per gli assiomi di ordinamento, moltiplicando per $-1$:
-   $$m \le b \iff -b \le -m, \quad \forall b \in B$$
+$$m \le b \iff -b \le -m, \quad \forall b \in B$$
    Ciò implica che ogni elemento $x \in -B$ soddisfa $x \le -m$. Pertanto, $-B$ è limitato superiormente da $-m$.
 4. Per l'Assioma di Completezza di Dedekind, l'insieme $-B$, essendo non vuoto e superiormente limitato, ammette estremo superiore in $\mathbb{R}$:
-   $$\lambda = \sup(-B) \in \mathbb{R}$$
+$$\lambda = \sup(-B) \in \mathbb{R}$$
 5. Dimostriamo che $-\lambda = \inf B$:
    - *Minorante:* $\forall b \in B$, $-b \in -B \implies -b \le \lambda \iff b \ge -\lambda$. Quindi $-\lambda$ è un minorante per $B$.
    - *Massimo minorante:* Sia $m'$ un qualsiasi minorante di $B$, ossia $\forall b \in B, m' \le b$. Allora $\forall b \in B, -b \le -m'$, ossia $-m'$ è un maggiorante per $-B$. Poiché $\lambda = \sup(-B)$ è il *minimo* dei maggioranti, si ha $\lambda \le -m' \iff m' \le -\lambda$.
@@ -245,7 +245,7 @@ Dunque $-\lambda$ è il massimo dei minoranti di $B$, ovvero $\inf B = -\sup(-B)
   - Dalla condizione (1), $M$ è un maggiorante di $A$.
   - Supponiamo per assurdo che esista un maggiorante $M'$ strettamente minore di $M$, ossia $M' < M$.
   - Poniamo $\varepsilon = M - M' > 0$. Per la condizione (2), in corrispondenza di tale $\varepsilon$ esiste un elemento $a \in A$ tale che:
-  $$a > M - \varepsilon = M - (M - M') = M'$$
+$$a > M - \varepsilon = M - (M - M') = M'$$
   - Ma $a > M'$ contraddice l'ipotesi che $M'$ sia un maggiorante per $A$.
   - Pertanto nessun numero strettamente minore di $M$ è un maggiorante: $M$ è il minimo dei maggioranti, ossia $M = \sup A$. $\blacksquare$
 
@@ -262,19 +262,19 @@ Dunque $-\lambda$ è il massimo dei minoranti di $B$, ovvero $\inf B = -\sup(-B)
 **Dimostrazione:**
 - **Dimostrazione 1 (Triangolare):**
   Dalla proprietà $|t| \le r \iff -r \le t \le r$, sappiamo che per ogni $x, y \in \mathbb{R}$:
-  $$-|x| \le x \le |x| \quad \text{e} \quad -|y| \le y \le |y|$$
+$$-|x| \le x \le |x| \quad \text{e} \quad -|y| \le y \le |y|$$
   Sommando membro a membro le due catene di disuguaglianze per compatibilità dell'ordinamento con l'addizione:
-  $$-(|x| + |y|) \le x + y \le |x| + |y|$$
+$$-(|x| + |y|) \le x + y \le |x| + |y|$$
   Applicando nuovamente l'equivalenza fondamentale con $t = x+y$ e $r = |x| + |y|$, deduciamo direttamente:
-  $$|x + y| \le |x| + |y|$$
+$$|x + y| \le |x| + |y|$$
 
 - **Dimostrazione 2 (Triangolare Inversa):**
   Scriviamo $x$ come somma telescopica: $x = (x - y) + y$. Applicando la disuguaglianza triangolare:
-  $$|x| = |(x - y) + y| \le |x - y| + |y| \implies |x| - |y| \le |x - y|$$
+$$|x| = |(x - y) + y| \le |x - y| + |y| \implies |x| - |y| \le |x - y|$$
   Invertendo i ruoli di $x$ e $y$:
-  $$|y| - |x| \le |y - x| = |-(x - y)| = |x - y| \implies -(|x| - |y|) \le |x - y|$$
+$$|y| - |x| \le |y - x| = |-(x - y)| = |x - y| \implies -(|x| - |y|) \le |x - y|$$
   Unificando le due disuguaglianze:
-  $$-|x - y| \le |x| - |y| \le |x - y| \iff ||x| - |y|| \le |x - y| \quad \blacksquare$$
+$$-|x - y| \le |x| - |y| \le |x - y| \iff ||x| - |y|| \le |x - y| \quad \blacksquare$$
 
 ### Teorema di Discretezza dei Numeri Naturali
 >[!important] Enunciato
@@ -294,7 +294,7 @@ Dimostriamo la prima asserzione per induzione su $m \in \mathbb{N}$:
   Supponiamo per assurdo che esista $k \in \mathbb{N}$ tale che $m + 1 < k < (m + 1) + 1 = m + 2$.
   Poiché $k > m + 1 \ge 1 > 0$, $k \ne 0$. Per il teorema di esistenza del predecessore, esiste $n \in \mathbb{N}$ tale che $k = n + 1$.
   Sostituendo $k = n + 1$:
-  $$m + 1 < n + 1 < m + 2 \iff m < n < m + 1$$
+$$m + 1 < n + 1 < m + 2 \iff m < n < m + 1$$
   Ma ciò contraddice l'ipotesi induttiva, poiché $n \in \mathbb{N}$ si troverebbe strettamente tra $m$ e $m+1$.
 Pertanto non esistono naturali strettamente compresi tra $m$ e $m+1$.
 Da ciò segue immediatamente che se $m < n$, non potendo $n$ cadere in $]m, m+1[$, deve necessariamente risultare $n \ge m + 1$. $\blacksquare$
@@ -330,19 +330,19 @@ Dunque ogni sottoinsieme non vuoto di $\mathbb{N}$ ammette elemento minimo. $\bl
 **Dimostrazione:**
 - **Esistenza:**
   Consideriamo l'insieme dei multipli di $m$ che non superano $n$:
-  $$A = \{k \in \mathbb{N} : k \cdot m \le n\}$$
+$$A = \{k \in \mathbb{N} : k \cdot m \le n\}$$
   - $A$ non è vuoto perché $0 \cdot m = 0 \le n \implies 0 \in A$.
   - $A$ è limitato superiormente da $n$: poiché $m \ge 1$, $k \le k \cdot m \le n$, dunque ogni $k \in A$ soddisfa $k \le n$.
   Essendo $A$ un sottoinsieme di $\mathbb{N}$ non vuoto e superiormente limitato, ammette massimo:
-  $$q = \max A \in \mathbb{N}$$
+$$q = \max A \in \mathbb{N}$$
   Poniamo $r = n - m \cdot q$.
   Poiché $q \in A$, $m \cdot q \le n \implies r = n - mq \ge 0$.
   Inoltre, poiché $q$ è il massimo di $A$, $q + 1 \notin A$, il che significa:
-  $$(q + 1)m > n \implies qm + m > n \implies m > n - qm = r \implies r < m$$
+$$(q + 1)m > n \implies qm + m > n \implies m > n - qm = r \implies r < m$$
   Abbiamo quindi trovato $q, r \in \mathbb{N}$ con $n = mq + r$ e $0 \le r < m$.
 - **Unicità:**
   Supponiamo che esistano due coppie $(q_1, r_1)$ e $(q_2, r_2)$ che soddisfano le condizioni. Allora:
-  $$mq_1 + r_1 = mq_2 + r_2 \implies m(q_1 - q_2) = r_2 - r_1$$
+$$mq_1 + r_1 = mq_2 + r_2 \implies m(q_1 - q_2) = r_2 - r_1$$
   Supponiamo senza perdita di generalità $q_1 \ge q_2$.
   Se fosse $q_1 > q_2$, avremmo $q_1 - q_2 \ge 1 \implies m(q_1 - q_2) \ge m$.
   D'altra parte, poiché $0 \le r_1, r_2 < m$, la differenza soddisfa $r_2 - r_1 \le r_2 < m$.
@@ -356,18 +356,18 @@ Dunque ogni sottoinsieme non vuoto di $\mathbb{N}$ ammette elemento minimo. $\bl
 
 **Dimostrazione per Induzione su $n$:**
 - *Base dell'induzione ($n = 0$):*
-  $$(1 + x)^0 = 1 \quad \text{e} \quad 1 + 0 \cdot x = 1 \implies 1 \ge 1 \quad \text{(Vera)}$$
+$$(1 + x)^0 = 1 \quad \text{e} \quad 1 + 0 \cdot x = 1 \implies 1 \ge 1 \quad \text{(Vera)}$$
 - *Passo induttivo ($n \implies n + 1$):*
   Assumiamo vera l'ipotesi induttiva per $n$: $(1 + x)^n \ge 1 + n x$.
   Vogliamo dimostrare che $(1 + x)^{n+1} \ge 1 + (n+1)x$.
   Poiché $x \ge -1$, si ha $1 + x \ge 0$. Possiamo dunque moltiplicare entrambi i membri dell'ipotesi induttiva per la quantità non negativa $(1 + x)$ preservando il verso della disuguaglianza:
-  $$(1 + x)^{n+1} = (1 + x)^n \cdot (1 + x) \ge (1 + nx)(1 + x)$$
+$$(1 + x)^{n+1} = (1 + x)^n \cdot (1 + x) \ge (1 + nx)(1 + x)$$
   Sviluppiamo il prodotto algebrico a destra:
-  $$(1 + nx)(1 + x) = 1 + x + nx + nx^2 = 1 + (n + 1)x + n x^2$$
+$$(1 + nx)(1 + x) = 1 + x + nx + nx^2 = 1 + (n + 1)x + n x^2$$
   Poiché $n \in \mathbb{N}$ e $x^2 \ge 0$, il termine $nx^2 \ge 0$. Omettendo tale quantità non negativa:
-  $$1 + (n + 1)x + n x^2 \ge 1 + (n + 1)x$$
+$$1 + (n + 1)x + n x^2 \ge 1 + (n + 1)x$$
   Concatenando le disuguaglianze, otteniamo:
-  $$(1 + x)^{n+1} \ge 1 + (n + 1)x$$
+$$(1 + x)^{n+1} \ge 1 + (n + 1)x$$
 La disuguaglianza è provata per ogni $n \in \mathbb{N}$. $\blacksquare$
 
 ### Dimostrazione dell'Irrazionalità di $\sqrt{2}$
@@ -385,7 +385,7 @@ $$\frac{m^2}{n^2} = 2 \implies m^2 = 2n^2$$
 2. Per il Teorema dimostrato nella Lezione 1 (per contronominale), se $m^2$ è pari, allora $m$ è pari.
 3. Esiste quindi un intero $k \in \mathbb{N}^*$ tale che $m = 2k$.
 4. Sostituendo $m = 2k$ nell'equazione:
-   $$(2k)^2 = 2n^2 \implies 4k^2 = 2n^2 \implies 2k^2 = n^2$$
+$$(2k)^2 = 2n^2 \implies 4k^2 = 2n^2 \implies 2k^2 = n^2$$
 5. L'uguaglianza mostra ora che anche $n^2$ è pari, il che implica che $n$ è pari.
 6. Abbiamo ottenuto che sia $m$ sia $n$ sono divisibili per $2$, il che contraddice l'ipotesi che la frazione $m/n$ fosse ridotta ai minimi termini ($\mathrm{MCD}(m, n) = 1$).
 L'assurdo dimostra che $\sqrt{2} \notin \mathbb{Q}$. $\blacksquare$
@@ -401,14 +401,14 @@ L'assurdo dimostra che $\sqrt{2} \notin \mathbb{Q}$. $\blacksquare$
    Poiché $\sqrt{2}$ è irrazionale, non può essere $\lambda^2 = 2$. Rimangono due casi:
    - **Caso $\lambda^2 < 2$:**
      Costruiamo un elemento di $A$ strettamente maggiore di $\lambda$. Scegliamo un intero $n \ge 1$ tale che:
-  $$\left(\lambda + \frac{1}{n}\right)^2 < 2$$
+$$\left(\lambda + \frac{1}{n}\right)^2 < 2$$
      Sviluppando: $\left(\lambda + \frac{1}{n}\right)^2 = \lambda^2 + \frac{2\lambda}{n} + \frac{1}{n^2} \le \lambda^2 + \frac{2\lambda + 1}{n}$.
      Basta imporre $\lambda^2 + \frac{2\lambda+1}{n} < 2 \iff \frac{2\lambda+1}{n} < 2 - \lambda^2 \iff n > \frac{2\lambda+1}{2 - \lambda^2}$.
      Per la proprietà archimedea, tale $n \in \mathbb{N}^*$ esiste. Allora $\lambda + \frac{1}{n} \in \mathbb{Q}$, $\left(\lambda + \frac{1}{n}\right)^2 < 2 \implies \lambda + \frac{1}{n} \in A$.
      Ma $\lambda + \frac{1}{n} > \lambda$, il che contraddice il fatto che $\lambda$ sia un maggiorante di $A$.
    - **Caso $\lambda^2 > 2$:**
      Costruiamo un maggiorante di $A$ strettamente minore di $\lambda$. Cerchiamo $n \in \mathbb{N}^*$ tale che:
-  $$\left(\lambda - \frac{1}{n}\right)^2 > 2$$
+$$\left(\lambda - \frac{1}{n}\right)^2 > 2$$
      Sviluppando: $\left(\lambda - \frac{1}{n}\right)^2 = \lambda^2 - \frac{2\lambda}{n} + \frac{1}{n^2} > \lambda^2 - \frac{2\lambda}{n}$.
      Basta imporre $\lambda^2 - \frac{2\lambda}{n} > 2 \iff \frac{2\lambda}{n} < \lambda^2 - 2 \iff n > \frac{2\lambda}{\lambda^2 - 2}$.
      Tale $n$ esiste per la proprietà archimedea. Dunque per ogni $x \in A$, $x^2 < 2 < \left(\lambda - \frac{1}{n}\right)^2 \implies x < \lambda - \frac{1}{n}$.
@@ -446,12 +446,12 @@ Dunque $\mathbb{N}$ è superiormente illimitato in $\mathbb{R}$. $\blacksquare$
 **Dimostrazione:**
 Siano $a, b \in \mathbb{R}$ con $a < b \implies b - a > 0$.
 1. Per la Proprietà di Archimede, esiste un naturale $n \in \mathbb{N}^*$ tale che:
-   $$n \cdot (b - a) > 1 \iff nb - na > 1$$
+$$n \cdot (b - a) > 1 \iff nb - na > 1$$
 2. L'intervallo aperto $]na, nb[$ possiede un'ampiezza strettamente superiore a $1$. Di conseguenza, deve contenere al suo interno almeno un numero intero relativo $m \in \mathbb{Z}$:
-   $$na < m < nb$$
+$$na < m < nb$$
    *(Formalmente, ponendo $m = \lfloor na \rfloor + 1$, si ha per definizione $m - 1 \le na < m \implies na < m$; inoltre $m \le na + 1 < na + (nb - na) = nb$)*.
 3. Dividendo ciascun membro per $n > 0$:
-   $$a < \frac{m}{n} < b$$
+$$a < \frac{m}{n} < b$$
 Poiché $m \in \mathbb{Z}$ e $n \in \mathbb{N}^*$, il rapporto $x = \frac{m}{n} \in \mathbb{Q}$, verificando la densità. $\blacksquare$
 
 ### Dimostrazione della Somma della Successione Geometrica
@@ -463,13 +463,13 @@ Poiché $m \in \mathbb{Z}$ e $n \in \mathbb{N}^*$, il rapporto $x = \frac{m}{n} 
 - Se $q = 1$: $\sum_{k=0}^n 1^k = \sum_{k=0}^n 1 = n + 1$.
 - Se $q \ne 1$, poniamo $S_n = \sum_{k=0}^n q^k = 1 + q + q^2 + \dots + q^n$.
   Moltiplichiamo l'intera somma per $q$:
-  $$q S_n = q(1 + q + \dots + q^n) = q + q^2 + \dots + q^n + q^{n+1}$$
+$$q S_n = q(1 + q + \dots + q^n) = q + q^2 + \dots + q^n + q^{n+1}$$
   Sottraendo $q S_n$ da $S_n$:
-  $$S_n - q S_n = (1 + q + q^2 + \dots + q^n) - (q + q^2 + \dots + q^{n+1})$$
+$$S_n - q S_n = (1 + q + q^2 + \dots + q^n) - (q + q^2 + \dots + q^{n+1})$$
   Tutti i termini intermedi si elidono telescopicamente:
-  $$S_n(1 - q) = 1 - q^{n+1}$$
+$$S_n(1 - q) = 1 - q^{n+1}$$
   Poiché $q \ne 1 \implies 1 - q \ne 0$, dividendo per $1 - q$:
-  $$S_n = \frac{1 - q^{n+1}}{1 - q} \quad \blacksquare$$
+$$S_n = \frac{1 - q^{n+1}}{1 - q} \quad \blacksquare$$
 
 ### Dimostrazione della Somma dei Primi $n$ Numeri Naturali (Gauss)
 >[!important] Enunciato
@@ -508,15 +508,15 @@ $$= \frac{(n + 1) \cdot n!}{[k \cdot (k-1)!] \cdot [(n - k + 1) \cdot (n - k)!]}
 **Dimostrazione per Induzione su $n$:**
 - *Base ($n = 0$):* $(a + b)^0 = 1$ e $\binom{0}{0} a^0 b^0 = 1 \cdot 1 \cdot 1 = 1$. L'uguaglianza è verificata.
 - *Passo induttivo ($n \implies n + 1$):*
-  $$(a + b)^{n+1} = (a + b)(a + b)^n = (a + b) \sum_{k=0}^n \binom{n}{k} a^{n-k} b^k$$
+$$(a + b)^{n+1} = (a + b)(a + b)^n = (a + b) \sum_{k=0}^n \binom{n}{k} a^{n-k} b^k$$
   Distribuiamo il prodotto per $a$ e per $b$:
-  $$= \sum_{k=0}^n \binom{n}{k} a^{n-k+1} b^k + \sum_{k=0}^n \binom{n}{k} a^{n-k} b^{k+1}$$
+$$= \sum_{k=0}^n \binom{n}{k} a^{n-k+1} b^k + \sum_{k=0}^n \binom{n}{k} a^{n-k} b^{k+1}$$
   Nel secondo sommatorio effettuiamo il cambio di variabile di indice $j = k + 1$ (quindi $k = j - 1$ con $j$ che varia da $1$ a $n+1$):
-  $$= \left( \binom{n}{0} a^{n+1} + \sum_{k=1}^n \binom{n}{k} a^{n+1-k} b^k \right) + \left( \sum_{j=1}^n \binom{n}{j-1} a^{n+1-j} b^j + \binom{n}{n} b^{n+1} \right)$$
+$$= \left( \binom{n}{0} a^{n+1} + \sum_{k=1}^n \binom{n}{k} a^{n+1-k} b^k \right) + \left( \sum_{j=1}^n \binom{n}{j-1} a^{n+1-j} b^j + \binom{n}{n} b^{n+1} \right)$$
   Rinominiamo la variabile muta $j$ in $k$ e uniamo le due sommatorie interne:
-  $$= \binom{n}{0} a^{n+1} + \sum_{k=1}^n \left[ \binom{n}{k} + \binom{n}{k-1} \right] a^{n+1-k} b^k + \binom{n}{n} b^{n+1}$$
+$$= \binom{n}{0} a^{n+1} + \sum_{k=1}^n \left[ \binom{n}{k} + \binom{n}{k-1} \right] a^{n+1-k} b^k + \binom{n}{n} b^{n+1}$$
   Per l'identità di Pascal provata in precedenza, $\binom{n}{k} + \binom{n}{k-1} = \binom{n+1}{k}$. Inoltre $\binom{n}{0} = 1 = \binom{n+1}{0}$ e $\binom{n}{n} = 1 = \binom{n+1}{n+1}$:
-  $$= \binom{n+1}{0} a^{n+1} + \sum_{k=1}^n \binom{n+1}{k} a^{n+1-k} b^k + \binom{n+1}{n+1} b^{n+1} = \sum_{k=0}^{n+1} \binom{n+1}{k} a^{n+1-k} b^k \quad \blacksquare$$
+$$= \binom{n+1}{0} a^{n+1} + \sum_{k=1}^n \binom{n+1}{k} a^{n+1-k} b^k + \binom{n+1}{n+1} b^{n+1} = \sum_{k=0}^{n+1} \binom{n+1}{k} a^{n+1-k} b^k \quad \blacksquare$$
 
 ---
 
@@ -633,19 +633,19 @@ Sostituendo queste espressioni nella definizione topologica, si ottiene esattame
 Supponiamo per assurdo che esistano due limiti distinti $\ell_1, \ell_2 \in \overline{\mathbb{R}}$ con $\ell_1 \ne \ell_2$ tali che:
 $$\lim_{x \to x_0} f(x) = \ell_1 \quad \text{e} \quad \lim_{x \to x_0} f(x) = \ell_2$$
 1. Poiché $\overline{\mathbb{R}}$ è uno spazio topologico di Hausdorff (soddisfa l'assioma di separazione $T_2$), per ogni coppia di punti distinti $\ell_1 \ne \ell_2$ esistono due intorni aperti disgiunti:
-   $$V_1 \in \mathcal{I}(\ell_1), \quad V_2 \in \mathcal{I}(\ell_2) \quad \text{tali che} \quad V_1 \cap V_2 = \emptyset$$
+$$V_1 \in \mathcal{I}(\ell_1), \quad V_2 \in \mathcal{I}(\ell_2) \quad \text{tali che} \quad V_1 \cap V_2 = \emptyset$$
    *(Nel caso finito $\ell_1, \ell_2 \in \mathbb{R}$, basta scegliere $\varepsilon = \frac{|\ell_1 - \ell_2|}{2} > 0$ e considerare $V_1 = ]\ell_1 - \varepsilon, \ell_1 + \varepsilon[$ e $V_2 = ]\ell_2 - \varepsilon, \ell_2 + \varepsilon[$)*.
 2. Per definizione di limite applicata a $\ell_1$, esiste un intorno $U_1 \in \mathcal{I}(x_0)$ tale che:
-   $$\forall x \in A \cap U_1 \setminus \{x_0\} \implies f(x) \in V_1$$
+$$\forall x \in A \cap U_1 \setminus \{x_0\} \implies f(x) \in V_1$$
 3. Per definizione di limite applicata a $\ell_2$, esiste un intorno $U_2 \in \mathcal{I}(x_0)$ tale che:
-   $$\forall x \in A \cap U_2 \setminus \{x_0\} \implies f(x) \in V_2$$
+$$\forall x \in A \cap U_2 \setminus \{x_0\} \implies f(x) \in V_2$$
 4. Definiamo $U = U_1 \cap U_2$. Poiché l'intersezione di due intorni di $x_0$ è ancora un intorno di $x_0$, si ha $U \in \mathcal{I}(x_0)$.
 5. Poiché per ipotesi $x_0$ è un punto di accumulazione per $A$, per definizione di punto di accumulazione ogni intorno di $x_0$ interseca $A$ in almeno un punto distinto da $x_0$. Esiste dunque:
-   $$x^* \in A \cap U \setminus \{x_0\}$$
+$$x^* \in A \cap U \setminus \{x_0\}$$
 6. Poiché $x^* \in U \subseteq U_1$, deduciamo che $f(x^*) \in V_1$.
    Analogamente, poiché $x^* \in U \subseteq U_2$, deduciamo che $f(x^*) \in V_2$.
 7. Ne consegue che:
-   $$f(x^*) \in V_1 \cap V_2$$
+$$f(x^*) \in V_1 \cap V_2$$
    Ciò è assurdo, poiché per costruzione $V_1 \cap V_2 = \emptyset$.
 L'assurdo scaturisce dall'aver ipotizzato $\ell_1 \ne \ell_2$. Pertanto, il limite è unico. $\blacksquare$
 
@@ -675,23 +675,23 @@ Distinguiamo tre casi:
 - **Caso 2: $a > 1$.**
   Poiché $a > 1$, si ha $\sqrt[n]{a} > 1$ per ogni $n \in \mathbb{N}^*$.
   Possiamo definire una successione ausiliaria $x_n > 0$ ponendo:
-  $$\sqrt[n]{a} = 1 + x_n$$
+$$\sqrt[n]{a} = 1 + x_n$$
   Elevando alla potenza $n$-esima:
-  $$a = (1 + x_n)^n$$
+$$a = (1 + x_n)^n$$
   Poiché $x_n > 0$, applichiamo la Disuguaglianza di Bernoulli:
-  $$a = (1 + x_n)^n \ge 1 + n x_n$$
+$$a = (1 + x_n)^n \ge 1 + n x_n$$
   Sottraendo $1$ e dividendo per $n$:
-  $$0 < x_n \le \frac{a - 1}{n}$$
+$$0 < x_n \le \frac{a - 1}{n}$$
   Calcoliamo i limiti per $n \to +\infty$:
-  $$\lim_{n \to +\infty} 0 = 0 \quad \text{e} \quad \lim_{n \to +\infty} \frac{a - 1}{n} = (a - 1) \lim_{n \to +\infty} \frac{1}{n} = (a - 1) \cdot 0 = 0$$
+$$\lim_{n \to +\infty} 0 = 0 \quad \text{e} \quad \lim_{n \to +\infty} \frac{a - 1}{n} = (a - 1) \lim_{n \to +\infty} \frac{1}{n} = (a - 1) \cdot 0 = 0$$
   Per il Teorema del Confronto (dei Carabinieri), ne segue che $\lim_{n \to +\infty} x_n = 0$.
   Pertanto:
-  $$\lim_{n \to +\infty} \sqrt[n]{a} = \lim_{n \to +\infty} (1 + x_n) = 1 + 0 = 1$$
+$$\lim_{n \to +\infty} \sqrt[n]{a} = \lim_{n \to +\infty} (1 + x_n) = 1 + 0 = 1$$
 - **Caso 3: $0 < a < 1$.**
   Poniamo $b = \frac{1}{a} > 1$.
   Per il Caso 2 appena dimostrato, $\lim_{n \to +\infty} \sqrt[n]{b} = 1$.
   Applicando il teorema sul limite del reciproco:
-  $$\lim_{n \to +\infty} \sqrt[n]{a} = \lim_{n \to +\infty} \sqrt[n]{\frac{1}{b}} = \lim_{n \to +\infty} \frac{1}{\sqrt[n]{b}} = \frac{1}{1} = 1$$
+$$\lim_{n \to +\infty} \sqrt[n]{a} = \lim_{n \to +\infty} \sqrt[n]{\frac{1}{b}} = \lim_{n \to +\infty} \frac{1}{\sqrt[n]{b}} = \frac{1}{1} = 1$$
 
 In tutti i casi il limite vale $1$. $\blacksquare$
 
@@ -758,11 +758,11 @@ La dimostrazione del punto (2) è perfettamente analoga fissando un arbitrario m
 - *Base dell'induzione ($k = 0$):* Poiché per definizione $(n_k)_{k \in \mathbb{N}} \subset \mathbb{N}$, si ha $n_0 \in \mathbb{N}$, da cui banalmente $n_0 \ge 0$.
 - *Passo induttivo ($k \implies k + 1$):* Assumiamo per ipotesi induttiva che la disuguaglianza sia verificata per l'indice $k$, ossia $n_k \ge k$.
   Poiché la successione degli indici $(n_k)$ è strettamente crescente, si ha:
-  $$n_{k+1} > n_k$$
+$$n_{k+1} > n_k$$
   Trattandosi di numeri interi naturali, la condizione $n_{k+1} > n_k$ equivale a:
-  $$n_{k+1} \ge n_k + 1$$
+$$n_{k+1} \ge n_k + 1$$
   Sfruttando l'ipotesi induttiva $n_k \ge k$:
-  $$n_{k+1} \ge n_k + 1 \ge k + 1$$
+$$n_{k+1} \ge n_k + 1 \ge k + 1$$
   La proprietà risulta verificata per $k + 1$.
 Per il Principio di Induzione Matematica, la disuguaglianza $n_k \ge k$ è valida per ogni $k \in \mathbb{N}$. $\blacksquare$
 
@@ -789,18 +789,18 @@ Ciò verifica esattamente la definizione di limite per la successione estratta, 
 **Dimostrazione:**
 - **Caso $q = 1$:** La successione è costante: $q^n = 1^n = 1$ per ogni $n \in \mathbb{N}$. Quindi $\lim_{n \to +\infty} q^n = 1$.
 - **Caso $q > 1$:** Poniamo $a = q - 1 > 0$, da cui $q = 1 + a$. Poiché $a > 0 \ge -1$, possiamo applicare la Disuguaglianza di Bernoulli:
-  $$q^n = (1 + a)^n \ge 1 + na$$
+$$q^n = (1 + a)^n \ge 1 + na$$
   Fissiamo un arbitrario $M \in \mathbb{R}$. Vogliamo che $q^n > M$. È sufficiente richiedere:
-  $$1 + na > M \iff na > M - 1 \iff n > \frac{M - 1}{a}$$
+$$1 + na > M \iff na > M - 1 \iff n > \frac{M - 1}{a}$$
   Per la Proprietà di Archimede, scegliendo $\nu = \max\left\{0, \lfloor \frac{M - 1}{a} \rfloor + 1\right\}$, per ogni $n > \nu$ risulta $q^n > M$. Dunque $\lim_{n \to +\infty} q^n = +\infty$.
 - **Caso $|q| < 1$:**
   - Se $q = 0$, $0^n = 0$ per $n \ge 1$, limite $0$.
   - Se $0 < |q| < 1$, poniamo $b = \frac{1}{|q|} > 1$. Per il punto precedente, $\lim_{n \to +\infty} b^n = \lim_{n \to +\infty} \left(\frac{1}{|q|}\right)^n = +\infty$.
     Applicando il teorema sul reciproco del limite di un infinito:
-  $$\lim_{n \to +\infty} |q|^n = \lim_{n \to +\infty} \frac{1}{(1/|q|)^n} = \frac{1}{+\infty} = 0$$
+$$\lim_{n \to +\infty} |q|^n = \lim_{n \to +\infty} \frac{1}{(1/|q|)^n} = \frac{1}{+\infty} = 0$$
     Dato che $\lim |a_n| = 0 \iff \lim a_n = 0$, ne segue che $\lim_{n \to +\infty} q^n = 0$.
 - **Caso $q = -1$:** $q^n = (-1)^n$. Consideriamo le sottosuccessioni dei pari e dei dispari:
-  $$a_{2k} = (-1)^{2k} = 1 \to 1, \quad a_{2k+1} = (-1)^{2k+1} = -1 \to -1$$
+$$a_{2k} = (-1)^{2k} = 1 \to 1, \quad a_{2k+1} = (-1)^{2k+1} = -1 \to -1$$
   Poiché ammette due sottosuccessioni con limiti differenti ($1 \ne -1$), per il Teorema 2.5 la successione non ammette limite.
 - **Caso $q < -1$:** Consideriamo le due sottosuccessioni:
   - Termini con indice pari: $a_{2k} = q^{2k} = (q^2)^k$. Poiché $q < -1$, si ha $q^2 > 1$. Dal caso $q > 1$ già dimostrato, $\lim_{k \to +\infty} (q^2)^k = +\infty$.
@@ -817,9 +817,9 @@ Ciò verifica esattamente la definizione di limite per la successione estratta, 
 **Dimostrazione:**
 Sia $V \in \mathcal{U}(\ell)$ un intorno arbitrario di $\ell$.
 - Poiché $\lim_{k \to +\infty} a_{2k} = \ell$, per definizione di limite esiste un indice $\nu_1 \in \mathbb{N}$ tale che:
-  $$\forall k \in \mathbb{N}, \quad k > \nu_1 \implies a_{2k} \in V$$
+$$\forall k \in \mathbb{N}, \quad k > \nu_1 \implies a_{2k} \in V$$
 - Poiché $\lim_{k \to +\infty} a_{2k+1} = \ell$, esiste un indice $\nu_2 \in \mathbb{N}$ tale che:
-  $$\forall k \in \mathbb{N}, \quad k > \nu_2 \implies a_{2k+1} \in V$$
+$$\forall k \in \mathbb{N}, \quad k > \nu_2 \implies a_{2k+1} \in V$$
 Definiamo la soglia globale $\nu = \max\{2\nu_1, \, 2\nu_2 + 1\} \in \mathbb{N}$.
 Sia ora $n \in \mathbb{N}$ un generico indice con $n > \nu$:
 - Se $n$ è un numero pari, allora $n = 2k$ per un opportuno $k \in \mathbb{N}$. Dalla condizione $n > \nu \ge 2\nu_1$ segue $2k > 2\nu_1 \implies k > \nu_1$, da cui $a_n = a_{2k} \in V$.
@@ -912,3 +912,1132 @@ Nell'intorno $U = U_0 \cap U_1$:
 $$\left|\frac{1}{g(x)} - \frac{1}{m}\right| < \frac{2}{|m|^2} \frac{\varepsilon |m|^2}{2} = \varepsilon$$
 Dunque $\lim_{x \to x_0} \frac{1}{g(x)} = \frac{1}{m}$. Infine, applicando la regola del prodotto:
 $$\lim_{x \to x_0} \left(\frac{f}{g}\right)(x) = \lim_{x \to x_0} \left(f(x) \cdot \frac{1}{g(x)}\right) = \ell \cdot \frac{1}{m} = \frac{\ell}{m} \quad \blacksquare$$
+
+
+---
+
+## Lezione 15 - 15: Proprietà dei limiti
+
+### Dimostrazione .: Per ipotesiℓ,m\in  R eℓ>m . Possiamo sicuramente scegliere due intorniV1
+> [!IMPORTANT] Enunciato
+> e V2, rispettivamente diℓ e m in modo che
+V1∩V2 =∅ e V1\ge V2 (sono separati).
+In altre termini si ha
+\forall y1\in V1,∀y2\in V2 : y1 >y 2. (1)
+Allora, dato che per ipotesif (x)→\ell e g(x)→m per x\to x0, si deve avere
+f (x)∈V1 in un intorno dix0 e g(x)∈V2 in un intorno dix0.
+Allora risulta che
+f (x)∈V1 e g(x)∈V2 simultaneamente in un intorno dix0
+e quindi, per la (1), che
+f (x)>g (x) in un intorno dix0.
+Osservazione 2.2. Il teorema precedente afferma che
+\ell>m \implies f (x)>g (x) in un intorno dix0.
+Notiamo invece che
+\ell\ge m ̸⇒ f (x)≥g(x) in un intorno dix0.
+In particolare può accadere cheℓ = m senza che sia necessariamentef (x)≤ g(x) o g(x)≤
+f (x) in un intorno dix0. Per example si può prenderef (x) = x e g(x) =−x e x0 = 0.
+
+**Dimostrazione:**
+e V2, rispettivamente diℓ e m in modo che
+V1∩V2 =∅ e V1\ge V2 (sono separati).
+In altre termini si ha
+\forall y1\in V1,∀y2\in V2 : y1 >y 2. (1)
+Allora, dato che per ipotesif (x)→\ell e g(x)→m per x\to x0, si deve avere
+f (x)∈V1 in un intorno dix0 e g(x)∈V2 in un intorno dix0.
+Allora risulta che
+f (x)∈V1 e g(x)∈V2 simultaneamente in un intorno dix0
+e quindi, per la (1), che
+f (x)>g (x) in un intorno dix0.
+Osservazione 2.2. Il teorema precedente afferma che
+\ell>m \implies f (x)>g (x) in un intorno dix0.
+Notiamo invece che
+\ell\ge m ̸⇒ f (x)≥g(x) in un intorno dix0.
+In particolare può accadere cheℓ = m senza che sia necessariamentef (x)≤ g(x) o g(x)≤
+f (x) in un intorno dix0. Per example si può prenderef (x) = x e g(x) =−x e x0 = 0.
+
+$$\blacksquare$$
+
+### Dimostrazione .: Consegue dal teorema precedente se si sceglieg≡\lambda.
+> [!IMPORTANT] Enunciato
+> 
+
+**Dimostrazione:**
+
+
+$$\blacksquare$$
+
+### Dimostrazione .: Consegue dal teorema precedente conλ = 0.
+> [!IMPORTANT] Enunciato
+> 
+
+**Dimostrazione:**
+
+
+$$\blacksquare$$
+
+### Dimostrazione .: Supponiamo che f (x)≤ g(x) in un intorno dix0. La dimostrazione procede per assurdo. Se fosse \ell > m, per il teorema della permanenza delle disuguaglianze
+> [!IMPORTANT] Enunciato
+> (Teorema 2.1) si avrebbe
+f (x)>g (x) in un intorno dix0.
+Ma stiamo supponendo chef (x)≤ g(x) in un intorno dix0 e quindi (prendendo come al
+solito l’intersezione degli intorni) si arriverebbe a
+f (x)≤g(x) e f (x)>g (x) simultaneamente in un intorno dix0.
+E questo produce una contraddizione, dato che un numero reale non può essere simultaneamente minore o uguale e strettamente maggiore di un altro numero reale.
+Osservazione 2.6. Notiamo che
+f (x)<g (x) in un intorno dix0 ̸⇒ \ell<m.
+Quindi si prolunga la disuguaglianza “≤” ma non la “<”. Per example risulta
+\forall x\in  ]− 1, 1[\{0} : x2 <|x|,
+ma lim
+x\to 0
+x2 = 0 = lim
+x\to 0
+|x|.
+Figura 1: In Italia il Teorema 2.7 è comunemente chiamatoTeorema dei carabinieri.
+
+**Dimostrazione:**
+(Teorema 2.1) si avrebbe
+f (x)>g (x) in un intorno dix0.
+Ma stiamo supponendo chef (x)≤ g(x) in un intorno dix0 e quindi (prendendo come al
+solito l’intersezione degli intorni) si arriverebbe a
+f (x)≤g(x) e f (x)>g (x) simultaneamente in un intorno dix0.
+E questo produce una contraddizione, dato che un numero reale non può essere simultaneamente minore o uguale e strettamente maggiore di un altro numero reale.
+Osservazione 2.6. Notiamo che
+f (x)<g (x) in un intorno dix0 ̸⇒ \ell<m.
+Quindi si prolunga la disuguaglianza “≤” ma non la “<”. Per example risulta
+\forall x\in  ]− 1, 1[\{0} : x2 <|x|,
+ma lim
+x\to 0
+x2 = 0 = lim
+x\to 0
+|x|.
+Figura 1: In Italia il Teorema 2.7 è comunemente chiamatoTeorema dei carabinieri.
+
+$$\blacksquare$$
+
+### Dimostrazione .: Sia V un intorno diℓ. Si deve provare cheg(x)∈ V in un intorno dix0.
+> [!IMPORTANT] Enunciato
+> Osserviamo preliminarmente che, essendoV un intervallo diR, vale che
+y1,y 2\in V e y1\le y2 \implies  [y1,y 2]⊂V. (2)
+Iniziamo ora la dimostrazione. Dall’ipotesi b) si ha
+f (x)∈V in un intorno dix0 e h(x)∈V in un intorno dix0.
+Inoltre, per l’ipotesi a), si ha anche che
+f (x)≤g(x)≤h(x) in un intorno dix0.
+Perciò, possiamo affermare che
+
+
+
+f (x)∈V
+h(x)∈V
+f (x)≤g(x)≤h(x)
+sono simultaneamente vere in un intorno dix0.
+Allora, ricordando la (2), si può concludere cheg(x)∈V in un intorno dix0.
+Osservazione 2.8. Nel Teorema 2.7 seℓ = +∞ si può fare a meno della funzioneh (basta
+un solo carabiniere!), cioè è sufficiente chiedere che
+• f (x)≤g(x) in un intorno dix0.
+Infatti seV = ]β, +∞] è un intorno di+∞, allora
+f (x)∈ ]β, +∞] in un intorno dix0.
+Quindi (
+f (x)≤g(x)
+f (x)∈ ]β, +∞] simultaneamente in un intorno dix0.
+Ma allora si hag(x)∈V in un intorno dix0. Allo stesso modo si vede che se nel Teorema 2.7,
+\ell =−∞, si può fare a meno dif e si può chiedere soltanto che
+• g(x)≤h(x) in un intorno dix0.
+
+**Dimostrazione:**
+Osserviamo preliminarmente che, essendoV un intervallo diR, vale che
+y1,y 2\in V e y1\le y2 \implies  [y1,y 2]⊂V. (2)
+Iniziamo ora la dimostrazione. Dall’ipotesi b) si ha
+f (x)∈V in un intorno dix0 e h(x)∈V in un intorno dix0.
+Inoltre, per l’ipotesi a), si ha anche che
+f (x)≤g(x)≤h(x) in un intorno dix0.
+Perciò, possiamo affermare che
+
+
+
+f (x)∈V
+h(x)∈V
+f (x)≤g(x)≤h(x)
+sono simultaneamente vere in un intorno dix0.
+Allora, ricordando la (2), si può concludere cheg(x)∈V in un intorno dix0.
+Osservazione 2.8. Nel Teorema 2.7 seℓ = +∞ si può fare a meno della funzioneh (basta
+un solo carabiniere!), cioè è sufficiente chiedere che
+• f (x)≤g(x) in un intorno dix0.
+Infatti seV = ]β, +∞] è un intorno di+∞, allora
+f (x)∈ ]β, +∞] in un intorno dix0.
+Quindi (
+f (x)≤g(x)
+f (x)∈ ]β, +∞] simultaneamente in un intorno dix0.
+Ma allora si hag(x)∈V in un intorno dix0. Allo stesso modo si vede che se nel Teorema 2.7,
+\ell =−∞, si può fare a meno dif e si può chiedere soltanto che
+• g(x)≤h(x) in un intorno dix0.
+
+$$\blacksquare$$
+
+### Dimostrazione .: Supponiamo che limx\to x0g(x) = 0. Evidentemente si ha
+> [!IMPORTANT] Enunciato
+> −g(x)≤f (x)≤g(x) in un intorno dix0.
+Perciò, essendo anchelimx\to x0−g(x) = 0, dal Teorema 2.7 seguelimx\to x0f (x) = 0.
+Esempio 2.10. Proviamo che
+lim
+x\to 0
+senx = 0, lim
+x\to 0
+cosx = 1, e lim
+x\to 0
+senx
+x = 1. (3)
+A tal fine si nota prima di tutto che vale
+\forall x\in  ]0,π/ 2[: sen x<x< tgx = senx
+cosx. (4)
+Queste disuguaglianze sono giustificate in Figura 16.2 con un ragionamento geometrico.
+Adesso dalla prima disuguaglianza di (4), tenendo conto chesenx è una funzione dispari, si
+ha
+x\in  ]−π/2, 0[⇒ −x\in  ]0,π/ 2[⇒ sen(−x)<−x \implies  −senx|{z}
+<0
+<− x|{z}
+<0
+\implies  |senx|<|x|.
+Perciò, dato chesenx è positivo perx\in  ]0,π/ 2[, si ha
+\forall x\in  ]−π/2,π/ 2[\{0} : | senx|<|x|. (5)
+Figura 2: Circonferenza trigonometrica (di raggio 1). Giustificazione della disuguaglianza
+sen(x) < x <tg(x), valida per ognix\in  ]0,π/ 2[. Tenendo conto che il segmentoOA ha
+lunghezza 1, si riconosce che l’area del triangolo OAB è (senx)/2 (senx è l’altezza del
+triangolo), l’area del settore circolareOAB è x/2 e l’area del triangoloOAC è tg(x)/2. La
+tesi segue quindi dal fatto che il triangoloOAB è contenuto nel settore circolareOAB che
+a sua volta è contenuto nel triangoloOAC.
+Allora, essendo limx\to 0|x| = 0, dal corollario 2.9 segue chelimx\to 0 senx = 0 e la prima di (3)
+è provata. Per quanto riguarda la seconda, ricordiamo la formula di duplicazione del coseno
+cos 2α = 1− 2 sen2α, da cui segue che
+cosx = 1− 2 sen2x
+2.
+Consideriamo quindi il terminesen2(x/2). Dalla (5) si ottiene
+\forall x\in  ]−π,π [\{0} : sen 2x
+2 =
+
+
+
+senx
+
+
+
+
+<
+
+
+
+x
+
+
+
+
+= x2
+4 .
+Perciò, essendolimx\to 0x2/4 = 0, ancoradalcorollario2.9otteniamoche limx\to 0 sen2(x/2) = 0
+e quindi per il Teorema sulle operazioni sui limiti
+cosx = 1− 2 sen2x
+2| {z }
+↓ 0
+\to  1− 2· 0 = 1 per x\to  0.
+Infine proviamo l’ultimo limite (notevole) in (3). Notiamo preliminarmente che per quanto
+già provato, si ha
+\to  0
+z}|{senx
+x|{z}
+\to  0
+per x\to  0.
+Si tratta perciò di una forma indeterminata(0/0). Proviamo quindi che il limite del rapporto
+esiste e vale1. Dalla (4), segue (dividendo persenx e facendo i reciproci)
+\forall x\in  ]0,π/ 2[: 1 < x
+senx < 1
+cosx \implies  cosx< senx
+x < 1.
+Adesso, ricordando che il coseno è pari e il seno è dispari si ha
+x\in  ]−π/2, 0[⇒ −x\in  ]0,π/ 2[⇒ cos(−x)< sen(−x)
+−x =− senx
+−x < 1 \implies  cosx< senx
+x < 1.
+In definitiva risulta
+\forall x\in  ]−π/2,π/ 2[\{0} : cos x< senx
+x < 1.
+Allora, per quanto già provato (cosx\to  1 per x\to  0), dal teorema dei carabinieri segue che
+lim
+x\to 0
+senx
+x = 1.
+Esercizio 2.11. Verificare mediante la definizione di limite che
+lim
+x\to +∞
+ax +b =
+(
++∞ se a> 0
+−∞ se a< 0 e lim
+x\to −∞
+ax +b =
+(
+−∞ se a> 0
++∞ se a< 0.
+Esempio 2.12. Sia n\in  N con n\ge  1. Allora
+lim
+x\to +∞
+xn = +∞ e lim
+x\to −∞
+xn =
+(
++∞ se n è pari
+−∞ se n è dispari.
+Infatti, dalla disuguaglianza di Bernoulli, segue che
+\forall x\in  R+ : xn = (1 + x− 1)n\ge  1 +n(x− 1)
+o in altri termini
+xn\ge  1 +n(x− 1) in un intorno di+∞.
+Dato chelimx\to +∞ 1 +n(x− 1) = +∞ (si veda l’Esercizio 2.11), allora per l’Osservazione 2.8,
+si halimx\to +∞xn = +∞. Vediamo il casox\to −∞ . Sen è pari, sempre dalla disuguaglianza
+di Bernoulli, si ha
+\forall x\in  R− : xn = (−x)n\ge  1 +n(−x− 1) = 1−n(x + 1),
+cioè
+xn\ge  1−n(x + 1) in un intorno di−∞.
+Allora, dato chelimx\to −∞ 1−n(x + 1) = +∞ (vedi Esercizio 2.11), sempre dall’Osservazione 2.8 segue chelimx\to −∞xn = +∞. Sen è dispari, si ha
+\forall x\in  R− : −xn = (−x)n\ge  1 +n(−x− 1) = 1−n(x + 1),
+cioè
+xn\le − 1 +n(x + 1) in un intorno di−∞.
+Come prima, dato chelimx\to −∞−1 +n(x + 1) =−∞ (vedi Esercizio 2.11), l’Osservazione 2.8
+implica che limx\to −∞xn =−∞.
+
+**Dimostrazione:**
+−g(x)≤f (x)≤g(x) in un intorno dix0.
+Perciò, essendo anchelimx\to x0−g(x) = 0, dal Teorema 2.7 seguelimx\to x0f (x) = 0.
+Esempio 2.10. Proviamo che
+lim
+x\to 0
+senx = 0, lim
+x\to 0
+cosx = 1, e lim
+x\to 0
+senx
+x = 1. (3)
+A tal fine si nota prima di tutto che vale
+\forall x\in  ]0,π/ 2[: sen x<x< tgx = senx
+cosx. (4)
+Queste disuguaglianze sono giustificate in Figura 16.2 con un ragionamento geometrico.
+Adesso dalla prima disuguaglianza di (4), tenendo conto chesenx è una funzione dispari, si
+ha
+x\in  ]−π/2, 0[⇒ −x\in  ]0,π/ 2[⇒ sen(−x)<−x \implies  −senx|{z}
+<0
+<− x|{z}
+<0
+\implies  |senx|<|x|.
+Perciò, dato chesenx è positivo perx\in  ]0,π/ 2[, si ha
+\forall x\in  ]−π/2,π/ 2[\{0} : | senx|<|x|. (5)
+Figura 2: Circonferenza trigonometrica (di raggio 1). Giustificazione della disuguaglianza
+sen(x) < x <tg(x), valida per ognix\in  ]0,π/ 2[. Tenendo conto che il segmentoOA ha
+lunghezza 1, si riconosce che l’area del triangolo OAB è (senx)/2 (senx è l’altezza del
+triangolo), l’area del settore circolareOAB è x/2 e l’area del triangoloOAC è tg(x)/2. La
+tesi segue quindi dal fatto che il triangoloOAB è contenuto nel settore circolareOAB che
+a sua volta è contenuto nel triangoloOAC.
+Allora, essendo limx\to 0|x| = 0, dal corollario 2.9 segue chelimx\to 0 senx = 0 e la prima di (3)
+è provata. Per quanto riguarda la seconda, ricordiamo la formula di duplicazione del coseno
+cos 2α = 1− 2 sen2α, da cui segue che
+cosx = 1− 2 sen2x
+2.
+Consideriamo quindi il terminesen2(x/2). Dalla (5) si ottiene
+\forall x\in  ]−π,π [\{0} : sen 2x
+2 =
+
+
+
+senx
+
+
+
+
+<
+
+
+
+x
+
+
+
+
+= x2
+4 .
+Perciò, essendolimx\to 0x2/4 = 0, ancoradalcorollario2.9otteniamoche limx\to 0 sen2(x/2) = 0
+e quindi per il Teorema sulle operazioni sui limiti
+cosx = 1− 2 sen2x
+2| {z }
+↓ 0
+\to  1− 2· 0 = 1 per x\to  0.
+Infine proviamo l’ultimo limite (notevole) in (3). Notiamo preliminarmente che per quanto
+già provato, si ha
+\to  0
+z}|{senx
+x|{z}
+\to  0
+per x\to  0.
+Si tratta perciò di una forma indeterminata(0/0). Proviamo quindi che il limite del rapporto
+esiste e vale1. Dalla (4), segue (dividendo persenx e facendo i reciproci)
+\forall x\in  ]0,π/ 2[: 1 < x
+senx < 1
+cosx \implies  cosx< senx
+x < 1.
+Adesso, ricordando che il coseno è pari e il seno è dispari si ha
+x\in  ]−π/2, 0[⇒ −x\in  ]0,π/ 2[⇒ cos(−x)< sen(−x)
+−x =− senx
+−x < 1 \implies  cosx< senx
+x < 1.
+In definitiva risulta
+\forall x\in  ]−π/2,π/ 2[\{0} : cos x< senx
+x < 1.
+Allora, per quanto già provato (cosx\to  1 per x\to  0), dal teorema dei carabinieri segue che
+lim
+x\to 0
+senx
+x = 1.
+Esercizio 2.11. Verificare mediante la definizione di limite che
+lim
+x\to +∞
+ax +b =
+(
++∞ se a> 0
+−∞ se a< 0 e lim
+x\to −∞
+ax +b =
+(
+−∞ se a> 0
++∞ se a< 0.
+Esempio 2.12. Sia n\in  N con n\ge  1. Allora
+lim
+x\to +∞
+xn = +∞ e lim
+x\to −∞
+xn =
+(
++∞ se n è pari
+−∞ se n è dispari.
+Infatti, dalla disuguaglianza di Bernoulli, segue che
+\forall x\in  R+ : xn = (1 + x− 1)n\ge  1 +n(x− 1)
+o in altri termini
+xn\ge  1 +n(x− 1) in un intorno di+∞.
+Dato chelimx\to +∞ 1 +n(x− 1) = +∞ (si veda l’Esercizio 2.11), allora per l’Osservazione 2.8,
+si halimx\to +∞xn = +∞. Vediamo il casox\to −∞ . Sen è pari, sempre dalla disuguaglianza
+di Bernoulli, si ha
+\forall x\in  R− : xn = (−x)n\ge  1 +n(−x− 1) = 1−n(x + 1),
+cioè
+xn\ge  1−n(x + 1) in un intorno di−∞.
+Allora, dato chelimx\to −∞ 1−n(x + 1) = +∞ (vedi Esercizio 2.11), sempre dall’Osservazione 2.8 segue chelimx\to −∞xn = +∞. Sen è dispari, si ha
+\forall x\in  R− : −xn = (−x)n\ge  1 +n(−x− 1) = 1−n(x + 1),
+cioè
+xn\le − 1 +n(x + 1) in un intorno di−∞.
+Come prima, dato chelimx\to −∞−1 +n(x + 1) =−∞ (vedi Esercizio 2.11), l’Osservazione 2.8
+implica che limx\to −∞xn =−∞.
+
+$$\blacksquare$$
+
+### Dimostrazione .: Per ipotesi, esisteC >0 tale che
+> [!IMPORTANT] Enunciato
+> |g(x)|≤ C in un intorno dix0
+e quindi
+|f (x)g(x)|≤ C|f (x)| in un intorno dix0.
+Alloradatoche limx\to x0C|f (x)| =C·0 = 0, dalcorollario2.9, siha limx\to x0f (x)g(x) = 0.
+Esempio 2.14. Abbiamo visto chelim
+x\to 0
+x2 = 0. Allora dal corollario 2.13 si ha che
+lim
+x\to 0
+x2 sen 1
+x = 0,
+perché la funzionesen(1/x) è limitata.
+Domande di autovalutazione.
+1. Quale delle seguenti corrisponde alla definizione dilimx\to −2f (x) =−4?
+1.∀\delta >0\exists \varepsilon> 0 tale che\forall x\in  R : 0 <|x + 2|<\delta \implies |f (x) + 4|<\varepsilon .
+2.∀\varepsilon> 0\exists \delta >0 tale che\forall x\in  R : 0 <|x + 2|<\delta \implies |f (x) + 4|<\varepsilon .
+3.∀\varepsilon> 0\exists \delta >0 tale che\forall x\in  R : 0 <|x− 2|<\delta \implies |f (x)− 4|<\varepsilon .
+4.∀\varepsilon> 0\exists \delta >0 and\exists x\in  R tale che 0<|x + 2|<\delta \implies |f (x) + 4|<\varepsilon .
+2. Quale delle seguenti corrisponde alla definizione dilimx\to −∞f (x) = +∞?
+1.∀β >0\exists α> 0 tale che\forall x\in  R : x>α \implies f (x)>β .
+2.∀β >0\exists α> 0 tale che\forall x\in  R : x< −α\implies f (x)<−β.
+3.∀α> 0\exists β >0 tale che\forall x\in  R : x< −α\implies f (x)>β .
+4.∀β >0\exists α> 0 tale che\forall x\in  R : x< −α\implies f (x)>β .
+3. Se limx\to 2f (x) = 5, quale delle seguenti è vera?
+1. f (x)> 2 nell’intervallo ]1, 3[
+2. f (x)> 4.99 in un intorno di2
+3. f (x) = 5 in un intorno di2
+4. nessuna delle precedenti
+2.1 Operazioni con i limiti in R
+
+**Dimostrazione:**
+|g(x)|≤ C in un intorno dix0
+e quindi
+|f (x)g(x)|≤ C|f (x)| in un intorno dix0.
+Alloradatoche limx\to x0C|f (x)| =C·0 = 0, dalcorollario2.9, siha limx\to x0f (x)g(x) = 0.
+Esempio 2.14. Abbiamo visto chelim
+x\to 0
+x2 = 0. Allora dal corollario 2.13 si ha che
+lim
+x\to 0
+x2 sen 1
+x = 0,
+perché la funzionesen(1/x) è limitata.
+Domande di autovalutazione.
+1. Quale delle seguenti corrisponde alla definizione dilimx\to −2f (x) =−4?
+1.∀\delta >0\exists \varepsilon> 0 tale che\forall x\in  R : 0 <|x + 2|<\delta \implies |f (x) + 4|<\varepsilon .
+2.∀\varepsilon> 0\exists \delta >0 tale che\forall x\in  R : 0 <|x + 2|<\delta \implies |f (x) + 4|<\varepsilon .
+3.∀\varepsilon> 0\exists \delta >0 tale che\forall x\in  R : 0 <|x− 2|<\delta \implies |f (x)− 4|<\varepsilon .
+4.∀\varepsilon> 0\exists \delta >0 and\exists x\in  R tale che 0<|x + 2|<\delta \implies |f (x) + 4|<\varepsilon .
+2. Quale delle seguenti corrisponde alla definizione dilimx\to −∞f (x) = +∞?
+1.∀β >0\exists α> 0 tale che\forall x\in  R : x>α \implies f (x)>β .
+2.∀β >0\exists α> 0 tale che\forall x\in  R : x< −α\implies f (x)<−β.
+3.∀α> 0\exists β >0 tale che\forall x\in  R : x< −α\implies f (x)>β .
+4.∀β >0\exists α> 0 tale che\forall x\in  R : x< −α\implies f (x)>β .
+3. Se limx\to 2f (x) = 5, quale delle seguenti è vera?
+1. f (x)> 2 nell’intervallo ]1, 3[
+2. f (x)> 4.99 in un intorno di2
+3. f (x) = 5 in un intorno di2
+4. nessuna delle precedenti
+2.1 Operazioni con i limiti in R
+
+$$\blacksquare$$
+
+### Dimostrazione .: Proviamo solo la prima (la seconda si prova in modo simile). Supponiamo
+> [!IMPORTANT] Enunciato
+> che \ell >−∞. Allora si può scegliereλ\in  R con \lambda < ℓe, per il primo corollario del teorema
+della permanenza delle disuguaglianze, si ha che
+\lambda<f (x) in un intorno dix0.
+
+**Dimostrazione:**
+che \ell >−∞. Allora si può scegliereλ\in  R con \lambda < ℓe, per il primo corollario del teorema
+della permanenza delle disuguaglianze, si ha che
+\lambda<f (x) in un intorno dix0.
+
+$$\blacksquare$$
+
+### Dimostrazione .: Proviamo la (i) soltanto. Siaβ >0. Dobbiamo provare che
+> [!IMPORTANT] Enunciato
+> f (x) +g(x)>β in un intorno dix0.
+Per ipotesi si ha che esisteλ\in  R tale che
+g(x)≥\lambda in un intorno dix0.
+Poi, essendof (x)→ +∞ per x\to  +∞, si può soddisfare la seguente
+f (x)>β −\lambda in un intorno dix0.
+Allora, si ha che
+g(x)≥\lambda e f (x)>β −\lambda sono simultaneamente vere in un intorno dix0
+e quindi sommandole si ha chef (x) +g(x)>β in un intorno dix0.
+Osservazione 2.17. Se limx\to x0f (x) = \ell\in {−∞, +∞} e limx\to x0g(x) = m\in  R, allora dal
+
+**Dimostrazione:**
+f (x) +g(x)>β in un intorno dix0.
+Per ipotesi si ha che esisteλ\in  R tale che
+g(x)≥\lambda in un intorno dix0.
+Poi, essendof (x)→ +∞ per x\to  +∞, si può soddisfare la seguente
+f (x)>β −\lambda in un intorno dix0.
+Allora, si ha che
+g(x)≥\lambda e f (x)>β −\lambda sono simultaneamente vere in un intorno dix0
+e quindi sommandole si ha chef (x) +g(x)>β in un intorno dix0.
+Osservazione 2.17. Se limx\to x0f (x) = \ell\in {−∞, +∞} e limx\to x0g(x) = m\in  R, allora dal
+
+$$\blacksquare$$
+
+### Dimostrazione .: (i): Consideriamo solo il casom\in  ]0, +∞] (l’altro si prova allo stesso modo).
+> [!IMPORTANT] Enunciato
+> Sia β > 0 e siaλ\in  R tale che 0 < \lambda < m. Allora, per il teorema della permanenza delle
+disuguaglianze, risulta che
+g(x)>\lambda in un intorno dix0.
+Poi, dato chelimx\to x0f (x) = +∞, si ha anche che
+f (x)> β
+\lambda in un intorno dix0.
+Allora, entrambe le condizioni sono vere simultaneamente in un intorno di x0 e quindi
+moltiplicando si ha chef (x)g(x)>β in un intorno dix0.
+(ii): Siaε> 0. Dobbiamo provare che
+
+
+
+
+
+f (x)
+
+
+
+
+<\varepsilon in un intorno dix0
+che chiaramente equivale a
+|f (x)|> 1
+\varepsilon in un intorno dix0.
+Allora
+lim
+x\to x0
+f (x) = +∞⇒ f (x)|{z}
+>0
+> 1
+\varepsilon in un intorno dix0
+lim
+x\to x0
+f (x) =−∞⇒ f (x)|{z}
+<0
+<− 1
+\varepsilon in un intorno dix0
+\implies −f (x)> 1
+\varepsilon in un intorno dix0.
+Perciò, in ogni caso,|f (x)|> 1/\varepsilon in un intorno dix0.
+(iii): Siaβ >0. Allora per ipotesi
+|f (x)|< 1
+β in un intorno dix0 e f (x)> 0 in un intorno dix0.
+Allora, le due condizioni valgono simultaneamente in un intorno dix0 e quindi si ha
+0<f (x)< 1
+β in un intorno dix0\implies  1
+f (x) >β in un intorno dix0,
+che è quanto si voleva dimostrare.
+Osservazione 2.20. Come conseguenza del Teorema 2.19 possiamo estendere ulteriormente
+l’algebra di R facendo le seguenti convenzioni
+\forall m\in  R\{ 0} : (±∞)m =m(±∞) =
+(
+±∞ se m> 0
+∓∞ se m< 0
+e
+\forall m\in  R : m
+±∞ = 0 e 1
+0± =±∞,
+dove con 0+ (risp. 0−) intendiamo considerare il caso che il limite vale zero e la funzione è
+strettamente positiva (risp. strettamente negativa) in un intorno dix0. In questo modo si
+può dire che sef (x)→\ell\in  R eg(x)→m\in  R e (\ell,m )̸= (±∞, 0) e (\ell,m )̸= (0,±∞), allora
+lim
+x\to x0
+f (x)g(x) = ℓm
+e che seℓ e m non sono entrambi infiniti o entrambi zero allora
+lim
+x\to x0
+f (x)
+g(x) = \ell
+m.
+Anche le forme
+(±∞)· 0 = 0· (±∞), ±∞
+±∞, 0
+0.
+sono dette forme indeterminate.
+2 Esempi di operazioni sui limiti in R
+Esempio 2.1 (Forme indeterminate +∞−∞ ).
+(i) Consideriamo le seguenti coppie di funzioni
+(a) f (x) = 1
+x2, g (x) = x− 1
+x2
+(b) f (x) = 1
+x2, g (x) = 2x2− 1
+x2
+(c) f (x) = 1
+x4, g (x) =− 1
+x2
+(d) f (x) = 1
+x2, g (x) =− 1
+x4.
+Si verifica facilmente che in tutti i casi
+lim
+x\to 0
+f (x) = +∞, lim
+x\to 0
+g(x) =−∞.
+Mentre:
+• nel caso (a),limx\to 0f (x) +g(x) = lim x\to 0
+x non esiste,
+• nel caso (b),limx\to 0f (x) +g(x) = 2,
+• nel caso (c),
+lim
+x\to 0
+f (x) +g(x) = lim
+x\to 0
+1−x2
+x4 = lim
+x\to 0
+(1−x2) lim
+x\to 0
+x4 = 1· (+∞) = +∞
+• nel caso (d),
+lim
+x\to 0
+f (x) +g(x) = lim
+x\to 0
+x2− 1
+x4 = lim
+x\to 0
+(x2− 1) lim
+x\to 0
+x4 = (−1)· (+∞) =−∞.
+Esempio 2.2 (ancora forme indeterminate +∞−∞ ).
+(i) lim
+x\to +∞
+x3− 3x2 = lim
+x\to +∞
+x3
+
+1− 3
+x
+
+= +∞· 1 = +∞.
+(ii) Proviamo che
+lim
+x\to +∞
+(
+√
+x + 1−√x) = 0.
+Si può provare direttamente dalla definizioni di limite (oppure del teorema sui limiti
+delle funzioni monotone che vedremo in seguito) che
+lim
+x\to +∞
+√
+x + 1 = +∞ e lim
+x\to +∞
+√x = +∞.
+Perciò il limite appare come una forma indeterminata(+∞) + (−∞). Questa forma
+indeterminata si può risolvere razionalizzando il rapporto nel modo seguente
+√
+x + 1−√x = (√x + 1−√x)(√x + 1 +√x)√x + 1 +√x
+= 1√x + 1 +√x\to  1
++∞ = 0, per x\to  +∞,
+dove si è applicata la (ii) del Teorema 2.5 della Lezione precedente.
+Limite di una funzione razionale per x\to ±∞
+Consideriamo il limite
+lim
+x\to ±∞
+P (x)
+Q(x) = lim
+x\to ±∞
+anxn +an−1xn−1 +··· +a1x +a0
+bmxm +bm−1xm−1 +··· +b1x +b0
+,
+dove m,n \in  N∗ e an e bm sono diversi da zero. Il dominio della funzione è un insieme del
+tipo A = R\{x1,...,x p} dove glixi sono gli zeri (distinti) diQ. Allora
+\forall x\in A\{ 0} : P (x)
+Q(x) = xn
+xm
+an + an−1
+x +··· + a1
+xn−1 + a0
+xn
+bm + bm−1
+x +··· + b1
+xm−1 + b0
+xm
+.
+Dato chean−k/xk\to  0 e bn−k/xk\to  0 per x\to ±∞ , si ha che
+an + an−1
+x +··· + a1
+xn−1 + a0
+xn
+bm + bm−1
+xm−1 +··· + b1
+xm−1 + b0
+xm
+\to  an
+bm
+\in  R∗ per x\to ±∞.
+Inoltre
+xn
+xm =
+
+
+
+xn−m se n>m
+1 se n =m
+xm−n se n<m.
+e quindi
+lim
+x\to +∞
+xn
+xm =
+
+
+
++∞ se n>m
+1 se n =m
+0 se n<m
+e lim
+x\to −∞
+xn
+xm =
+
+
+
++∞ se n>m e n−m è pari
+−∞ se n>m e n−m è dispari
+1 se n =m
+0 se n<m.
+In definitiva si ha
+lim
+x\to +∞
+P (x)
+Q(x) =
+
+
+
+an
+bm
+· (+∞) se n>m
+an
+bm
+se n =m
+0 se n<m.
+e lim
+x\to −∞
+P (x)
+Q(x) =
+
+
+
+an
+bm
+· (+∞) se n>m e n−m è pari
+an
+bm
+· (−∞) se n>m e n−m è dispari
+an
+bm
+se n =m
+0 se n<m.
+Esempio 2.3.
+(i) Calcolare il seguente limite
+lim
+x\to +∞
+3x3− 2x + 1
+−x4 + 2x2 +x.
+Allora
+3x3− 2x + 1
+−x4 + 2x2 +x = x3
+x4· 3− 2
+x2 + 1
+x3
+−1 + 2
+x2 + 1
+x3
+= 1
+x· 3− 2
+x2 + 1
+x3
+−1 + 2
+x2 + 1
+x3
+\to  0· (−3) = 0 per x\to  +∞.
+(ii) Calcolare il seguente limite
+lim
+x\to −∞
+−x4 + 2x2 +x
+3x3− 2x + 1 .
+Allora
+−x4 + 2x2 +x
+3x3− 2x + 1 = x4
+x3·−1 + 2
+x2 + 1
+x3
+3− 2
+x2 + 1
+x3
+=x·−1 + 2
+x2 + 1
+x3
+3− 2
+x2 + 1
+x3
+\to −∞·
+
+− 1
+
+= +∞ per x\to  +∞.
+
+**Dimostrazione:**
+Sia β > 0 e siaλ\in  R tale che 0 < \lambda < m. Allora, per il teorema della permanenza delle
+disuguaglianze, risulta che
+g(x)>\lambda in un intorno dix0.
+Poi, dato chelimx\to x0f (x) = +∞, si ha anche che
+f (x)> β
+\lambda in un intorno dix0.
+Allora, entrambe le condizioni sono vere simultaneamente in un intorno di x0 e quindi
+moltiplicando si ha chef (x)g(x)>β in un intorno dix0.
+(ii): Siaε> 0. Dobbiamo provare che
+
+
+
+
+
+f (x)
+
+
+
+
+<\varepsilon in un intorno dix0
+che chiaramente equivale a
+|f (x)|> 1
+\varepsilon in un intorno dix0.
+Allora
+lim
+x\to x0
+f (x) = +∞⇒ f (x)|{z}
+>0
+> 1
+\varepsilon in un intorno dix0
+lim
+x\to x0
+f (x) =−∞⇒ f (x)|{z}
+<0
+<− 1
+\varepsilon in un intorno dix0
+\implies −f (x)> 1
+\varepsilon in un intorno dix0.
+Perciò, in ogni caso,|f (x)|> 1/\varepsilon in un intorno dix0.
+(iii): Siaβ >0. Allora per ipotesi
+|f (x)|< 1
+β in un intorno dix0 e f (x)> 0 in un intorno dix0.
+Allora, le due condizioni valgono simultaneamente in un intorno dix0 e quindi si ha
+0<f (x)< 1
+β in un intorno dix0\implies  1
+f (x) >β in un intorno dix0,
+che è quanto si voleva dimostrare.
+Osservazione 2.20. Come conseguenza del Teorema 2.19 possiamo estendere ulteriormente
+l’algebra di R facendo le seguenti convenzioni
+\forall m\in  R\{ 0} : (±∞)m =m(±∞) =
+(
+±∞ se m> 0
+∓∞ se m< 0
+e
+\forall m\in  R : m
+±∞ = 0 e 1
+0± =±∞,
+dove con 0+ (risp. 0−) intendiamo considerare il caso che il limite vale zero e la funzione è
+strettamente positiva (risp. strettamente negativa) in un intorno dix0. In questo modo si
+può dire che sef (x)→\ell\in  R eg(x)→m\in  R e (\ell,m )̸= (±∞, 0) e (\ell,m )̸= (0,±∞), allora
+lim
+x\to x0
+f (x)g(x) = ℓm
+e che seℓ e m non sono entrambi infiniti o entrambi zero allora
+lim
+x\to x0
+f (x)
+g(x) = \ell
+m.
+Anche le forme
+(±∞)· 0 = 0· (±∞), ±∞
+±∞, 0
+0.
+sono dette forme indeterminate.
+2 Esempi di operazioni sui limiti in R
+Esempio 2.1 (Forme indeterminate +∞−∞ ).
+(i) Consideriamo le seguenti coppie di funzioni
+(a) f (x) = 1
+x2, g (x) = x− 1
+x2
+(b) f (x) = 1
+x2, g (x) = 2x2− 1
+x2
+(c) f (x) = 1
+x4, g (x) =− 1
+x2
+(d) f (x) = 1
+x2, g (x) =− 1
+x4.
+Si verifica facilmente che in tutti i casi
+lim
+x\to 0
+f (x) = +∞, lim
+x\to 0
+g(x) =−∞.
+Mentre:
+• nel caso (a),limx\to 0f (x) +g(x) = lim x\to 0
+x non esiste,
+• nel caso (b),limx\to 0f (x) +g(x) = 2,
+• nel caso (c),
+lim
+x\to 0
+f (x) +g(x) = lim
+x\to 0
+1−x2
+x4 = lim
+x\to 0
+(1−x2) lim
+x\to 0
+x4 = 1· (+∞) = +∞
+• nel caso (d),
+lim
+x\to 0
+f (x) +g(x) = lim
+x\to 0
+x2− 1
+x4 = lim
+x\to 0
+(x2− 1) lim
+x\to 0
+x4 = (−1)· (+∞) =−∞.
+Esempio 2.2 (ancora forme indeterminate +∞−∞ ).
+(i) lim
+x\to +∞
+x3− 3x2 = lim
+x\to +∞
+x3
+
+1− 3
+x
+
+= +∞· 1 = +∞.
+(ii) Proviamo che
+lim
+x\to +∞
+(
+√
+x + 1−√x) = 0.
+Si può provare direttamente dalla definizioni di limite (oppure del teorema sui limiti
+delle funzioni monotone che vedremo in seguito) che
+lim
+x\to +∞
+√
+x + 1 = +∞ e lim
+x\to +∞
+√x = +∞.
+Perciò il limite appare come una forma indeterminata(+∞) + (−∞). Questa forma
+indeterminata si può risolvere razionalizzando il rapporto nel modo seguente
+√
+x + 1−√x = (√x + 1−√x)(√x + 1 +√x)√x + 1 +√x
+= 1√x + 1 +√x\to  1
++∞ = 0, per x\to  +∞,
+dove si è applicata la (ii) del Teorema 2.5 della Lezione precedente.
+Limite di una funzione razionale per x\to ±∞
+Consideriamo il limite
+lim
+x\to ±∞
+P (x)
+Q(x) = lim
+x\to ±∞
+anxn +an−1xn−1 +··· +a1x +a0
+bmxm +bm−1xm−1 +··· +b1x +b0
+,
+dove m,n \in  N∗ e an e bm sono diversi da zero. Il dominio della funzione è un insieme del
+tipo A = R\{x1,...,x p} dove glixi sono gli zeri (distinti) diQ. Allora
+\forall x\in A\{ 0} : P (x)
+Q(x) = xn
+xm
+an + an−1
+x +··· + a1
+xn−1 + a0
+xn
+bm + bm−1
+x +··· + b1
+xm−1 + b0
+xm
+.
+Dato chean−k/xk\to  0 e bn−k/xk\to  0 per x\to ±∞ , si ha che
+an + an−1
+x +··· + a1
+xn−1 + a0
+xn
+bm + bm−1
+xm−1 +··· + b1
+xm−1 + b0
+xm
+\to  an
+bm
+\in  R∗ per x\to ±∞.
+Inoltre
+xn
+xm =
+
+
+
+xn−m se n>m
+1 se n =m
+xm−n se n<m.
+e quindi
+lim
+x\to +∞
+xn
+xm =
+
+
+
++∞ se n>m
+1 se n =m
+0 se n<m
+e lim
+x\to −∞
+xn
+xm =
+
+
+
++∞ se n>m e n−m è pari
+−∞ se n>m e n−m è dispari
+1 se n =m
+0 se n<m.
+In definitiva si ha
+lim
+x\to +∞
+P (x)
+Q(x) =
+
+
+
+an
+bm
+· (+∞) se n>m
+an
+bm
+se n =m
+0 se n<m.
+e lim
+x\to −∞
+P (x)
+Q(x) =
+
+
+
+an
+bm
+· (+∞) se n>m e n−m è pari
+an
+bm
+· (−∞) se n>m e n−m è dispari
+an
+bm
+se n =m
+0 se n<m.
+Esempio 2.3.
+(i) Calcolare il seguente limite
+lim
+x\to +∞
+3x3− 2x + 1
+−x4 + 2x2 +x.
+Allora
+3x3− 2x + 1
+−x4 + 2x2 +x = x3
+x4· 3− 2
+x2 + 1
+x3
+−1 + 2
+x2 + 1
+x3
+= 1
+x· 3− 2
+x2 + 1
+x3
+−1 + 2
+x2 + 1
+x3
+\to  0· (−3) = 0 per x\to  +∞.
+(ii) Calcolare il seguente limite
+lim
+x\to −∞
+−x4 + 2x2 +x
+3x3− 2x + 1 .
+Allora
+−x4 + 2x2 +x
+3x3− 2x + 1 = x4
+x3·−1 + 2
+x2 + 1
+x3
+3− 2
+x2 + 1
+x3
+=x·−1 + 2
+x2 + 1
+x3
+3− 2
+x2 + 1
+x3
+\to −∞·
+
+− 1
+
+= +∞ per x\to  +∞.
+
+$$\blacksquare$$

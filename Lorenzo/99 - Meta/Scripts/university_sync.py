@@ -400,11 +400,11 @@ def update_master_frontmatter(file_path: Path, new_pdf: str, new_note: str, lez_
 
     # Aggiorna source se manca
     if new_pdf not in text and 'source: [' in text:
-        text = re.sub(r'(source:\s*\[[^\]]*)\]', rf'\1, "{new_pdf}"]', text)
+        text = re.sub(r'^(source:\s*\[.*)\]\s*$', rf'\1, "{new_pdf}"]', text, flags=re.MULTILINE)
 
     # Aggiorna related se manca
     if f"[[{new_note}]]" not in text and 'related: [' in text:
-        text = re.sub(r'(related:\s*\[[^\]]*)\]', rf'\1, "[[{new_note}]]"]', text)
+        text = re.sub(r'^(related:\s*\[.*)\]\s*$', rf'\1, "[[{new_note}]]"]', text, flags=re.MULTILINE)
 
     # Aggiorna summary con l'ultima lezione
     text = re.sub(r"dalla Lezione 1 alla Lezione \d+", f"dalla Lezione 1 alla Lezione {lez_num}", text)
