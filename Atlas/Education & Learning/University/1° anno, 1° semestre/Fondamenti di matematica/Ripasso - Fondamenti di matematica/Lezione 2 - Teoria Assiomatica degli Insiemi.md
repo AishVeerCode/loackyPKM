@@ -85,14 +85,14 @@ Questo assioma demolisce alla radice il paradosso di Russell: non è lecito isol
 Grazie all'assioma di specificazione si definiscono le operazioni insiemistiche canoniche:
 
 1. **Intersezione Binaria:**
-   $$A \cap B := \{x \in A \mid x \in B\} \iff x \in A \cap B \iff x \in A \land x \in B$$
+$$A \cap B := \{x \in A \mid x \in B\} \iff x \in A \cap B \iff x \in A \land x \in B$$
 2. **Differenza tra Insiemi:**
-   $$A \setminus B := \{x \in A \mid x \notin B\} \iff x \in A \setminus B \iff x \in A \land x \notin B$$
+$$A \setminus B := \{x \in A \mid x \notin B\} \iff x \in A \setminus B \iff x \in A \land x \notin B$$
 3. **Insieme Complementare:**
    Se $B \subseteq A$, la differenza $A \setminus B$ prende il nome di complementare di $B$ rispetto ad $A$, denotato con $\complement_A(B)$.
 4. **Intersezione di una Famiglia di Insiemi:**
    Sia $\mathcal{F}$ una famiglia non vuota di insiemi. Fissato un arbitrario $B \in \mathcal{F}$, per l'assioma di specificazione:
-   $$\bigcap \mathcal{F} = \bigcap_{A \in \mathcal{F}} A := \{x \in B \mid (\forall A \in \mathcal{F})(x \in A)\}$$
+$$\bigcap \mathcal{F} = \bigcap_{A \in \mathcal{F}} A := \{x \in B \mid (\forall A \in \mathcal{F})(x \in A)\}$$
    Tale insieme non dipende dalla scelta iniziale di $B$ e racchiude gli elementi comuni a tutti gli insiemi della famiglia.
 
 ### Assioma 5: Assioma dell'Unione
@@ -109,11 +109,11 @@ Dati tre insiemi generici $A, B, C$:
 - **Commutatività:** $A \cap B = B \cap A$, $A \cup B = B \cup A$.
 - **Associatività:** $(A \cap B) \cap C = A \cap (B \cap C)$, $(A \cup B) \cup C = A \cup (B \cup C)$.
 - **Distributività:**
-  $$A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$$
-  $$A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$$
+$$A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$$
+$$A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$$
 - **Leggi di De Morgan per insiemi:**
-  $$A \setminus (B \cap C) = (A \setminus B) \cup (A \setminus C) \iff \complement_A(B \cap C) = \complement_A(B) \cup \complement_A(C)$$
-  $$A \setminus (B \cup C) = (A \setminus B) \cap (A \setminus C) \iff \complement_A(B \cup C) = \complement_A(B) \cap \complement_A(C)$$
+$$A \setminus (B \cap C) = (A \setminus B) \cup (A \setminus C) \iff \complement_A(B \cap C) = \complement_A(B) \cup \complement_A(C)$$
+$$A \setminus (B \cup C) = (A \setminus B) \cap (A \setminus C) \iff \complement_A(B \cup C) = \complement_A(B) \cap \complement_A(C)$$
 
 **Definizione di insiemi per elencazione finita:** Iterando la combinazione di coppie e unioni si generano insiemi finiti: $\{a, b, c\} := \{a, b\} \cup \{c\}$, $\{a, b, c, d\} := \{a, b, c\} \cup \{d\}$, e così via.
 
@@ -127,9 +127,9 @@ Proprietà immediate:
 - Per ogni insieme $A$, si ha sempre $\emptyset \in \mathcal{P}(A)$ e $A \in \mathcal{P}(A)$. Dunque $\mathcal{P}(A)$ non è mai vuoto.
 - Se $A = \{x, y\}$ con $x \neq y$, allora $\mathcal{P}(A) = \{\emptyset, \{x\}, \{y\}, \{x, y\}\}$.
 - Iterazione sui singoletti:
-  $$\mathcal{P}(\emptyset) = \{\emptyset\}$$
-  $$\mathcal{P}(\mathcal{P}(\emptyset)) = \{\emptyset, \{\emptyset\}\}$$
-  $$\mathcal{P}(\mathcal{P}(\mathcal{P}(\emptyset))) = \{\emptyset, \{\emptyset\}, \{\{\emptyset\}\}, \{\emptyset, \{\emptyset\}\}\}$$
+$$\mathcal{P}(\emptyset) = \{\emptyset\}$$
+$$\mathcal{P}(\mathcal{P}(\emptyset)) = \{\emptyset, \{\emptyset\}\}$$
+$$\mathcal{P}(\mathcal{P}(\mathcal{P}(\emptyset))) = \{\emptyset, \{\emptyset\}, \{\{\emptyset\}\}, \{\emptyset, \{\emptyset\}\}\}$$
 
 ## Costruzione Assiomatica dei Numeri Naturali (Von Neumann)
 
@@ -223,4 +223,3 @@ In Analisi 1, un insieme $C \subseteq \mathbb{R}$ è definito **chiuso** se e so
 All'esame di Analisi 1 non viene richiesta la teoria formale di Zermelo-Fraenkel, ma il docente si aspetta che lo studente riconosca dove l'Assioma della Scelta entra in gioco. In particolare, la sua variante debole, l'**Assioma della Scelta Numerabile (Countable Choice)**, viene impiegata sistematicamente:
 - Nel dimostrare l'equivalenza tra la definizione $\varepsilon-\delta$ di limite di funzione e la definizione per successioni (Heine): se $f(x) \not\to L$, per ogni $n \in \mathbb{N}$ si sceglie un punto $x_n$ tale che $|x_n - x_0| < 1/n$ ma $|f(x_n) - L| \ge \varepsilon_0$ (trattato in [[Lecture 14 - Limits of Functions in Terms of Sequences and Continuity]]).
 - Nell'estrazione di sottosuccessioni convergenti nel Teorema di Bolzano-Weierstrass (trattato in [[Lecture 09 - Limsup, Liminf, and the Bolzano-Weierstrass Theorem]]).
-

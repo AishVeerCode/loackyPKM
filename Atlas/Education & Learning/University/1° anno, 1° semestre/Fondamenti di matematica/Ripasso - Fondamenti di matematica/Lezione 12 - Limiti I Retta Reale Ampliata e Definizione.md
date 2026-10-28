@@ -32,14 +32,14 @@ La nozione di vicinanza metrica si formalizza attraverso i sistemi di intorni:
 
 1. **Intorno di un punto al finito $x_0 \in \mathbb{R}$:**
    Dato un raggio $r > 0$, l'intervallo aperto simmetrico centrato in $x_0$:
-   $$I_r(x_0) := ]x_0 - r, x_0 + r[ = \{x \in \mathbb{R} \mid |x - x_0| < r\}$$
+$$I_r(x_0) := ]x_0 - r, x_0 + r[ = \{x \in \mathbb{R} \mid |x - x_0| < r\}$$
    costituisce un intorno circolare elementare. Più in generale, un insieme $U \subseteq \overline{\mathbb{R}}$ è un intorno di $x_0$ se contiene un intervallo aperto $]x_0 - r, x_0 + r[$ con $r > 0$.
 2. **Intorno di $+\infty$:**
    Un insieme $U \subseteq \overline{\mathbb{R}}$ è un intorno di $+\infty$ se contiene una semiretta aperta del tipo:
-   $$]M, +\infty] = \{x \in \overline{\mathbb{R}} \mid x > M\}, \qquad \text{con } M \in \mathbb{R}$$
+$$]M, +\infty] = \{x \in \overline{\mathbb{R}} \mid x > M\}, \qquad \text{con } M \in \mathbb{R}$$
 3. **Intorno di $-\infty$:**
    Un insieme $U \subseteq \overline{\mathbb{R}}$ è un intorno di $-\infty$ se contiene una semiretta aperta del tipo:
-   $$[-\infty, -M[ = \{x \in \overline{\mathbb{R}} \mid x < -M\}, \qquad \text{con } M \in \mathbb{R}$$
+$$[-\infty, -M[ = \{x \in \overline{\mathbb{R}} \mid x < -M\}, \qquad \text{con } M \in \mathbb{R}$$
 
 ```mermaid
 flowchart TD
@@ -60,10 +60,10 @@ flowchart TD
 ### Punti di Accumulazione e Punti Isolati
 Sia $A \subseteq \mathbb{R}$ e sia $x_0 \in \overline{\mathbb{R}}$:
 - **Punto di accumulazione:** $x_0$ si dice <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>punto di accumulazione</b></font></mark> per $A$ se ogni intorno $U$ di $x_0$ contiene almeno un punto di $A$ distinto da $x_0$:
-  $$\forall U \in \mathcal{U}(x_0): \quad (U \setminus \{x_0\}) \cap A \ne \emptyset$$
+$$\forall U \in \mathcal{U}(x_0): \quad (U \setminus \{x_0\}) \cap A \ne \emptyset$$
   L'insieme di tutti i punti di accumulazione di $A$ si chiama **insieme derivato** e si denota con $D(A)$ o $\mathrm{Acc}(A)$.
 - **Punto isolato:** Un punto $x_0 \in A$ è detto isolato se esiste almeno un intorno $U \in \mathcal{U}(x_0)$ che non contiene altri elementi di $A$ all'infuori di $x_0$:
-  $$\exists U \in \mathcal{U}(x_0): \quad U \cap A = \{x_0\}$$
+$$\exists U \in \mathcal{U}(x_0): \quad U \cap A = \{x_0\}$$
 
 *Esempi notevoli:*
 - Per l'intervallo $A = ]a, b[$, i punti di accumulazione coincidono con l'intervallo chiuso $[a, b]$.

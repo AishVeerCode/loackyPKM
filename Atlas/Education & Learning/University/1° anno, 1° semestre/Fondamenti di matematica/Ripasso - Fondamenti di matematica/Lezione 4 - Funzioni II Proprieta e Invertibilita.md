@@ -59,20 +59,20 @@ La corretta formulazione matematica (secondo Hadamard) richiede:
 Analizziamo il comportamento dell'equazione $f(x) = y$ per diverse leggi analitiche:
 
 1. **Caso Né Iniettiva Né Suriettiva:**
-   $$f: \mathbb{R} \to \mathbb{R}, \quad f(x) = x^2 + 1$$
+$$f: \mathbb{R} \to \mathbb{R}, \quad f(x) = x^2 + 1$$
    Risolvendo l'equazione $x^2 + 1 = y \iff x^2 = y - 1$:
    - Se $y < 1$: l'equazione non ammette soluzioni reali ($\implies$ non suriettiva).
    - Se $y = 1$: ammette l'unica soluzione $x = 0$.
    - Se $y > 1$: ammette due soluzioni distinte $x = \pm \sqrt{y - 1}$ ($\implies$ non iniettiva).
 
 2. **Caso Iniettiva ma Non Suriettiva:**
-   $$f: \mathbb{R}_+ \to \mathbb{R}, \quad f(x) = \sqrt{x} + 1 \quad (\text{dove } \mathbb{R}_+ = [0, +\infty))$$
+$$f: \mathbb{R}_+ \to \mathbb{R}, \quad f(x) = \sqrt{x} + 1 \quad (\text{dove } \mathbb{R}_+ = [0, +\infty))$$
    - Se $y < 1$: nessuna soluzione reale.
    - Se $y \ge 1$: ammette l'unica soluzione $x = (y - 1)^2 \ge 0$.
    Dunque $f$ è iniettiva (al più una soluzione), ma non suriettiva.
 
 3. **Caso Suriettiva ma Non Iniettiva:**
-   $$f: \mathbb{R} \to \mathbb{R}, \quad f(x) = x^3 - x$$
+$$f: \mathbb{R} \to \mathbb{R}, \quad f(x) = x^3 - x$$
    L'equazione $x^3 - x = y$ è un polinomio di terzo grado a coefficienti reali. Poiché $\lim_{x \to \pm \infty} f(x) = \pm \infty$ ed $f$ è continua, l'equazione ammette sempre almeno una soluzione reale per ogni $y \in \mathbb{R}$ ($\implies$ suriettiva).
    Studiando la derivata prima $f'(x) = 3x^2 - 1$:
    - Punti stazionari: $x = \pm 1/\sqrt{3}$.
@@ -86,9 +86,9 @@ Analizziamo il comportamento dell'equazione $f(x) = y$ per diverse leggi analiti
 ### Proprietà di Immagine e Controimmagine con Proprietà Funzionali
 Riprendendo le inclusioni di composizione viste nella lezione precedente:
 - Se $f: A \to B$ è **iniettiva**, allora per ogni $X \subseteq A$:
-  $$f^{-1}(f(X)) = X$$
+$$f^{-1}(f(X)) = X$$
 - Se $f: A \to B$ è **suriettiva**, allora per ogni $Y \subseteq B$:
-  $$f(f^{-1}(Y)) = Y$$
+$$f(f^{-1}(Y)) = Y$$
 
 ## Composizione di Funzioni
 
@@ -102,13 +102,13 @@ Ad esempio, se $f: \mathbb{R} \to \mathbb{R}$ con $f(x) = x^2 + 1$ e $g: \mathbb
 
 ### Proprietà della Composizione
 1. **Associatività:** Date $f: A \to B$, $g: B \to C$ e $h: C \to D$:
-   $$h \circ (g \circ f) = (h \circ g) \circ f$$
+$$h \circ (g \circ f) = (h \circ g) \circ f$$
 2. **Elemento Neutro:** Le funzioni identità si comportano come unità moltiplicative:
-   $$i_B \circ f = f \quad \text{e} \quad f \circ i_A = f$$
+$$i_B \circ f = f \quad \text{e} \quad f \circ i_A = f$$
 3. **Non Commutatività Generale:** In generale $g \circ f \neq f \circ g$.
    *Esempio:* Siano $f(x) = \sin x$ e $g(x) = x^2$ su $\mathbb{R}$:
-   $$(g \circ f)(x) = g(\sin x) = (\sin x)^2 = \sin^2 x$$
-   $$(f \circ g)(x) = f(x^2) = \sin(x^2)$$
+$$(g \circ f)(x) = g(\sin x) = (\sin x)^2 = \sin^2 x$$
+$$(f \circ g)(x) = f(x^2) = \sin(x^2)$$
    Le due espressioni identificano funzioni radicalmente differenti.
 
 ## Il Teorema di Invertibilità
@@ -117,18 +117,18 @@ Ad esempio, se $f: \mathbb{R} \to \mathbb{R}$ con $f(x) = x^2 + 1$ e $g: \mathbb
 **Teorema:** Sia data una funzione $f: A \to B$. Le seguenti affermazioni sono logicamente equivalenti:
 1. $f$ è **bigettiva**.
 2. $f$ è **invertibile**, ossia esiste una funzione $g: B \to A$ tale che:
-   $$g \circ f = i_A \quad \text{e} \quad f \circ g = i_B$$
+$$g \circ f = i_A \quad \text{e} \quad f \circ g = i_B$$
    il che equivale alle identità:
-   $$\forall x \in A: g(f(x)) = x \quad \text{e} \quad \forall y \in B: f(g(y)) = y$$
+$$\forall x \in A: g(f(x)) = x \quad \text{e} \quad \forall y \in B: f(g(y)) = y$$
 
 Inoltre, tale funzione $g$ è **unica**, prende il nome di <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>funzione inversa</b></font></mark> di $f$ e si denota con $f^{-1}: B \to A$.
 
 ### Dimostrazione
 - **$(1 \implies 2)$:**
   Poiché $f$ è bigettiva, per ogni $y \in B$ l'equazione $f(x) = y$ ammette un'unica soluzione in $A$. Definiamo la funzione $g: B \to A$ ponendo per ogni $y \in B$:
-  $$g(y) := \text{l'unica soluzione dell'equazione } f(x) = y$$
+$$g(y) := \text{l'unica soluzione dell'equazione } f(x) = y$$
   Dalla definizione segue immediatamente che:
-  $$f(x) = y \iff x = g(y)$$
+$$f(x) = y \iff x = g(y)$$
   Applicando $f$ ad ambo i membri: $f(g(y)) = y$, dunque $f \circ g = i_B$.
   Applicando $g$ a $y = f(x)$: $g(f(x)) = x$, dunque $g \circ f = i_A$.
 
@@ -136,13 +136,13 @@ Inoltre, tale funzione $g$ è **unica**, prende il nome di <mark style="backgrou
   Supponiamo che esista $g: B \to A$ con $g(f(x)) = x$ e $f(g(y)) = y$.
   - *Suriettività:* Per ogni $y \in B$, posto $x = g(y) \in A$, si ha $f(x) = f(g(y)) = y$. Dunque ogni $y$ ammette controimmagine, provando la suriettività.
   - *Iniettività:* Siano $x_1, x_2 \in A$ tali che $f(x_1) = f(x_2)$. Applicando $g$:
-    $$g(f(x_1)) = g(f(x_2)) \implies x_1 = x_2$$
+$$g(f(x_1)) = g(f(x_2)) \implies x_1 = x_2$$
     dunque $f$ è iniettiva.
   Essendo iniettiva e suriettiva, $f$ è bigettiva.
 
 - **Unicità dell'inversa:**
   Se esistesse un'altra funzione $h: B \to A$ soddisfacente le stesse condizioni ($h \circ f = i_A$ e $f \circ h = i_B$), sfruttando l'associatività:
-  $$h = h \circ i_B = h \circ (f \circ g) = (h \circ f) \circ g = i_A \circ g = g$$
+$$h = h \circ i_B = h \circ (f \circ g) = (h \circ f) \circ g = i_A \circ g = g$$
   L'inversa è pertanto univocamente determinata.
 
 ### Significato Geometrico e Simmetria del Grafico
@@ -229,4 +229,3 @@ Nella visione di Georg Cantor, le funzioni bigettive diventano il metro universa
 - Due insiemi $A$ e $B$ hanno la stessa **cardinalità** (o sono equipotenti, $A \sim B$) se e solo se esiste una bigezione $f: A \to B$.
 - Un insieme è **infinito numerabile** se ammette una bigezione con $\mathbb{N}$ ($A \sim \mathbb{N}$).
 - L'esistenza di una bigezione esplicita tra $\mathbb{R}$ e l'intervallo limitato $]-1, 1[$ (ad esempio tramite l'omeomorfismo $f(x) = \frac{x}{\sqrt{1 + x^2}}$ con inversa $f^{-1}(y) = \frac{y}{\sqrt{1 - y^2}}$) dimostra che la retta reale infinita ha la stessa identica cardinalità di un segmento compresso.
-

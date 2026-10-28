@@ -108,7 +108,7 @@ Esempi canonici:
   Essendo $(n_k)$ strettamente crescente in $\mathbb{N}$, si ha $n_{k+1} > n_k$.
   Per la discretezza dell'ordinamento di $\mathbb{N}$ (provata in [[Lezione 6 - Valore Assoluto e Numeri Naturali]]), $n_{k+1} \ge n_k + 1$.
   Sostituendo l'ipotesi induttiva:
-  $$n_{k+1} \ge n_k + 1 \ge k + 1$$
+$$n_{k+1} \ge n_k + 1 \ge k + 1$$
 Il principio di induzione garantisce che $n_k \ge k$ per ogni $k \in \mathbb{N}$. $\blacksquare$
 
 ---
@@ -159,12 +159,12 @@ Poiché $1 \ne -1$, la successione $((-1)^n)$ non è regolare.
 *Dimostrazione:*
 1. **Caso $q = 1$:** $q^n = 1^n = 1$, costante, quindi $\lim q^n = 1$.
 2. **Caso $q > 1$:** Poniamo $a = q - 1 > 0 \implies q = 1 + a$. Per la Disuguaglianza di Bernoulli (dimostrata in [[Lezione 7 - Insiemi Numerici N Z e Q]]):
-   $$q^n = (1 + a)^n \ge 1 + na$$
+$$q^n = (1 + a)^n \ge 1 + na$$
    Fissato un arbitrario $\beta > 0$, per la proprietà archimedea scegliamo $\nu = \lfloor \frac{\beta - 1}{a} \rfloor + 1$. Per ogni $n > \nu$:
-   $$q^n \ge 1 + na > 1 + a \cdot \frac{\beta - 1}{a} = \beta \implies \lim_{n \to +\infty} q^n = +\infty$$
+$$q^n \ge 1 + na > 1 + a \cdot \frac{\beta - 1}{a} = \beta \implies \lim_{n \to +\infty} q^n = +\infty$$
 3. **Caso $|q| < 1$:** Se $q = 0$, $0^n = 0 \to 0$. Se $0 < |q| < 1$, allora $\frac{1}{|q|} > 1$.
    Per il punto precedente, $\lim_{n \to +\infty} \left(\frac{1}{|q|}\right)^n = +\infty$. Applicando il teorema sul reciproco:
-   $$\lim_{n \to +\infty} |q^n| = \lim_{n \to +\infty} \frac{1}{(1/|q|)^n} = 0 \iff \lim_{n \to +\infty} q^n = 0$$
+$$\lim_{n \to +\infty} |q^n| = \lim_{n \to +\infty} \frac{1}{(1/|q|)^n} = 0 \iff \lim_{n \to +\infty} q^n = 0$$
 4. **Caso $q = -1$:** $q^n = (-1)^n$, non regolare per quanto visto sopra.
 5. **Caso $q < -1$:** Consideriamo le due sottosuccessioni dei termini pari e dispari:
    - Termini pari: $q^{2k} = (q^2)^k$. Poiché $q < -1$, si ha $q^2 > 1$. Dal punto (2), $\lim_{k \to +\infty} q^{2k} = +\infty$.

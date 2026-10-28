@@ -35,9 +35,9 @@ Tuttavia, essendo $\mathbb{N}$ un insieme induttivo (come stabilito in [[Lezione
 ### Formulazioni Geometriche e Campi Archimedei
 Dalla proprietà di Archimede derivano forme equivalenti di costante impiego analitico:
 1. **Superamento di ogni soglia reale:**
-   $$\forall x \in \mathbb{R}, \; \exists n \in \mathbb{N}^* : n > x$$
+$$\forall x \in \mathbb{R}, \; \exists n \in \mathbb{N}^* : n > x$$
 2. **Formulazione geometrica del sottomultiplo:**
-   $$\forall a \in \mathbb{R}, \forall u \in \mathbb{R} \text{ con } u > 0, \; \exists n \in \mathbb{N} : n u > a$$
+$$\forall a \in \mathbb{R}, \forall u \in \mathbb{R} \text{ con } u > 0, \; \exists n \in \mathbb{N} : n u > a$$
    *(Dimostrazione: basta porre $x = a/u$ e applicare il punto 1).*
    Geometricamente, se $u$ rappresenta la lunghezza di un segmento assunto come unità di misura, un opportuno multiplo intero di $u$ supera qualsiasi lunghezza finita $a$.
 3. Un campo ordinato che soddisfa tale condizione si dice <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>campo archimedeo</b></font></mark>. Sia $\mathbb{R}$ sia $\mathbb{Q}$ sono campi archimedei (se $q = m/n \in \mathbb{Q}^+$, allora $m + 1 > m \ge m/n$).
@@ -47,24 +47,24 @@ La proprietà archimedea consente di risolvere le disequazioni di verifica $\var
 
 1. **Insieme $A = \left\{\dfrac{2n+2}{2n+1} \;\middle|\; n \in \mathbb{N}\right\}$:**
    Riscrivendo l'elemento generico:
-   $$\frac{2n+2}{2n+1} = 1 + \frac{1}{2n+1}$$
+$$\frac{2n+2}{2n+1} = 1 + \frac{1}{2n+1}$$
    - Per $n = 0$, l'elemento vale $2$, ed essendo $\frac{1}{2n+1} \le 1$, si ha $\max A = 2$.
    - Mostriamo che $\inf A = 1$. Chiaramente $1 + \frac{1}{2n+1} > 1$, quindi $1$ è un minorante. Sia ora $\varepsilon > 0$; dobbiamo trovare $n \in \mathbb{N}$ tale che:
-     $$1 + \frac{1}{2n+1} < 1 + \varepsilon \iff \frac{1}{2n+1} < \varepsilon \iff 2n + 1 > \frac{1}{\varepsilon} \iff n > \frac{1}{2}\left(\frac{1}{\varepsilon} - 1\right)$$
+$$1 + \frac{1}{2n+1} < 1 + \varepsilon \iff \frac{1}{2n+1} < \varepsilon \iff 2n + 1 > \frac{1}{\varepsilon} \iff n > \frac{1}{2}\left(\frac{1}{\varepsilon} - 1\right)$$
      L'esistenza di tale $n$ è garantita dalla proprietà archimedea. Quindi $\inf A = 1$.
 
 2. **Insieme $A = \left\{\dfrac{3n}{2n+1} \;\middle|\; n \in \mathbb{N}\right\}$:**
    Per $n \in \mathbb{N}^*$:
-   $$\frac{3n}{2n+1} = \frac{3}{2 + 1/n} < \frac{3}{2}$$
+$$\frac{3n}{2n+1} = \frac{3}{2 + 1/n} < \frac{3}{2}$$
    Quindi $3/2$ è un maggiorante. Fissato un candidato $b < 3/2$, la condizione $\frac{3n}{2n+1} > b$ equivale a:
-   $$3n > b(2n + 1) \iff (3 - 2b)n > b \iff n > \frac{b}{3 - 2b}$$
+$$3n > b(2n + 1) \iff (3 - 2b)n > b \iff n > \frac{b}{3 - 2b}$$
    Poiché $3 - 2b > 0$, la proprietà di Archimede assicura l'esistenza di tale $n$. Dunque $\sup A = 3/2$.
 
 3. **Insieme $A = \left\{(-1)^n + \dfrac{1}{2^n} \;\middle|\; n \in \mathbb{N}\right\}$:**
    - Se $n$ è pari: $(-1)^n + 2^{-n} = 1 + 2^{-n} \le 2$ (per $n=0$ vale $2$, quindi $\max A = 2$).
    - Se $n$ è dispari: $(-1)^n + 2^{-n} = -1 + 2^{-n} > -1$.
    Per provare che $\inf A = -1$, risolviamo per $n$ dispari:
-   $$-1 + \frac{1}{2^n} < -1 + \varepsilon \iff \frac{1}{2^n} < \varepsilon \iff 2^n > \frac{1}{\varepsilon}$$
+$$-1 + \frac{1}{2^n} < -1 + \varepsilon \iff \frac{1}{2^n} < \varepsilon \iff 2^n > \frac{1}{\varepsilon}$$
    Ricordando il corollario di Bernoulli ($2^n > n$), basta scegliere un dispari $n > 1/\varepsilon$ (archimedeo) per soddisfare la disuguaglianza. Ne segue $\inf A = -1$.
 
 ### Illimitatezza di $\mathbb{Z}$
@@ -182,21 +182,21 @@ Esplicitamente, per $n \ge 1$: $n! = n \cdot (n - 1) \cdots 2 \cdot 1$.
 
 - **Permutazioni:** Dato un insieme $A$ di $n$ elementi, il numero di funzioni biettive $f: A \to A$ (permutazioni) è pari a $n!$.
 - **Disposizioni semplici:** Il numero di funzioni iniettive da un insieme di $k$ elementi a uno di $n$ elementi ($k \le n$) è:
-  $$D_{n, k} = n(n - 1)(n - 2)\cdots(n - k + 1) = \frac{n!}{(n - k)!}$$
+$$D_{n, k} = n(n - 1)(n - 2)\cdots(n - k + 1) = \frac{n!}{(n - k)!}$$
 - **Combinazioni (Sottoinsiemi di cardinalità $k$):** Se non consideriamo l'ordine dei $k$ elementi scelti, ogni configurazione viene contata $k!$ volte. Dunque la cardinalità della famiglia dei sottoinsiemi di $k$ elementi $\mathcal{P}_k(\{1, \dots, n\})$ è:
-  $$\binom{n}{k} := \frac{n!}{k!(n - k)!}$$
+$$\binom{n}{k} := \frac{n!}{k!(n - k)!}$$
 
 La quantità $\binom{n}{k}$ si legge "$n$ su $k$" ed è il <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>coefficiente binomiale</b></font></mark>.
 
 ### Proprietà dei Coefficienti Binomiali
 Per ogni $n, k \in \mathbb{N}$ con $k \le n$:
 1. **Valori estremi ed elementari:**
-   $$\binom{n}{0} = \binom{n}{n} = 1, \qquad \binom{n}{1} = n$$
+$$\binom{n}{0} = \binom{n}{n} = 1, \qquad \binom{n}{1} = n$$
 2. **Simmetria speculare:**
-   $$\binom{n}{k} = \binom{n}{n - k}$$
+$$\binom{n}{k} = \binom{n}{n - k}$$
    *(Scegliere $k$ elementi da includere equivale a scegliere $n-k$ elementi da escludere).*
 3. **Formula ricorsiva di Pascal/Tartaglia:** Se $1 \le k \le n$:
-   $$\binom{n + 1}{k} = \binom{n}{k - 1} + \binom{n}{k}$$
+$$\binom{n + 1}{k} = \binom{n}{k - 1} + \binom{n}{k}$$
 
 *Dimostrazione algebrica:*
 $$\begin{aligned}
@@ -230,17 +230,17 @@ con la convenzione $a^0 = b^0 = 1$ anche qualora uno dei termini sia nullo.
 *Dimostrazione (per induzione su $n$):*
 - **Base ($n = 0$):** $(a + b)^0 = 1$ e $\sum_{k=0}^0 \binom{0}{k} a^{0-k} b^k = \binom{0}{0} a^0 b^0 = 1$. L'uguaglianza è verificata.
 - **Passo induttivo:** Supponiamo vera la formula per $n$:
-  $$(a + b)^{n+1} = (a + b)(a + b)^n = a(a + b)^n + b(a + b)^n$$
+$$(a + b)^{n+1} = (a + b)(a + b)^n = a(a + b)^n + b(a + b)^n$$
   Sostituendo l'ipotesi induttiva:
-  $$(a + b)^{n+1} = a \sum_{k=0}^n \binom{n}{k} a^{n-k} b^k + b \sum_{k=0}^n \binom{n}{k} a^{n-k} b^k = \sum_{k=0}^n \binom{n}{k} a^{n+1-k} b^k + \sum_{k=0}^n \binom{n}{k} a^{n-k} b^{k+1}$$
+$$(a + b)^{n+1} = a \sum_{k=0}^n \binom{n}{k} a^{n-k} b^k + b \sum_{k=0}^n \binom{n}{k} a^{n-k} b^k = \sum_{k=0}^n \binom{n}{k} a^{n+1-k} b^k + \sum_{k=0}^n \binom{n}{k} a^{n-k} b^{k+1}$$
   Isoliamo il primo termine ($k=0$) della prima somma e l'ultimo ($k=n$) della seconda somma:
-  $$= \binom{n}{0} a^{n+1} + \sum_{k=1}^n \binom{n}{k} a^{n+1-k} b^k + \sum_{k=0}^{n-1} \binom{n}{k} a^{n-k} b^{k+1} + \binom{n}{n} b^{n+1}$$
+$$= \binom{n}{0} a^{n+1} + \sum_{k=1}^n \binom{n}{k} a^{n+1-k} b^k + \sum_{k=0}^{n-1} \binom{n}{k} a^{n-k} b^{k+1} + \binom{n}{n} b^{n+1}$$
   Effettuando una traslazione di indice sulla seconda sommatoria ($j = k + 1$):
-  $$\sum_{k=0}^{n-1} \binom{n}{k} a^{n-k} b^{k+1} = \sum_{j=1}^n \binom{n}{j-1} a^{n-(j-1)} b^j = \sum_{k=1}^n \binom{n}{k-1} a^{n+1-k} b^k$$
+$$\sum_{k=0}^{n-1} \binom{n}{k} a^{n-k} b^{k+1} = \sum_{j=1}^n \binom{n}{j-1} a^{n-(j-1)} b^j = \sum_{k=1}^n \binom{n}{k-1} a^{n+1-k} b^k$$
   Raggruppando le due sommatorie intermedie:
-  $$= a^{n+1} + \sum_{k=1}^n \left[ \binom{n}{k} + \binom{n}{k-1} \right] a^{n+1-k} b^k + b^{n+1}$$
+$$= a^{n+1} + \sum_{k=1}^n \left[ \binom{n}{k} + \binom{n}{k-1} \right] a^{n+1-k} b^k + b^{n+1}$$
   Applicando la formula ricorsiva di Tartaglia $\binom{n}{k} + \binom{n}{k-1} = \binom{n+1}{k}$:
-  $$= \binom{n+1}{0} a^{n+1} + \sum_{k=1}^n \binom{n+1}{k} a^{n+1-k} b^k + \binom{n+1}{n+1} b^{n+1} = \sum_{k=0}^{n+1} \binom{n+1}{k} a^{n+1-k} b^k$$
+$$= \binom{n+1}{0} a^{n+1} + \sum_{k=1}^n \binom{n+1}{k} a^{n+1-k} b^k + \binom{n+1}{n+1} b^{n+1} = \sum_{k=0}^{n+1} \binom{n+1}{k} a^{n+1-k} b^k$$
 Il teorema è dimostrato per ogni $n \in \mathbb{N}$.
 
 ### Cardinalità delle Parti
@@ -277,7 +277,7 @@ La formula algebrica della somma geometrica $S_n = \sum_{k=0}^n q^k = \frac{1 - 
 
 Passando al limite per $n \to \infty$:
 - Se $|q| < 1$, allora $q^{n+1} \to 0$, per cui:
-  $$\sum_{k=0}^\infty q^k = \lim_{n \to \infty} \frac{1 - q^{n+1}}{1 - q} = \frac{1}{1 - q}$$
+$$\sum_{k=0}^\infty q^k = \lim_{n \to \infty} \frac{1 - q^{n+1}}{1 - q} = \frac{1}{1 - q}$$
 - Se $q \ge 1$, la serie diverge a $+\infty$ (per $q = 1$, $S_n = n + 1 \to +\infty$).
 - Se $q \le -1$, la serie è indeterminata (oscilla finemente o diverge).
 
@@ -296,6 +296,5 @@ a_n = \left(1 + \frac{1}{n}\right)^n &= \sum_{k=0}^n \binom{n}{k} \frac{1}{n^k} 
 
 1. **Monotonia Stretta:** Al crescere di $n$, ogni termine $\left(1 - \frac{j}{n}\right)$ cresce, e la somma contiene un termine positivo in più. Quindi $a_n < a_{n+1}$ per ogni $n \ge 1$ (strettamente crescente).
 2. **Limitatezza Superiore:** Poiché $\left(1 - \frac{j}{n}\right) < 1$ e $k! \ge 2^{k-1}$ per $k \ge 1$:
-   $$a_n < 1 + 1 + \sum_{k=2}^n \frac{1}{k!} < 2 + \sum_{k=2}^n \frac{1}{2^{k-1}} = 2 + \left(1 - \frac{1}{2^{n-1}}\right) < 3$$
+$$a_n < 1 + 1 + \sum_{k=2}^n \frac{1}{k!} < 2 + \sum_{k=2}^n \frac{1}{2^{k-1}} = 2 + \left(1 - \frac{1}{2^{n-1}}\right) < 3$$
 Per il **Teorema di Convergenza Monotona** (da [[Lecture 08 - The Squeeze Theorem and Operations with Convergent Sequences]]), la successione ammette limite finito compreso tra $2$ e $3$, denotato con $e \approx 2.71828\dots$
-

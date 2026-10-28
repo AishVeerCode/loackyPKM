@@ -2,20 +2,20 @@
 status: permanent
 type: summary
 area: education
-related: ["[[Lezione 1 - Logica delle Proposizioni e dei Predicati]]", "[[Lezione 2 - Teoria Assiomatica degli Insiemi]]", "[[Lezione 3 - Relazioni e Funzioni I]]", "[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lezione 5 - i Numeri Reali e Assioma di Completezza]]", "[[Lezione 6 - Valore Assoluto e Numeri Naturali]]", "[[Lezione 7 - Insiemi Numerici N Z e Q]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]", "[[Lezione 9 - Funzioni Reali ed Estremi]]", "[[Lezione 10 - Funzioni Reali II e Funzioni Elementari I]]", "[[Lezione 11 - Funzioni Reali Elementari II]]", "[[Lezione 12 - Limiti I Retta Reale Ampliata e Definizione]]", "[[Lezione 13 - Limiti II Restrizioni Limiti Laterali e Successioni]]", "[[Lezione 14 - Limiti di Successioni e Proprieta Locali]]", "[[Lezione 15 - Proprieta dei Limiti]]", "[[Assiomi, proposizioni ecc...]]", "[[University]]"]
-aliases: ["Dimostrazioni", "Dimostrazioni Fondamenti di Matematica", "Raccolta Dimostrazioni Lezioni 1-15"]
-source: ["Lezione 1.pdf", "Lezione 2.pdf", "Lezione 3.pdf", "Lezione 4.pdf", "Lezione 5.pdf", "Lezione 6.pdf", "Lezione 7.pdf", "Lezione 8.pdf", "Lezione 9.pdf", "Lezione 10.pdf", "Lezione 11.pdf", "Lezione 12.pdf", "Lezione 13.pdf", "Lezione 14.pdf", "Lezione 15.pdf"]
+related: ["[[Lezione 1 - Logica delle Proposizioni e dei Predicati]]", "[[Lezione 2 - Teoria Assiomatica degli Insiemi]]", "[[Lezione 3 - Relazioni e Funzioni I]]", "[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lezione 5 - i Numeri Reali e Assioma di Completezza]]", "[[Lezione 6 - Valore Assoluto e Numeri Naturali]]", "[[Lezione 7 - Insiemi Numerici N Z e Q]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]", "[[Lezione 9 - Funzioni Reali ed Estremi]]", "[[Lezione 10 - Funzioni Reali II e Funzioni Elementari I]]", "[[Lezione 11 - Funzioni Reali Elementari II]]", "[[Lezione 12 - Limiti I Retta Reale Ampliata e Definizione]]", "[[Lezione 13 - Limiti II Restrizioni Limiti Laterali e Successioni]]", "[[Lezione 14 - Limiti di Successioni e Proprieta Locali]]", "[[Lezione 15 - Proprieta dei Limiti]]", "[[Lezione 17 - Limiti delle Funzioni Composte e Confronto Locale]]", "[[Lezione 18 - Gerarchie di Infiniti e Infinitesimi e Continuita I]]", "[[Lezione 19 - Funzioni Continue e Punti di Discontinuita]]", "[[Lezione 20 - Continuita delle Funzioni Monotone e Limiti Notevoli]]", "[[Assiomi, proposizioni ecc...]]", "[[University]]"]
+aliases: ["Dimostrazioni", "Dimostrazioni Fondamenti di Matematica", "Raccolta Dimostrazioni Lezioni 1-20"]
+source: ["Lezione 1.pdf", "Lezione 2.pdf", "Lezione 3.pdf", "Lezione 4.pdf", "Lezione 5.pdf", "Lezione 6.pdf", "Lezione 7.pdf", "Lezione 8.pdf", "Lezione 9.pdf", "Lezione 10.pdf", "Lezione 11.pdf", "Lezione 12.pdf", "Lezione 13.pdf", "Lezione 14.pdf", "Lezione 15.pdf", "Lezione 17.pdf", "Lezione 18.pdf", "Lezione 19.pdf", "Lezione 20.pdf"]
 title: "Dimostrazioni"
 date: '2026-10-15'
-updated: '2026-10-20T20:42'
+updated: '2026-10-28T22:15'
 tags: [education/university, education/matematica, education/dimostrazioni]
-summary: "Compendio integrale e rigoroso di tutte le dimostrazioni matematiche svolte nel corso di Fondamenti di Matematica dalla Lezione 1 alla Lezione 15."
+summary: "Compendio integrale e rigoroso di tutte le dimostrazioni matematiche svolte nel corso di Fondamenti di Matematica dalla Lezione 1 alla Lezione 20."
 ---
 [[Home MOC|Home]] / [[Education & Learning]] / [[University]] / [[Dimostrazioni]]
 
 # Dimostrazioni
 
-Raccolta esaustiva di tutte le dimostrazioni analitiche e algebriche svolte nelle Lezioni da 1 a 15 del corso di Fondamenti di Matematica, articolate con passaggi logico-deduttivi formali, esplicitazione delle ipotesi e verifica delle tesi.
+Raccolta esaustiva di tutte le dimostrazioni analitiche e algebriche svolte nelle Lezioni da 1 a 20 del corso di Fondamenti di Matematica, articolate con passaggi logico-deduttivi formali, esplicitazione delle ipotesi e verifica delle tesi.
 
 ---
 
@@ -1128,3 +1128,436 @@ $$|f(x)| < \frac{1}{\beta} \text{ in un intorno di } x_0 \quad \text{e} \quad f(
 Le due condizioni valgono simultaneamente nell'intersezione degli intorni, da cui:
 $$0 < f(x) < \frac{1}{\beta} \text{ in un intorno di } x_0 \implies \frac{1}{f(x)} > \beta \text{ in un intorno di } x_0$$
 che dimostra $\lim_{x \to x_0} \frac{1}{f(x)} = +\infty$. $\blacksquare$
+
+
+---
+
+## Lezione 17: Limiti delle Funzioni Composte e Confronto Locale
+
+### Teorema 1.1: Limite delle Funzioni Composte (Regola di Sostituzione)
+>[!important] Enunciato
+>Siano $A, B \subset \mathbb{R}$ due sottoinsiemi non vuoti, $f: A \to \mathbb{R}$ e $g: B \to \mathbb{R}$ con $f(A) \subset B$. Siano $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $A$ e $y_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $B$. Supponiamo che:
+>1. $\lim_{x \to x_0} f(x) = y_0$ e $\lim_{y \to y_0} g(y) = \ell \in \overline{\mathbb{R}}$;
+>2. $f(x) \neq y_0$ definitivamente in un intorno forato di $x_0$.
+>
+>Allora:
+>$$\lim_{x \to x_0} (g \circ f)(x) = \lim_{x \to x_0} g(f(x)) = \ell$$
+>Inoltre, se $y_0 \in B$ e la funzione $g$ è continua in $y_0$ (cioè $\ell = g(y_0)$), la conclusione sussiste anche se l'ipotesi (2) non è soddisfatta.
+
+**Dimostrazione:**
+Sia $W$ un intorno aperto di $\ell$ in $\overline{\mathbb{R}}$.
+1. Poiché per ipotesi $\lim_{y \to y_0} g(y) = \ell$, dalla definizione topologica di limite esiste un intorno $V \in \mathcal{U}(y_0)$ tale che:
+$$y \in V \cap B \setminus \{y_0\} \implies g(y) \in W \tag{1}$$
+2. Poiché $\lim_{x \to x_0} f(x) = y_0$, in corrispondenza dell'intorno $V$ esiste un intorno $U_1 \in \mathcal{U}(x_0)$ tale che:
+$$x \in U_1 \cap A \setminus \{x_0\} \implies f(x) \in V \tag{2}$$
+3. Dall'ipotesi (2), esiste un intorno $U_2 \in \mathcal{U}(x_0)$ tale che:
+$$x \in U_2 \cap A \setminus \{x_0\} \implies f(x) \neq y_0 \tag{3}$$
+4. Poniamo $U = U_1 \cap U_2 \in \mathcal{U}(x_0)$. Nell'intersezione $U$, le condizioni $(2)$ e $(3)$ valgono simultaneamente. Essendo per ipotesi $f(A) \subset B$, per ogni $x \in U \cap A \setminus \{x_0\}$ si deduce che:
+$$f(x) \in V \cap B \setminus \{y_0\}$$
+5. Applicando la relazione $(1)$ con $y = f(x)$, si ottiene:
+$$g(f(x)) \in W$$
+Ciò prova che per ogni intorno $W$ di $\ell$ esiste un intorno $U$ di $x_0$ tale che $g(f(x)) \in W$ per ogni $x \in U \cap A \setminus \{x_0\}$, ossia $\lim_{x \to x_0} g(f(x)) = \ell$.
+Infine, se $y_0 \in B$ e $g$ è continua in $y_0$, la relazione $(1)$ vale per ogni $y \in V \cap B$ (anche per $y = y_0$), rendendo superflua la condizione $f(x) \neq y_0$.
+
+$$\blacksquare$$
+
+### Proposizione 2.2 (i): La Trascurabilità Rispetto a Se Stessi Implica l'Annullamento Locale
+>[!important] Enunciato
+>Sia $f: A \to \mathbb{R}$ e sia $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $A$. Allora:
+>$$f \ll f \text{ per } x \to x_0 \implies f(x) = 0 \text{ definitivamente in un intorno di } x_0$$
+
+**Dimostrazione:**
+Per definizione di trascurabilità locale $f \ll f$, esiste una funzione $\sigma: A \to \mathbb{R}$ tale che in un intorno $U_1$ di $x_0$:
+$$f(x) = \sigma(x)f(x) \quad \text{con } \lim_{x \to x_0} \sigma(x) = 0$$
+Fissiamo $\varepsilon = 1/2$. Dalla definizione di limite per $\sigma(x)$, esiste un intorno $U_2$ di $x_0$ tale che per ogni $x \in U_2 \cap A \setminus \{x_0\}$ si ha $|\sigma(x)| < 1/2$.
+Nell'intersezione $U = U_1 \cap U_2$ risulta:
+$$|f(x)| = |\sigma(x)||f(x)| \le \frac{1}{2}|f(x)| \iff |f(x)| - \frac{1}{2}|f(x)| \le 0 \iff \frac{1}{2}|f(x)| \le 0$$
+Poiché la norma $|f(x)| \ge 0$, l'unica soluzione possibile è $|f(x)| = 0$, da cui $f(x) = 0$ per ogni $x \in U \cap A \setminus \{x_0\}$.
+
+$$\blacksquare$$
+
+### Proposizione 2.2 (ii, iii, iv): Proprietà Algebriche e d'Ordine delle Relazioni Locali
+>[!important] Enunciato
+>Siano $f, g, h: A \to \mathbb{R}$ e $x_0 \in \overline{\mathbb{R}}$ di accumulazione per $A$. Per $x \to x_0$:
+>1. $f \ll g \land g \ll h \implies f \ll h$ (transitività di $\ll$);
+>2. $\asymp$ e $\sim$ sono relazioni di equivalenza (riflessive, simmetriche e transitive).
+
+**Dimostrazione:**
+1. **Transitività:** Supponiamo che $f(x) = \sigma(x)g(x)$ in un intorno $U_1$ con $\lim \sigma(x) = \ell$, e $g(x) = \gamma(x)h(x)$ in un intorno $U_2$ con $\lim \gamma(x) = m$. Nell'intorno $U = U_1 \cap U_2$:
+$$f(x) = [\sigma(x)\gamma(x)]h(x)$$
+Per il Teorema sul limite del prodotto, $\lim_{x \to x_0} [\sigma(x)\gamma(x)] = \ell m$.
+- Se $\ell = 0$ o $m = 0$, allora $\ell m = 0$, provando che $f \ll h$.
+- Se $\ell \neq 0$ e $m \neq 0$, allora $\ell m \neq 0$, provando la transitività di $\asymp$.
+- Se $\ell = 1$ e $m = 1$, allora $\ell m = 1$, provando la transitività di $\sim$.
+2. **Riflessività:** Per ogni funzione $f$, scegliendo $\sigma(x) = 1$ costantemente, si ha $f(x) = 1 \cdot f(x)$ con $\lim_{x \to x_0} 1 = 1 \neq 0$. Quindi $f \asymp f$ e $f \sim f$.
+3. **Simmetria:** Sia $f(x) = \sigma(x)g(x)$ in un intorno $U_1$ con $\lim \sigma(x) = \ell \neq 0$. Per il Teorema della permanenza del segno, esiste un intorno $U_2$ in cui $\sigma(x) \neq 0$. Definiamo $\gamma(x) = 1/\sigma(x)$ in $U_2$ e $0$ altrove. In $U_1 \cap U_2$ si ha $g(x) = \gamma(x)f(x)$ con $\lim_{x \to x_0} \gamma(x) = 1/\ell \neq 0$. Se $\ell = 1$, allora $1/\ell = 1$, provando la simmetria di $\asymp$ e $\sim$.
+
+$$\blacksquare$$
+
+### Proposizione 2.4: Caratterizzazione delle Relazioni Locali tramite Limite del Rapporto
+>[!important] Enunciato
+>Siano $f, g: A \to \mathbb{R}$ con $g(x) \neq 0$ per ogni $x$ in un intorno forato di $x_0$. Allora per $x \to x_0$:
+>$$f = o(g) \iff \lim_{x \to x_0} \frac{f(x)}{g(x)} = 0$$
+>$$f \asymp g \iff \lim_{x \to x_0} \frac{f(x)}{g(x)} = \ell \in \mathbb{R}^*$$
+>$$f \sim g \iff \lim_{x \to x_0} \frac{f(x)}{g(x)} = 1$$
+>Inoltre, se anche $f(x) \neq 0$ localmente:
+>$$g = o(f) \iff \lim_{x \to x_0} \left|\frac{f(x)}{g(x)}\right| = +\infty$$
+
+**Dimostrazione:**
+Se $f(x) = \sigma(x)g(x)$ con $\lim \sigma(x) \in \{0, \ell, 1\}$, dividendo membro a membro per $g(x) \neq 0$ si ottiene $\sigma(x) = \frac{f(x)}{g(x)}$, da cui $\lim \frac{f(x)}{g(x)} = \lim \sigma(x)$.
+Viceversa, se $\lim \frac{f(x)}{g(x)} = c$, definiamo $\sigma(x) = \frac{f(x)}{g(x)}$ per $x \neq x_0$ e $\sigma(x_0) = 0$. Allora $f(x) = \sigma(x)g(x)$ e $\lim \sigma(x) = c$.
+Infine, per il limite a infinito:
+$$\lim_{x \to x_0} \left|\frac{f(x)}{g(x)}\right| = +\infty \iff \lim_{x \to x_0} \left|\frac{g(x)}{f(x)}\right| = 0 \iff \lim_{x \to x_0} \frac{g(x)}{f(x)} = 0 \iff g = o(f)$$
+
+$$\blacksquare$$
+
+### Proposizione 3.1: Divergenza Rapida dell'Esponenziale Rispetto alla Potenza Lineare
+>[!important] Enunciato
+>Vale il limite di divergenza fondamentale:
+>$$\lim_{n \to +\infty} \frac{e^n}{n} = +\infty$$
+
+**Dimostrazione:**
+Poiché la base naturale $e > 2$, per ogni numero naturale $n \ge 2$, applichiamo la formula dello sviluppo del binomio di Newton a $2^n = (1 + 1)^n$:
+$$e^n > 2^n = (1 + 1)^n = \sum_{k=0}^n \binom{n}{k} \ge \binom{n}{0} + \binom{n}{1} + \binom{n}{2}$$
+Calcolando i singoli coefficienti binomiali:
+$$\binom{n}{0} = 1, \qquad \binom{n}{1} = n, \qquad \binom{n}{2} = \frac{n(n-1)}{2}$$
+Pertanto:
+$$e^n > 1 + n + \frac{n(n-1)}{2} = 1 + n + \frac{n^2 - n}{2} = 1 + \frac{n}{2} + \frac{n^2}{2} > \frac{n^2}{2}$$
+Inoltre per $n = 1$ risulta $e^1 = e > 1/2$. Di conseguenza, per ogni intero positivo $n \in \mathbb{N}^*$:
+$$e^n > \frac{n^2}{2} \implies \frac{e^n}{n} > \frac{n}{2}$$
+Poiché $\lim_{n \to +\infty} \frac{n}{2} = +\infty$, applicando il Teorema del confronto con una sola funzione divergente (Osservazione 2.8 della Lezione 15), si conclude:
+$$\lim_{n \to +\infty} \frac{e^n}{n} = +\infty$$
+
+$$\blacksquare$$
+
+---
+
+## Lezione 18: Gerarchie di Infiniti e Infinitesimi e Continuità (Parte I)
+
+### Proposizione 1.1: Gerarchia Universale degli Infiniti ed Infinitesimi per Funzioni
+>[!important] Enunciato
+>Siano $a > 1$ e $\alpha > 0$. Valgono i seguenti limiti:
+>1. $\lim_{x \to +\infty} \frac{a^x}{x^\alpha} = +\infty$
+>2. $\lim_{x \to -\infty} |x|^\alpha a^x = 0$
+>3. $\lim_{x \to +\infty} \frac{\log_a x}{x^\alpha} = 0$
+>4. $\lim_{x \to 0^+} x^\alpha \log_a x = 0$
+>5. $\lim_{x \to +\infty} \frac{x^x}{a^x} = +\infty$
+
+**Dimostrazione:**
+- **Punto 1 ($a^x / x^\alpha \to +\infty$):**
+  - *Caso $a = e$ e $\alpha = 1$:* Per ogni $x > 0$, la parte intera soddisfa $\lfloor x \rfloor \le x < \lfloor x \rfloor + 1$. Essendo l'esponenziale crescente e il reciproco decrescente:
+$$e^{\lfloor x \rfloor} \le e^x \quad \text{e} \quad \frac{1}{\lfloor x \rfloor + 1} < \frac{1}{x} \implies \frac{e^{\lfloor x \rfloor}}{\lfloor x \rfloor + 1} \le \frac{e^x}{x}$$
+  Ponendo $n = \lfloor x \rfloor$, per $x \to +\infty$ si ha $n \to +\infty$. Applicando la Proposizione 3.1 della Lezione 17:
+$$\lim_{x \to +\infty} \frac{e^{\lfloor x \rfloor}}{\lfloor x \rfloor + 1} = \lim_{n \to +\infty} \left(\frac{e^n}{n} \cdot \frac{n}{n+1}\right) = (+\infty) \cdot 1 = +\infty \implies \lim_{x \to +\infty} \frac{e^x}{x} = +\infty$$
+  - *Caso $a > 1$ e $\alpha = 1$:* Riscrivendo $a^x = e^{x \ln a}$ con $\ln a > 0$:
+$$\lim_{x \to +\infty} \frac{a^x}{x} = \lim_{x \to +\infty} \left(\ln a \cdot \frac{e^{x \ln a}}{x \ln a}\right) = \ln a \cdot \lim_{y \to +\infty} \frac{e^y}{y} = (\ln a) \cdot (+\infty) = +\infty$$
+  - *Caso generale $\alpha > 0$:* Scriviamo:
+$$\frac{a^x}{x^\alpha} = \left(\frac{a^{x/\alpha}}{x}\right)^\alpha = \left(\frac{(a^{1/\alpha})^x}{x}\right)^\alpha$$
+  Poiché $a^{1/\alpha} > 1$, dal passo precedente la frazione interna tende a $+\infty$, e per continuità della potenza $y^\alpha$ con $\alpha > 0$, il limite è $+\infty$.
+- **Punto 2 ($|x|^\alpha a^x \to 0$ per $x \to -\infty$):**
+  Ponendo $y = -x \to +\infty$, si ha $|x| = y$ e $a^x = a^{-y} = 1/a^y$. Allora:
+$$\lim_{x \to -\infty} |x|^\alpha a^x = \lim_{y \to +\infty} \frac{y^\alpha}{a^y} = \lim_{y \to +\infty} \frac{1}{\frac{a^y}{y^\alpha}} = \frac{1}{+\infty} = 0$$
+- **Punto 3 ($\frac{\log_a x}{x^\alpha} \to 0$ per $x \to +\infty$):**
+  Ponendo $y = \log_a x \iff x = a^y$, per $x \to +\infty$ si ha $y \to +\infty$. Quindi:
+$$\lim_{x \to +\infty} \frac{\log_a x}{x^\alpha} = \lim_{y \to +\infty} \frac{y}{(a^y)^\alpha} = \lim_{y \to +\infty} \frac{y}{(a^\alpha)^y} = 0$$
+  poiché $a^\alpha > 1$.
+- **Punto 4 ($x^\alpha \log_a x \to 0$ per $x \to 0^+$):**
+  Ponendo $y = 1/x \to +\infty$, si ha $\log_a x = -\log_a y$:
+$$\lim_{x \to 0^+} x^\alpha \log_a x = \lim_{y \to +\infty} \frac{-\log_a y}{y^\alpha} = -0 = 0$$
+- **Punto 5 ($x^x / a^x \to +\infty$ per $x \to +\infty$):**
+  Riscrivendo in base esponenziale:
+$$\frac{x^x}{a^x} = \frac{e^{x \ln x}}{e^{x \ln a}} = e^{x(\ln x - \ln a)}$$
+  Poiché $\lim_{x \to +\infty} x(\ln x - \ln a) = (+\infty) \cdot (+\infty) = +\infty$, dal limite della funzione esponenziale segue che $\lim_{x \to +\infty} e^{x(\ln x - \ln a)} = +\infty$.
+
+$$\blacksquare$$
+
+### Proposizione 1.4: Criterio del Rapporto per Successioni
+>[!important] Enunciato
+>Sia $(a_n)_{n \in \mathbb{N}}$ una successione a termini strettamente positivi ($a_n > 0$) tale che:
+>$$\lim_{n \to +\infty} \frac{a_{n+1}}{a_n} = \ell \in [0, +\infty]$$
+>Allora:
+>$$\lim_{n \to +\infty} a_n = \begin{cases} +\infty & \text{se } \ell > 1 \\ 0 & \text{se } \ell < 1 \end{cases}$$
+
+**Dimostrazione:**
+1. **Caso $\ell < 1$:** Scegliamo un numero reale $q$ tale che $\ell < q < 1$. Per il Teorema della permanenza delle disuguaglianze applicato a $\frac{a_{n+1}}{a_n} \to \ell$, esiste un indice $\nu \in \mathbb{N}$ tale che per ogni $n > \nu$:
+$$\frac{a_{n+1}}{a_n} < q \implies a_{n+1} < q a_n$$
+Iterando a ritroso la disuguaglianza per $n > \nu$:
+$$a_n \le q a_{n-1} \le q^2 a_{n-2} \le \dots \le q^{n - \nu - 1} a_{\nu + 1} = \left(\frac{a_{\nu+1}}{q^{\nu+1}}\right) q^n$$
+Poiché $0 < q < 1$, la successione geometrica $q^n \to 0$ per $n \to +\infty$. Essendo $a_n > 0$, per il Teorema dei carabinieri segue che $\lim_{n \to +\infty} a_n = 0$.
+2. **Caso $\ell > 1$:** Scegliamo un numero reale $q$ tale che $1 < q < \ell$. Per il Teorema della permanenza delle disuguaglianze, esiste un indice $\nu \in \mathbb{N}$ tale che per ogni $n > \nu$:
+$$\frac{a_{n+1}}{a_n} > q \implies a_{n+1} > q a_n$$
+Iterando per $n > \nu$:
+$$a_n > \left(\frac{a_{\nu+1}}{q^{\nu+1}}\right) q^n$$
+Poiché $q > 1$, la successione geometrica $q^n \to +\infty$. Per confronto con una costante positiva moltiplicata per $q^n$, segue che $\lim_{n \to +\infty} a_n = +\infty$.
+
+$$\blacksquare$$
+
+### Proposizione 1.5: Limiti Notevoli di Fattoriali e Torri Esponenziali
+>[!important] Enunciato
+>Valgono i seguenti limiti per $n \to +\infty$:
+>1. $\lim_{n \to +\infty} \frac{n!}{a^n} = +\infty \quad (\forall a > 1)$
+>2. $\lim_{n \to +\infty} \frac{n^n}{n!} = +\infty$
+>3. $\lim_{n \to +\infty} \frac{(2n)!}{n^n} = +\infty$
+
+**Dimostrazione:**
+In tutti i casi applichiamo il Criterio del rapporto (Proposizione 1.4):
+1. Poniamo $b_n = \frac{n!}{a^n}$. Il quoziente vale:
+$$\frac{b_{n+1}}{b_n} = \frac{(n+1)!}{a^{n+1}} \cdot \frac{a^n}{n!} = \frac{(n+1)n! \cdot a^n}{a \cdot a^n \cdot n!} = \frac{n+1}{a}$$
+Poiché $\lim_{n \to +\infty} \frac{n+1}{a} = +\infty > 1$, segue $\lim_{n \to +\infty} b_n = +\infty$.
+2. Poniamo $b_n = \frac{n^n}{n!}$. Il quoziente vale:
+$$\frac{b_{n+1}}{b_n} = \frac{(n+1)^{n+1}}{(n+1)!} \cdot \frac{n!}{n^n} = \frac{(n+1)(n+1)^n}{(n+1)n!} \cdot \frac{n!}{n^n} = \left(\frac{n+1}{n}\right)^n = \left(1 + \frac{1}{n}\right)^n$$
+Poiché $\lim_{n \to +\infty} \left(1 + \frac{1}{n}\right)^n = e \approx 2.718 > 1$, segue $\lim_{n \to +\infty} b_n = +\infty$.
+3. Poniamo $b_n = \frac{(2n)!}{n^n}$. Il quoziente vale:
+$$\frac{b_{n+1}}{b_n} = \frac{[2(n+1)]!}{(n+1)^{n+1}} \cdot \frac{n^n}{(2n)!} = \frac{(2n+2)(2n+1)(2n)!}{(n+1)(n+1)^n} \cdot \frac{n^n}{(2n)!} = \frac{2(n+1)(2n+1)}{n+1} \cdot \left(\frac{n}{n+1}\right)^n = 2(2n+1) \cdot \frac{1}{\left(1 + \frac{1}{n}\right)^n}$$
+Passando al limite:
+$$\lim_{n \to +\infty} \frac{b_{n+1}}{b_n} = \lim_{n \to +\infty} \left[2(2n+1) \cdot \frac{1}{(1 + 1/n)^n}\right] = (+\infty) \cdot \frac{1}{e} = +\infty > 1$$
+Dunque $\lim_{n \to +\infty} b_n = +\infty$.
+
+$$\blacksquare$$
+
+### Proposizione 2.3: Continuità nei Punti Isolati e Caratterizzazione nei Punti di Accumulazione
+>[!important] Enunciato
+>Sia $f: A \subset \mathbb{R} \to \mathbb{R}$ e sia $x_0 \in A$.
+>1. Se $x_0$ è un punto isolato di $A$, allora $f$ è continua in $x_0$.
+>2. Se $x_0$ è punto di accumulazione per $A$, allora:
+>$$f \text{ è continua in } x_0 \iff \lim_{x \to x_0} f(x) = f(x_0)$$
+
+**Dimostrazione:**
+1. Se $x_0$ è punto isolato di $A$, esiste un intorno $U \in \mathcal{U}(x_0)$ tale che $U \cap A = \{x_0\}$. Ne segue che per ogni intorno $V \in \mathcal{U}(f(x_0))$:
+$$f(U \cap A) = f(\{x_0\}) = \{f(x_0)\} \subset V$$
+La condizione topologica di continuità è soddisfatta per qualsiasi intorno $V$.
+2. Se $x_0 \in A$ è punto di accumulazione per $A$, dato che ogni intorno $V$ di $f(x_0)$ contiene già $f(x_0)$, si ha che per ogni intorno $U \in \mathcal{U}(x_0)$:
+$$f(U \cap A) \subset V \iff f(U \cap A \setminus \{x_0\}) \subset V$$
+che è esattamente la definizione del limite funzionale $\lim_{x \to x_0} f(x) = f(x_0)$.
+
+$$\blacksquare$$
+
+---
+
+## Lezione 19: Funzioni Continue e Punti di Discontinuità
+
+### Lemma 1.3: Rappresentazione Algebrica di Massimo e Minimo
+>[!important] Enunciato
+>Per ogni coppia di numeri reali $a, b \in \mathbb{R}$:
+>$$\max\{a, b\} = \frac{a + b + |a - b|}{2}, \qquad \min\{a, b\} = \frac{a + b - |a - b|}{2}$$
+
+**Dimostrazione:**
+Distinguiamo i due casi possibili di ordinamento:
+- **Caso $a \le b$:** Allora $a - b \le 0$, perciò $|a - b| = -(a - b) = b - a$. Sostituendo:
+$$\frac{a + b + |a - b|}{2} = \frac{a + b + b - a}{2} = \frac{2b}{2} = b = \max\{a, b\}$$
+$$\frac{a + b - |a - b|}{2} = \frac{a + b - (b - a)}{2} = \frac{2a}{2} = a = \min\{a, b\}$$
+- **Caso $a \ge b$:** Allora $a - b \ge 0$, perciò $|a - b| = a - b$. Sostituendo:
+$$\frac{a + b + |a - b|}{2} = \frac{a + b + a - b}{2} = \frac{2a}{2} = a = \max\{a, b\}$$
+$$\frac{a + b - |a - b|}{2} = \frac{a + b - (a - b)}{2} = \frac{2b}{2} = b = \min\{a, b\}$$
+L'uguaglianza è verificata in entrambi i casi.
+
+$$\blacksquare$$
+
+### Teorema 1.2: Algebra della Continuità e Stabilità Reticolare
+>[!important] Enunciato
+>Siano $f, g: A \to \mathbb{R}$ continue in $x_0 \in A$. Allora sono continue in $x_0$:
+>1. $f + g$
+>2. $f \cdot g$
+>3. $f/g$ (se $g(x) \neq 0$ per ogni $x \in A$)
+>4. $|f|$
+>5. $f \vee g = \max\{f, g\}$ e $f \wedge g = \min\{f, g\}$
+>6. La restrizione $f|_B$ per ogni sottoinsieme $B \subset A$ contenente $x_0$.
+
+**Dimostrazione:**
+Se $x_0$ è isolato la continuità è immediata. Se $x_0$ è di accumulazione per $A$:
+$$\lim_{x \to x_0} f(x) = f(x_0) \quad \text{e} \quad \lim_{x \to x_0} g(x) = g(x_0)$$
+1. Per il teorema sulla somma dei limiti: $\lim (f+g)(x) = f(x_0) + g(x_0) = (f+g)(x_0)$.
+2. Per il teorema sul prodotto dei limiti: $\lim (fg)(x) = f(x_0)g(x_0) = (fg)(x_0)$.
+3. Per il teorema sul quoziente: essendo $g(x_0) \neq 0$, $\lim (f/g)(x) = f(x_0)/g(x_0) = (f/g)(x_0)$.
+4. Dalla disuguaglianza triangolare inversa $\big||f(x)| - |f(x_0)|\big| \le |f(x) - f(x_0)| \to 0$, segue $\lim |f(x)| = |f(x_0)|$.
+5. Dal Lemma 1.3, punto per punto:
+$$(f \vee g)(x) = \frac{f(x) + g(x) + |f(x) - g(x)|}{2}, \qquad (f \wedge g)(x) = \frac{f(x) + g(x) - |f(x) - g(x)|}{2}$$
+Poiché $f$ e $g$ sono continue, la differenza $f - g$ è continua per i punti (1) e (2); il valore assoluto $|f - g|$ è continuo per il punto (4); infine somme e prodotti per costanti scalari sono continue per i punti (1) e (2). Dunque $f \vee g$ e $f \wedge g$ sono continue in $x_0$.
+6. Segue dal Teorema sul limite delle restrizioni di funzioni.
+
+$$\blacksquare$$
+
+### Proposizione 1.7: La Proprietà di Lipschitz Implica la Continuità
+>[!important] Enunciato
+>Sia $f: A \to \mathbb{R}$ una funzione Lipschitziana con costante $L > 0$, cioè:
+>$$\forall x, y \in A: \quad |f(x) - f(y)| \le L |x - y|$$
+>Allora $f$ è continua su tutto il dominio $A$.
+
+**Dimostrazione:**
+Sia $x_0 \in A$ arbitrario. Fissato $\varepsilon > 0$, definiamo $\delta = \frac{\varepsilon}{L} > 0$.
+Per ogni $x \in A$ con $|x - x_0| < \delta$, applicando la disuguaglianza di Lipschitz:
+$$|f(x) - f(x_0)| \le L |x - x_0| < L \cdot \delta = L \cdot \frac{\varepsilon}{L} = \varepsilon$$
+La definizione metrica di continuità è verificata in ogni punto $x_0 \in A$.
+
+$$\blacksquare$$
+
+### Esempio 1.8: 1-Lipschitzianità delle Funzioni Seno e Coseno tramite Formule di Prostaferesi
+>[!important] Enunciato
+>Le funzioni goniometriche fondamentali soddisfano:
+>$$\forall x, y \in \mathbb{R}: \quad |\sin x - \sin y| \le |x - y| \qquad \text{e} \qquad |\cos x - \cos y| \le |x - y|$$
+>e sono pertanto Lipschitziane con costante $L = 1$, dunque continue su $\mathbb{R}$.
+
+**Dimostrazione:**
+Richiamiamo le formule di prostaferesi:
+$$\sin x - \sin y = 2 \cos\left(\frac{x+y}{2}\right) \sin\left(\frac{x-y}{2}\right)$$
+$$\cos x - \cos y = -2 \sin\left(\frac{x+y}{2}\right) \sin\left(\frac{x-y}{2}\right)$$
+Utilizzando le disuguaglianze trigonometriche note $|\cos \theta| \le 1$, $|\sin \theta| \le 1$ e $|\sin t| \le |t|$ per ogni $t \in \mathbb{R}$:
+$$|\sin x - \sin y| = 2 \left|\cos\left(\frac{x+y}{2}\right)\right| \left|\sin\left(\frac{x-y}{2}\right)\right| \le 2 \cdot 1 \cdot \left|\frac{x-y}{2}\right| = 2 \cdot \frac{|x-y|}{2} = |x - y|$$
+Analogamente per il coseno:
+$$|\cos x - \cos y| = 2 \left|\sin\left(\frac{x+y}{2}\right)\right| \left|\sin\left(\frac{x-y}{2}\right)\right| \le 2 \cdot 1 \cdot \left|\frac{x-y}{2}\right| = |x - y|$$
+Dunque seno e coseno sono 1-Lipschitziane e di conseguenza continue su tutto $\mathbb{R}$.
+
+$$\blacksquare$$
+
+### Teorema 1.9: Continuità delle Funzioni Composte
+>[!important] Enunciato
+>Siano $A, B \subset \mathbb{R}$ non vuoti, $f: A \to B$ e $g: B \to \mathbb{R}$. Sia $x_0 \in A$. Allora:
+>$$f \text{ continua in } x_0 \quad \land \quad g \text{ continua in } f(x_0) \implies g \circ f \text{ è continua in } x_0$$
+
+**Dimostrazione:**
+Sia $W$ un intorno aperto di $g(f(x_0))$ in $\mathbb{R}$.
+1. Poiché $g$ è continua nel punto $y_0 = f(x_0) \in B$, per la definizione topologica di continuità esiste un intorno $V \in \mathcal{U}(f(x_0))$ tale che:
+$$y \in V \cap B \implies g(y) \in W$$
+2. Poiché $f$ è continua nel punto $x_0 \in A$, in corrispondenza dell'intorno $V$ esiste un intorno $U \in \mathcal{U}(x_0)$ tale che:
+$$x \in U \cap A \implies f(x) \in V$$
+3. Essendo per ipotesi $f(A) \subset B$, per ogni $x \in U \cap A$ risulta $f(x) \in V \cap B$, da cui segue direttamente:
+$$g(f(x)) \in W$$
+Ciò dimostra che $f(U \cap A) \subset V \implies g(f(U \cap A)) \subset W$, ovvero che $(g \circ f)$ è continua in $x_0$.
+
+$$\blacksquare$$
+
+---
+
+## Lezione 20: Continuità delle Funzioni Monotone e Limiti Notevoli
+
+### Teorema 1.4: Teorema dell'Immagine Intervallo per Funzioni Monotone
+>[!important] Enunciato
+>Sia $f: A \to \mathbb{R}$ una funzione monotona. Se l'immagine $f(A)$ è un intervallo di $\mathbb{R}$, allora $f$ è continua su tutto $A$.
+
+**Dimostrazione:**
+Ricordiamo la proprietà caratteristica fondamentale di un intervallo $I \subset \mathbb{R}$:
+$$\forall y_1, y_2 \in I, \quad y_1 < y_2 \land y_1 < y < y_2 \implies y \in I$$
+Supponiamo senza perdita di generalità che $f$ sia crescente e sia $x_0 \in A$.
+Supponiamo per assurdo che $f$ non sia continua a sinistra in $x_0$, ossia che $x_0$ sia di accumulazione a sinistra per $A$ e che:
+$$f(x_0^-) = \sup_{\substack{x \in A \\ x < x_0}} f(x) < f(x_0)$$
+Dalla monotonia crescente di $f$, per ogni $x \in A$ si ha:
+$$x < x_0 \implies f(x) \le f(x_0^-) \quad \text{e} \quad x \ge x_0 \implies f(x) \ge f(x_0)$$
+Scegliamo un punto $x_1 \in A$ con $x_1 < x_0$. Poniamo $y_1 = f(x_1)$ e $y_0 = f(x_0)$. Poiché $y_1 \le f(x_0^-) < f(x_0) = y_0$, entrambi i valori $y_1, y_0$ appartengono all'immagine $f(A)$.
+Tuttavia, nessun valore $y$ appartenente all'intervallo non degenere $]f(x_0^-), f(x_0)[$ può essere assunto dalla funzione, poiché $f(x) \le f(x_0^-)$ per ogni $x < x_0$ e $f(x) \ge f(x_0)$ per ogni $x \ge x_0$.
+Di conseguenza l'insieme immagine $f(A)$ contiene $y_1$ e $y_0$ ma non contiene i punti intermedi compresi tra $f(x_0^-)$ e $f(x_0)$, il che contraddice l'ipotesi che $f(A)$ sia un intervallo.
+Dunque deve essere $f(x_0^-) = f(x_0)$.
+In modo del tutto speculare si prova che se $x_0$ è di accumulazione a destra deve risultare $f(x_0^+) = f(x_0)$. Pertanto $f$ è continua in ogni punto $x_0 \in A$.
+
+$$\blacksquare$$
+
+### Teorema - Limite Notevole 1: Generazione del Numero di Nepero $e$
+>[!important] Enunciato
+>Vale il limite fondamentale per $x \to \pm\infty$:
+>$$\lim_{x \to \pm\infty} \left(1 + \frac{1}{x}\right)^x = e$$
+
+**Dimostrazione:**
+1. **Caso $x \to +\infty$:**
+   Per ogni $x \ge 1$, dalla disuguaglianza della parte intera $\lfloor x \rfloor \le x < \lfloor x \rfloor + 1$:
+$$1 + \frac{1}{\lfloor x \rfloor + 1} < 1 + \frac{1}{x} \le 1 + \frac{1}{\lfloor x \rfloor}$$
+   Elevando a potenza (essendo basi ed esponenti positivi):
+$$\left(1 + \frac{1}{\lfloor x \rfloor + 1}\right)^{\lfloor x \rfloor} < \left(1 + \frac{1}{x}\right)^x \le \left(1 + \frac{1}{\lfloor x \rfloor}\right)^{\lfloor x \rfloor + 1}$$
+   Poniamo $n = \lfloor x \rfloor \in \mathbb{N}$ e calcoliamo i limiti delle successioni agli estremi per $n \to +\infty$:
+$$\lim_{n \to +\infty} \left(1 + \frac{1}{n+1}\right)^n = \lim_{n \to +\infty} \left[\left(1 + \frac{1}{n+1}\right)^{n+1} \cdot \left(1 + \frac{1}{n+1}\right)^{-1}\right] = e \cdot 1 = e$$
+$$\lim_{n \to +\infty} \left(1 + \frac{1}{n}\right)^{n+1} = \lim_{n \to +\infty} \left[\left(1 + \frac{1}{n}\right)^n \cdot \left(1 + \frac{1}{n}\right)\right] = e \cdot 1 = e$$
+   Per il Teorema dei carabinieri segue $\lim_{x \to +\infty} \left(1 + \frac{1}{x}\right)^x = e$.
+2. **Caso $x \to -\infty$:**
+   Per $x < -1$, poniamo $x = -|x|$. Riscrivendo la frazione:
+$$\left(1 + \frac{1}{x}\right)^x = \left(1 - \frac{1}{|x|}\right)^{-|x|} = \left(\frac{|x|-1}{|x|}\right)^{-|x|} = \left(\frac{|x|}{|x|-1}\right)^{|x|} = \left(1 + \frac{1}{|x|-1}\right)^{|x|}$$
+   Scomponendo l'esponente $|x| = (|x|-1) + 1$:
+$$\left(1 + \frac{1}{|x|-1}\right)^{|x|-1} \cdot \left(1 + \frac{1}{|x|-1}\right)$$
+   Ponendo $y = |x| - 1 \to +\infty$ per $x \to -\infty$, applicando il limite per $y \to +\infty$:
+$$\lim_{x \to -\infty} \left(1 + \frac{1}{x}\right)^x = \lim_{y \to +\infty} \left[\left(1 + \frac{1}{y}\right)^y \cdot \left(1 + \frac{1}{y}\right)\right] = e \cdot 1 = e$$
+
+$$\blacksquare$$
+
+### Teorema - Limite Notevole 2: Limite della Potenza di Binomio con Parametro
+>[!important] Enunciato
+>Per ogni parametro reale $p \in \mathbb{R}$:
+>$$\lim_{x \to \pm\infty} \left(1 + \frac{p}{x}\right)^x = e^p \qquad \text{e} \qquad \lim_{x \to 0} (1 + px)^{1/x} = e^p$$
+
+**Dimostrazione:**
+Se $p = 0$, la base vale costantemente $1$ e $1^x = 1 = e^0$.
+Supponiamo $p \neq 0$. Poniamo $y = x/p$, da cui $x = py$.
+Per $x \to \pm\infty$, risulta $y \to \pm\infty \cdot \text{sgn}(p) = \pm\infty$.
+Riscriviamo la funzione:
+$$\left(1 + \frac{p}{x}\right)^x = \left[\left(1 + \frac{1}{x/p}\right)^{x/p}\right]^p = \left[\left(1 + \frac{1}{y}\right)^y\right]^p$$
+Per il Limite Notevole 1, la base converge a $e$; per la continuità della funzione potenza $t \mapsto t^p$ su $\mathbb{R}^+$:
+$$\lim_{x \to \pm\infty} \left(1 + \frac{p}{x}\right)^x = \lim_{y \to \pm\infty} \left[\left(1 + \frac{1}{y}\right)^y\right]^p = e^p$$
+Per il secondo limite, ponendo $y = 1/x$, per $x \to 0^\pm$ si ha $y \to \pm\infty$:
+$$\lim_{x \to 0} (1 + px)^{1/x} = \lim_{y \to \pm\infty} \left(1 + \frac{p}{y}\right)^y = e^p$$
+
+$$\blacksquare$$
+
+### Teorema - Limite Notevole 3: Limite Notevole del Logaritmo
+>[!important] Enunciato
+>Sia $a > 0$ con $a \neq 1$. Allora:
+>$$\lim_{x \to 0} \frac{\log_a(1 + x)}{x} = \log_a e = \frac{1}{\ln a}$$
+>In particolare, per $a = e$:
+>$$\lim_{x \to 0} \frac{\ln(1 + x)}{x} = 1$$
+
+**Dimostrazione:**
+Applicando la proprietà fondamentale dei logaritmi $k \log_a t = \log_a(t^k)$:
+$$\frac{\log_a(1 + x)}{x} = \frac{1}{x} \cdot \log_a(1 + x) = \log_a \left[(1 + x)^{1/x}\right]$$
+Per il Limite Notevole 2 con $p = 1$, si ha $\lim_{x \to 0} (1 + x)^{1/x} = e$.
+Poiché la funzione logaritmica $\log_a$ è continua nel punto $e \in ]0, +\infty[$, applicando il Teorema di continuità delle funzioni composte (Osservazione 1.10 della Lezione 19):
+$$\lim_{x \to 0} \frac{\log_a(1 + x)}{x} = \lim_{y \to e} \log_a y = \log_a e = \frac{\ln e}{\ln a} = \frac{1}{\ln a}$$
+
+$$\blacksquare$$
+
+### Teorema - Limite Notevole 4: Limite Notevole dell'Esponenziale
+>[!important] Enunciato
+>Sia $a > 0$. Allora:
+>$$\lim_{x \to 0} \frac{a^x - 1}{x} = \ln a$$
+>In particolare, per $a = e$:
+>$$\lim_{x \to 0} \frac{e^x - 1}{x} = 1$$
+
+**Dimostrazione:**
+Se $a = 1$ il numeratore è identicamente nullo e $\ln 1 = 0$.
+Sia $a \neq 1$. Effettuiamo la sostituzione di variabile $y = a^x - 1$.
+Dall'invertibilità della funzione esponenziale:
+$$1 + y = a^x \iff x = \log_a(1 + y)$$
+Poiché la funzione esponenziale $a^x$ è continua, per $x \to 0$ risulta $y \to a^0 - 1 = 0$. Inoltre per $x \neq 0$ si ha $y \neq 0$.
+Sostituendo nella frazione:
+$$\frac{a^x - 1}{x} = \frac{y}{\log_a(1 + y)} = \frac{1}{\frac{\log_a(1 + y)}{y}}$$
+Applicando il Teorema sul limite delle funzioni composte e il Limite Notevole 3:
+$$\lim_{x \to 0} \frac{a^x - 1}{x} = \lim_{y \to 0} \frac{1}{\frac{\log_a(1 + y)}{y}} = \frac{1}{\log_a e} = \ln a$$
+
+$$\blacksquare$$
+
+### Teorema - Limite Notevole 5: Limite Notevole della Potenza Reale
+>[!important] Enunciato
+>Per ogni $\alpha \in \mathbb{R}$:
+>$$\lim_{x \to 0} \frac{(1 + x)^\alpha - 1}{x} = \alpha$$
+
+**Dimostrazione:**
+Riscriviamo la base esponenziale $(1 + x)^\alpha = e^{\ln\left[(1 + x)^\alpha\right]} = e^{\alpha \ln(1 + x)}$.
+Moltiplicando e dividendo opportunamente:
+$$\frac{(1 + x)^\alpha - 1}{x} = \frac{e^{\alpha \ln(1 + x)} - 1}{x} = \frac{e^{\alpha \ln(1 + x)} - 1}{\alpha \ln(1 + x)} \cdot \frac{\ln(1 + x)}{x} \cdot \alpha$$
+Ponendo $y = \alpha \ln(1 + x)$, poiché per $x \to 0$ si ha $y \to 0$, per il Limite Notevole 4 dell'esponenziale:
+$$\lim_{x \to 0} \frac{e^{\alpha \ln(1 + x)} - 1}{\alpha \ln(1 + x)} = \lim_{y \to 0} \frac{e^y - 1}{y} = 1$$
+Inoltre per il Limite Notevole 3 del logaritmo:
+$$\lim_{x \to 0} \frac{\ln(1 + x)}{x} = 1$$
+Pertanto, per il teorema sul limite del prodotto:
+$$\lim_{x \to 0} \frac{(1 + x)^\alpha - 1}{x} = 1 \cdot 1 \cdot \alpha = \alpha$$
+
+$$\blacksquare$$
+
+### Teorema - Limite Notevole 6: Limiti Trigonometrici di Coseno e Tangente
+>[!important] Enunciato
+>Valgono i seguenti limiti per $x \to 0$:
+>$$\lim_{x \to 0} \frac{1 - \cos x}{x^2} = \frac{1}{2} \qquad \text{e} \qquad \lim_{x \to 0} \frac{\tan x}{x} = 1$$
+
+**Dimostrazione:**
+1. **Per il coseno:** Moltiplichiamo numeratore e denominatore per $1 + \cos x$:
+$$\frac{1 - \cos x}{x^2} = \frac{(1 - \cos x)(1 + \cos x)}{x^2 (1 + \cos x)} = \frac{1 - \cos^2 x}{x^2 (1 + \cos x)} = \frac{\sin^2 x}{x^2 (1 + \cos x)} = \left(\frac{\sin x}{x}\right)^2 \cdot \frac{1}{1 + \cos x}$$
+Poiché $\lim_{x \to 0} \frac{\sin x}{x} = 1$ e per continuità del coseno $\lim_{x \to 0} \cos x = \cos 0 = 1$:
+$$\lim_{x \to 0} \frac{1 - \cos x}{x^2} = (1)^2 \cdot \frac{1}{1 + 1} = \frac{1}{2}$$
+2. **Per la tangente:** Scrivendo $\tan x = \frac{\sin x}{\cos x}$:
+$$\lim_{x \to 0} \frac{\tan x}{x} = \lim_{x \to 0} \left(\frac{\sin x}{x} \cdot \frac{1}{\cos x}\right) = \left(\lim_{x \to 0} \frac{\sin x}{x}\right) \cdot \left(\lim_{x \to 0} \frac{1}{\cos x}\right) = 1 \cdot \frac{1}{1} = 1$$
+
+$$\blacksquare$$

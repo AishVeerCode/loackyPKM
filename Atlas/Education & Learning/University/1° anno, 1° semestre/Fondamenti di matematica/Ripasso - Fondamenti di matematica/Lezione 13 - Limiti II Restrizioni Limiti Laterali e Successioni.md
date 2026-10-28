@@ -32,15 +32,15 @@ La definizione topologica unificata formulata in [[Lezione 12 - Limiti I Retta R
 ### Dimostrazione Rigorosa per Assurdo
 Supponiamo per assurdo che esistano due limiti distinti $\ell_1, \ell_2 \in \overline{\mathbb{R}}$ con $\ell_1 \ne \ell_2$.
 1. **Separazione degli intorni:** Per la proprietà di separazione di Hausdorff della retta reale estesa $\overline{\mathbb{R}}$, esistono due intorni $V_1 \in \mathcal{U}(\ell_1)$ e $V_2 \in \mathcal{U}(\ell_2)$ tra loro disgiunti:
-   $$V_1 \cap V_2 = \emptyset$$
+$$V_1 \cap V_2 = \emptyset$$
 2. **Applicazione della definizione di limite:** Poiché $\lim_{x \to x_0} f(x) = \ell_1$ e $\lim_{x \to x_0} f(x) = \ell_2$, in corrispondenza di $V_1$ e $V_2$ esistono rispettivamente due intorni $U_1, U_2 \in \mathcal{U}(x_0)$ tali che:
-   $$x \in U_1 \cap A_{x_0} \implies f(x) \in V_1$$
-   $$x \in U_2 \cap A_{x_0} \implies f(x) \in V_2$$
+$$x \in U_1 \cap A_{x_0} \implies f(x) \in V_1$$
+$$x \in U_2 \cap A_{x_0} \implies f(x) \in V_2$$
    dove si rammenta la notazione $A_{x_0} := A \setminus \{x_0\}$.
 3. **Intersezione degli intorni:** Poniamo $U := U_1 \cap U_2$. Essendo intersezione finita di intorni di $x_0$, $U$ è ancora un intorno di $x_0$. Poiché per ipotesi $x_0$ è un punto di accumulazione per $A$, l'insieme forato non può essere vuoto:
-   $$U \cap A_{x_0} \ne \emptyset$$
+$$U \cap A_{x_0} \ne \emptyset$$
 4. **Deduzione della contraddizione:** Scegliamo un elemento arbitrario $\bar{x} \in U \cap A_{x_0}$. Poiché $\bar{x} \in U_1 \cap A_{x_0}$ e contemporaneamente $\bar{x} \in U_2 \cap A_{x_0}$, ne consegue che:
-   $$f(\bar{x}) \in V_1 \quad \land \quad f(\bar{x}) \in V_2 \implies f(\bar{x}) \in V_1 \cap V_2$$
+$$f(\bar{x}) \in V_1 \quad \land \quad f(\bar{x}) \in V_2 \implies f(\bar{x}) \in V_1 \cap V_2$$
    Ciò implica che $V_1 \cap V_2 \ne \emptyset$, contraddicendo l'ipotesi iniziale di disgiunzione $V_1 \cap V_2 = \emptyset$. L'assurdo dimostra che deve necessariamente sussistere $\ell_1 = \ell_2$.
 
 > [!NOTE] Unicità vs Esistenza
@@ -103,9 +103,9 @@ Ne consegue che la funzione di Dirichlet **non è regolare in alcun punto** del 
 #### 3. Funzione Oscillante Asintotica: $f(x) = \sin\left(\frac{1}{x}\right)$ per $x \to 0$
 Sia $f: \mathbb{R} \setminus \{0\} \to \mathbb{R}$ con $f(x) = \sin(1/x)$. Cerchiamo due insiemi di punti in cui la funzione assume valori costanti distinti:
 - Imponiamo $\sin(1/x) = 0 \iff \frac{1}{x} = k\pi \iff x = \frac{1}{k\pi}$ con $k \in \mathbb{Z}^*$. Definiamo l'insieme:
-  $$B_1 = \left\{ \frac{1}{k\pi} \;\middle|\; k \in \mathbb{Z}^* \right\}$$
+$$B_1 = \left\{ \frac{1}{k\pi} \;\middle|\; k \in \mathbb{Z}^* \right\}$$
 - Imponiamo $\sin(1/x) = 1 \iff \frac{1}{x} = \frac{\pi}{2} + 2k\pi \iff x = \frac{1}{\pi/2 + 2k\pi}$ con $k \in \mathbb{Z}$. Definiamo l'insieme:
-  $$B_2 = \left\{ \frac{1}{\pi/2 + 2k\pi} \;\middle|\; k \in \mathbb{Z} \right\}$$
+$$B_2 = \left\{ \frac{1}{\pi/2 + 2k\pi} \;\middle|\; k \in \mathbb{Z} \right\}$$
 Per $k \to \pm\infty$, gli elementi di $B_1$ e $B_2$ si addensano verso $0$, rendendo $0$ punto di accumulazione per entrambi.
 Poiché $f|_{B_1} \equiv 0 \implies \lim_{x \to 0} f|_{B_1}(x) = 0$, mentre $f|_{B_2} \equiv 1 \implies \lim_{x \to 0} f|_{B_2}(x) = 1$, la funzione presenta infinite oscillazioni di ampiezza unitaria in ogni intorno di zero e **non ammette limite** per $x \to 0$.
 
@@ -121,9 +121,9 @@ $$A_{x_0}^- := A \cap ]-\infty, x_0[, \qquad A_{x_0}^+ := A \cap ]x_0, +\infty[$
 
 - **Punto di accumulazione a sinistra (o a destra):** $x_0$ si dice punto di accumulazione a sinistra per $A$ se è punto di accumulazione per $A_{x_0}^-$ (analogamente a destra per $A_{x_0}^+$).
 - **Limite sinistro:** $\ell$ è il limite sinistro di $f(x)$ per $x \to x_0$, denotato con $\lim_{x \to x_0^-} f(x) = \ell$ oppure $f(x_0^-) = \ell$, se $\ell$ è il limite della restrizione $f|_{A_{x_0}^-}$:
-  $$\forall V \in \mathcal{U}(\ell), \, \exists U \in \mathcal{U}(x_0) : \forall x \in U \cap A_{x_0}^- \implies f(x) \in V$$
+$$\forall V \in \mathcal{U}(\ell), \, \exists U \in \mathcal{U}(x_0) : \forall x \in U \cap A_{x_0}^- \implies f(x) \in V$$
 - **Limite destro:** $\ell$ è il limite destro di $f(x)$ per $x \to x_0$, denotato con $\lim_{x \to x_0^+} f(x) = \ell$ oppure $f(x_0^+) = \ell$, se $\ell$ è il limite della restrizione $f|_{A_{x_0}^+}$:
-  $$\forall V \in \mathcal{U}(\ell), \, \exists U \in \mathcal{U}(x_0) : \forall x \in U \cap A_{x_0}^+ \implies f(x) \in V$$
+$$\forall V \in \mathcal{U}(\ell), \, \exists U \in \mathcal{U}(x_0) : \forall x \in U \cap A_{x_0}^+ \implies f(x) \in V$$
 
 ### Teorema di Equivalenza del Limite Globale
 
@@ -135,23 +135,23 @@ $$A_{x_0}^- := A \cap ]-\infty, x_0[, \qquad A_{x_0}^+ := A \cap ]x_0, +\infty[$
 *Dimostrazione:*
 - Implicazione $(1) \implies (2)$: Discende immediatamente dal teorema sul limite delle restrizioni (Teorema 2.1), poiché $A_{x_0}^- \subset A$ e $A_{x_0}^+ \subset A$.
 - Implicazione $(2) \implies (1)$: Sia $V$ un intorno arbitrario di $\ell$. Per le ipotesi di limite sinistro e destro, esistono due intorni $U_1, U_2 \in \mathcal{U}(x_0)$ tali che:
-  $$x \in U_1 \cap A_{x_0}^- \implies f(x) \in V$$
-  $$x \in U_2 \cap A_{x_0}^+ \implies f(x) \in V$$
+$$x \in U_1 \cap A_{x_0}^- \implies f(x) \in V$$
+$$x \in U_2 \cap A_{x_0}^+ \implies f(x) \in V$$
   Poniamo $U := U_1 \cap U_2$. Poiché $A_{x_0} = A_{x_0}^- \cup A_{x_0}^+$, ogni elemento $x \in U \cap A_{x_0}$ appartiene necessariamente a $U_1 \cap A_{x_0}^-$ oppure a $U_2 \cap A_{x_0}^+$. In entrambi i casi risulta $f(x) \in V$, provando che $\lim_{x \to x_0} f(x) = \ell$.
 
 ### Casi Esemplificativi di Studio dei Limiti Laterali
 
 1. **Funzione Segno $\operatorname{sgn}(x)$ in $x_0 = 0$:**
-   $$\operatorname{sgn}(x) = \begin{cases} 1 & \text{se } x > 0 \\ 0 & \text{se } x = 0 \\ -1 & \text{se } x < 0 \end{cases}$$
+$$\operatorname{sgn}(x) = \begin{cases} 1 & \text{se } x > 0 \\ 0 & \text{se } x = 0 \\ -1 & \text{se } x < 0 \end{cases}$$
    Risulta $\lim_{x \to 0^-} \operatorname{sgn}(x) = -1$ e $\lim_{x \to 0^+} \operatorname{sgn}(x) = 1$. Poiché i limiti laterali sono discordi, $\operatorname{sgn}(x)$ non è regolare per $x \to 0$.
 2. **Funzione Iperbolica $f(x) = 1/x$ in $x_0 = 0$:**
-   $$\lim_{x \to 0^-} \frac{1}{x} = -\infty, \qquad \lim_{x \to 0^+} \frac{1}{x} = +\infty$$
+$$\lim_{x \to 0^-} \frac{1}{x} = -\infty, \qquad \lim_{x \to 0^+} \frac{1}{x} = +\infty$$
    Entrambi i limiti laterali divergono ma con segni opposti: la funzione non è regolare per $x \to 0$.
 3. **Ininfluenza del valore puntuale $f(x_0)$ (Discontinuità Eliminabile):**
    Consideriamo la funzione:
-   $$f(x) = \begin{cases} x^2 & \text{se } x \ne 0 \\ 1 & \text{se } x = 0 \end{cases}$$
+$$f(x) = \begin{cases} x^2 & \text{se } x \ne 0 \\ 1 & \text{se } x = 0 \end{cases}$$
    Valutiamo i limiti laterali per $x \to 0$:
-   $$\lim_{x \to 0^-} f(x) = \lim_{x \to 0^-} x^2 = 0, \qquad \lim_{x \to 0^+} f(x) = \lim_{x \to 0^+} x^2 = 0$$
+$$\lim_{x \to 0^-} f(x) = \lim_{x \to 0^-} x^2 = 0, \qquad \lim_{x \to 0^+} f(x) = \lim_{x \to 0^+} x^2 = 0$$
    I limiti laterali esistono e coincidono a $0$. Dunque $\lim_{x \to 0} f(x) = 0$, nonostante $f(0) = 1$. Ciò comprova che il valore della funzione nel punto $x_0$ non ha alcun effetto sul limite né sulla regolarità.
 
 ---
@@ -177,15 +177,15 @@ Due metodologie consentono di determinare $\delta_\varepsilon$:
 
 - **Metodo della maggiorazione a due stadi (vincolo preliminare):**
   Supponiamo preliminarmente che il raggio dell'intorno non superi l'unità: $|x - x_0| < 1$. In tal caso:
-  $$|x^2 - x_0^2| \le |x - x_0|(1 + 2|x_0|)$$
+$$|x^2 - x_0^2| \le |x - x_0|(1 + 2|x_0|)$$
   Per rendere tale quantità minore di $\varepsilon$, basta imporre $|x - x_0| < \frac{\varepsilon}{1 + 2|x_0|}$. Per soddisfare entrambi i vincoli contemporaneamente, scegliamo:
-  $$\delta_\varepsilon := \min\left(1, \; \frac{\varepsilon}{1 + 2|x_0|}\right)$$
+$$\delta_\varepsilon := \min\left(1, \; \frac{\varepsilon}{1 + 2|x_0|}\right)$$
   In tal modo, $0 < |x - x_0| < \delta_\varepsilon \implies |x^2 - x_0^2| < \varepsilon$.
 
 - **Metodo esatto tramite disequazione quadratica:**
   Ponendo $t = |x - x_0| > 0$, la disuguaglianza maggiorata diventa $t(t + 2|x_0|) < \varepsilon \iff t^2 + 2|x_0|t - \varepsilon < 0$.
   L'equazione associata ha discriminante ridotto $\Delta/4 = x_0^2 + \varepsilon > 0$ e radice positiva:
-  $$t = \sqrt{x_0^2 + \varepsilon} - |x_0| > 0$$
+$$t = \sqrt{x_0^2 + \varepsilon} - |x_0| > 0$$
   Ponendo direttamente $\delta_\varepsilon := \sqrt{x_0^2 + \varepsilon} - |x_0|$, per ogni $0 < |x - x_0| < \delta_\varepsilon$ la condizione $|x^2 - x_0^2| < \varepsilon$ risulta rigorosamente soddisfatta.
 
 ---
@@ -256,18 +256,18 @@ Questo risultato cruciale afferma che l'estrazione di radice di ordine arbitrari
 - **Caso $a = 1$:** La successione è costantemente $a_n = \sqrt[n]{1} = 1$, dunque il limite è banalmente 1.
 - **Caso $a > 1$:** Risulta $\sqrt[n]{a} > 1$, per cui $|\sqrt[n]{a} - 1| = \sqrt[n]{a} - 1$.
   Fissato $\varepsilon > 0$, dobbiamo verificare che per $n$ sufficientemente grande:
-  $$\sqrt[n]{a} - 1 < \varepsilon \iff \sqrt[n]{a} < 1 + \varepsilon \iff a < (1 + \varepsilon)^n$$
+$$\sqrt[n]{a} - 1 < \varepsilon \iff \sqrt[n]{a} < 1 + \varepsilon \iff a < (1 + \varepsilon)^n$$
   Ricordiamo la **disuguaglianza di Bernoulli** (studiata in [[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]):
-  $$(1 + \varepsilon)^n \ge 1 + n\varepsilon$$
+$$(1 + \varepsilon)^n \ge 1 + n\varepsilon$$
   Di conseguenza, per garantire che sia $a < (1 + \varepsilon)^n$, è sufficiente richiedere la condizione più restrittiva:
-  $$a < 1 + n\varepsilon \iff n\varepsilon > a - 1 \iff n > \frac{a - 1}{\varepsilon}$$
+$$a < 1 + n\varepsilon \iff n\varepsilon > a - 1 \iff n > \frac{a - 1}{\varepsilon}$$
   Se scegliamo come indice di soglia:
-  $$\nu_\varepsilon := \left\lfloor \frac{a - 1}{\varepsilon} \right\rfloor \in \mathbb{N}$$
+$$\nu_\varepsilon := \left\lfloor \frac{a - 1}{\varepsilon} \right\rfloor \in \mathbb{N}$$
   allora per ogni $n > \nu_\varepsilon$ si ha $n > \frac{a - 1}{\varepsilon} \implies 1 + n\varepsilon > a \implies (1 + \varepsilon)^n > a \implies \sqrt[n]{a} - 1 < \varepsilon$, provando la convergenza.
 
 - **Caso $0 < a < 1$:** Poniamo $b = \frac{1}{a} > 1$. Per la proprietà provata nel caso precedente, $\lim_{n \to +\infty} \sqrt[n]{b} = 1$.
   Osserviamo l'identità algebrica:
-  $$|\sqrt[n]{a} - 1| = 1 - \sqrt[n]{a} = \sqrt[n]{a} \cdot \left(\frac{1}{\sqrt[n]{a}} - 1\right) < 1 \cdot |\sqrt[n]{b} - 1|$$
+$$|\sqrt[n]{a} - 1| = 1 - \sqrt[n]{a} = \sqrt[n]{a} \cdot \left(\frac{1}{\sqrt[n]{a}} - 1\right) < 1 \cdot |\sqrt[n]{b} - 1|$$
   Dato che $\sqrt[n]{b} \to 1$, per ogni $\varepsilon > 0$ esiste un indice $\nu_\varepsilon$ tale che per $n > \nu_\varepsilon$ si ha $|\sqrt[n]{b} - 1| < \varepsilon$. Per la maggiorazione sopra, ne consegue che anche $|\sqrt[n]{a} - 1| < \varepsilon$, completando l'intera dimostrazione.
 
 > [!TIP] Approccio Logaritmico Alternativo

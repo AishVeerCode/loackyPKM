@@ -47,7 +47,7 @@ flowchart LR
 ### Proprietà Fondamentali dell'Esponenziale
 Per $a \ne 1$, la funzione $\exp_a: \mathbb{R} \to ]0, +\infty[$, definita da $\exp_a(x) = a^x$, soddisfa:
 1. **Omomorfismo additivo-moltiplicativo:**
-   $$a^{x+y} = a^x a^y, \qquad a^{xy} = (a^x)^y, \qquad a^{-x} = \frac{1}{a^x}$$
+$$a^{x+y} = a^x a^y, \qquad a^{xy} = (a^x)^y, \qquad a^{-x} = \frac{1}{a^x}$$
 2. **Monotonia stretta:**
    - Se $a > 1$: $\exp_a$ è strettamente crescente su tutto $\mathbb{R}$.
    - Se $0 < a < 1$: $\exp_a$ è strettamente decrescente su tutto $\mathbb{R}$.
@@ -65,7 +65,7 @@ $$\forall x \in \mathbb{R}, \, y > 0: \quad a^x = y \iff x = \log_a(y)$$
 - $\log_a\left(\frac{x}{y}\right) = \log_a(x) - \log_a(y)$
 - $\log_a(x^\alpha) = \alpha \log_a(x)$ per ogni $\alpha \in \mathbb{R}$
 - **Formula del cambio di base:** dati $a, b \in ]0, +\infty[ \setminus \{1\}$:
-  $$\log_b(x) = \frac{\log_a(x)}{\log_a(b)}$$
+$$\log_b(x) = \frac{\log_a(x)}{\log_a(b)}$$
 - Se la base è $e$, il logaritmo naturale si denota comunemente con $\ln(x)$ o semplicemente $\log(x)$.
 
 ---
@@ -85,7 +85,7 @@ Se $\alpha > 0$, la funzione si estende per continuità nell'origine ponendo $0^
 2. **Caso $\alpha < 0$:**
    - $p_\alpha$ è definita unicamente su $\mathbb{R}_+^*$, è strettamente decrescente, con immagine $p_\alpha(\mathbb{R}_+^*) = \mathbb{R}_+^*$.
 3. **Invertibilità:** Per ogni $\alpha \in \mathbb{R}^*$, l'inversa della funzione potenza $p_\alpha$ è la funzione potenza avente esponente reciproco:
-   $$(p_\alpha)^{-1} = p_{1/\alpha}, \qquad (x^\alpha = y \iff x = y^{1/\alpha})$$
+$$(p_\alpha)^{-1} = p_{1/\alpha}, \qquad (x^\alpha = y \iff x = y^{1/\alpha})$$
 
 ---
 
@@ -110,20 +110,20 @@ $$\cosh(x) = \sqrt{1 + \sinh^2(x)} \ge 1, \qquad \cosh(0) = 1, \quad \sinh(0) = 
 Per determinare le funzioni inverse, si risolvono algebricamente le equazioni nelle incognite $x$ ponendo la sostituzione $t = e^x > 0$:
 
 1. **Settore Seno Iperbolico ($\mathrm{settsinh}$):**
-   $$\sinh x = y \iff e^x - e^{-x} = 2y \iff t - \frac{1}{t} = 2y \iff t^2 - 2yt - 1 = 0$$
+$$\sinh x = y \iff e^x - e^{-x} = 2y \iff t - \frac{1}{t} = 2y \iff t^2 - 2yt - 1 = 0$$
    Le soluzioni sono $t = y \pm \sqrt{y^2 + 1}$. Poiché $\sqrt{y^2 + 1} > |y|$, la radice col segno negativo è strettamente minore di zero e va scartata. L'unica soluzione positiva è $t = y + \sqrt{y^2 + 1}$. Applicando il logaritmo:
-   $$\mathrm{settsinh}(y) = \ln\left(y + \sqrt{y^2 + 1}\right), \qquad y \in \mathbb{R}$$
+$$\mathrm{settsinh}(y) = \ln\left(y + \sqrt{y^2 + 1}\right), \qquad y \in \mathbb{R}$$
 
 2. **Settore Coseno Iperbolico ($\mathrm{settcosh}$):**
    Poiché $\cosh$ è pari, per renderla invertibile si considera la restrizione a $\mathbb{R}_+$, dove è strettamente crescente. Per $y \ge 1$:
-   $$\cosh x = y \iff t^2 - 2yt + 1 = 0 \implies t = y \pm \sqrt{y^2 - 1}$$
+$$\cosh x = y \iff t^2 - 2yt + 1 = 0 \implies t = y \pm \sqrt{y^2 - 1}$$
    Imponendo $x \ge 0 \iff t \ge 1$, si sceglie la determinazione con il segno positivo:
-   $$\mathrm{settcosh}(y) = \ln\left(y + \sqrt{y^2 - 1}\right), \qquad y \in [1, +\infty[$$
+$$\mathrm{settcosh}(y) = \ln\left(y + \sqrt{y^2 - 1}\right), \qquad y \in [1, +\infty[$$
 
 3. **Settore Tangente Iperbolica ($\mathrm{setttgh}$):**
    Per $y \in ]-1, 1[$:
-   $$\tanh x = y \iff \frac{e^{2x} - 1}{e^{2x} + 1} = y \iff e^{2x}(1 - y) = 1 + y \iff e^{2x} = \frac{1+y}{1-y}$$
-   $$\mathrm{setttgh}(y) = \frac{1}{2} \ln\left(\frac{1+y}{1-y}\right), \qquad y \in ]-1, 1[$$
+$$\tanh x = y \iff \frac{e^{2x} - 1}{e^{2x} + 1} = y \iff e^{2x}(1 - y) = 1 + y \iff e^{2x} = \frac{1+y}{1-y}$$
+$$\mathrm{setttgh}(y) = \frac{1}{2} \ln\left(\frac{1+y}{1-y}\right), \qquad y \in ]-1, 1[$$
 
 ---
 

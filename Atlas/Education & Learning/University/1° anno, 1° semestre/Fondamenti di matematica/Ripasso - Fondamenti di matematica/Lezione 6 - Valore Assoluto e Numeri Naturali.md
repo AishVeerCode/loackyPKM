@@ -26,11 +26,11 @@ $$\sup\{x, y\} = \max\{x, y\}, \qquad \inf\{x, y\} = \min\{x, y\}$$
 ### Definizioni Fondamentali
 Dato $x \in \mathbb{R}$, si definiscono:
 - **Valore assoluto (o modulo):**
-  $$|x| := \max\{x, -x\}$$
+$$|x| := \max\{x, -x\}$$
 - **Parte positiva:**
-  $$x^+ := \max\{x, 0\}$$
+$$x^+ := \max\{x, 0\}$$
 - **Parte negativa:**
-  $$x^- := \max\{-x, 0\}$$
+$$x^- := \max\{-x, 0\}$$
 
 Tutte e tre le quantità risultano costantemente **non negative** ($\ge 0$). Il loro comportamento in base al segno di $x$ è riassunto nella seguente tabella:
 
@@ -48,32 +48,32 @@ $$x = x^+ - x^-, \qquad |x| = x^+ + x^-$$
 Per ogni $x, y \in \mathbb{R}$ e $a \ge 0$ valgono le seguenti proprietà:
 
 1. **Annullamento e parità:**
-   $$|x| = 0 \iff x = 0, \qquad |-x| = |x|$$
+$$|x| = 0 \iff x = 0, \qquad |-x| = |x|$$
    *Dimostrazione:* Se $|x| = 0$, poiché $|x| = \max\{x, -x\}$, deve aversi $x \le 0$ e $-x \le 0 \implies x \ge 0$, da cui $x = 0$. Il viceversa è banale. Inoltre $\max\{-x, -(-x)\} = \max\{-x, x\} = |x|$.
 2. **Limitazione bilaterale:**
-   $$-|x| \le x \le |x|$$
+$$-|x| \le x \le |x|$$
    *Dimostrazione:* Discende immediatamente da $x \le \max\{x, -x\} = |x|$ e $-x \le |x| \iff x \ge -|x|$.
 3. **Caratterizzazione delle disequazioni modulari:**
-   $$|x| \le a \iff -a \le x \le a$$
+$$|x| \le a \iff -a \le x \le a$$
    Inoltre, per $a > 0$:
-   $$|x| < a \iff -a < x < a$$
+$$|x| < a \iff -a < x < a$$
    *Dimostrazione:* Il massimo di due quantità $\{x, -x\}$ è $\le a$ se e solo se entrambe sono $\le a$, ovvero $x \le a \land -x \le a \iff x \le a \land x \ge -a$.
 4. **Omogeneità e moltiplicatività:**
-   $$|xy| = |x||y|$$
+$$|xy| = |x||y|$$
    *Dimostrazione:* Se uno dei fattori è nullo, entrambi i membri valgono 0. Se $x$ e $y$ sono concordi, $xy > 0$ e $|xy| = xy = |x||y|$. Se sono discordi, $xy < 0$ e $|xy| = -(xy) = (-x)y = |x||y|$.
 5. **Disuguaglianza triangolare:**
-   $$|x + y| \le |x| + |y|$$
+$$|x + y| \le |x| + |y|$$
    *Dimostrazione:* Dalla proprietà (2) abbiamo $x \le |x|$ e $y \le |y|$. Sommando membro a membro:
-   $$x + y \le |x| + |y|$$
+$$x + y \le |x| + |y|$$
    Analogamente, $-x \le |x|$ e $-y \le |y|$, per cui:
-   $$-(x + y) = -x - y \le |x| + |y|$$
+$$-(x + y) = -x - y \le |x| + |y|$$
    Essendo $|x + y| = \max\{x + y, -(x + y)\}$, ed essendo entrambi i termini minori o uguali a $|x| + |y|$, ne consegue che $|x + y| \le |x| + |y|$.
 6. **Disuguaglianza triangolare inversa:**
-   $$\big| |x| - |y| \big| \le |x - y|$$
+$$\big| |x| - |y| \big| \le |x - y|$$
    *Dimostrazione:* Scriviamo $x = (x - y) + y$. Applicando la disuguaglianza triangolare:
-   $$|x| = |(x - y) + y| \le |x - y| + |y| \implies |x| - |y| \le |x - y|$$
+$$|x| = |(x - y) + y| \le |x - y| + |y| \implies |x| - |y| \le |x - y|$$
    Scambiando i ruoli di $x$ e $y$:
-   $$|y| - |x| \le |y - x| = |-(x - y)| = |x - y| \implies -(|x| - |y|) \le |x - y|$$
+$$|y| - |x| \le |y - x| = |-(x - y)| = |x - y| \implies -(|x| - |y|) \le |x - y|$$
    Prendendo il massimo tra $(|x| - |y|)$ e $-(|x| - |y|)$, si ottiene la tesi $\big| |x| - |y| \big| \le |x - y|$.
 
 ## I Numeri Naturali come Minimo Insieme Induttivo
@@ -105,7 +105,7 @@ Notazioni standard:
 - Elementi di $\mathbb{N}$: numeri naturali.
 - Insieme dei naturali non nulli: $\mathbb{N}^* := \mathbb{N} \setminus \{0\}$.
 - Funzione <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>successore</b></font></mark>:
-  $$s: \mathbb{N} \to \mathbb{N}, \qquad s(n) := n + 1$$
+$$s: \mathbb{N} \to \mathbb{N}, \qquad s(n) := n + 1$$
   In particolare: $1 := s(0) = 0 + 1$, $2 := s(1) = 1 + 1$, $3 := s(2) = 2 + 1$, e così via.
 
 ## Il Principio di Induzione
@@ -145,7 +145,7 @@ Dalla costruzione induttiva all'interno di $\mathbb{R}$ si deducono come teoremi
 3. **Iniettività del successore:** $s$ è una funzione iniettiva.
    *Dimostrazione:* Siano $n, m \in \mathbb{N}$. Se $s(n) = s(m)$, allora $n + 1 = m + 1$. Per la legge di cancellazione additiva in $\mathbb{R}$, ne discende $n = m$.
 4. **Origine dello zero:** Lo zero non è successore di alcun naturale:
-   $$\forall n \in \mathbb{N}: s(n) \neq 0$$
+$$\forall n \in \mathbb{N}: s(n) \neq 0$$
    *Dimostrazione:* Per ogni $n \in \mathbb{N}$, essendo $n \ge 0$, si ha $s(n) = n + 1 \ge 0 + 1 = 1 > 0$. Dunque $s(n) \neq 0$.
 
 ### Esistenza e Unicità del Predecessore
@@ -181,7 +181,7 @@ Per ogni $m, n \in \mathbb{N}$:
 
 ### Caratterizzazione dell'Ordine Naturale
 5. **Relazione tra ordine e differenza:**
-   $$m \le n \iff n - m \in \mathbb{N} \iff \exists k \in \mathbb{N} : n = m + k$$
+$$m \le n \iff n - m \in \mathbb{N} \iff \exists k \in \mathbb{N} : n = m + k$$
    *Dimostrazione:*
    - $(\impliedby)$ Se $n - m \in \mathbb{N}$, poiché $\mathbb{N} \subset [0, +\infty)$, si ha $n - m \ge 0 \implies m \le n$.
    - $(\implies)$ Fissato $n \in \mathbb{N}$, procediamo per induzione su $m$ per la proprietà $P(m): m \le n \implies n - m \in \mathbb{N}$.
@@ -190,12 +190,12 @@ Per ogni $m, n \in \mathbb{N}$:
 
 ### Teorema di Discretezza
 6. **Assenza di elementi intermedi:** Non esiste alcun numero naturale strettamente compreso tra $m$ e $m + 1$:
-   $$\nexists n \in \mathbb{N} \text{ tale che } m < n < m + 1$$
+$$\nexists n \in \mathbb{N} \text{ tale che } m < n < m + 1$$
    *Dimostrazione:* Se esistesse un tale $n \in \mathbb{N}$, per la proprietà (5) si avrebbe $n - m \in \mathbb{N}$. Ma sottraendo $m$ dalla catena di disuguaglianze risulterebbe:
-   $$0 < n - m < 1$$
+$$0 < n - m < 1$$
    Ciò contraddirrebbe la dicotomia (1), secondo cui ogni naturale non nullo è $\ge 1$.
 7. **Salto unitario:**
-   $$m < n \implies m + 1 \le n$$
+$$m < n \implies m + 1 \le n$$
    *Dimostrazione:* Se per assurdo fosse $m + 1 > n$, allora $m < n < m + 1$, il che produrrebbe un naturale strettamente compreso tra $m$ e $m + 1$, violando la proprietà (6).
 
 > [!TIP] Rilevanza Teorica
@@ -228,14 +228,14 @@ La disuguaglianza triangolare inversa $\big| |x| - |y| \big| \le |x - y|$ è uno
    Posto $f(x) = |x|$, per ogni $x, y \in \mathbb{R}$ si ha $|f(x) - f(y)| = \big||x| - |y|\big| \le 1 \cdot |x - y|$. La funzione valore assoluto è $1$-lipschitziana su tutto $\mathbb{R}$, dunque globalmente e uniformemente continua.
 2. **Conservazione della Convergenza in Modulo (da [[Lecture 07 - Convergent Sequences of Real Numbers]]):**
    Se $x_n \to x$, allora $|x_n| \to |x|$. Infatti:
-   $$\big| |x_n| - |x| \big| \le |x_n - x| < \varepsilon \quad \forall n \ge N$$
+$$\big| |x_n| - |x| \big| \le |x_n - x| < \varepsilon \quad \forall n \ge N$$
 3. **Dimostrazione che Ogni Successione Convergente è Limitata (da [[Lecture 07 - Convergent Sequences of Real Numbers]]):**
    Se $x_n \to x$, scegliendo $\varepsilon = 1$ nella definizione di limite, per ogni $n \ge N$:
-   $$|x_n| - |x| \le |x_n - x| < 1 \implies |x_n| < |x| + 1$$
+$$|x_n| - |x| \le |x_n - x| < 1 \implies |x_n| < |x| + 1$$
    I termini della successione sono tutti controllati da $M = \max\{|x_1|, \dots, |x_{N-1}|, |x| + 1\}$.
 4. **Minorazione del Denominatore per Quozienti (da [[Lecture 08 - The Squeeze Theorem and Operations with Convergent Sequences]]):**
    Se $y_n \to y \neq 0$, scegliendo $\varepsilon = |y|/2 > 0$, per $n \ge N$:
-   $$|y_n| = |y - (y - y_n)| \ge |y| - |y - y_n| > |y| - \frac{|y|}{2} = \frac{|y|}{2} > 0$$
+$$|y_n| = |y - (y - y_n)| \ge |y| - |y - y_n| > |y| - \frac{|y|}{2} = \frac{|y|}{2} > 0$$
    Ciò consente di stimare $\left|\frac{1}{y_n} - \frac{1}{y}\right| = \frac{|y_n - y|}{|y_n||y|} \le \frac{2}{|y|^2}|y_n - y| \to 0$.
 
 ### 3. Disuguaglianza Triangolare Generalizzata e Convergenza Assoluta (da [[Lecture 11 - Absolute Convergence and the Comparison Test]])
@@ -244,4 +244,3 @@ $$\left|\sum_{k=1}^n x_k\right| \le \sum_{k=1}^n |x_k|$$
 In Analisi 1, passando al limite per $n \to \infty$ mediante la completezza di $\mathbb{R}$, questo risultato dimostra il **Teorema Fondamentale della Convergenza Assoluta**:
 $$\sum_{n=1}^\infty |a_n| < \infty \implies \sum_{n=1}^\infty a_n \text{ converge, e } \left|\sum_{n=1}^\infty a_n\right| \le \sum_{n=1}^\infty |a_n|$$
 garantendo che ogni serie assolutamente convergente è anche semplicemente convergente.
-

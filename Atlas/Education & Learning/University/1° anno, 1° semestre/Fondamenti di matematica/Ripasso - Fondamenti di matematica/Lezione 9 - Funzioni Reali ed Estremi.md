@@ -36,20 +36,20 @@ Casi notevoli:
 ### Modelli di Rappresentazione del Reale
 Le funzioni reali formalizzano fenomeni fisici, ingegneristici ed economici:
 1. **Distribuzione termica spaziale:** Nello spazio tridimensionale identificato con $\mathbb{R}^3 = \mathbb{R} \times \mathbb{R} \times \mathbb{R}$, data una regione $A \subset \mathbb{R}^3$, la temperatura nei punti $(x, y, z) \in A$ è modellata dalla funzione reale:
-   $$T: A \to \mathbb{R}, \qquad (x, y, z) \mapsto T(x, y, z)$$
+$$T: A \to \mathbb{R}, \qquad (x, y, z) \mapsto T(x, y, z)$$
 2. **Dinamica del moto oscillatorio:** Il moto di un pendolo nell'intervallo temporale $A = [t_0, t_1]$ è descritto dall'angolo orientato rispetto alla verticale:
-   $$\theta: [t_0, t_1] \to \mathbb{R}, \qquad t \mapsto \theta(t)$$
+$$\theta: [t_0, t_1] \to \mathbb{R}, \qquad t \mapsto \theta(t)$$
 3. **Serie temporali dei mercati:** L'andamento del prezzo giornaliero di un bene su base annua si esprime come funzione reale discreta:
-   $$f: \{1, 2, \dots, 365\} \to \mathbb{R}, \qquad n \mapsto f(n)$$
+$$f: \{1, 2, \dots, 365\} \to \mathbb{R}, \qquad n \mapsto f(n)$$
 
 ## L'Anello Ordinato e Reticolare $(\mathbb{R}^A, +, \cdot, \le)$
 
 ### Operazioni Algebriche Puntuali
 Sull'insieme $\mathbb{R}^A$ sono definite le operazioni di somma e prodotto per via puntuale: dati $f, g \in \mathbb{R}^A$:
 - **Somma di funzioni:**
-  $$(f + g): A \to \mathbb{R}, \qquad (f + g)(x) := f(x) + g(x)$$
+$$(f + g): A \to \mathbb{R}, \qquad (f + g)(x) := f(x) + g(x)$$
 - **Prodotto di funzioni:**
-  $$(f \cdot g): A \to \mathbb{R}, \qquad (f \cdot g)(x) := f(x) \cdot g(x)$$
+$$(f \cdot g): A \to \mathbb{R}, \qquad (f \cdot g)(x) := f(x) \cdot g(x)$$
 
 La terna $(\mathbb{R}^A, +, \cdot)$ soddisfa le proprietà algebriche fondamentali:
 - **A1–A4:** $(\mathbb{R}^A, +)$ è un **gruppo abeliano** con elemento neutro la funzione nulla $0: x \mapsto 0$ e opposto $(-f): x \mapsto -f(x)$.
@@ -83,9 +83,9 @@ Pertanto $(\mathbb{R}^A, +, \cdot, \le)$ è un <mark style="background:rgba(181,
 ### Operazioni Reticolari su Funzioni
 Dati $f, g \in \mathbb{R}^A$, si definiscono puntualmente le funzioni:
 - **Estremo superiore reticolare ($f \vee g$):**
-  $$(f \vee g)(x) := \sup\{f(x), g(x)\} = \max\{f(x), g(x)\}$$
+$$(f \vee g)(x) := \sup\{f(x), g(x)\} = \max\{f(x), g(x)\}$$
 - **Estremo inferiore reticolare ($f \wedge g$):**
-  $$(f \wedge g)(x) := \inf\{f(x), g(x)\} = \min\{f(x), g(x)\}$$
+$$(f \wedge g)(x) := \inf\{f(x), g(x)\} = \min\{f(x), g(x)\}$$
 
 *Nota concettuale:* La funzione $f \vee g$ rappresenta la più piccola funzione in $\mathbb{R}^A$ che sia maggiore o uguale sia di $f$ che di $g$. Essa non coincide con il massimo della coppia $\{f, g\}$ nell'ordine parziale, in quanto né $f \le g$ né $g \le f$ sussistono in generale.
 
@@ -105,22 +105,22 @@ $$f(A) := \{f(x) \mid x \in A\} \subset \mathbb{R}$$
 ### Definizioni
 Sia $f: A \to \mathbb{R}$. Allora:
 1. $f$ si dice <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>limitata superiormente</b></font></mark> se l'immagine $f(A)$ è limitata superiormente in $\mathbb{R}$, ossia:
-   $$\exists M \in \mathbb{R} \text{ tale che } \forall x \in A: f(x) \le M$$
+$$\exists M \in \mathbb{R} \text{ tale che } \forall x \in A: f(x) \le M$$
    Ogni numero $M$ siffatto è detto **maggiorante** di $f$.
 2. $f$ si dice <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>limitata inferiormente</b></font></mark> se l'immagine $f(A)$ è limitata inferiormente in $\mathbb{R}$, ossia:
-   $$\exists m \in \mathbb{R} \text{ tale che } \forall x \in A: m \le f(x)$$
+$$\exists m \in \mathbb{R} \text{ tale che } \forall x \in A: m \le f(x)$$
    Ogni numero $m$ siffatto è detto **minorante** di $f$.
 3. $f$ si dice <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>limitata</b></font></mark> se è contemporaneamente limitata superiormente e inferiormente:
-   $$\exists m, M \in \mathbb{R} \text{ tali che } \forall x \in A: m \le f(x) \le M$$
+$$\exists m, M \in \mathbb{R} \text{ tali che } \forall x \in A: m \le f(x) \le M$$
    *Formulazione modulare equivalente:* Posto $C := \max\{|m|, |M|\} \in \mathbb{R}_+$, $f$ è limitata se e solo se:
-   $$\exists C \in \mathbb{R}_+ \text{ tale che } \forall x \in A: |f(x)| \le C$$
+$$\exists C \in \mathbb{R}_+ \text{ tale che } \forall x \in A: |f(x)| \le C$$
 
 ### Negazione Logica: Funzioni Illimitate
 Quando una funzione non è limitata, si dice illimitata. Negando formalmente i quantificatori:
 - **Illimitata superiormente:**
-  $$\neg(\exists M \in \mathbb{R}, \forall x \in A : f(x) \le M) \iff \forall M \in \mathbb{R}, \exists x \in A : f(x) > M$$
+$$\neg(\exists M \in \mathbb{R}, \forall x \in A : f(x) \le M) \iff \forall M \in \mathbb{R}, \exists x \in A : f(x) > M$$
 - **Illimitata inferiormente:**
-  $$\neg(\exists m \in \mathbb{R}, \forall x \in A : m \le f(x)) \iff \forall m \in \mathbb{R}, \exists x \in A : f(x) < m$$
+$$\neg(\exists m \in \mathbb{R}, \forall x \in A : m \le f(x)) \iff \forall m \in \mathbb{R}, \exists x \in A : f(x) < m$$
 
 ## Estremo Superiore ed Estremo Inferiore di Funzioni Reali
 
@@ -146,26 +146,26 @@ Entrambi i valori non sono mai assunti dalla funzione sui reali (quindi massimo 
 #### Esercizio 1: $f(x) = \frac{1}{x \sin x}$ su $]0, \pi[$
 - **Limitatezza inferiore:** Per ogni $x \in ]0, \pi[$, $\sin x > 0$ e $x > 0$, dunque $f(x) > 0$. Ne segue che $0$ è un minorante e $f$ è limitata inferiormente.
 - **Illimitatezza superiore:** Fissato arbitrariamente $M > 0$, risolviamo la disequazione:
-  $$\frac{1}{x \sin x} > M \iff x \sin x < \frac{1}{M}$$
+$$\frac{1}{x \sin x} > M \iff x \sin x < \frac{1}{M}$$
   Poiché per $x \in ]0, \pi[$ si ha $0 < \sin x \le 1$, vale $x \sin x \le x$.
   Pertanto, la condizione $x < 1/M$ implica a maggior ragione $x \sin x < 1/M$.
   Basta scegliere qualsiasi $x < \min\left\{\frac{1}{M}, \pi\right\}$ per ottenere $f(x) > M$. Essendo $M$ arbitrario, la funzione è illimitata superiormente.
 
 #### Esercizio 2: $f(x) = \frac{-x\sqrt{x} + 1}{1 - x}$ su $]0, 1[$
 - **Calcolo dell'estremo inferiore:** Trasformiamo algebricamente l'espressione:
-  $$f(x) = \frac{-x\sqrt{x} + 1 - x + x}{1 - x} = 1 + \frac{x - x\sqrt{x}(1 - x)}{1 - x} = 1 + \frac{x}{1 - x}\big(1 - \sqrt{x}(1 - x)\big)$$
+$$f(x) = \frac{-x\sqrt{x} + 1 - x + x}{1 - x} = 1 + \frac{x - x\sqrt{x}(1 - x)}{1 - x} = 1 + \frac{x}{1 - x}\big(1 - \sqrt{x}(1 - x)\big)$$
   Poiché $0 < x < 1$, si ha $0 < \sqrt{x} < 1$ e $0 < 1 - x < 1$, da cui $0 < \sqrt{x}(1 - x) < 1$.
   Ne consegue $1 - \sqrt{x}(1 - x) > 0$, e poiché $\frac{x}{1 - x} > 0$, si conclude che $f(x) > 1$. Il numero $1$ è quindi un minorante.
   Verifichiamo la seconda condizione per $\varepsilon > 0$:
-  $$f(x) < 1 + \varepsilon \iff \frac{x}{1 - x}\big(1 - \sqrt{x}(1 - x)\big) < \varepsilon \impliedby \frac{x}{1 - x} < \varepsilon$$
+$$f(x) < 1 + \varepsilon \iff \frac{x}{1 - x}\big(1 - \sqrt{x}(1 - x)\big) < \varepsilon \impliedby \frac{x}{1 - x} < \varepsilon$$
   Risolvendo $\frac{x}{1 - x} < \varepsilon$:
-  $$x < \varepsilon(1 - x) \iff (1 + \varepsilon)x < \varepsilon \iff x < \frac{\varepsilon}{1 + \varepsilon}$$
+$$x < \varepsilon(1 - x) \iff (1 + \varepsilon)x < \varepsilon \iff x < \frac{\varepsilon}{1 + \varepsilon}$$
   Scegliendo qualsiasi $x \in \left]0, \frac{\varepsilon}{1 + \varepsilon}\right[ \subset ]0, 1[$, la disuguaglianza $f(x) < 1 + \varepsilon$ è soddisfatta. Dunque:
-  $$\inf_{]0, 1[} f = 1$$
+$$\inf_{]0, 1[} f = 1$$
 - **Illimitatezza superiore:** Per provare che per ogni $M > 0$ esiste $x \in ]0, 1[$ tale che $f(x) > M$, osserviamo che essendo $-1 < -x\sqrt{x} < 0$, vale la minorazione:
-  $$f(x) \ge \frac{-1 + 1}{1 - x} \implies \text{più precisamente: } f(x) > \frac{1 - x}{1 - x} = 1, \quad \text{e per } x \to 1^-: \frac{-x\sqrt{x} + 1}{1 - x} > \frac{-1 + 1}{1-x} \text{ (singolarità)}$$
+$$f(x) \ge \frac{-1 + 1}{1 - x} \implies \text{più precisamente: } f(x) > \frac{1 - x}{1 - x} = 1, \quad \text{e per } x \to 1^-: \frac{-x\sqrt{x} + 1}{1 - x} > \frac{-1 + 1}{1-x} \text{ (singolarità)}$$
   Minorando direttamente con $g(x) := -1 + \frac{1}{1 - x}$:
-  $$-1 + \frac{1}{1 - x} > M \iff \frac{1}{1 - x} > M + 1 \iff 1 - x < \frac{1}{M + 1} \iff x > 1 - \frac{1}{M + 1}$$
+$$-1 + \frac{1}{1 - x} > M \iff \frac{1}{1 - x} > M + 1 \iff 1 - x < \frac{1}{M + 1} \iff x > 1 - \frac{1}{M + 1}$$
   Ogni $x \in \left]1 - \frac{1}{M + 1}, 1\right[$ soddisfa $f(x) > M$. La funzione è illimitata superiormente.
 
 > [!TIP] Principio di Maggiorazione e Minorazione
@@ -227,11 +227,11 @@ ovvero l'immagine $f([a, b])$ ammette sia massimo che minimo: $\max_{[a, b]} f =
 1. **Limitatezza dell'Immagine:** Si dimostra che $f([a, b])$ è limitata. Se fosse illimitata superiormente, per ogni $n \in \mathbb{N}$ esisterebbe $x_n \in [a, b]$ con $f(x_n) > n$. Essendo $(x_n)$ una successione limitata in $[a, b]$, per il Teorema di Bolzano-Weierstrass (da [[Lecture 09 - Limsup, Liminf, and the Bolzano-Weierstrass Theorem]]) esiste una sottosuccessione convergente $x_{n_k} \to x_0 \in [a, b]$. Per continuità di $f$, $f(x_{n_k}) \to f(x_0) \in \mathbb{R}$, contraddicendo $f(x_{n_k}) > n_k \to +\infty$.
 2. **Esistenza del Punto di Massimo:** Poiché $f([a, b])$ è superiormente limitata, per l'Assioma di Completezza di $\mathbb{R}$ esiste finito $M := \sup_{[a, b]} f$.
    Per la caratterizzazione dell'estremo superiore, per ogni $n \ge 1$ esiste un punto $x_n \in [a, b]$ tale che:
-   $$M - \frac{1}{n} < f(x_n) \le M$$
+$$M - \frac{1}{n} < f(x_n) \le M$$
    Per il Teorema del Confronto (Carabinieri), $\lim_{n \to \infty} f(x_n) = M$.
    Applicando nuovamente Bolzano-Weierstrass alla successione $(x_n)$, estraiamo una sottosuccessione convergente $x_{n_k} \to x_{\max} \in [a, b]$.
    Poiché $f$ è continua in $x_{\max}$:
-   $$f(x_{\max}) = \lim_{k \to \infty} f(x_{n_k}) = M$$
+$$f(x_{\max}) = \lim_{k \to \infty} f(x_{n_k}) = M$$
    Il valore $M$ appartiene all'immagine: $M = \max_{[a, b]} f$ e $x_{\max} \in \mathrm{argmax}_{[a, b]} f$. Analogamente per il minimo.
 
 > [!WARNING] Essenzialità delle Ipotesi di Weierstrass
@@ -245,9 +245,9 @@ Nel passaggio dal discreto al continuo, l'estremo superiore e inferiore governan
 
 **Teorema di Convergenza Monotona (MCT):**
 1. Se $(a_n)$ è monotona crescente ($a_n \le a_{n+1}$):
-   $$\lim_{n \to \infty} a_n = \sup_{n \in \mathbb{N}} a_n$$
+$$\lim_{n \to \infty} a_n = \sup_{n \in \mathbb{N}} a_n$$
 2. Se $(a_n)$ è monotona decrescente ($a_n \ge a_{n+1}$):
-   $$\lim_{n \to \infty} a_n = \inf_{n \in \mathbb{N}} a_n$$
+$$\lim_{n \to \infty} a_n = \inf_{n \in \mathbb{N}} a_n$$
 
 Ciò stabilisce che per una successione monotona calcolare il limite dinamico o calcolare l'estremo statico dell'insieme immagine è la stessa identica operazione.
 
@@ -255,9 +255,8 @@ Ciò stabilisce che per una successione monotona calcolare il limite dinamico o 
 Quando una successione o funzione oscilla e non ammette limite ordinario (come $a_n = (-1)^n$), gli estremi delle "code" eliminano l'influenza dei primi $k$ termini transitori:
 
 - **Definizioni:**
-  $$\limsup_{n \to \infty} a_n := \lim_{k \to \infty} \left(\sup_{n \ge k} a_n\right), \qquad \liminf_{n \to \infty} a_n := \lim_{k \to \infty} \left(\inf_{n \ge k} a_n\right)$$
+$$\limsup_{n \to \infty} a_n := \lim_{k \to \infty} \left(\sup_{n \ge k} a_n\right), \qquad \liminf_{n \to \infty} a_n := \lim_{k \to \infty} \left(\inf_{n \ge k} a_n\right)$$
 - **Proprietà Cardine d'Esame:**
   1. $\limsup a_n$ è il **massimo limite** raggiungibile da qualsiasi sottosuccessione convergente; $\liminf a_n$ è il **minimo limite**.
   2. **Criterio di Convergenza:** La successione converge se e solo se $\liminf a_n = \limsup a_n = L$, nel qual caso $\lim a_n = L$.
   3. Nel Criterio della Radice di Cauchy per le serie numeriche (da [[Lecture 12 - Ratio, Root, and Alternating Series Tests]]) e nel raggio di convergenza di Hadamard per le serie di potenze (da [[Lecture 25 - Power Series and the Weierstrass Approximation Theorem]]), la condizione di sommabilità si esprime rigorosamente tramite il limite superiore: $\limsup_{n \to \infty} \sqrt[n]{|a_n|} < 1$.
-

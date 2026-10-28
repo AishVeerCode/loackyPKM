@@ -39,7 +39,7 @@ La quadrupla $(\mathbb{R}, +)$ soddisfacente gli assiomi A1–A4 costituisce una
 
 ### Proprietà Distributiva
 - **D Distributività della moltiplicazione rispetto all'addizione:**
-  $$\forall x, y, z \in \mathbb{R}: x \cdot (y + z) = x \cdot y + x \cdot z$$
+$$\forall x, y, z \in \mathbb{R}: x \cdot (y + z) = x \cdot y + x \cdot z$$
 
 L'insieme degli assiomi A1–A4, M1–M4 e D certifica che $(\mathbb{R}, +, \cdot)$ è un <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>campo</b></font></mark> (o corpo commutativo).
 
@@ -57,7 +57,7 @@ Dagli assiomi derivano proprietà fondamentali dimostrabili:
    *Dimostrazione:* $0 + 0x = 0x = (0 + 0)x = 0x + 0x$. Per cancellazione additiva: $0x = 0$.
    Se esistesse un inverso $0^{-1}$, si avrebbe $1 = 0 \cdot 0^{-1} = 0$, violando l'assioma $1 \neq 0$.
 4. **Legge di annullamento del prodotto:**
-   $$\forall x, y \in \mathbb{R}: xy = 0 \iff x = 0 \lor y = 0$$
+$$\forall x, y \in \mathbb{R}: xy = 0 \iff x = 0 \lor y = 0$$
 5. **Regola dei segni:**
    $(-x)y = -(xy)$ e $(-x)(-y) = xy$. In particolare $(-1)x = -x$ e $(-1)(-1) = 1$.
 6. **Inverso del prodotto:**
@@ -86,7 +86,7 @@ La quintupla $(\mathbb{R}, +, \cdot, \le)$ definisce un <mark style="background:
 - In particolare, poiché $1 = 1^2$ e $1 \neq 0$, ne discende rigorosamente che $1 > 0$.
 - **Inversione:** Se $x > 0$, allora $x^{-1} > 0$. Se $0 < x < y$, allora $y^{-1} < x^{-1}$.
 - **Densità dell'ordinamento:**
-  $$\forall x, y \in \mathbb{R}: x < y \implies \exists z \in \mathbb{R} \text{ tale che } x < z < y$$
+$$\forall x, y \in \mathbb{R}: x < y \implies \exists z \in \mathbb{R} \text{ tale che } x < z < y$$
   *Dimostrazione costruttiva:* È sufficiente scegliere il punto medio $z = \frac{x+y}{2} = 2^{-1}(x+y)$. Poiché $1 > 0 \implies 2 = 1+1 > 0$, applicando gli assiomi AO e MO si ottiene $x < \frac{x+y}{2} < y$.
 
 ## Intervalli di $\mathbb{R}$
@@ -116,9 +116,9 @@ Sia $A \subseteq \mathbb{R}$ un sottoinsieme non vuoto.
 
 ### Massimo e Minimo
 - Se un maggiorante di $A$ **appartiene ad $A$**, esso è detto <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>massimo</b></font></mark> di $A$, denotato con $\max A$:
-  $$M = \max A \iff M \in A \land (\forall a \in A: a \le M)$$
+$$M = \max A \iff M \in A \land (\forall a \in A: a \le M)$$
 - Se un minorante di $A$ appartiene ad $A$, esso è detto <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>minimo</b></font></mark> di $A$, denotato con $\min A$:
-  $$m = \min A \iff m \in A \land (\forall a \in A: m \le a)$$
+$$m = \min A \iff m \in A \land (\forall a \in A: m \le a)$$
 
 In virtù della proprietà antisimmetrica dell'ordine O2, massimo e minimo, se esistono, sono **unici**.
 
@@ -130,9 +130,9 @@ In virtù della proprietà antisimmetrica dell'ordine O2, massimo e minimo, se e
 
 ### Estremo Superiore ed Estremo Inferiore
 - L'**estremo superiore** di $A$, indicato con $\sup A$, è il minimo dei suoi maggioranti:
-  $$\sup A := \min U(A)$$
+$$\sup A := \min U(A)$$
 - L'**estremo inferiore** di $B$, indicato con $\inf B$, è il massimo dei suoi minoranti:
-  $$\inf B := \max L(B)$$
+$$\inf B := \max L(B)$$
 
 Relazione con massimo e minimo:
 $$\max A \text{ esiste} \iff \sup A \text{ esiste ed appartiene ad } A \quad (\text{in tal caso } \max A = \sup A)$$
@@ -157,13 +157,13 @@ $$i = \max L(B) = \inf B$$
 ### Caratterizzazione Operativa di $\sup$ e $\inf$
 **Proposizione:** Siano $A, B \subset \mathbb{R}$ insiemi non vuoti.
 1. Se $A$ è superiormente limitato, allora $s = \sup A$ se e solo se:
-   $$(\forall a \in A: a \le s) \quad \land \quad (\forall t < s, \exists a \in A : t < a)$$
+$$(\forall a \in A: a \le s) \quad \land \quad (\forall t < s, \exists a \in A : t < a)$$
    Posto $t = s - \varepsilon$ con $\varepsilon > 0$, la seconda condizione equivale a:
-   $$\forall \varepsilon > 0, \exists a \in A : a > s - \varepsilon$$
+$$\forall \varepsilon > 0, \exists a \in A : a > s - \varepsilon$$
 2. Se $B$ è inferiormente limitato, allora $i = \inf B$ se e solo se:
-   $$(\forall b \in B: i \le b) \quad \land \quad (\forall t > i, \exists b \in B : b < t)$$
+$$(\forall b \in B: i \le b) \quad \land \quad (\forall t > i, \exists b \in B : b < t)$$
    Posto $t = i + \varepsilon$ con $\varepsilon > 0$, equivale a:
-   $$\forall \varepsilon > 0, \exists b \in B : b < i + \varepsilon$$
+$$\forall \varepsilon > 0, \exists b \in B : b < i + \varepsilon$$
 
 *Dimostrazione per $\sup A$:*
 - $(\implies)$ Se $s = \sup A$, la prima condizione è vera poiché $s$ è maggiorante. Supponendo per assurdo falsa la seconda, esisterebbe $t < s$ tale che $\forall a \in A, a \le t$. Allora $t$ sarebbe un maggiorante di $A$ strettamente minore del minimo maggiorante $s$, assurdo.
@@ -191,13 +191,13 @@ $$E := \{q \in \mathbb{Q} \mid q > 0 \land q^2 < 2\}$$
 2. Supponiamo per assurdo che esista $s = \sup_{\mathbb{Q}} E \in \mathbb{Q}$. Per la legge di tricotomia si hanno tre alternative mutuamente esclusive: $s^2 < 2$, $s^2 = 2$ oppure $s^2 > 2$.
    - **Caso $s^2 = 2$:** Impossibile, poiché $\sqrt{2}$ non è un numero razionale (dimostrato in [[Lezione 7 - Insiemi Numerici N Z e Q]]).
    - **Caso $s^2 < 2$:** Consideriamo il numero razionale:
-     $$q := s + \frac{2 - s^2}{s + 2} = \frac{2s + 2}{s + 2} \in \mathbb{Q}$$
+$$q := s + \frac{2 - s^2}{s + 2} = \frac{2s + 2}{s + 2} \in \mathbb{Q}$$
      Poiché $s^2 < 2$, si ha $2 - s^2 > 0 \implies q > s$. Calcolando il quadrato:
-     $$q^2 - 2 = \left(\frac{2s + 2}{s + 2}\right)^2 - 2 = \frac{4s^2 + 8s + 4 - 2(s^2 + 4s + 4)}{(s + 2)^2} = \frac{2(s^2 - 2)}{(s + 2)^2} < 0$$
+$$q^2 - 2 = \left(\frac{2s + 2}{s + 2}\right)^2 - 2 = \frac{4s^2 + 8s + 4 - 2(s^2 + 4s + 4)}{(s + 2)^2} = \frac{2(s^2 - 2)}{(s + 2)^2} < 0$$
      Dunque $q^2 < 2$, il che implica che $q \in E$. Ma $q > s$, contraddicendo il fatto che $s$ sia un maggiorante di $E$!
    - **Caso $s^2 > 2$:** Consideriamo lo stesso numero razionale $q = \frac{2s + 2}{s + 2}$.
      Poiché $s^2 > 2$, si ha $2 - s^2 < 0 \implies q < s$. Dall'identità algebrica precedente:
-     $$q^2 - 2 = \frac{2(s^2 - 2)}{(s + 2)^2} > 0 \implies q^2 > 2$$
+$$q^2 - 2 = \frac{2(s^2 - 2)}{(s + 2)^2} > 0 \implies q^2 > 2$$
      Questo mostra che $q$ è ancora un maggiorante per $E$. Ma $q < s$, contraddicendo il fatto che $s$ sia il *minimo* maggiorante di $E$!
 In tutti i casi si perviene a una contraddizione: **$E$ non ammette estremo superiore in $\mathbb{Q}$**. $\mathbb{Q}$ è "pieno di buchi".
 
@@ -229,4 +229,3 @@ All'esame di Analisi 1 viene spesso richiesto di dimostrare perché i numeri nat
 - Sommando $1$ ad ambo i membri: $n + 1 > L$.
 - Ma $n + 1 \in \mathbb{N}$ (essendo $\mathbb{N}$ induttivo), il che contraddice l'ipotesi che $L$ sia un maggiorante per $\mathbb{N}$.
 Dunque $\mathbb{N}$ non è superiormente limitato in $\mathbb{R}$ (**Proprietà di Archimede**).
-

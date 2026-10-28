@@ -48,7 +48,7 @@ $$B := \{k \in \mathbb{N} \mid x \le k, \; \forall x \in X\}$$
 Per ipotesi di limitatezza, $B \neq \emptyset$. Per il teorema del buon ordinamento, esiste $a := \min B$. Mostriamo che $a \in X$:
 - Se $a = 0$, da $0 \le x \le 0$ per ogni $x \in X$ segue $X = \{0\}$, e banalmente $\max X = 0$.
 - Se $a > 0$, allora $a - 1 \in \mathbb{N}$. Per la minimalità di $a$ in $B$, il numero $a - 1$ non può essere un maggiorante di $X$, dunque esiste $x \in X$ tale che:
-  $$a - 1 < x \le a$$
+$$a - 1 < x \le a$$
   Per la discretezza dell'ordine, $a - 1 < x \implies a \le x$. Essendo $x \le a$, si conclude che $x = a \in X$.
 Dunque $a$ è un maggiorante che appartiene ad $X$, ovvero $a = \max X$.
 
@@ -64,14 +64,14 @@ Il numero $q$ è il <mark style="background:rgba(181, 113, 255, 0.36)"><font col
 
 *Dimostrazione:*
 - **Esistenza:** Consideriamo l'insieme dei multipli di $m$ che non superano $n$:
-  $$A := \{k \in \mathbb{N} \mid km \le n\}$$
+$$A := \{k \in \mathbb{N} \mid km \le n\}$$
   Si ha $0 \in A$ poiché $0 \cdot m = 0 \le n$. Inoltre, essendo $m \ge 1$, per ogni $k \in A$ vale $k \le km \le n$, per cui $A$ è limitato superiormente da $n$.
   Per il corollario precedente, esiste $q := \max A$.
   Ne segue che $qm \le n$, mentre $(q + 1)m > n$ (altrimenti $q + 1 \in A$, violando la massimalità di $q$).
   Poniamo $r := n - qm$. Poiché $qm \le n$, $r \in \mathbb{N}$. Inoltre:
-  $$n < (q + 1)m = qm + m \implies r = n - qm < m$$
+$$n < (q + 1)m = qm + m \implies r = n - qm < m$$
 - **Unicità:** Supponiamo che $n = qm + r = q'm + r'$ con $0 \le r, r' < m$. Se fosse $q < q'$, allora per discretezza $q + 1 \le q'$, da cui:
-  $$n = qm + r < qm + m = (q + 1)m \le q'm \le q'm + r' = n$$
+$$n = qm + r < qm + m = (q + 1)m \le q'm \le q'm + r' = n$$
   contraddizione ($n < n$). Similmente si esclude $q' < q$. Ne consegue $q = q'$ e, per cancellazione, $r = r'$.
 
 ### Teorema di Parità
@@ -108,11 +108,11 @@ $$(1 + x)^n \ge 1 + nx$$
 - **Base ($n = 0$):** $(1 + x)^0 = 1$ e $1 + 0 \cdot x = 1$. L'uguaglianza $1 \ge 1$ è vera.
 - **Passo induttivo:** Supponiamo vera l'ipotesi per $n$: $(1 + x)^n \ge 1 + nx$.
   Essendo $x \ge -1$, il fattore $(1 + x)$ è non negativo ($\ge 0$). Moltiplicando ambo i membri per $(1 + x)$ preservando il verso:
-  $$(1 + x)^{n+1} = (1 + x)(1 + x)^n \ge (1 + x)(1 + nx)$$
+$$(1 + x)^{n+1} = (1 + x)(1 + x)^n \ge (1 + x)(1 + nx)$$
   Sviluppando il prodotto:
-  $$(1 + x)(1 + nx) = 1 + nx + x + nx^2 = 1 + (n + 1)x + nx^2$$
+$$(1 + x)(1 + nx) = 1 + nx + x + nx^2 = 1 + (n + 1)x + nx^2$$
   Poiché $n \ge 0$ e $x^2 \ge 0$, il termine $nx^2 \ge 0$. Pertanto:
-  $$1 + (n + 1)x + nx^2 \ge 1 + (n + 1)x$$
+$$1 + (n + 1)x + nx^2 \ge 1 + (n + 1)x$$
   Combinando le disuguaglianze otteniamo $(1 + x)^{n+1} \ge 1 + (n + 1)x$.
 
 **Corollario:** Per ogni $n \in \mathbb{N}$:
@@ -170,7 +170,7 @@ Possiamo scrivere $x = \frac{m}{n}$ con $m, n \in \mathbb{N}^*$ ridotti ai minim
 $$\frac{m^2}{n^2} = 2 \implies m^2 = 2n^2$$
 1. $m^2$ è pari. Poiché il quadrato di un numero dispari è sempre dispari ($(2h+1)^2 = 4h^2 + 4h + 1 = 2(2h^2+2h) + 1$), ne consegue che $m$ deve essere **pari**.
 2. Possiamo quindi scrivere $m = 2k$ per un opportuno $k \in \mathbb{N}^*$. Sostituendo nell'equazione:
-   $$(2k)^2 = 2n^2 \implies 4k^2 = 2n^2 \implies n^2 = 2k^2$$
+$$(2k)^2 = 2n^2 \implies 4k^2 = 2n^2 \implies n^2 = 2k^2$$
 3. Di conseguenza anche $n^2$ è pari, il che implica che $n$ è **pari**.
 Si è così dedotto che sia $m$ sia $n$ sono pari, in contraddizione palese con l'ipotesi che la frazione fosse ridotta ai minimi termini.
 
@@ -192,15 +192,15 @@ $$A := \{x \in \mathbb{Q} \mid x \le 0 \lor x^2 < 2\}$$
    Poiché $1 \in A$, deve aversi $\lambda \ge 1 > 0$. Dal teorema precedente sappiamo che $\lambda^2 \neq 2$. Restano due casi:
    - **Caso 1: $\lambda^2 < 2$.**
      Scegliamo $\varepsilon \in \mathbb{Q}$ con $0 < \varepsilon < 1$. Calcoliamo:
-     $$(\lambda + \varepsilon)^2 = \lambda^2 + 2\lambda\varepsilon + \varepsilon^2 < \lambda^2 + (1 + 2\lambda)\varepsilon$$
+$$(\lambda + \varepsilon)^2 = \lambda^2 + 2\lambda\varepsilon + \varepsilon^2 < \lambda^2 + (1 + 2\lambda)\varepsilon$$
      Affinché $(\lambda + \varepsilon)^2 < 2$, basta imporre che:
-     $$\lambda^2 + (1 + 2\lambda)\varepsilon < 2 \iff \varepsilon < \frac{2 - \lambda^2}{1 + 2\lambda}$$
+$$\lambda^2 + (1 + 2\lambda)\varepsilon < 2 \iff \varepsilon < \frac{2 - \lambda^2}{1 + 2\lambda}$$
      Scegliendo $\varepsilon = \frac{1}{2}\min\left\{1, \frac{2 - \lambda^2}{1 + 2\lambda}\right\} \in \mathbb{Q}^+$, l'elemento $a := \lambda + \varepsilon$ appartiene ad $A$. Ma $a > \lambda$, il che contraddice il fatto che $\lambda$ sia un maggiorante di $A$.
    - **Caso 2: $\lambda^2 > 2$.**
      Scegliamo $\varepsilon \in \mathbb{Q}$ con $0 < \varepsilon < \lambda$. Calcoliamo:
-     $$(\lambda - \varepsilon)^2 = \lambda^2 - 2\lambda\varepsilon + \varepsilon^2 > \lambda^2 - 2\lambda\varepsilon$$
+$$(\lambda - \varepsilon)^2 = \lambda^2 - 2\lambda\varepsilon + \varepsilon^2 > \lambda^2 - 2\lambda\varepsilon$$
      Affinché $(\lambda - \varepsilon)^2 > 2$, basta che:
-     $$\lambda^2 - 2\lambda\varepsilon > 2 \iff \varepsilon < \frac{\lambda^2 - 2}{2\lambda}$$
+$$\lambda^2 - 2\lambda\varepsilon > 2 \iff \varepsilon < \frac{\lambda^2 - 2}{2\lambda}$$
      Scegliendo $\varepsilon = \frac{1}{2}\min\left\{\lambda, \frac{\lambda^2 - 2}{2\lambda}\right\} \in \mathbb{Q}^+$, si ha $(\lambda - \varepsilon)^2 > 2$.
      Per ogni $x \in A$ positivo si ha $x^2 < 2 < (\lambda - \varepsilon)^2 \implies x < \lambda - \varepsilon$.
      Ne segue che $\lambda - \varepsilon$ è un maggiorante di $A$ strettamente minore di $\lambda$, contraddicendo l'ipotesi che $\lambda$ fosse il minimo dei maggioranti.
@@ -250,15 +250,14 @@ Per ogni $n \in \mathbb{N}$, l'$n$-esima cifra di $y$ differisce dall'$n$-esima 
 La successione di Erone $u_{n+1} = \frac{1}{2}\left(u_n + \frac{a}{u_n}\right)$ con $a > 0, u_0 > 0$ è il prototipo d'esame per le successioni definite per ricorrenza:
 
 1. **Limitazione Inferiore:** Per ogni $n \ge 1$, calcoliamo:
-   $$u_{n+1}^2 - a = \frac{1}{4}\left(u_n + \frac{a}{u_n}\right)^2 - a = \frac{u_n^2 + 2a + a^2/u_n^2 - 4a}{4} = \frac{(u_n^2 - a)^2}{4u_n^2} \ge 0$$
+$$u_{n+1}^2 - a = \frac{1}{4}\left(u_n + \frac{a}{u_n}\right)^2 - a = \frac{u_n^2 + 2a + a^2/u_n^2 - 4a}{4} = \frac{(u_n^2 - a)^2}{4u_n^2} \ge 0$$
    Ne segue $u_{n+1}^2 \ge a \implies u_{n+1} \ge \sqrt{a}$ per ogni $n \ge 0$. Dunque la successione è limitata inferiormente da $\sqrt{a}$ a partire dal primo passo.
 2. **Monotonia Decrescente:** Calcoliamo la differenza tra termini successivi per $n \ge 1$:
-   $$u_{n+1} - u_n = \frac{1}{2}\left(u_n + \frac{a}{u_n}\right) - u_n = \frac{a - u_n^2}{2u_n}$$
+$$u_{n+1} - u_n = \frac{1}{2}\left(u_n + \frac{a}{u_n}\right) - u_n = \frac{a - u_n^2}{2u_n}$$
    Poiché $u_n^2 \ge a$ e $u_n > 0$, il numeratore $a - u_n^2 \le 0$, da cui $u_{n+1} \le u_n$. La successione è **monotona decrescente** per $n \ge 1$.
 3. **Esistenza del Limite (MCT):** Essendo decrescente e inferiormente limitata da $\sqrt{a}$, per il **Teorema di Convergenza Monotona** esiste finito il limite reale:
-   $$L = \lim_{n \to \infty} u_n \ge \sqrt{a} > 0$$
+$$L = \lim_{n \to \infty} u_n \ge \sqrt{a} > 0$$
 4. **Calcolo del Limite:** Passando al limite per $n \to \infty$ in ambo i membri della relazione di ricorrenza (sfruttando l'algebra dei limiti):
-   $$L = \frac{1}{2}\left(L + \frac{a}{L}\right) \iff 2L = L + \frac{a}{L} \iff L = \frac{a}{L} \iff L^2 = a$$
+$$L = \frac{1}{2}\left(L + \frac{a}{L}\right) \iff 2L = L + \frac{a}{L} \iff L = \frac{a}{L} \iff L^2 = a$$
    Poiché $L > 0$, l'unica soluzione ammissibile è $L = \sqrt{a}$.
 La successione converge a $\sqrt{a}$ con convergenza quadratica (metodo delle tangenti di Newton).
-

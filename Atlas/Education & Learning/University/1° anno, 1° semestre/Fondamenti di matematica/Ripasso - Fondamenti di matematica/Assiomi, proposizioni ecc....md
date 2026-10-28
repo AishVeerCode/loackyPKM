@@ -2,20 +2,20 @@
 status: permanent
 type: summary
 area: education
-related: ["[[Lezione 1 - Logica delle Proposizioni e dei Predicati]]", "[[Lezione 2 - Teoria Assiomatica degli Insiemi]]", "[[Lezione 3 - Relazioni e Funzioni I]]", "[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lezione 5 - i Numeri Reali e Assioma di Completezza]]", "[[Lezione 6 - Valore Assoluto e Numeri Naturali]]", "[[Lezione 7 - Insiemi Numerici N Z e Q]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]", "[[Lezione 9 - Funzioni Reali ed Estremi]]", "[[Lezione 10 - Funzioni Reali II e Funzioni Elementari I]]", "[[Lezione 11 - Funzioni Reali Elementari II]]", "[[Lezione 12 - Limiti I Retta Reale Ampliata e Definizione]]", "[[Lezione 13 - Limiti II Restrizioni Limiti Laterali e Successioni]]", "[[Lezione 14 - Limiti di Successioni e Proprieta Locali]]", "[[Lezione 15 - Proprieta dei Limiti]]", "[[Dimostrazioni]]", "[[University]]"]
+related: ["[[Lezione 1 - Logica delle Proposizioni e dei Predicati]]", "[[Lezione 2 - Teoria Assiomatica degli Insiemi]]", "[[Lezione 3 - Relazioni e Funzioni I]]", "[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lezione 5 - i Numeri Reali e Assioma di Completezza]]", "[[Lezione 6 - Valore Assoluto e Numeri Naturali]]", "[[Lezione 7 - Insiemi Numerici N Z e Q]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]", "[[Lezione 9 - Funzioni Reali ed Estremi]]", "[[Lezione 10 - Funzioni Reali II e Funzioni Elementari I]]", "[[Lezione 11 - Funzioni Reali Elementari II]]", "[[Lezione 12 - Limiti I Retta Reale Ampliata e Definizione]]", "[[Lezione 13 - Limiti II Restrizioni Limiti Laterali e Successioni]]", "[[Lezione 14 - Limiti di Successioni e Proprieta Locali]]", "[[Lezione 15 - Proprieta dei Limiti]]", "[[Lezione 17 - Limiti delle Funzioni Composte e Confronto Locale]]", "[[Lezione 18 - Gerarchie di Infiniti e Infinitesimi e Continuita I]]", "[[Lezione 19 - Funzioni Continue e Punti di Discontinuita]]", "[[Lezione 20 - Continuita delle Funzioni Monotone e Limiti Notevoli]]", "[[Dimostrazioni]]", "[[University]]"]
 aliases: ["Assiomi, proposizioni ecc...", "Assiomi, Proposizioni ecc...", "Assiomi Proposizioni Definizioni", "Assiomi, proposizioni ecc...."]
-source: ["Lezione 1.pdf", "Lezione 2.pdf", "Lezione 3.pdf", "Lezione 4.pdf", "Lezione 5.pdf", "Lezione 6.pdf", "Lezione 7.pdf", "Lezione 8.pdf", "Lezione 9.pdf", "Lezione 10.pdf", "Lezione 11.pdf", "Lezione 12.pdf", "Lezione 13.pdf", "Lezione 14.pdf", "Lezione 15.pdf"]
+source: ["Lezione 1.pdf", "Lezione 2.pdf", "Lezione 3.pdf", "Lezione 4.pdf", "Lezione 5.pdf", "Lezione 6.pdf", "Lezione 7.pdf", "Lezione 8.pdf", "Lezione 9.pdf", "Lezione 10.pdf", "Lezione 11.pdf", "Lezione 12.pdf", "Lezione 13.pdf", "Lezione 14.pdf", "Lezione 15.pdf", "Lezione 17.pdf", "Lezione 18.pdf", "Lezione 19.pdf", "Lezione 20.pdf"]
 title: "Assiomi, Proposizioni, Definizioni e Teoremi"
 date: '2026-10-15'
-updated: '2026-10-20T20:45'
+updated: '2026-10-28T22:15'
 tags: [education/university, education/matematica, education/teoria]
-summary: "Repertorio sistematico di tutti gli assiomi, definizioni, proposizioni, teoremi, lemmi e corollari trattati nel corso di Fondamenti di Matematica dalla Lezione 1 alla Lezione 15."
+summary: "Repertorio sistematico di tutti gli assiomi, definizioni, proposizioni, teoremi, lemmi e corollari trattati nel corso di Fondamenti di Matematica dalla Lezione 1 alla Lezione 20."
 ---
 [[Home MOC|Home]] / [[Education & Learning]] / [[University]] / [[Assiomi, proposizioni ecc...]]
 
 # Assiomi, Proposizioni, Definizioni e Teoremi
 
-Quadro teorico integrale dei concetti primitivi, degli assiomi fondativi, delle definizioni formali, dei teoremi, delle proposizioni, dei lemmi e dei corollari svolti nelle Lezioni da 1 a 15 del corso di Fondamenti di Matematica.
+Quadro teorico integrale dei concetti primitivi, degli assiomi fondativi, delle definizioni formali, dei teoremi, delle proposizioni, dei lemmi e dei corollari svolti nelle Lezioni da 1 a 20 del corso di Fondamenti di Matematica.
 
 ---
 
@@ -615,3 +615,177 @@ $$(+\infty) + (-\infty), \qquad (\pm\infty) \cdot 0, \qquad \frac{\pm\infty}{\pm
 
 - <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Regola del Limite di una Funzione Razionale per $x \to \pm\infty$:</b></font></mark> Sia $\frac{P(x)}{Q(x)} = \frac{a_n x^n + \dots + a_0}{b_m x^m + \dots + b_0}$ con $n, m \in \mathbb{N}^*$ e $a_n, b_m \ne 0$. Allora:
 $$\lim_{x \to +\infty} \frac{P(x)}{Q(x)} = \begin{cases} \dfrac{a_n}{b_m} \cdot (+\infty) & \text{se } n > m \\[6pt] \dfrac{a_n}{b_m} & \text{se } n = m \\[6pt] 0 & \text{se } n < m \end{cases}, \qquad \lim_{x \to -\infty} \frac{P(x)}{Q(x)} = \begin{cases} \dfrac{a_n}{b_m} \cdot (+\infty) & \text{se } n > m \text{ e } n - m \text{ è pari} \\[6pt] \dfrac{a_n}{b_m} \cdot (-\infty) & \text{se } n > m \text{ e } n - m \text{ è dispari} \\[6pt] \dfrac{a_n}{b_m} & \text{se } n = m \\[6pt] 0 & \text{se } n < m \end{cases}$$
+
+
+---
+
+## Lezione 17: Limiti delle Funzioni Composte e Confronto Locale
+
+### Limiti delle Funzioni Composte
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 1.1 (Sul Limite delle Funzioni Composte):</b></font></mark> Siano $A, B \subset \mathbb{R}$ insiemi non vuoti, $f: A \to \mathbb{R}$ e $g: B \to \mathbb{R}$ con $f(A) \subset B$. Siano $x_0 \in \overline{\mathbb{R}}$ di accumulazione per $A$ e $y_0 \in \overline{\mathbb{R}}$ di accumulazione per $B$. Supponiamo che:
+  - **a)** $\lim_{x \to x_0} f(x) = y_0$ e $\lim_{y \to y_0} g(y) = \ell \in \overline{\mathbb{R}}$;
+  - **b)** $f(x) \neq y_0$ in un intorno sferico forato di $x_0$.
+  Allora:
+$$\lim_{x \to x_0} g(f(x)) = \ell$$
+  *Clausola di Continuità:* Se $y_0 \in B$ e la funzione esterna $g$ è continua in $y_0$ (ossia $\ell = g(y_0)$), la conclusione sussiste anche se la condizione **b)** non è verificata.
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Osservazione 1.2 (Regola di Sostituzione):</b></font></mark> Per calcolare $\lim_{x \to x_0} g(f(x))$, ponendo formalmente $y = f(x)$, se $f(x) \to y_0$ per $x \to x_0$ e sono verificate le ipotesi del Teorema 1.1, si ha:
+$$\lim_{x \to x_0} g(f(x)) = \lim_{y \to y_0} g(y)$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Osservazione 1.4 (Necessità dell'Ipotesi di Non Stazionarietà):</b></font></mark> L'ipotesi $f(x) \neq y_0$ è necessaria se $g$ non è continua. Ponendo $f(x) = \lfloor x + 1/2 \rfloor$ e $g(y) = 1$ se $y=0$ e $0$ se $y \neq 0$: $\lim_{x \to 0} f(x) = 0$ e $\lim_{y \to 0} g(y) = 0$, ma in $[-1/2, 1/2[$ si ha $f(x) = 0$, da cui $g(f(x)) = 1$ e $\lim_{x \to 0} g(f(x)) = 1 \neq 0$.
+
+### Teoria del Confronto Locale
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione 2.1.a (Trascurabilità Locale o o-piccolo):</b></font></mark> Siano $f, g: A \to \mathbb{R}$ e $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $A$. Si dice che $f$ è *trascurabile rispetto a $g$* per $x \to x_0$, e si scrive $f \ll g$ o $f = o(g)$, se esiste $\sigma: A \to \mathbb{R}$ tale che in un intorno di $x_0$:
+$$f(x) = \sigma(x)g(x) \quad \text{con } \lim_{x \to x_0} \sigma(x) = 0$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione 2.1.b (Stesso Ordine di Grandezza):</b></font></mark> Si dice che $f$ è *dello stesso ordine di $g$* per $x \to x_0$, e si scrive $f \asymp g$, se esiste $\sigma: A \to \mathbb{R}$ tale che in un intorno di $x_0$:
+$$f(x) = \sigma(x)g(x) \quad \text{con } \lim_{x \to x_0} \sigma(x) = \ell \in \mathbb{R}^* = \mathbb{R} \setminus \{0\}$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione 2.1.c (Asintoticità):</b></font></mark> Si dice che $f$ è *asintotica a $g$* per $x \to x_0$, e si scrive $f \sim g$, se esiste $\sigma: A \to \mathbb{R}$ tale che in un intorno di $x_0$:
+$$f(x) = \sigma(x)g(x) \quad \text{con } \lim_{x \to x_0} \sigma(x) = 1$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Proposizione 2.2 (Proprietà delle Relazioni di Confronto):</b></font></mark> Siano $f, g, h: A \to \mathbb{R}$ e $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $A$. Valgono le seguenti proprietà per $x \to x_0$:
+  - **(i)** $f \ll f \implies f(x) = 0$ in un intorno di $x_0$.
+  - **(ii)** $f \ll g \land g \ll h \implies f \ll h$ (proprietà transitiva della trascurabilità).
+  - **(iii)** $\asymp$ è una relazione di equivalenza (riflessiva, simmetrica, transitiva).
+  - **(iv)** $\sim$ è una relazione di equivalenza (riflessiva, simmetrica, transitiva).
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Proposizione 2.4 (Caratterizzazione tramite Quoziente):</b></font></mark> Se $g(x) \neq 0$ per ogni $x$ in un intorno forato di $x_0$:
+  - $f = o(g) \iff \lim_{x \to x_0} \frac{f(x)}{g(x)} = 0$
+  - $f \asymp g \iff \lim_{x \to x_0} \frac{f(x)}{g(x)} = \ell \in \mathbb{R}^*$
+  - $f \sim g \iff \lim_{x \to x_0} \frac{f(x)}{g(x)} = 1$
+  - Inoltre, se $f(x) \neq 0$ localmente: $g = o(f) \iff \lim_{x \to x_0} \left|\frac{f(x)}{g(x)}\right| = +\infty$.
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizioni 2.6 e 2.7 (Infinitesimi, Infiniti e Ordini Relativi):</b></font></mark>
+  - $f$ è *infinitesima* per $x \to x_0$ se $\lim_{x \to x_0} f(x) = 0$.
+  - $f$ è un *infinito* per $x \to x_0$ se $\lim_{x \to x_0} |f(x)| = +\infty$.
+  - Se $f \ll g$ ed entrambe sono infinitesime, $f$ è un *infinitesimo di ordine superiore* rispetto a $g$.
+  - Se $f \ll g$ ed entrambe sono infiniti, $f$ è un *infinito di ordine inferiore* rispetto a $g$ ($g$ è di ordine superiore a $f$).
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Proposizione 3.1 (Divergenza Rapida di $e^n/n$):</b></font></mark> Vale il limite di successione:
+$$\lim_{n \to +\infty} \frac{e^n}{n} = +\infty$$
+
+---
+
+## Lezione 18: Gerarchie di Infiniti e Infinitesimi e Continuità (Parte I)
+
+### Gerarchia degli Infiniti ed Infinitesimi per Funzioni
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Proposizione 1.1 (Gerarchia di Infiniti ed Infinitesimi in R):</b></font></mark> Siano $a > 1$ e $\alpha > 0$. Valgono i seguenti limiti notevoli:
+  - **(i)** $\lim_{x \to +\infty} \frac{a^x}{x^\alpha} = +\infty$
+  - **(ii)** $\lim_{x \to -\infty} |x|^\alpha a^x = 0$
+  - **(iii)** $\lim_{x \to +\infty} \frac{\log_a x}{x^\alpha} = 0$
+  - **(iv)** $\lim_{x \to 0^+} x^\alpha \log_a x = 0$
+  - **(v)** $\lim_{x \to +\infty} \frac{x^x}{a^x} = +\infty$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Osservazione 1.2 (Catena Gerarchica per $x \to +\infty$):</b></font></mark>
+$$\log_a x \ll x^\alpha \ll a^x \ll x^x \qquad (a > 1, \, \alpha > 0)$$
+
+### Criterio del Rapporto e Gerarchia per Successioni
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Proposizione 1.4 (Criterio del Rapporto per Successioni):</b></font></mark> Sia $(a_n)_{n \in \mathbb{N}}$ una successione reale a termini strettamente positivi ($a_n > 0$) tale che:
+$$\lim_{n \to +\infty} \frac{a_{n+1}}{a_n} = \ell \in [0, +\infty]$$
+Allora:
+$$\lim_{n \to +\infty} a_n = \begin{cases} +\infty & \text{se } \ell > 1 \\ 0 & \text{se } \ell < 1 \end{cases}$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Proposizione 1.5 (Limiti Notevoli per Successioni con Fattoriali):</b></font></mark>
+  - **(i)** $\lim_{n \to +\infty} \frac{n!}{a^n} = +\infty \quad (\forall a > 1)$
+  - **(ii)** $\lim_{n \to +\infty} \frac{n^n}{n!} = +\infty$
+  - **(iii)** $\lim_{n \to +\infty} \frac{(2n)!}{n^n} = +\infty$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Osservazione 1.6 (Gerarchia Completa per Successioni a $+\infty$):</b></font></mark>
+$$\log_a n \ll n^\alpha \ll a^n \ll n! \ll n^n \ll (2n)! \qquad (a > 1, \, \alpha > 0)$$
+
+### Fondamenti delle Funzioni Continue
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione 2.1 (Funzione Continua - Definizione Topologica):</b></font></mark> Sia $f: A \subset \mathbb{R} \to \mathbb{R}$ e sia $x_0 \in A$. Si dice che $f$ è *continua in $x_0$* se per ogni intorno $V \in \mathcal{U}(f(x_0))$ esiste un intorno $U \in \mathcal{U}(x_0)$ tale che:
+$$f(U \cap A) \subset V$$
+$f$ è continua in $B \subset A$ se è continua in ogni punto di $B$; è continua se lo è su tutto il dominio $A$.
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Osservazione 2.2 (Formulazione Metrica Epsilon-Delta):</b></font></mark> La continuità in $x_0$ equivale a:
+$$\forall \varepsilon > 0, \, \exists \delta > 0 : \forall x \in A, \, |x - x_0| < \delta \implies |f(x) - f(x_0)| < \varepsilon$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Proposizione 2.3 (Continuità nei Punti Isolati e di Accumulazione):</b></font></mark> Sia $f: A \subset \mathbb{R} \to \mathbb{R}$ e $x_0 \in A$:
+  - **(i)** Se $x_0$ è un punto isolato di $A$, allora $f$ è *sempre continua* in $x_0$.
+  - **(ii)** Se $x_0$ è un punto di accumulazione per $A$, allora:
+$$f \text{ è continua in } x_0 \iff \lim_{x \to x_0} f(x) = f(x_0)$$
+
+### Teorema di Cesàro sulla Radice n-esima
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 3.1 (Di Cesàro):</b></font></mark> Sia $(a_n)_{n \in \mathbb{N}}$ una successione a termini strettamente positivi ($a_n > 0$). Se esiste $\lim_{n \to +\infty} \frac{a_{n+1}}{a_n} = \ell \in [0, +\infty]$, allora:
+$$\lim_{n \to +\infty} \sqrt[n]{a_n} = \ell$$
+*(Il viceversa non sussiste: la convergenza della radice non implica quella del rapporto).*
+
+---
+
+## Lezione 19: Funzioni Continue e Punti di Discontinuità
+
+### Algebra delle Funzioni Continue
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 1.2 (Operazioni sulle Funzioni Continue):</b></font></mark> Siano $f, g: A \to \mathbb{R}$ continue in $x_0 \in A$. Allora sono continue in $x_0$:
+  - **(i)** $f + g$
+  - **(ii)** $f \cdot g$
+  - **(iii)** $f/g$ (se $g(x) \neq 0$ per ogni $x \in A$)
+  - **(iv)** $|f|$
+  - **(v)** $f \vee g = \max\{f, g\}$ e $f \wedge g = \min\{f, g\}$
+  - **(vi)** La restrizione $f|_B$ per ogni sottoinsieme $B \subset A$ con $x_0 \in B$.
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Lemma 1.3 (Rappresentazione di Massimo e Minimo):</b></font></mark> Per ogni $a, b \in \mathbb{R}$:
+$$\max\{a, b\} = \frac{a + b + |a - b|}{2}, \qquad \min\{a, b\} = \frac{a + b - |a - b|}{2}$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione 1.4 e Osservazione 1.5 (Struttura dello Spazio C(A)):</b></font></mark> L'insieme $\mathcal{C}(A) = \{f: A \to \mathbb{R} \mid f \text{ continua su } A\}$ è uno **spazio vettoriale reale**, un'**algebra reale** e un'**algebra reticolata**.
+
+### Funzioni Lipschitziane
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione 1.6 (Funzione Lipschitziana):</b></font></mark> Una funzione $f: A \to \mathbb{R}$ si dice *Lipschitziana* se esiste una costante $L > 0$ tale che:
+$$\forall x, y \in A: \quad |f(x) - f(y)| \le L |x - y|$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Proposizione 1.7 (Lipschitzianità Implica Continuità):</b></font></mark> Ogni funzione Lipschitziana $f: A \to \mathbb{R}$ è continua su $A$. (In particolare seno, coseno e modulo sono 1-Lipschitziani su $\mathbb{R}$).
+
+### Composizione e Prolungamento Continuo
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 1.9 (Continuità delle Funzioni Composte):</b></font></mark> Siano $f: A \to B$ e $g: B \to \mathbb{R}$. Se $f$ è continua in $x_0 \in A$ e $g$ è continua in $f(x_0) \in B$, allora:
+$$g \circ f \text{ è continua in } x_0$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Osservazione 1.10 (Limite con Funzione Esterna Continua):</b></font></mark> Se $\lim_{x \to x_0} f(x) = y_0 \in B$ e $g$ è continua in $y_0$, allora:
+$$\lim_{x \to x_0} g(f(x)) = g(y_0)$$
+senza richiedere che $f(x) \neq y_0$.
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 1.11 (Di Prolungamento per Continuità):</b></font></mark> Sia $f: A \to \mathbb{R}$ continua e sia $B \subset \mathbb{R}$ con $A \subset B \subset A \cup D_r(A)$. Se per ogni $x_0 \in B \setminus A$ esiste finito il limite $\lim_{x \to x_0} f(x)$, allora esiste un unico prolungamento continuo $\overline{f}: B \to \mathbb{R}$ tale che $\overline{f}|_A = f$, definito ponendo $\overline{f}(x) = \lim_{y \to x} f(y)$ per $x \in B \setminus A$.
+
+### Tassonomia dei Punti di Discontinuità
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione 2.1 (Classificazione dei Punti di Discontinuità nel Dominio):</b></font></mark> Sia $f: A \to \mathbb{R}$ e $x_0 \in A$ punto di accumulazione per $A$. Se $f$ non è continua in $x_0$:
+  - **(i) Discontinuità Eliminabile:** Esiste finito $\lim_{x \to x_0} f(x) = \ell \in \mathbb{R}$, ma $\ell \neq f(x_0)$.
+  - **(ii) Discontinuità di Prima Specie (o di Salto):** Esistono finiti entrambi i limiti unilaterali ma sono distinti: $\lim_{x \to x_0^-} f(x) = \ell^- \ne \ell^+ = \lim_{x \to x_0^+} f(x)$. La differenza $s = \ell^+ - \ell^-$ si chiama *salto*.
+  - **(iii) Discontinuità di Seconda Specie:** Almeno uno dei due limiti unilaterali non esiste oppure è infinito ($\pm\infty$).
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Osservazione 2.2 (Requisito di Appartenenza al Dominio):</b></font></mark> Per definire una discontinuità in $x_0$, il punto **deve appartenere al dominio $A$**. Se $x_0 \notin A$ (es. $x_0 = 0$ per $f(x) = 1/x$), non si tratta di discontinuità bensì di punto escluso dal dominio.
+
+---
+
+## Lezione 20: Continuità delle Funzioni Monotone e Limiti Notevoli
+
+### Regolarità delle Funzioni Monotone
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Proprietà (Limiti Unilaterali di Funzioni Monotone):</b></font></mark> Per una funzione monotona $f: A \to \mathbb{R}$, i limiti unilaterali sinistro e destro nei punti di accumulazione interni esistono sempre finiti:
+$$f(x_0^-) = \sup_{\substack{x \in A \\ x < x_0}} f(x) \le f(x_0) \le \inf_{\substack{x \in A \\ x > x_0}} f(x) = f(x_0^+)$$
+Ne consegue che:
+  - Una funzione monotona **non possiede mai discontinuità di seconda specie**;
+  - L'insieme dei punti di discontinuità di una funzione monotona è **al più numerabile**.
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 1.4 (Continuità per Immagine Intervallo):</b></font></mark> Sia $f: A \to \mathbb{R}$ una funzione monotona. Se l'immagine $f(A)$ è un intervallo di $\mathbb{R}$, allora $f$ è **continua su tutto $A$**.
+*(Garantisce la continuità di esponenziali, logaritmi, potenze reali e funzioni iperboliche).*
+
+### Compendio dei Limiti Notevoli Trascendenti
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Limite Notevole 1 (Numero di Nepero e):</b></font></mark>
+$$\lim_{x \to \pm\infty} \left(1 + \frac{1}{x}\right)^x = e$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Limite Notevole 2 (Potenza con Parametro ed Esponente Infinitesimo):</b></font></mark> Per ogni $p \in \mathbb{R}$:
+$$\lim_{x \to \pm\infty} \left(1 + \frac{p}{x}\right)^x = e^p \qquad \text{e} \qquad \lim_{x \to 0} (1 + px)^{1/x} = e^p$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Limite Notevole 3 (Limite del Logaritmo):</b></font></mark> Per ogni $a > 0, a \neq 1$:
+$$\lim_{x \to 0} \frac{\log_a(1 + x)}{x} = \log_a e = \frac{1}{\ln a} \qquad \left(\text{in particolare } \lim_{x \to 0} \frac{\ln(1 + x)}{x} = 1\right)$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Limite Notevole 4 (Limite dell'Esponenziale):</b></font></mark> Per ogni $a > 0$:
+$$\lim_{x \to 0} \frac{a^x - 1}{x} = \ln a \qquad \left(\text{in particolare } \lim_{x \to 0} \frac{e^x - 1}{x} = 1\right)$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Limite Notevole 5 (Limite della Potenza Reale):</b></font></mark> Per ogni $\alpha \in \mathbb{R}$:
+$$\lim_{x \to 0} \frac{(1 + x)^\alpha - 1}{x} = \alpha$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Limite Notevole 6 (Limiti Trigonometrici di Coseno e Tangente):</b></font></mark>
+$$\lim_{x \to 0} \frac{1 - \cos x}{x^2} = \frac{1}{2} \qquad \text{e} \qquad \lim_{x \to 0} \frac{\tan x}{x} = 1$$
+
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Tavola delle Equivalenze Asintotiche per $x \to 0$:</b></font></mark>
+$$\sin x \sim x, \quad \tan x \sim x, \quad 1 - \cos x \sim \frac{1}{2} x^2, \quad \ln(1 + x) \sim x, \quad e^x - 1 \sim x, \quad (1 + x)^\alpha - 1 \sim \alpha x$$

@@ -87,20 +87,20 @@ $$(P \iff Q) \equiv (P \implies Q) \land (Q \implies P)$$
 Tra le formule tautologiche (sempre vere indipendentemente dal valore delle variabili componenti), emergono principi cardine:
 
 1. **Legge del Terzo Escluso (Tertium non datur):**
-   $$P \lor \neg P \equiv V$$
+$$P \lor \neg P \equiv V$$
    Ogni proposizione è o vera o falsa: non vi è una terza via ontologica nel formalismo classico.
 
 2. **Leggi di De Morgan:**
-   $$\neg (P \land Q) \iff (\neg P \lor \neg Q)$$
-   $$\neg (P \lor Q) \iff (\neg P \land \neg Q)$$
+$$\neg (P \land Q) \iff (\neg P \lor \neg Q)$$
+$$\neg (P \lor Q) \iff (\neg P \land \neg Q)$$
    Negare che due proprietà coesistano equivale ad affermare che almeno una delle due non sussiste.
 
 3. **Legge della Contronominale:**
-   $$(P \implies Q) \iff (\neg Q \implies \neg P)$$
+$$(P \implies Q) \iff (\neg Q \implies \neg P)$$
    Un'implicazione è logicamente indistinguibile dalla sua forma contronominale.
 
 4. **Metodo di Dimostrazione per Assurdo (Reductio ad Absurdum):**
-   $$(P \implies Q) \iff [(P \land \neg Q) \implies (R \land \neg R)]$$
+$$(P \implies Q) \iff [(P \land \neg Q) \implies (R \land \neg R)]$$
    Per dimostrare che $P \implies Q$, si assume vera la premessa $P$ e falsa la conclusione $\neg Q$. Se da queste assunzioni congiunte si deduce una contraddizione logica insanabile ($R \land \neg R$), allora la tesi iniziale $Q$ deve necessariamente essere vera.
 
 ## Logica dei Predicati
@@ -161,11 +161,11 @@ $$(\forall x)(\neg Q(x) \implies \neg P(x))$$
 Ossia: *Se $x$ è dispari, allora $x^2$ è dispari.*
 
 1. Assumiamo che $x$ sia dispari. Per definizione, esiste $n \in \mathbb{N} \cup \{0\}$ tale che:
-   $$x = 2n + 1$$
+$$x = 2n + 1$$
 2. Calcoliamo il quadrato di $x$ mediante sviluppo algebrico diretto:
-   $$x^2 = (2n + 1)^2 = 4n^2 + 4n + 1 = 2(2n^2 + 2n) + 1$$
+$$x^2 = (2n + 1)^2 = 4n^2 + 4n + 1 = 2(2n^2 + 2n) + 1$$
 3. Ponendo $k = 2n^2 + 2n \in \mathbb{N}$, otteniamo:
-   $$x^2 = 2k + 1$$
+$$x^2 = 2k + 1$$
    che è esattamente la forma analitica di un numero dispari.
 4. Avendo provato che $\neg Q(x) \implies \neg P(x)$ per ogni $x$, per l'equivalenza contronominale il teorema originale $P(x) \implies Q(x)$ è rigorosamente dimostrato.
 
@@ -179,11 +179,11 @@ Nel percorso di **Analisi Matematica 1** e nella trattazione rigorosa di [[Lectu
 Uno degli errori concettuali più sanzionati nelle prove d'esame riguarda l'inversione dell'ordine dei quantificatori. Consideriamo la definizione di funzione continua rispetto a quella di funzione uniformemente continua (trattata in dettaglio in [[Lecture 14 - Limits of Functions in Terms of Sequences and Continuity]] e [[Lecture 17 - Uniform Continuity and Definition of the Derivative]]):
 
 - **Continuità Puntuale su un intervallo $I$:**
-  $$\forall x_0 \in I, \; \forall \varepsilon > 0, \; \exists \delta > 0 : \forall x \in I, \; |x - x_0| < \delta \implies |f(x) - f(x_0)| < \varepsilon$$
+$$\forall x_0 \in I, \; \forall \varepsilon > 0, \; \exists \delta > 0 : \forall x \in I, \; |x - x_0| < \delta \implies |f(x) - f(x_0)| < \varepsilon$$
   In questa formulazione, il raggio $\delta$ dipende **sia da $\varepsilon$ sia dallo specifico punto $x_0$**: $\delta = \delta(x_0, \varepsilon)$.
 - **Continuità Uniforme su $I$:**
   Scambiando l'ordine e portando la quantificazione su $x_0$ in fondo:
-  $$\forall \varepsilon > 0, \; \exists \delta > 0 : \forall x, x_0 \in I, \; |x - x_0| < \delta \implies |f(x) - f(x_0)| < \varepsilon$$
+$$\forall \varepsilon > 0, \; \exists \delta > 0 : \forall x, x_0 \in I, \; |x - x_0| < \delta \implies |f(x) - f(x_0)| < \varepsilon$$
   Ora un **singolo $\delta = \delta(\varepsilon)$** deve funzionare simultaneamente per qualsiasi coppia di punti nel dominio.
 
 > [!WARNING] Controesempio Tipico d'Esame
@@ -195,17 +195,17 @@ Negare formalmente una definizione quantificata è la tecnica standard richiesta
 1. **Non-convergenza di una successione ad un limite $L$ (da [[Lecture 07 - Convergent Sequences of Real Numbers]]):**
    - Definizione: $\forall \varepsilon > 0, \; \exists N \in \mathbb{N} : \forall n \ge N \implies |a_n - L| < \varepsilon$
    - Negazione formale:
-     $$\exists \varepsilon_0 > 0 : \forall N \in \mathbb{N}, \; \exists n \ge N : |a_n - L| \ge \varepsilon_0$$
+$$\exists \varepsilon_0 > 0 : \forall N \in \mathbb{N}, \; \exists n \ge N : |a_n - L| \ge \varepsilon_0$$
    Questa negazione è lo strumento operativo con cui, in [[Lecture 09 - Limsup, Liminf, and the Bolzano-Weierstrass Theorem]], si estraggono sottosuccessioni che violano la convergenza.
 
 2. **Negazione della Condizione di Cauchy (da [[Lecture 10 - Completeness of Real Numbers and Infinite Series]]):**
    - Condizione di Cauchy: $\forall \varepsilon > 0, \; \exists N \in \mathbb{N} : \forall n, m \ge N \implies |a_n - a_m| < \varepsilon$
    - Negazione:
-     $$\exists \varepsilon_0 > 0 : \forall N \in \mathbb{N}, \; \exists n, m \ge N : |a_n - a_m| \ge \varepsilon_0$$
+$$\exists \varepsilon_0 > 0 : \forall N \in \mathbb{N}, \; \exists n, m \ge N : |a_n - a_m| \ge \varepsilon_0$$
    Applicando questa negazione con $\varepsilon_0 = 1/2$ alla successione delle somme parziali della serie armonica $S_n = \sum_{k=1}^n \frac{1}{k}$ (scegliendo $m = 2n$), si dimostra che essa non è di Cauchy e quindi diverge.
 
 3. **Discontinuità di $f$ in $x_0$ (da [[Lecture 14 - Limits of Functions in Terms of Sequences and Continuity]]):**
-   $$\exists \varepsilon_0 > 0 : \forall \delta > 0, \; \exists x \in \text{dom}(f) : |x - x_0| < \delta \land |f(x) - f(x_0)| \ge \varepsilon_0$$
+$$\exists \varepsilon_0 > 0 : \forall \delta > 0, \; \exists x \in \text{dom}(f) : |x - x_0| < \delta \land |f(x) - f(x_0)| \ge \varepsilon_0$$
 
 ### 3. La Dimostrazione per Contronominale nel Test di Divergenza delle Serie
 In Analisi 1, uno dei teoremi più utilizzati nella pratica degli esercizi è la condizione necessaria di convergenza per le serie numeriche (formalizzata in [[Lecture 10 - Completeness of Real Numbers and Infinite Series]]):
@@ -213,4 +213,3 @@ $$\text{Teorema Diretto: } \sum_{n=1}^{+\infty} a_n \text{ converge} \implies \l
 Applicando la legge della contronominale $(P \implies Q) \iff (\neg Q \implies \neg P)$:
 $$\text{Criterio di Divergenza (Contronominale): } \lim_{n \to +\infty} a_n \neq 0 \text{ (oppure non esiste)} \implies \sum_{n=1}^{+\infty} a_n \text{ non converge}$$
 Poiché verificare se il limite è diverso da zero è spesso immediato, la forma contronominale costituisce il primissimo test da applicare in sede d'esame prima di intraprendere criteri di convergenza complessi.
-

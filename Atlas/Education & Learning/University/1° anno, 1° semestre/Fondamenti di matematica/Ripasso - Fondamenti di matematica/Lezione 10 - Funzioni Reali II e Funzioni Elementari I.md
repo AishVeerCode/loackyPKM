@@ -26,13 +26,13 @@ In continuità con l'analisi funzionale sviluppata in [[Lezione 9 - Funzioni Rea
 ### Definizioni Fondamentali
 Sia $f: A \subseteq \mathbb{R} \to \mathbb{R}$ una funzione reale di variabile reale:
 - **Crescente:** se per ogni coppia di punti $x_1, x_2 \in A$:
-  $$x_1 < x_2 \implies f(x_1) \le f(x_2)$$
+$$x_1 < x_2 \implies f(x_1) \le f(x_2)$$
 - **Decrescente:** se per ogni coppia di punti $x_1, x_2 \in A$:
-  $$x_1 < x_2 \implies f(x_1) \ge f(x_2)$$
+$$x_1 < x_2 \implies f(x_1) \ge f(x_2)$$
 - **Strettamente crescente:** se per ogni coppia di punti $x_1, x_2 \in A$:
-  $$x_1 < x_2 \implies f(x_1) < f(x_2)$$
+$$x_1 < x_2 \implies f(x_1) < f(x_2)$$
 - **Strettamente decrescente:** se per ogni coppia di punti $x_1, x_2 \in A$:
-  $$x_1 < x_2 \implies f(x_1) > f(x_2)$$
+$$x_1 < x_2 \implies f(x_1) > f(x_2)$$
 
 Una funzione che soddisfa una delle prime due proprietà si dice **monotona**; se soddisfa una delle ultime due, si dice <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>strettamente monotona</b></font></mark>. Se la proprietà vale restringendo il dominio a un sottoinsieme $B \subseteq A$, si afferma che $f$ è monotona (o strettamente monotona) in $B$ tramite la restrizione $f|_B$.
 
@@ -51,19 +51,19 @@ flowchart TD
 Consideriamo la funzione potenza $f: \mathbb{R}_+ \to \mathbb{R}_+$, $f(x) = x^n$ con $n \in \mathbb{N}^*$. Si dimostra che $f$ è strettamente crescente su $\mathbb{R}_+$ mediante il principio di induzione su $n$:
 1. **Base induttiva ($n = 1$):** $P(1)$ asserisce $0 \le x_1 < x_2 \implies x_1 < x_2$, banalmente vera.
 2. **Passo induttivo ($P(n) \implies P(n+1)$):** Assumendo vera $0 \le x_1^n < x_2^n$, moltiplicando per $x_1 \ge 0$ e $x_2^n > 0$:
-   $$x_1^{n+1} \le x_1 x_2^n \quad \land \quad x_1 x_2^n < x_2^{n+1} \implies 0 \le x_1^{n+1} < x_2^{n+1}$$
+$$x_1^{n+1} \le x_1 x_2^n \quad \land \quad x_1 x_2^n < x_2^{n+1} \implies 0 \le x_1^{n+1} < x_2^{n+1}$$
    Dunque $P(n+1)$ è verificata per ogni $n \in \mathbb{N}^*$.
 
 ### Esercizi Notevoli di Monotonia
 1. **Verifica per $f: \mathbb{R}_+^* \to \mathbb{R}$, $f(x) = \frac{x}{1+x}$:**
    Riscrivendo l'espressione dividendo numeratore e denominatore per $x$:
-   $$f(x) = \frac{1}{1 + 1/x}$$
+$$f(x) = \frac{1}{1 + 1/x}$$
    Se $0 < x_1 < x_2$, allora $\frac{1}{x_1} > \frac{1}{x_2}$, da cui $1 + \frac{1}{x_1} > 1 + \frac{1}{x_2}$, e invertendo:
-   $$\frac{1}{1 + 1/x_1} < \frac{1}{1 + 1/x_2} \implies f(x_1) < f(x_2)$$
+$$\frac{1}{1 + 1/x_1} < \frac{1}{1 + 1/x_2} \implies f(x_1) < f(x_2)$$
    Pertanto $f$ è strettamente crescente su $\mathbb{R}_+^*$.
 2. **Verifica per $f: ]1, +\infty[ \to \mathbb{R}$, $f(x) = \frac{x}{1+x^2}$:**
    Siano $1 < x_1 < x_2$. La condizione di stretta decrescenza $f(x_1) > f(x_2)$ equivale a:
-   $$\frac{x_1}{1+x_1^2} > \frac{x_2}{1+x_2^2} \iff x_1(1+x_2^2) > x_2(1+x_1^2) \iff x_1 x_2(x_2 - x_1) > x_2 - x_1$$
+$$\frac{x_1}{1+x_1^2} > \frac{x_2}{1+x_2^2} \iff x_1(1+x_2^2) > x_2(1+x_1^2) \iff x_1 x_2(x_2 - x_1) > x_2 - x_1$$
    Poiché $x_2 - x_1 > 0$, dividendo per $x_2 - x_1$ si ottiene $x_1 x_2 > 1$, identità sempre vera essendo $x_1, x_2 > 1$. La funzione è quindi strettamente decrescente su $]1, +\infty[$.
 
 > [!NOTE] Funzioni prive di intervalli di monotonia
@@ -135,7 +135,7 @@ si chiama <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c
 - Se $b = 0$, la funzione $f(x) = ax$ è detta **lineare**.
 - Se $a = 0$, la funzione $f(x) = b$ è costante (quindi pari).
 - Se $a \ne 0$, la funzione è biiettiva su tutto $\mathbb{R}$ e la sua inversa è anch'essa affine:
-  $$f^{-1}(y) = \frac{1}{a}y - \frac{b}{a}$$
+$$f^{-1}(y) = \frac{1}{a}y - \frac{b}{a}$$
 - La composizione di due funzioni affini è ancora una funzione affine.
 
 ### 2. Funzione Potenza ad Esponente Intero Naturale

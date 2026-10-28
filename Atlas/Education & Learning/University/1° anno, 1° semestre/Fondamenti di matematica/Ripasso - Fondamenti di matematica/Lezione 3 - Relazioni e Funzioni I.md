@@ -57,7 +57,7 @@ $$A \times B = \{(x, y) \mid x \in A \land y \in B\}$$
 
 Esempi:
 - Discreto: Se $A = \{a, b, c\}$ e $B = \{d, e\}$, allora:
-  $$A \times B = \{(a, d), (a, e), (b, d), (b, e), (c, d), (c, e)\}$$
+$$A \times B = \{(a, d), (a, e), (b, d), (b, e), (c, d), (c, e)\}$$
 - Continuo: Se $A = [1, 4]$ e $B = [2, 3]$, il prodotto $A \times B$ rappresenta un rettangolo compatto nel piano reale $\mathbb{R}^2 = \mathbb{R} \times \mathbb{R}$.
 
 ## Relazioni e Corrispondenze
@@ -84,9 +84,9 @@ $$(\forall x \in A)(\exists! y \in B)((x, y) \in R)$$
 
 Tale condizione universale si decompone in due requisiti inderogabili:
 1. **Esistenza (Totalità sul dominio):**
-   $$(\forall x \in A)(\exists y \in B)((x, y) \in R) \iff \text{dom}(R) = A$$
+$$(\forall x \in A)(\exists y \in B)((x, y) \in R) \iff \text{dom}(R) = A$$
 2. **Unicità (Univocità del valore):**
-   $$(\forall x \in A)(\forall y_1, y_2 \in B)\left(((x, y_1) \in R \land (x, y_2) \in R) \implies y_1 = y_2\right)$$
+$$(\forall x \in A)(\forall y_1, y_2 \in B)\left(((x, y_1) \in R \land (x, y_2) \in R) \implies y_1 = y_2\right)$$
 
 L'unico elemento $y \in B$ tale che $(x, y) \in R$ si indica con $f(x)$ e si definisce **immagine** di $x$ mediante $f$.
 La scrittura canonica è:
@@ -109,36 +109,36 @@ Una relazione geometrica nel piano cartesiano rappresenta una funzione se e solo
 Sia data un'applicazione $f: A \to B$.
 
 1. **Immagine Diretta:** Sia $X \subseteq A$. L'immagine di $X$ mediante $f$ è l'insieme dei valori assunti dalla funzione sugli elementi di $X$:
-   $$f(X) := \{y \in B \mid \exists x \in X : f(x) = y\} = \{f(x) \in B \mid x \in X\}$$
+$$f(X) := \{y \in B \mid \exists x \in X : f(x) = y\} = \{f(x) \in B \mid x \in X\}$$
    L'insieme $f(A) \subseteq B$ è detto **immagine della funzione $f$**, spesso denotato con $\text{Im}(f)$.
 
 2. **Controimmagine (o Immagine Inversa):** Sia $Y \subseteq B$. La controimmagine di $Y$ mediante $f$ è l'insieme di tutti gli elementi del dominio che mappano all'interno di $Y$:
-   $$f^{-1}(Y) := \{x \in A \mid f(x) \in Y\}$$
+$$f^{-1}(Y) := \{x \in A \mid f(x) \in Y\}$$
 
 ### Esempio Esplicativo
 Siano $A = \{1, 2, 3\}$, $B = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\}$ e la legge $f(x) = x^2 + 1$.
 - Se $X = \{1, 2\}$, allora $f(1) = 2$ e $f(2) = 5$, per cui:
-  $$f(X) = \{2, 5\}$$
+$$f(X) = \{2, 5\}$$
 - Se $Y = \{5, 6, 7, 8, 9, 10\}$, calcoliamo quali elementi di $A$ hanno immagine in $Y$:
   $f(1) = 2 \notin Y$, $f(2) = 5 \in Y$, $f(3) = 10 \in Y$, per cui:
-  $$f^{-1}(Y) = \{2, 3\}$$
+$$f^{-1}(Y) = \{2, 3\}$$
 
 ### Proprietà Algebriche di Immagine e Controimmagine
 Siano $X_1, X_2 \subseteq A$ e $Y_1, Y_2 \subseteq B$:
 
 - **Monotonia:**
-  $$X_1 \subseteq X_2 \implies f(X_1) \subseteq f(X_2)$$
-  $$Y_1 \subseteq Y_2 \implies f^{-1}(Y_1) \subseteq f^{-1}(Y_2)$$
+$$X_1 \subseteq X_2 \implies f(X_1) \subseteq f(X_2)$$
+$$Y_1 \subseteq Y_2 \implies f^{-1}(Y_1) \subseteq f^{-1}(Y_2)$$
 - **Comportamento rispetto all'unione:**
-  $$f(X_1 \cup X_2) = f(X_1) \cup f(X_2)$$
-  $$f^{-1}(Y_1 \cup Y_2) = f^{-1}(Y_1) \cup f^{-1}(Y_2)$$
+$$f(X_1 \cup X_2) = f(X_1) \cup f(X_2)$$
+$$f^{-1}(Y_1 \cup Y_2) = f^{-1}(Y_1) \cup f^{-1}(Y_2)$$
 - **Comportamento rispetto all'intersezione (Asimmetria fondamentale):**
-  $$f(X_1 \cap X_2) \subseteq f(X_1) \cap f(X_2)$$
+$$f(X_1 \cap X_2) \subseteq f(X_1) \cap f(X_2)$$
   *Attenzione:* L'inclusione inversa per l'immagine diretta non vale in generale! Se due elementi distinti $x_1 \neq x_2$ possiedono la stessa immagine $y = f(x_1) = f(x_2)$, posti $X_1 = \{x_1\}$ e $X_2 = \{x_2\}$ si ha $X_1 \cap X_2 = \emptyset \implies f(X_1 \cap X_2) = \emptyset$, mentre $f(X_1) \cap f(X_2) = \{y\}$.
   Al contrario, per la controimmagine sussiste l'uguaglianza perfetta:
-  $$f^{-1}(Y_1 \cap Y_2) = f^{-1}(Y_1) \cap f^{-1}(Y_2)$$
+$$f^{-1}(Y_1 \cap Y_2) = f^{-1}(Y_1) \cap f^{-1}(Y_2)$$
 - **Composizione diretta/inversa:**
-  $$X \subseteq f^{-1}(f(X)) \quad \text{e} \quad f(f^{-1}(Y)) \subseteq Y$$
+$$X \subseteq f^{-1}(f(X)) \quad \text{e} \quad f(f^{-1}(Y)) \subseteq Y$$
 
 ## Restrizioni e Famiglie
 
@@ -150,8 +150,8 @@ In forma di terna: $f|_X = (X, B, R|_X)$, dove $R|_X = \{(x, y) \in R \mid x \in
 ### Famiglie Indicizzate di Elementi e di Parti
 - **Famiglia di elementi:** Una funzione $a: I \to A$, dove $I$ è un insieme d'indici, viene comunemente chiamata famiglia di elementi di $A$ e denotata con $(a_i)_{i \in I}$, indicando il valore $a(i)$ con il pedice $a_i$.
 - **Famiglia di parti:** Una funzione $F: I \to \mathcal{P}(A)$ è detta famiglia di parti di $A$, denotata con $(F_i)_{i \in I}$. L'unione e l'intersezione generalizzata della famiglia assumono la forma:
-  $$\bigcup_{i \in I} F_i = \{x \in A \mid (\exists i \in I)(x \in F_i)\}$$
-  $$\bigcap_{i \in I} F_i = \{x \in A \mid (\forall i \in I)(x \in F_i)\}$$
+$$\bigcup_{i \in I} F_i = \{x \in A \mid (\exists i \in I)(x \in F_i)\}$$
+$$\bigcap_{i \in I} F_i = \{x \in A \mid (\forall i \in I)(x \in F_i)\}$$
 
 ---
 
@@ -163,11 +163,11 @@ In **Analisi Matematica 1** e nella trattazione di [[Lecture 04 - The Characteri
 Una relazione binaria $\sim$ su un insieme $X$ è detta di **equivalenza** se è riflessiva ($x \sim x$), simmetrica ($x \sim y \implies y \sim x$) e transitiva ($x \sim y \land y \sim z \implies x \sim z$). L'insieme quoziente $X / \sim$ partiziona $X$ in classi disgiunte:
 1. **Costruzione dei Numeri Razionali $\mathbb{Q}$:**
    Sul prodotto cartesiano $\mathbb{Z} \times \mathbb{N}^*$ si definisce la relazione:
-   $$(m, n) \sim (p, q) \iff mq = np$$
+$$(m, n) \sim (p, q) \iff mq = np$$
    Ogni frazione $\frac{m}{n}$ è la classe di equivalenza $[(m, n)]_\sim$ di tutte le coppie che rappresentano lo stesso rapporto.
 2. **Costruzione di Cauchy dei Numeri Reali $\mathbb{R}$ (da [[Lecture 10 - Completeness of Real Numbers and Infinite Series]]):**
    Sia $\mathcal{C}$ lo spazio di tutte le successioni di Cauchy a valori in $\mathbb{Q}$. Si definisce l'equivalenza:
-   $$(x_n) \sim (y_n) \iff \lim_{n \to \infty} |x_n - y_n| = 0$$
+$$(x_n) \sim (y_n) \iff \lim_{n \to \infty} |x_n - y_n| = 0$$
    Il campo reale $\mathbb{R}$ è canonicamente isomorfo all'insieme quoziente $\mathcal{C} / \sim$.
 
 ### 2. Relazioni d'Ordine Totale su $\mathbb{R}$ e Tricotomia
@@ -193,4 +193,3 @@ $$\forall V \subseteq \mathbb{R} \text{ aperto} \implies f^{-1}(V) \text{ è ape
 In Analisi 1, una successione reale non è una lista intuitiva di valori, ma formalmente un'applicazione:
 $$a: \mathbb{N} \to \mathbb{R}, \qquad n \mapsto a_n$$
 L'insieme di indici è $I = \mathbb{N}$. Una **sottosuccessione** (introdotta in [[Lecture 09 - Limsup, Liminf, and the Bolzano-Weierstrass Theorem]]) è la composizione $a \circ \sigma$ con una funzione d'indici strettamente crescente $\sigma: \mathbb{N} \to \mathbb{N}$ ($\sigma(k) = n_k$ con $n_1 < n_2 < \dots$).
-
