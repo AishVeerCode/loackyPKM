@@ -2,20 +2,20 @@
 status: permanent
 type: summary
 area: education
-related: ["[[Lezione 1 - Logica delle Proposizioni e dei Predicati]]", "[[Lezione 2 - Teoria Assiomatica degli Insiemi]]", "[[Lezione 3 - Relazioni e Funzioni I]]", "[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lezione 5 - i Numeri Reali e Assioma di Completezza]]", "[[Lezione 6 - Valore Assoluto e Numeri Naturali]]", "[[Lezione 7 - Insiemi Numerici N Z e Q]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]", "[[Lezione 9 - Funzioni Reali ed Estremi]]", "[[Lezione 10 - Funzioni Reali II e Funzioni Elementari I]]", "[[Lezione 11 - Funzioni Reali Elementari II]]", "[[Lezione 12 - Limiti I Retta Reale Ampliata e Definizione]]", "[[Lezione 13 - Limiti II Restrizioni Limiti Laterali e Successioni]]", "[[Lezione 14 - Limiti di Successioni e Proprieta Locali]]", "[[Lezione 15 - Proprieta dei Limiti]]", "[[Lezione 17 - Limiti delle Funzioni Composte e Confronto Locale]]", "[[Lezione 18 - Gerarchie di Infiniti e Infinitesimi e Continuita I]]", "[[Lezione 19 - Funzioni Continue e Punti di Discontinuita]]", "[[Lezione 20 - Continuita delle Funzioni Monotone e Limiti Notevoli]]", "[[Assiomi, proposizioni ecc...]]", "[[University]]"]
+related: ["[[Lezione 1 - Logica delle Proposizioni e dei Predicati]]", "[[Lezione 2 - Teoria Assiomatica degli Insiemi]]", "[[Lezione 3 - Relazioni e Funzioni I]]", "[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lezione 5 - i Numeri Reali e Assioma di Completezza]]", "[[Lezione 6 - Valore Assoluto e Numeri Naturali]]", "[[Lezione 7 - Insiemi Numerici N Z e Q]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]", "[[Lezione 9 - Funzioni Reali ed Estremi]]", "[[Lezione 10 - Funzioni Reali II e Funzioni Elementari I]]", "[[Lezione 11 - Funzioni Reali Elementari II]]", "[[Lezione 12 - Limiti I Retta Reale Ampliata e Definizione]]", "[[Lezione 13 - Limiti II Restrizioni Limiti Laterali e Successioni]]", "[[Lezione 14 - Limiti di Successioni e Proprieta Locali]]", "[[Lezione 15 - Proprieta dei Limiti]]", "[[Lezione 17 - Limiti delle Funzioni Composte e Confronto Locale]]", "[[Lezione 18 - Gerarchie di Infiniti e Infinitesimi e Continuita I]]", "[[Lezione 19 - Funzioni Continue e Punti di Discontinuita]]", "[[Lezione 20 - Continuita delle Funzioni Monotone e Limiti Notevoli]]", "[[Lezione 21 - Teoremi di Bolzano e Proprieta Topologiche per Successioni]]", "[[Lezione 22 - Valori Intermedi Punti Fissi e Teorema di Bolzano-Weierstrass]]", "[[Lezione 23 - Insiemi Compatti Teorema di Weierstrass e Successioni per Ricorrenza]]", "[[Lezione 24 - Serie Numeriche I Definizioni Proprieta e Serie Geometrica]]", "[[Lezione 25 - Serie Numeriche II Serie Resto e Criteri di Confronto]]", "[[Lezione 26 - Serie Numeriche III Criteri della Radice e del Rapporto e Condensazione di Cauchy]]", "[[Lezione 27 - Serie Numeriche IV Criterio di Leibniz Convergenza Assoluta e Serie Esponenziale]]", "[[Assiomi, proposizioni ecc...]]", "[[University]]"]
 aliases: ["Dimostrazioni", "Dimostrazioni Fondamenti di Matematica", "Raccolta Dimostrazioni Lezioni 1-20"]
-source: ["Lezione 1.pdf", "Lezione 2.pdf", "Lezione 3.pdf", "Lezione 4.pdf", "Lezione 5.pdf", "Lezione 6.pdf", "Lezione 7.pdf", "Lezione 8.pdf", "Lezione 9.pdf", "Lezione 10.pdf", "Lezione 11.pdf", "Lezione 12.pdf", "Lezione 13.pdf", "Lezione 14.pdf", "Lezione 15.pdf", "Lezione 17.pdf", "Lezione 18.pdf", "Lezione 19.pdf", "Lezione 20.pdf"]
+source: ["Lezione 1.pdf", "Lezione 2.pdf", "Lezione 3.pdf", "Lezione 4.pdf", "Lezione 5.pdf", "Lezione 6.pdf", "Lezione 7.pdf", "Lezione 8.pdf", "Lezione 9.pdf", "Lezione 10.pdf", "Lezione 11.pdf", "Lezione 12.pdf", "Lezione 13.pdf", "Lezione 14.pdf", "Lezione 15.pdf", "Lezione 17.pdf", "Lezione 18.pdf", "Lezione 19.pdf", "Lezione 20.pdf", "Lezione 21.pdf", "Lezione 22.pdf", "Lezione 23.pdf", "Lezione 24.pdf", "Lezione 25.pdf", "Lezione 26.pdf", "Lezione 27.pdf"]
 title: "Dimostrazioni"
 date: '2026-10-15'
-updated: '2026-10-28T22:15'
+updated: '2026-11-08T01:15'
 tags: [education/university, education/matematica, education/dimostrazioni]
-summary: "Compendio integrale e rigoroso di tutte le dimostrazioni matematiche svolte nel corso di Fondamenti di Matematica dalla Lezione 1 alla Lezione 20."
+summary: "Compendio integrale e rigoroso di tutte le dimostrazioni matematiche svolte nel corso di Fondamenti di Matematica dalla Lezione 1 alla Lezione 27."
 ---
 [[Home MOC|Home]] / [[Education & Learning]] / [[University]] / [[Dimostrazioni]]
 
 # Dimostrazioni
 
-Raccolta esaustiva di tutte le dimostrazioni analitiche e algebriche svolte nelle Lezioni da 1 a 20 del corso di Fondamenti di Matematica, articolate con passaggi logico-deduttivi formali, esplicitazione delle ipotesi e verifica delle tesi.
+Raccolta esaustiva di tutte le dimostrazioni analitiche e algebriche svolte nelle Lezioni da 1 a 27 del corso di Fondamenti di Matematica, articolate con passaggi logico-deduttivi formali, esplicitazione delle ipotesi e verifica delle tesi.
 
 ---
 
@@ -1559,5 +1559,836 @@ Poiché $\lim_{x \to 0} \frac{\sin x}{x} = 1$ e per continuità del coseno $\lim
 $$\lim_{x \to 0} \frac{1 - \cos x}{x^2} = (1)^2 \cdot \frac{1}{1 + 1} = \frac{1}{2}$$
 2. **Per la tangente:** Scrivendo $\tan x = \frac{\sin x}{\cos x}$:
 $$\lim_{x \to 0} \frac{\tan x}{x} = \lim_{x \to 0} \left(\frac{\sin x}{x} \cdot \frac{1}{\cos x}\right) = \left(\lim_{x \to 0} \frac{\sin x}{x}\right) \cdot \left(\lim_{x \to 0} \frac{1}{\cos x}\right) = 1 \cdot \frac{1}{1} = 1$$
+
+$$\blacksquare$$
+
+
+---
+
+## Lezione 21: Teoremi di Bolzano e Proprietà Topologiche per Successioni
+
+### Proposizione 1.6: Proprietà di Minimo della Chiusura
+>[!important] Enunciato
+>Per ogni insieme $A \subset \mathbb{R}$, l'aderenza $\overline{A}$ è un insieme chiuso ed è il più piccolo insieme chiuso contenente $A$ (ovvero $\overline{\overline{A}} = \overline{A}$).
+
+**Dimostrazione:**
+Ricordiamo che se $U$ è un intorno di un punto $x$, allora $U$ è intorno di ogni punto $y$ sufficientemente vicino a $x$ (proprietà di apertura degli intorni).
+Proviamo che $\overline{\overline{A}} \subset \overline{A}$ (essendo $\overline{A} \subset \overline{\overline{A}}$ sempre verificata).
+Sia $x \in \overline{\overline{A}}$. Allora per ogni intorno $U \in \mathcal{U}(x)$ si ha $U \cap \overline{A} \neq \emptyset$.
+Sia dunque $y \in U \cap \overline{A}$. Poiché $y \in U$ ed essendo $U$ un intorno aperto, $U$ è anche un intorno del punto $y$.
+Dato che $y \in \overline{A}$, per la definizione di aderenza ogni intorno di $y$ interseca $A$, e in particolare $U \cap A \neq \emptyset$.
+Poiché ciò sussiste per ogni intorno $U$ di $x$, deduciamo che $x \in \overline{A}$.
+Dunque $\overline{\overline{A}} = \overline{A}$, il che dimostra che $\overline{A}$ è un insieme chiuso.
+Inoltre, se $C$ è un qualsiasi insieme chiuso tale che $A \subset C$, allora $\overline{A} \subset \overline{C} = C$, provando che $\overline{A}$ è il minimo chiuso contenente $A$.
+
+$$\blacksquare$$
+
+### Teorema 2.1: Caratterizzazione dei Limiti mediante Successioni (Teorema Ponte)
+>[!important] Enunciato
+>Siano $f: A \to \mathbb{R}$, $\ell \in \overline{\mathbb{R}}$ e $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $A$. Allora:
+>$$\lim_{x \to x_0} f(x) = \ell \iff \left( \forall (a_n)_{n \in \mathbb{N}} \in (A \setminus \{x_0\})^{\mathbb{N}}, \ a_n \to x_0 \implies \lim_{n \to +\infty} f(a_n) = \ell \right)$$
+
+**Dimostrazione:**
+1. **(i) $\implies$ (ii):** Supponiamo che $\lim_{x \to x_0} f(x) = \ell$ e sia $(a_n)$ una successione in $A \setminus \{x_0\}$ con $a_n \to x_0$.
+   Sia $V$ un intorno arbitrario di $\ell$. Per la definizione di limite di funzione, esiste un intorno $U \in \mathcal{U}(x_0)$ tale che per ogni $x \in U \cap A \setminus \{x_0\}$ si ha $f(x) \in V$.
+   Dato che $a_n \to x_0$, in corrispondenza dell'intorno $U$ esiste un indice $\nu \in \mathbb{N}$ tale che per ogni $n > \nu$ risulta $a_n \in U$.
+   Poiché per ipotesi $a_n \in A \setminus \{x_0\}$, per ogni $n > \nu$ si ha $a_n \in U \cap A \setminus \{x_0\}$, da cui $f(a_n) \in V$.
+   Ciò prova che $f(a_n) \to \ell$.
+2. **(ii) $\implies$ (i):** Dimostriamo la contronominale: supponiamo per assurdo che non sia vero che $\lim_{x \to x_0} f(x) = \ell$.
+   Allora esiste un intorno $V$ di $\ell$ per cui nessun intorno $U$ di $x_0$ verifica la condizione di limite.
+   Consideriamo una famiglia numerabile di intorni decrescenti di $x_0$:
+$$U_n = \begin{cases} ]x_0 - \frac{1}{n+1}, x_0 + \frac{1}{n+1}[ & \text{se } x_0 \in \mathbb{R} \\ ]n, +\infty] & \text{se } x_0 = +\infty \\ [-\infty, -n[ & \text{se } x_0 = -\infty \end{cases}$$
+   Per ogni $n \in \mathbb{N}$, la proprietà di limite fallisce in $U_n$, dunque esiste un punto $a_n \in U_n \cap A \setminus \{x_0\}$ tale che $f(a_n) \notin V$.
+   La successione $(a_n)$ così costruita soddisfa $a_n \in A \setminus \{x_0\}$ e $a_n \to x_0$, ma la successione immagine $f(a_n)$ non può convergere a $\ell$ poiché tutti i suoi elementi giacciono fuori da $V$.
+   Ciò contraddice l'ipotesi (ii).
+
+$$\blacksquare$$
+
+### Teorema 2.2: Caratterizzazione Sequenziale della Continuità
+>[!important] Enunciato
+>Siano $f: A \to \mathbb{R}$ e $x_0 \in A$. La funzione $f$ è continua in $x_0$ se e solo se per ogni successione $(a_n)_{n \in \mathbb{N}}$ in $A$ con $a_n \to x_0$, risulta:
+>$$\lim_{n \to +\infty} f(a_n) = f(x_0)$$
+
+**Dimostrazione:**
+Se $x_0$ è un punto isolato di $A$, $f$ è automaticamente continua in $x_0$; d'altra parte ogni successione in $A$ che converge a $x_0$ è definitivamente costante ($a_n = x_0$), per cui $f(a_n) = f(x_0)$ definitivamente e l'equivalenza è banale.
+Se $x_0$ è punto di accumulazione per $A$, l'equivalenza discende direttamente dal Teorema Ponte (Teorema 2.1) ponendo $\ell = f(x_0)$ ed estendendo la convergenza anche nel caso in cui $a_n$ assuma il valore $x_0$, essendo in tal caso $f(a_n) = f(x_0) \in V$.
+
+$$\blacksquare$$
+
+### Proposizione 2.3: Caratterizzazione Sequenziale della Chiusura
+>[!important] Enunciato
+>Sia $A \subset \mathbb{R}$ e $x \in \mathbb{R}$. Allora:
+>$$x \in \overline{A} \iff \exists (a_n)_{n \in \mathbb{N}} \in A^{\mathbb{N}} \quad \text{tale che} \quad \lim_{n \to +\infty} a_n = x$$
+
+**Dimostrazione:**
+1. **$\impliedby$:** Sia $(a_n) \in A^{\mathbb{N}}$ con $a_n \to x$. Per ogni intorno $U \in \mathcal{U}(x)$, per definizione di limite esiste $\nu \in \mathbb{N}$ tale che $a_n \in U$ per ogni $n > \nu$. Poiché $a_n \in A$, si ha $U \cap A \neq \emptyset$, dunque $x \in \overline{A}$.
+2. **$\implies$:** Sia $x \in \overline{A}$. Per ogni $n \in \mathbb{N}$, consideriamo l'intorno sferico $U_n = ]x - \frac{1}{n+1}, x + \frac{1}{n+1}[$. Poiché $x \in \overline{A}$, per ogni $n$ si ha $U_n \cap A \neq \emptyset$. Scegliamo un elemento $a_n \in U_n \cap A$.
+   Si ottiene una successione $(a_n) \in A^{\mathbb{N}}$ che soddisfa:
+$$x - \frac{1}{n+1} < a_n < x + \frac{1}{n+1}$$
+   Per il Teorema dei carabinieri, $\lim_{n \to +\infty} a_n = x$.
+
+$$\blacksquare$$
+
+### Proposizione 2.4: Caratterizzazione Sequenziale degli Insiemi Chiusi
+>[!important] Enunciato
+>Sia $A \subset \mathbb{R}$. Sono equivalenti:
+>- **(i)** $A$ è chiuso in $\mathbb{R}$.
+>- **(ii)** Per ogni successione convergente $(a_n)_{n \in \mathbb{N}}$ di elementi di $A$, il limite appartiene ad $A$ ($a_n \to x \implies x \in A$).
+
+**Dimostrazione:**
+- **(i) $\implies$ (ii):** Sia $(a_n) \in A^{\mathbb{N}}$ con $a_n \to x \in \mathbb{R}$. Per la Proposizione 2.3, $x \in \overline{A}$. Ma per ipotesi $A$ è chiuso, dunque $\overline{A} = A$, da cui $x \in A$.
+- **(ii) $\implies$ (i):** Sia $x \in \overline{A}$. Per la Proposizione 2.3 esiste una successione $(a_n) \in A^{\mathbb{N}}$ tale che $a_n \to x$. Dall'ipotesi (ii) segue che $x \in A$. Dunque $\overline{A} \subset A$, da cui $\overline{A} = A$, provando che $A$ è chiuso.
+
+$$\blacksquare$$
+
+### Teorema 3.1: Teorema degli Zeri di Bolzano (Dimostrazione con Bisezione)
+>[!important] Enunciato
+>Sia $I$ un intervallo di $\mathbb{R}$ e sia $f: I \to \mathbb{R}$ continua. Siano $a, b \in I$ con $a < b$ tali che $f(a)f(b) < 0$. Allora esiste almeno un punto $x_0 \in ]a, b[$ tale che:
+>$$f(x_0) = 0$$
+
+**Dimostrazione:**
+Costruiamo mediante bisezione successiva una successione di intervalli compatti inscatolati $[a_n, b_n]$.
+Poniamo $I_0 = [a_0, b_0]$ con $a_0 = a$ e $b_0 = b$.
+Valutiamo il punto medio $c_0 = (a_0 + b_0)/2$. Se $f(c_0) = 0$, abbiamo trovato lo zero cercato.
+Altrimenti $f(c_0) \neq 0$, e poiché $f(a_0)$ e $f(b_0)$ hanno segni discordi, $f(c_0)$ avrà segno discorde con uno dei due estremi. Selezioniamo il semintervallo a estremi discordi:
+$$I_1 = [a_1, b_1] = \begin{cases} [a_0, c_0] & \text{se } f(a_0)f(c_0) < 0 \\ [c_0, b_0] & \text{se } f(c_0)f(b_0) < 0 \end{cases}$$
+Iterando il procedimento, al passo $n$-esimo controlliamo $c_n = (a_n + b_n)/2$: se $f(c_n) = 0$ il processo termina; altrimenti definiamo $I_{n+1} = [a_{n+1}, b_{n+1}]$ con $f(a_{n+1})f(b_{n+1}) < 0$.
+Si ottiene una successione di intervalli soddisfacente:
+1. $a = a_0 \le a_1 \le \dots \le a_n \le a_{n+1} \le b_{n+1} \le b_n \le \dots \le b_0 = b$;
+2. $b_n - a_n = \frac{b - a}{2^n}$;
+3. $f(a_n) f(b_n) < 0$ per ogni $n \in \mathbb{N}$.
+
+Dalla proprietà (1), $(a_n)$ è monotona crescente e superiormente limitata da $b$, mentre $(b_n)$ è monotona decrescente e inferiormente limitata da $a$. Per il Teorema sui limiti delle successioni monotone, entrambe convergono:
+$$a_n \to x_0 = \sup_{n} a_n \in [a, b], \qquad b_n \to x_1 = \inf_{n} b_n \in [a, b]$$
+Dalla proprietà (2):
+$$x_1 - x_0 = \lim_{n \to +\infty} (b_n - a_n) = \lim_{n \to +\infty} \frac{b - a}{2^n} = 0 \implies x_0 = x_1$$
+Dunque entrambe le successioni convergono allo stesso punto $x_0$.
+Poiché $f$ è continua in $x_0$, per il Teorema Ponte:
+$$f(a_n) \to f(x_0) \quad \text{e} \quad f(b_n) \to f(x_0) \implies f(a_n) f(b_n) \to [f(x_0)]^2$$
+Poiché $f(a_n)f(b_n) < 0$ per ogni $n$, per il Teorema di permanenza delle disuguaglianze:
+$$[f(x_0)]^2 \le 0 \implies f(x_0) = 0$$
+Infine, poiché $f(a) \neq 0$ e $f(b) \neq 0$, risulta necessariamente $x_0 \in ]a, b[$.
+
+$$\blacksquare$$
+
+### Teorema 4.1: Teorema degli Zeri di Bolzano (Dimostrazione Variazionale)
+>[!important] Enunciato
+>Sia $f: [a, b] \to \mathbb{R}$ continua con $f(a) < 0 < f(b)$. Allora esiste $x_0 \in ]a, b[$ tale che $f(x_0) = 0$.
+
+**Dimostrazione:**
+Definiamo l'insieme:
+$$A = \{x \in [a, b] \mid f(x) < 0\}$$
+- $A \neq \emptyset$ poiché $a \in A$.
+- $A$ è limitato superiormente da $b$.
+Per l'Assioma di completezza dei numeri reali, esiste finito:
+$$x_0 = \sup A \in [a, b]$$
+Per la permanenza del segno:
+1. Poiché $f(a) < 0$, esiste $\delta_1 > 0$ tale che $f(x) < 0$ in $[a, a+\delta_1]$, da cui $a+\delta_1 \le x_0 \implies x_0 > a$.
+2. Poiché $f(b) > 0$, esiste $\delta_2 > 0$ tale che $f(x) > 0$ in $[b-\delta_2, b]$, dunque $[b-\delta_2, b] \cap A = \emptyset$, da cui $x_0 \le b - \delta_2 < b$.
+Quindi $x_0 \in ]a, b[$.
+Mostriamo che non può essere né $f(x_0) < 0$ né $f(x_0) > 0$:
+- Se fosse $f(x_0) < 0$, per la permanenza del segno esisterebbe $\delta > 0$ tale che $f(x) < 0$ per ogni $x \in ]x_0-\delta, x_0+\delta[$. Ma allora $x_0 + \frac{\delta}{2} \in A$, contraddicendo il fatto che $x_0$ sia un maggiorante di $A$.
+- Se fosse $f(x_0) > 0$, per la permanenza del segno esisterebbe $\delta > 0$ tale che $f(x) > 0$ per ogni $x \in ]x_0-\delta, x_0+\delta[$. Allora nessun elemento di $]x_0-\delta, x_0]$ apparterrebbe ad $A$, per cui $x_0 - \delta$ sarebbe un maggiorante di $A$ strettamente minore di $x_0$, contraddicendo il fatto che $x_0$ sia il minimo dei maggioranti.
+L'unica possibilità compatibile è $f(x_0) = 0$.
+
+$$\blacksquare$$
+
+
+---
+
+## Lezione 22: Valori Intermedi, Punti Fissi e Teorema di Bolzano-Weierstrass
+
+### Teorema 1.1: Teorema dei Valori Intermedi di Bolzano (1° Forma)
+>[!important] Enunciato
+>Sia $f: I \to \mathbb{R}$ continua su un intervallo $I \subset \mathbb{R}$. Siano $a, b \in I$ con $f(a) < f(b)$. Allora per ogni $y \in ]f(a), f(b)[$ esiste $x \in I$ tale che $f(x) = y$.
+>Inoltre, posti $m = \inf_I f$ e $M = \sup_I f$, si ha $]m, M[ \subset f(I)$.
+
+**Dimostrazione:**
+Sia $y \in ]f(a), f(b)[$. Definiamo la funzione ausiliaria $g: I \to \mathbb{R}$ ponendo:
+$$g(x) = f(x) - y$$
+La funzione $g$ è continua su $I$ in quanto differenza di funzioni continue. Valutando agli estremi $a$ e $b$:
+$$g(a) = f(a) - y < 0, \qquad g(b) = f(b) - y > 0$$
+Ne consegue che $g(a)g(b) < 0$. Per il Teorema degli zeri di Bolzano (Teorema 3.1 della Lezione 21):
+- Se $a < b$, esiste $x \in ]a, b[ \subset I$ tale che $g(x) = 0$;
+- Se $b < a$, esiste $x \in ]b, a[ \subset I$ tale che $g(x) = 0$.
+In ogni caso esiste $x \in I$ tale che $f(x) - y = 0 \iff f(x) = y$, provando che $[f(a), f(b)] \subset f(I)$.
+Per la seconda parte, sia $y \in ]m, M[$. Dalle proprietà di $\inf$ e $\sup$, esistono due punti $a, b \in I$ tali che $m \le f(a) < y < f(b) \le M$.
+Applicando il risultato precedente all'intervallo di estremi $a$ e $b$, deduciamo che $y \in f(I)$, provando che $]m, M[ \subset f(I)$.
+
+$$\blacksquare$$
+
+### Teorema 1.3: Teorema dei Valori Intermedi (2° Forma Topologica)
+>[!important] Enunciato
+>Sia $f: I \to \mathbb{R}$ una funzione continua definita in un intervallo $I \subset \mathbb{R}$. Allora l'immagine $f(I)$ è un intervallo di $\mathbb{R}$.
+
+**Dimostrazione:**
+Per il Teorema 1.1, l'immagine $f(I)$ contiene l'intervallo aperto $]\inf_I f, \sup_I f[$.
+D'altra parte, per definizione di estremo inferiore e superiore, ogni valore $f(x)$ è compreso tra essi:
+$$f(I) \subset [\inf_I f, \sup_I f]$$
+Pertanto $f(I)$ è necessariamente un intervallo di estremi $\inf_I f$ e $\sup_I f$ (aperto, chiuso o semiaperto, limitato o illimitato).
+
+$$\blacksquare$$
+
+### Corollario 1.4: Esistenza ed Unicità della Radice $n$-esima Reale Positiva
+>[!important] Enunciato
+>Per ogni $n \in \mathbb{N}^*$ e ogni $y \in \mathbb{R}^+$, esiste un unico $x \in \mathbb{R}^+$ tale che:
+>$$x^n = y$$
+
+**Dimostrazione:**
+- **Unicità:** La funzione potenza intera $f: \mathbb{R}^+ \to \mathbb{R}^+$, $f(x) = x^n$ è strettamente crescente su $\mathbb{R}^+$ (se $0 \le x_1 < x_2$, allora $x_1^n < x_2^n$). Essendo strettamente monotona, $f$ è iniettiva, dunque il valore $y$ può essere assunto al più una volta.
+- **Esistenza:** Scegliamo $a = 0$ e $b \in \mathbb{R}^+$ con $b > 1$ e $b > y$. Allora:
+$$a^n = 0 \le y < b < b^n$$
+  Poiché la funzione polinomiale $f(x) = x^n$ è continua sull'intervallo $[a, b]$ e $y$ è un valore compreso tra $f(a) = 0$ e $f(b) = b^n$, per il Teorema dei valori intermedi esiste almeno un punto $x \in [a, b] \subset \mathbb{R}^+$ tale che $x^n = y$.
+
+$$\blacksquare$$
+
+### Teorema 2.1: Teorema del Punto Fisso per Intervalli Compatti
+>[!important] Enunciato
+>Sia $g: [a, b] \to [a, b]$ una funzione continua. Allora esiste almeno un punto $x_0 \in [a, b]$ tale che:
+>$$g(x_0) = x_0$$
+
+**Dimostrazione:**
+L'equazione $g(x) = x$ è equivalente a $g(x) - x = 0$.
+Definiamo la funzione $f: [a, b] \to \mathbb{R}$ ponendo $f(x) = g(x) - x$.
+Essendo $g$ continua e la funzione identità continua, $f$ è continua su $[a, b]$.
+Poiché per ipotesi $g([a, b]) \subset [a, b]$, per ogni $x \in [a, b]$ si ha $a \le g(x) \le b$. Valutando agli estremi:
+$$f(a) = g(a) - a \ge a - a = 0$$
+$$f(b) = g(b) - b \le b - b = 0$$
+- Se $f(a) = 0$, allora $g(a) = a$ e $x_0 = a$ è un punto fisso.
+- Se $f(b) = 0$, allora $g(b) = b$ e $x_0 = b$ è un punto fisso.
+- Se $f(a) > 0$ e $f(b) < 0$, allora $f(a)f(b) < 0$. Per il Teorema degli zeri di Bolzano esiste $x_0 \in ]a, b[$ tale che $f(x_0) = 0 \iff g(x_0) = x_0$.
+
+$$\blacksquare$$
+
+### Teorema 2.2: Equivalenza tra Iniettività e Stretta Monotonia su Intervalli
+>[!important] Enunciato
+>Sia $I \subset \mathbb{R}$ un intervallo e sia $f: I \to \mathbb{R}$ una funzione continua. Allora:
+>$$f \text{ è iniettiva} \iff f \text{ è strettamente monotona}$$
+
+**Dimostrazione:**
+- **$\impliedby$:** Banalmente, ogni funzione strettamente monotona su un qualsiasi insieme è sempre iniettiva ($x_1 \neq x_2 \implies x_1 < x_2 \lor x_2 < x_1 \implies f(x_1) < f(x_2) \lor f(x_2) < f(x_1) \implies f(x_1) \neq f(x_2)$).
+- **$\implies$:** Supponiamo che $f$ sia continua e iniettiva sull'intervallo $I$.
+  *Passo 1 (Conservazione dei valori intermedi):* Proviamo che per ogni terna $x, y, z \in I$ con $x < y < z$, $f(y)$ è strettamente intermedio tra $f(x)$ e $f(z)$ (cioè $f(x) < f(y) < f(z)$ oppure $f(z) < f(y) < f(x)$).
+  Infatti, per iniettività $f(x), f(y), f(z)$ sono tutti distinti. Se per assurdo $f(y)$ non fosse intermedio, allora $f(y)$ sarebbe o maggiore di entrambi o minore di entrambi:
+  se ad esempio $f(y) > \max(f(x), f(z))$, scegliamo un valore $k$ tale che $\max(f(x), f(z)) < k < f(y)$.
+  Applicando il Teorema dei valori intermedi a $[x, y]$, esiste $c_1 \in ]x, y[$ tale che $f(c_1) = k$.
+  Applicando il Teorema dei valori intermedi a $[y, z]$, esiste $c_2 \in ]y, z[$ tale che $f(c_2) = k$.
+  Ma $c_1 < y < c_2 \implies c_1 \neq c_2$ con $f(c_1) = f(c_2) = k$, contraddicendo l'iniettività di $f$.
+  *Passo 2 (Monotonia globale):* Siano $x_1, x_2 \in I$ con $x_1 < x_2$. Supponiamo senza perdita di generalità $f(x_1) < f(x_2)$.
+  Siano ora due punti arbitrari $x, y \in I$ con $x < y$. Mostriamo che deve essere $f(x) < f(y)$.
+  Ordinando i quattro punti $x_1, x_2, x, y$ sull'intervallo e applicando ripetutamente il Passo 1 alle terne ordinate, il segno della disuguaglianza $f(x_1) < f(x_2)$ si propaga necessariamente a tutte le coppie, provando che $f$ è strettamente crescente su tutto $I$.
+
+$$\blacksquare$$
+
+### Teorema 2.4: Continuità delle Funzioni Inverse
+>[!important] Enunciato
+>Sia $f: I \to \mathbb{R}$ una funzione continua e iniettiva definita in un intervallo $I \subset \mathbb{R}$. Allora la funzione inversa:
+>$$f^{-1}: f(I) \to \mathbb{R}$$
+>è continua su tutto il suo dominio $f(I)$.
+
+**Dimostrazione:**
+Per il Teorema 2.2, essendo $f$ continua e iniettiva su un intervallo, $f$ è strettamente monotona.
+Ne consegue che anche la funzione inversa $f^{-1}: f(I) \to I$ è strettamente monotona (con lo stesso verso di monotonia).
+Per il Teorema 1.3, l'immagine $f(I)$ è un intervallo di $\mathbb{R}$.
+Inoltre, l'immagine della funzione inversa è $f^{-1}(f(I)) = I$, che è un intervallo di $\mathbb{R}$.
+Applicando il Teorema di continuità per immagine intervallo (Teorema 1.4 della Lezione 20): ogni funzione monotona definita su un intervallo la cui immagine è un intervallo è necessariamente continua su tutto il dominio.
+Dunque $f^{-1}$ è continua.
+
+$$\blacksquare$$
+
+### Teorema 3.1: Teorema di Bolzano-Weierstrass per Successioni
+>[!important] Enunciato
+>Da ogni successione reale limitata $(a_n)_{n \in \mathbb{N}}$ è possibile estrarre una sottosuccessione convergente.
+
+**Dimostrazione:**
+Dimostriamo anzitutto che da *qualsiasi* successione reale $(a_n)_{n \in \mathbb{N}}$ si può estrarre una sottosuccessione monotona.
+A tal fine definiamo il concetto di **indice di picco**: un indice $n \in \mathbb{N}$ si dice di picco se:
+$$\forall m \ge n \implies a_n \ge a_m$$
+Sia $P = \{n \in \mathbb{N} \mid n \text{ è indice di picco}\}$. Si presentano due casi:
+1. **$P$ è infinito:** Definiamo per induzione una successione strettamente crescente di indici $(n_k)_{k \in \mathbb{N}}$:
+   - $n_0 = \min P$ (il primo picco);
+   - $n_{k+1} = \min \{n \in P \mid n > n_k\}$ (il picco successivo).
+   L'insieme $\{n \in P \mid n > n_k\}$ è non vuoto per ogni $k$ essendo $P$ infinito.
+   Poiché $n_k$ è di picco e $n_{k+1} > n_k$, per definizione di picco risulta $a_{n_k} \ge a_{n_{k+1}}$.
+   Dunque la successione estratta $(a_{n_k})_{k \in \mathbb{N}}$ è **monotona decrescente**.
+2. **$P$ è finito:** In tal caso esiste un indice $\overline{n} \in \mathbb{N}$ oltre il quale non vi sono più picchi (se $P \neq \emptyset$, $\overline{n} = \max P + 1$; se $P = \emptyset$, $\overline{n} = 0$).
+   Dato che nessun $n \ge \overline{n}$ è di picco, per ogni $n \ge \overline{n}$ esiste un indice $m > n$ tale che $a_m > a_n$.
+   Costruiamo per ricorrenza gli indici:
+   - $n_0 = \overline{n}$;
+   - $n_{k+1} = \min \{m \in \mathbb{N} \mid m > n_k \land a_m > a_{n_k}\}$.
+   Per costruzione $n_{k+1} > n_k$ e $a_{n_{k+1}} > a_{n_k}$. Dunque l'estratta $(a_{n_k})_{k \in \mathbb{N}}$ è **strettamente crescente**.
+
+In entrambi i casi abbiamo estratto una sottosuccessione $(a_{n_k})$ monotona.
+Poiché per ipotesi la successione originaria $(a_n)$ è limitata, anche l'estratta $(a_{n_k})$ è limitata.
+Per il Teorema fondamentale sui limiti delle successioni monotone, ogni successione monotona e limitata converge a un limite finito $\ell \in \mathbb{R}$ (al sup se crescente, all'inf se decrescente).
+Ciò conclude la dimostrazione.
+
+$$\blacksquare$$
+
+
+---
+
+## Lezione 23: Insiemi Compatti, Teorema di Weierstrass e Successioni per Ricorrenza
+
+### Teorema 1.2: Teorema di Heine-Borel in $\mathbb{R}$
+>[!important] Enunciato
+>Sia $A \subset \mathbb{R}$. Sono equivalenti:
+>- **(i)** $A$ è compatto per successioni;
+>- **(ii)** $A$ è chiuso e limitato.
+
+**Dimostrazione:**
+1. **(i) $\implies$ (ii):** Supponiamo che $A$ sia compatto.
+   - **$A$ è limitato:** Se per assurdo $A$ non fosse limitato, per ogni $n \in \mathbb{N}$ esisterebbe un punto $a_n \in A$ con $|a_n| > n$. La successione $(a_n)_{n \in \mathbb{N}}$ diverge in modulo a $+\infty$. Di conseguenza ogni sua sottosuccessione diverge anch'essa in modulo a $+\infty$. Ma per compattezza di $A$, da $(a_n)$ dovrebbe potersi estrarre una sottosuccessione convergente a un punto $x_0 \in A \subset \mathbb{R}$, assurdo. Dunque $A$ è limitato.
+   - **$A$ è chiuso:** Ricordiamo che $x \in \overline{A} \iff \exists (a_n) \in A^{\mathbb{N}}$ con $a_n \to x$. Poiché $A$ è compatto, da $(a_n)$ possiamo estrarre una sottosuccessione $(a_{n_k})$ convergente a un certo $x_0 \in A$. Per l'unicità del limite deve essere $x = x_0 \in A$. Ne segue $\overline{A} \subset A$, da cui $\overline{A} = A$, provando che $A$ è chiuso.
+2. **(ii) $\implies$ (i):** Supponiamo che $A$ sia chiuso e limitato.
+   Sia $(a_n)_{n \in \mathbb{N}}$ una qualsiasi successione in $A$. Poiché $A$ è limitato, $(a_n)$ è una successione limitata in $\mathbb{R}$.
+   Per il Teorema di Bolzano-Weierstrass (Teorema 3.1 della Lezione 22), da $(a_n)$ è possibile estrarre una sottosuccessione $(a_{n_k})_{k \in \mathbb{N}}$ convergente a un limite $x_0 \in \mathbb{R}$.
+   Essendo $a_{n_k} \in A$ per ogni $k$, per la caratterizzazione sequenziale della chiusura (Proposizione 2.3 della Lezione 21) si ha $x_0 \in \overline{A}$.
+   Ma per ipotesi $A$ è chiuso, dunque $\overline{A} = A$, da cui segue $x_0 \in A$.
+   Questo prova che ogni successione in $A$ ammette un'estratta convergente in $A$, ovvero $A$ è compatto.
+
+$$\blacksquare$$
+
+### Teorema 2.1: Teorema di Weierstrass sui Massimi e Minimi Assoluti
+>[!important] Enunciato
+>Sia $A \subset \mathbb{R}$ un insieme compatto (chiuso e limitato) e sia $f: A \to \mathbb{R}$ una funzione continua.
+>Allora $f$ ammette massimo e minimo assoluti su $A$:
+>$$\exists x_{\min}, x_{\max} \in A \quad \text{tali che} \quad f(x_{\min}) = \min_{x \in A} f(x) \quad \text{e} \quad f(x_{\max}) = \max_{x \in A} f(x)$$
+
+**Dimostrazione:**
+Dimostriamo l'esistenza del massimo (per il minimo è del tutto analogo considerando $-f$).
+Poniamo $M = \sup_{x \in A} f(x) \in ]-\infty, +\infty]$.
+1. Per definizione di estremo superiore, possiamo costruire una successione reale $(b_n)_{n \in \mathbb{N}}$ tale che $b_n < M$ per ogni $n$ e $b_n \to M$ per $n \to +\infty$ (ad esempio ponendo $b_n = M - \frac{1}{n+1}$ se $M < +\infty$, oppure $b_n = n$ se $M = +\infty$).
+2. Poiché $b_n < \sup_{x \in A} f(x)$, per le proprietà del sup esiste per ogni $n$ un elemento $a_n \in A$ tale che:
+$$b_n < f(a_n) \le M$$
+   Poiché $b_n \to M$, per il Teorema dei carabinieri risulta $\lim_{n \to +\infty} f(a_n) = M$. La successione $(a_n) \in A^{\mathbb{N}}$ è detta **successione massimizzante**.
+3. Poiché per ipotesi $A$ è compatto, per la definizione di compattezza sequenziale esiste una sottosuccessione $(a_{n_k})_{k \in \mathbb{N}}$ convergente a un punto $x_0 \in A$:
+$$\lim_{k \to +\infty} a_{n_k} = x_0 \in A$$
+4. Essendo $f$ continua nel punto $x_0 \in A$, per la caratterizzazione della continuità mediante successioni (Teorema Ponte) si ha:
+$$\lim_{k \to +\infty} f(a_{n_k}) = f(x_0)$$
+   D'altra parte, poiché l'intera successione $f(a_n)$ converge a $M$, anche ogni sua sottosuccessione converge allo stesso limite: $\lim_{k \to +\infty} f(a_{n_k}) = M$.
+   Per l'unicità del limite:
+$$M = f(x_0)$$
+   Dato che $x_0 \in A$, il valore $M$ è assunto dalla funzione su $A$ ed è finito ($f(x_0) \in \mathbb{R}$).
+   Dunque $M = \max_{x \in A} f(x)$ e $x_0$ è un punto di massimo assoluto.
+
+$$\blacksquare$$
+
+### Proposizione 3.1: Convergenza delle Successioni Ricorsive ai Punti Fissi
+>[!important] Enunciato
+>Sia $f: A \to A$ una funzione continua e sia $(a_n)_{n \in \mathbb{N}}$ generata dalla relazione di ricorrenza:
+>$$a_0 \in A, \qquad a_{n+1} = f(a_n) \quad \forall n \ge 0$$
+>Se $(a_n)$ converge a un elemento $\overline{x} \in A$, allora $\overline{x}$ è un punto fisso di $f$:
+>$$f(\overline{x}) = \overline{x}$$
+
+**Dimostrazione:**
+Poiché per ipotesi $\lim_{n \to +\infty} a_n = \overline{x}$ e $f$ è continua su $A$, per la continuità per successioni si ha:
+$$\lim_{n \to +\infty} f(a_n) = f(\overline{x})$$
+D'altra parte, la successione traslata $a_{n+1}$ converge allo stesso limite $\lim_{n \to +\infty} a_{n+1} = \overline{x}$.
+Poiché per definizione di ricorrenza $a_{n+1} = f(a_n)$ per ogni $n \ge 0$, per l'unicità del limite deve essere:
+$$\overline{x} = f(\overline{x})$$
+
+$$\blacksquare$$
+
+### Teorema: Convergenza e Proprietà del Metodo di Erone per la Radice Quadrata
+>[!important] Enunciato
+>Sia $b > 0$. Scelto $a_0 > 0$, la successione definita per ricorrenza da:
+>$$a_{n+1} = \frac{1}{2}\left(a_n + \frac{b}{a_n}\right) = f(a_n)$$
+>con $f: \mathbb{R}_+^* \to \mathbb{R}_+^*$, $f(x) = \frac{1}{2}(x + b/x)$, converge a $\sqrt{b}$.
+
+**Dimostrazione:**
+1. **Ricerca dei punti fissi:**
+$$f(x) = x \iff \frac{1}{2}\left(x + \frac{b}{x}\right) = x \iff x + \frac{b}{x} = 2x \iff \frac{b}{x} = x \iff x^2 = b$$
+   Poiché $x > 0$, l'unico punto fisso in $\mathbb{R}_+^*$ è $x = \sqrt{b}$.
+2. **Stima per eccesso per ogni $x > 0$:**
+$$f(x) - \sqrt{b} = \frac{x}{2} + \frac{b}{2x} - \sqrt{b} = \frac{x^2 + b - 2x\sqrt{b}}{2x} = \frac{(x - \sqrt{b})^2}{2x} \ge 0 \implies f(x) \ge \sqrt{b}$$
+   Ne consegue che per ogni $n \ge 1$, $a_n = f(a_{n-1}) \ge \sqrt{b}$ (ogni termine dal primo in poi sovrastima $\sqrt{b}$).
+3. **Monotonia decrescente per $n \ge 1$:**
+$$a_{n+1} \le a_n \iff \frac{1}{2}\left(a_n + \frac{b}{a_n}\right) \le a_n \iff a_n + \frac{b}{a_n} \le 2a_n \iff \frac{b}{a_n} \le a_n \iff b \le a_n^2 \iff \sqrt{b} \le a_n$$
+   che è vera per quanto provato al punto 2.
+4. **Convergenza:** Essendo $(a_n)_{n \ge 1}$ monotona decrescente e inferiormente limitata da $\sqrt{b}$ (quindi $\sqrt{b} \le a_n \le a_1$), per il Teorema sui limiti delle successioni monotone ammette limite finito $\overline{x} = \lim_{n \to +\infty} a_n \in [\sqrt{b}, a_1]$.
+   Poiché $f$ è continua su $\mathbb{R}_+^*$ e $a_{n+1} = f(a_n)$, per la Proposizione 3.1 il limite $\overline{x}$ deve essere un punto fisso di $f$.
+   Essendo $\sqrt{b}$ l'unico punto fisso positivo, concludiamo che:
+$$\lim_{n \to +\infty} a_n = \sqrt{b}$$
+
+$$\blacksquare$$
+
+
+---
+
+## Lezione 24: Serie Numeriche I - Definizioni, Proprietà e Serie Geometrica
+
+### Teorema 2.1: Somma e Carattere della Serie Geometrica
+>[!important] Enunciato
+>Sia $q \in \mathbb{R}$. Per la serie geometrica $\sum_{n=0}^{+\infty} q^n$, la successione delle somme parziali è data da:
+>$$s_n = \sum_{k=0}^n q^k = \begin{cases} \frac{1 - q^{n+1}}{1 - q} & \text{se } q \neq 1 \\ n + 1 & \text{se } q = 1 \end{cases}$$
+>Al variare di $q \in \mathbb{R}$, il carattere della serie è:
+>$$\sum_{n=0}^{+\infty} q^n = \begin{cases} \frac{1}{1 - q} & \text{se } |q| < 1 \quad \text{(convergente)} \\ +\infty & \text{se } q \ge 1 \quad \text{(divergente a } +\infty) \\ \text{non esiste} & \text{se } q \le -1 \quad \text{(indeterminata)} \end{cases}$$
+
+**Dimostrazione:**
+Se $q = 1$, la ridotta $n$-esima è la somma di $n+1$ termini uguali a $1$:
+$$s_n = \sum_{k=0}^n 1 = n + 1 \implies \lim_{n \to +\infty} s_n = +\infty$$
+Se $q \neq 1$, moltiplicando per $(1 - q)$ la somma telescopica:
+$$(1 - q) s_n = (1 - q)(1 + q + q^2 + \dots + q^n) = (1 + q + \dots + q^n) - (q + q^2 + \dots + q^{n+1}) = 1 - q^{n+1}$$
+Dividendo per $(1 - q)$:
+$$s_n = \frac{1 - q^{n+1}}{1 - q}$$
+Calcolando il limite per $n \to +\infty$, poiché:
+$$\lim_{n \to +\infty} q^{n+1} = \begin{cases} 0 & \text{se } |q| < 1 \\ +\infty & \text{se } q > 1 \\ \text{non esiste} & \text{se } q \le -1 \end{cases}$$
+otteniamo immediatamente:
+- Per $|q| < 1$: $\lim s_n = \frac{1 - 0}{1 - q} = \frac{1}{1 - q}$ (convergente);
+- Per $q > 1$: $\lim s_n = \frac{1 - (+\infty)}{1 - q} = \frac{-\infty}{\text{negativo}} = +\infty$ (divergente);
+- Per $q = -1$: $s_n$ oscilla tra $1$ (per $n$ pari) e $0$ (per $n$ dispari), dunque il limite non esiste;
+- Per $q < -1$: $q^{n+1}$ oscilla con ampiezza divergente, dunque il limite non esiste.
+
+$$\blacksquare$$
+
+### Teorema: Somma della Serie Telescopica di Mengoli
+>[!important] Enunciato
+>La serie di Mengoli $\sum_{n=1}^{+\infty} \frac{1}{n(n+1)}$ è convergente e la sua somma vale $1$.
+
+**Dimostrazione:**
+Scomponiamo il termine generale in fratti semplici:
+$$\frac{1}{n(n+1)} = \frac{1}{n} - \frac{1}{n+1}$$
+Scrivendo la somma parziale $n$-esima:
+$$s_n = \sum_{k=1}^n \left( \frac{1}{k} - \frac{1}{k+1} \right) = \left(1 - \frac{1}{2}\right) + \left(\frac{1}{2} - \frac{1}{3}\right) + \dots + \left(\frac{1}{n} - \frac{1}{n+1}\right)$$
+Tutti i termini intermedi si elidono reciprocamente a due a due, lasciando unicamente il primo e l'ultimo:
+$$s_n = 1 - \frac{1}{n+1}$$
+Passando al limite per $n \to +\infty$:
+$$\sum_{n=1}^{+\infty} \frac{1}{n(n+1)} = \lim_{n \to +\infty} s_n = \lim_{n \to +\infty} \left(1 - \frac{1}{n+1}\right) = 1 - 0 = 1$$
+
+$$\blacksquare$$
+
+### Proposizione 3.1: Linearità della Somma di Serie Numeriche Convergenti
+>[!important] Enunciato
+>Siano $\sum a_n$ e $\sum b_n$ due serie convergenti con somme $A, B \in \mathbb{R}$. Allora $\sum (a_n + b_n)$ converge a $A + B$ e per ogni $\lambda \in \mathbb{R}$, $\sum \lambda a_n$ converge a $\lambda A$.
+
+**Dimostrazione:**
+Per ogni $n \in \mathbb{N}$, per la proprietà di linearità delle somme finite:
+$$\sum_{k=0}^n (a_k + b_k) = \sum_{k=0}^n a_k + \sum_{k=0}^n b_k \qquad \text{e} \qquad \sum_{k=0}^n \lambda a_k = \lambda \sum_{k=0}^n a_k$$
+Passando al limite per $n \to +\infty$, per l'algebra dei limiti finiti in $\mathbb{R}$:
+$$\lim_{n \to +\infty} \sum_{k=0}^n (a_k + b_k) = \lim_{n \to +\infty} \sum_{k=0}^n a_k + \lim_{n \to +\infty} \sum_{k=0}^n b_k = A + B$$
+$$\lim_{n \to +\infty} \sum_{k=0}^n \lambda a_k = \lambda \lim_{n \to +\infty} \sum_{k=0}^n a_k = \lambda A$$
+
+$$\blacksquare$$
+
+### Teorema 3.2: Condizione Necessaria di Convergenza di una Serie
+>[!important] Enunciato
+>Sia $\sum_{n=0}^{+\infty} a_n$ una serie numerica. Allora:
+>$$\sum_{n=0}^{+\infty} a_n \text{ è convergente} \implies \lim_{n \to +\infty} a_n = 0$$
+
+**Dimostrazione:**
+Sia $s_n = \sum_{k=0}^n a_k$ la successione delle somme parziali.
+Per ogni $n \ge 1$, notiamo che:
+$$s_n - s_{n-1} = \sum_{k=0}^n a_k - \sum_{k=0}^{n-1} a_k = a_n$$
+Poiché la serie converge per ipotesi, esiste finito il limite della successione delle somme parziali:
+$$\lim_{n \to +\infty} s_n = s \in \mathbb{R}$$
+Di conseguenza, anche la successione traslata soddisfa $\lim_{n \to +\infty} s_{n-1} = s$.
+Applicando il teorema sul limite della differenza di successioni convergenti:
+$$\lim_{n \to +\infty} a_n = \lim_{n \to +\infty} (s_n - s_{n-1}) = \lim_{n \to +\infty} s_n - \lim_{n \to +\infty} s_{n-1} = s - s = 0$$
+
+$$\blacksquare$$
+
+
+---
+
+## Lezione 25: Serie Numeriche II - Serie Resto, Proprietà Associativa e Criteri di Confronto
+
+### Proposizione 1.1: Invarianza del Carattere della Serie Resto
+>[!important] Enunciato
+>Sia $m \in \mathbb{N}$. La serie $\sum a_n$ e la sua serie resto $R_m = \sum_{n=m+1}^{+\infty} a_n$ hanno esattamente lo stesso carattere. Se sono regolari:
+>$$\sum_{n=0}^{+\infty} a_n = \sum_{k=0}^m a_k + R_m$$
+>Inoltre, se la serie converge, allora $\lim_{m \to +\infty} R_m = 0$.
+
+**Dimostrazione:**
+Sia $s_n = \sum_{k=0}^n a_k$ la somma parziale di $\sum a_n$ e sia $t_n = \sum_{k=1}^n a_{m+k}$ la somma parziale della serie resto $R_m$.
+Per ogni $n \in \mathbb{N}$, sommando i primi $m$ termini:
+$$s_{m+n} = \sum_{k=0}^m a_k + \sum_{k=1}^n a_{m+k} = s_m + t_n \implies t_n = s_{m+n} - s_m$$
+Poiché $s_m$ è una costante finita indipendente da $n$, il limite di $t_n$ per $n \to +\infty$ esiste (finito o infinito) se e solo se esiste il limite di $s_{m+n}$ per $n \to +\infty$.
+Essendo $(s_{m+n})$ un'estratta (coda) di $(s_n)$, essa converge (o diverge) se e solo se converge (o diverge) $(s_n)$.
+Dunque le due serie hanno lo stesso carattere e $R_m = \lim t_n = \lim s_n - s_m = \sum_{n=0}^{+\infty} a_n - \sum_{k=0}^m a_k$.
+Infine, se la serie converge con somma $s \in \mathbb{R}$, allora $\lim_{m \to +\infty} s_m = s$, da cui:
+$$\lim_{m \to +\infty} R_m = \lim_{m \to +\infty} (s - s_m) = s - s = 0$$
+
+$$\blacksquare$$
+
+### Proposizione 1.2: Stabilità del Carattere rispetto a Variazioni di Finiti Termini
+>[!important] Enunciato
+>Il carattere di una serie non si altera se si modifica un numero finito di termini.
+
+**Dimostrazione:**
+Sia $\sum a_n$ la serie originaria e sia $\sum b_n$ la serie ottenuta modificando termini fino a un certo indice $m \in \mathbb{N}$.
+Per ogni $n > m$, risulta $b_n = a_n$.
+Dunque le due serie condividono esattamente la stessa serie resto di ordine $m$:
+$$\sum_{n=m+1}^{+\infty} b_n = \sum_{n=m+1}^{+\infty} a_n$$
+Per la Proposizione 1.1, $\sum b_n$ ha lo stesso carattere della sua serie resto di ordine $m$, la quale ha lo stesso carattere di $\sum a_n$.
+Ne consegue che $\sum b_n$ ha esattamente lo stesso carattere di $\sum a_n$.
+
+$$\blacksquare$$
+
+### Teorema 1.3: Proprietà Associativa per Serie Regolari
+>[!important] Enunciato
+>Sia $\sum_{n=0}^{+\infty} a_n$ una serie regolare e sia $(n_k)_{k \in \mathbb{N}}$ una successione di indici strettamente crescente con $n_0 = 0$.
+>Definendo $b_k = \sum_{i=n_k}^{n_{k+1}-1} a_i$, la serie $\sum_{k=0}^{+\infty} b_k$ è regolare e ha la stessa somma:
+>$$\sum_{k=0}^{+\infty} b_k = \sum_{n=0}^{+\infty} a_n$$
+
+**Dimostrazione:**
+Siano $(s_n)_{n \in \mathbb{N}}$ le somme parziali di $\sum a_n$ e $(t_k)_{k \in \mathbb{N}}$ le somme parziali di $\sum b_k$.
+Per ogni $k \in \mathbb{N}$:
+$$t_k = \sum_{j=0}^k b_j = \sum_{j=0}^k \left( \sum_{i=n_j}^{n_{j+1}-1} a_i \right) = \sum_{i=0}^{n_{k+1}-1} a_i = s_{n_{k+1}-1}$$
+Dunque la successione $(t_k)_{k \in \mathbb{N}}$ non è altro che una sottosuccessione estratta della successione delle somme parziali $(s_n)_{n \in \mathbb{N}}$, con indici $\sigma_k = n_{k+1}-1$.
+Poiché la serie $\sum a_n$ è regolare per ipotesi, la successione $(s_n)$ ammette limite $\lim_{n \to +\infty} s_n = s \in \overline{\mathbb{R}}$.
+Dal teorema sui limiti delle successioni estratte, ogni sottosuccessione di una successione convergente (o divergente) converge allo stesso limite:
+$$\lim_{k \to +\infty} t_k = \lim_{k \to +\infty} s_{\sigma_k} = s$$
+Dunque la serie $\sum b_k$ è regolare e ha somma identica a $\sum a_n$.
+
+$$\blacksquare$$
+
+### Teorema 2.2: Regolarità delle Serie a Termini Positivi
+>[!important] Enunciato
+>Ogni serie a termini positivi $\sum a_n$ ($a_n \ge 0$ per ogni $n$) è sempre regolare:
+>$$\sum_{n=0}^{+\infty} a_n \in [0, +\infty]$$
+>dunque è convergente oppure divergente a $+\infty$.
+
+**Dimostrazione:**
+Sia $s_n = \sum_{k=0}^n a_k$ la successione delle somme parziali. Essendo $a_n \ge 0$, per ogni $n \in \mathbb{N}$:
+$$s_{n+1} = s_n + a_{n+1} \ge s_n$$
+Dunque la successione $(s_n)_{n \in \mathbb{N}}$ è monotona crescente.
+Per il Teorema sui limiti delle funzioni e successioni monotone, ogni successione monotona crescente ammette sempre limite in $\overline{\mathbb{R}}$, coincidente con il suo estremo superiore:
+$$\lim_{n \to +\infty} s_n = \sup_{n \in \mathbb{N}} s_n \in [0, +\infty]$$
+Ciò esclude categoricamente l'oscillazione o indeterminatezza, provando che la serie o converge a un valore finito o diverge a $+\infty$.
+
+$$\blacksquare$$
+
+### Teorema 2.3: Divergenza della Serie Armonica (Dimostrazione di Oresme)
+>[!important] Enunciato
+>La serie armonica $\sum_{n=1}^{+\infty} \frac{1}{n}$ è divergente positivamente a $+\infty$.
+
+**Dimostrazione:**
+Consideriamo la ridotta associata alle potenze di $2$, cioè per $n = 2^k$ con $k \in \mathbb{N}^*$:
+$$s_{2^k} = 1 + \frac{1}{2} + \left( \frac{1}{3} + \frac{1}{4} \right) + \left( \frac{1}{5} + \frac{1}{6} + \frac{1}{7} + \frac{1}{8} \right) + \dots + \left( \frac{1}{2^{k-1}+1} + \dots + \frac{1}{2^k} \right)$$
+Ciascun blocco tra parentesi contiene $2^{j-1}$ termini, ciascuno dei quali è maggiore o uguale all'ultimo termine del blocco $\frac{1}{2^j}$. Pertanto:
+$$\sum_{i=2^{j-1}+1}^{2^j} \frac{1}{i} > 2^{j-1} \cdot \frac{1}{2^j} = \frac{1}{2}$$
+Sostituendo tale minorazione per ciascuno dei $k-1$ blocchi successivi a $1 + 1/2$:
+$$s_{2^k} > 1 + \frac{1}{2} + \underbrace{\frac{1}{2} + \dots + \frac{1}{2}}_{k-1 \text{ volte}} = 1 + \frac{k}{2}$$
+Poiché $\lim_{k \to +\infty} (1 + k/2) = +\infty$, la sottosuccessione $(s_{2^k})$ diverge a $+\infty$.
+Essendo la serie a termini positivi, per il Teorema 2.2 essa è regolare, per cui l'intera successione delle somme parziali ammette lo stesso limite della sottosuccessione:
+$$\sum_{n=1}^{+\infty} \frac{1}{n} = \lim_{n \to +\infty} s_n = +\infty$$
+
+$$\blacksquare$$
+
+### Teorema 3.1: Criterio del Confronto per Serie a Termini Positivi
+>[!important] Enunciato
+>Siano $\sum a_n$ e $\sum b_n$ due serie a termini positivi tali che $a_n \le b_n$ definitivamente. Allora:
+>- **(i)** $\sum b_n$ converge $\implies \sum a_n$ converge;
+>- **(ii)** $\sum a_n$ diverge a $+\infty \implies \sum b_n$ diverge a $+\infty$.
+
+**Dimostrazione:**
+Supponiamo senza perdita di generalità (per la stabilità del carattere) che $a_n \le b_n$ per ogni $n \in \mathbb{N}$.
+Siano $s_n = \sum_{k=0}^n a_k$ e $t_n = \sum_{k=0}^n b_k$.
+Sommando termine a termine le disuguaglianze, per ogni $n \in \mathbb{N}$:
+$$s_n \le t_n$$
+Poiché entrambe le serie sono a termini positivi, per il Teorema 2.2 esistono i limiti:
+$$s = \lim_{n \to +\infty} s_n = \sum_{n=0}^{+\infty} a_n \in [0, +\infty], \qquad t = \lim_{n \to +\infty} t_n = \sum_{n=0}^{+\infty} b_n \in [0, +\infty]$$
+Per il Teorema di prolungamento delle disuguaglianze:
+$$s \le t$$
+- Se $\sum b_n$ converge, $t < +\infty$, da cui $s \le t < +\infty$, dunque $\sum a_n$ converge.
+- Se $\sum a_n$ diverge, $s = +\infty$, da cui $t \ge s = +\infty$, dunque $\sum b_n$ diverge.
+
+$$\blacksquare$$
+
+### Teorema 3.2: Criterio del Confronto Asintotico
+>[!important] Enunciato
+>Siano $a_n, b_n > 0$ e supponiamo che $\lim_{n \to +\infty} \frac{a_n}{b_n} = \ell \in [0, +\infty]$.
+>1. Se $\ell \in ]0, +\infty[$, le serie $\sum a_n$ e $\sum b_n$ hanno lo stesso carattere;
+>2. Se $\ell = 0$ e $\sum b_n$ converge, allora $\sum a_n$ converge;
+>3. Se $\ell = +\infty$ e $\sum b_n$ diverge, allora $\sum a_n$ diverge.
+
+**Dimostrazione:**
+1. Sia $\ell \in ]0, +\infty[$. Scegliamo $\varepsilon = \ell / 2 > 0$. Per la definizione di limite, esiste un indice $\nu \in \mathbb{N}$ tale che per ogni $n > \nu$:
+$$\ell - \varepsilon < \frac{a_n}{b_n} < \ell + \varepsilon \iff \frac{\ell}{2} b_n < a_n < \frac{3\ell}{2} b_n$$
+   - Dalla prima disuguaglianza $a_n > \frac{\ell}{2} b_n$, per il criterio del confronto, se $\sum a_n$ converge allora $\sum b_n$ converge, e se $\sum b_n$ diverge allora $\sum a_n$ diverge.
+   - Dalla seconda disuguaglianza $a_n < \frac{3\ell}{2} b_n$, se $\sum b_n$ converge allora $\sum a_n$ converge, e se $\sum a_n$ diverge allora $\sum b_n$ diverge.
+   Dunque le due serie hanno esattamente lo stesso carattere.
+2. Se $\ell = 0$, fissato $\varepsilon = 1$, definitivamente $\frac{a_n}{b_n} < 1 \implies a_n < b_n$. Se $\sum b_n$ converge, per confronto $\sum a_n$ converge.
+3. Se $\ell = +\infty$, fissato $M = 1$, definitivamente $\frac{a_n}{b_n} > 1 \implies a_n > b_n$. Se $\sum b_n$ diverge, per confronto $\sum a_n$ diverge.
+
+$$\blacksquare$$
+
+
+---
+
+## Lezione 26: Serie Numeriche III - Criteri della Radice, del Rapporto, Condensazione di Cauchy e Prodotto di Eulero
+
+### Teorema 1.1: Criterio della Radice di Cauchy
+>[!important] Enunciato
+>Sia $\sum a_n$ una serie a termini positivi ($a_n \ge 0$) e supponiamo che $\lim_{n \to +\infty} \sqrt[n]{a_n} = \ell \in [0, +\infty]$.
+>- (i) Se $\ell < 1$, la serie $\sum a_n$ converge;
+>- (ii) Se $\ell > 1$, la serie $\sum a_n$ diverge a $+\infty$;
+>- (iii) Se $\ell = 1$, il criterio è inconcludente.
+
+**Dimostrazione:**
+1. **Caso $\ell < 1$:** Scegliamo un numero reale $q$ tale che $\ell < q < 1$ e poniamo $\varepsilon = q - \ell > 0$.
+   Per la definizione di limite, esiste un indice $\nu \in \mathbb{N}$ tale che per ogni $n > \nu$:
+$$\sqrt[n]{a_n} < \ell + \varepsilon = q \iff a_n < q^n$$
+   Poiché $q < 1$, la serie geometrica $\sum q^n$ è convergente.
+   Per il Criterio del confronto (Teorema 3.1 della Lezione 25), la serie $\sum a_n$ è convergente.
+2. **Caso $\ell > 1$:** Scegliamo un numero reale $q$ con $1 < q < \ell$ e poniamo $\varepsilon = \ell - q > 0$.
+   Esiste $\nu \in \mathbb{N}$ tale che per ogni $n > \nu$:
+$$\sqrt[n]{a_n} > \ell - \varepsilon = q > 1 \iff a_n > q^n > 1$$
+   Poiché per ogni $n > \nu$ risulta $a_n > 1$, il termine generale non può tendere a $0$ ($a_n \not\to 0$).
+   Per la condizione necessaria di convergenza (Teorema 3.2 della Lezione 24), la serie non può convergere. Essendo a termini positivi, per il Teorema di regolarità deve necessariamente divergere a $+\infty$.
+3. **Caso $\ell = 1$:** Per la serie armonica $\sum 1/n$, $\sqrt[n]{1/n} = 1/\sqrt[n]{n} \to 1$ ed essa diverge. Per la serie armonica quadratica $\sum 1/n^2$, $\sqrt[n]{1/n^2} = (1/\sqrt[n]{n})^2 \to 1$ ed essa converge. Dunque per $\ell = 1$ il criterio non può determinare il carattere.
+
+$$\blacksquare$$
+
+### Teorema 1.2: Criterio del Rapporto di d'Alembert
+>[!important] Enunciato
+>Sia $\sum a_n$ a termini strettamente positivi ($a_n > 0$) e supponiamo che $\lim_{n \to +\infty} \frac{a_{n+1}}{a_n} = \ell \in [0, +\infty]$.
+>- (i) Se $\ell < 1$, la serie converge;
+>- (ii) Se $\ell > 1$, la serie diverge a $+\infty$;
+>- (iii) Se $\ell = 1$, il criterio è inconcludente.
+
+**Dimostrazione:**
+1. **Caso $\ell < 1$:** Scegliamo $q$ tale che $\ell < q < 1$. Per definizione di limite, esiste $\nu \in \mathbb{N}$ tale che per ogni $n \ge \nu$:
+$$\frac{a_{n+1}}{a_n} < q \implies a_{n+1} < q a_n$$
+   Applicando iterativamente la disuguaglianza per i termini successivi a $\nu$:
+$$a_{\nu+1} < q a_\nu, \quad a_{\nu+2} < q a_{\nu+1} < q^2 a_\nu, \quad \dots, \quad a_{\nu+k} < q^k a_\nu$$
+   Ponendo $n = \nu + k$:
+$$a_n < \frac{a_\nu}{q^\nu} q^n = C q^n \qquad \text{con } C = \frac{a_\nu}{q^\nu} > 0$$
+   Poiché $q < 1$, la serie geometrica $\sum C q^n$ converge. Per il criterio del confronto, la serie $\sum a_n$ converge.
+2. **Caso $\ell > 1$:** Scegliamo $q$ tale che $1 < q < \ell$. Esiste $\nu \in \mathbb{N}$ tale che per ogni $n \ge \nu$:
+$$\frac{a_{n+1}}{a_n} > 1 \implies a_{n+1} > a_n$$
+   Dunque la successione $(a_n)_{n \ge \nu}$ è strettamente crescente a termini positivi, per cui $a_n \ge a_\nu > 0$.
+   Ne consegue che $a_n \not\to 0$, violando la condizione necessaria. Essendo a termini positivi, la serie diverge a $+\infty$.
+3. **Caso $\ell = 1$:** Per $\sum 1/n$, $\frac{1/(n+1)}{1/n} = \frac{n}{n+1} \to 1$ (diverge); per $\sum 1/n^2$, $\frac{n^2}{(n+1)^2} \to 1$ (converge). Inconcludente.
+
+$$\blacksquare$$
+
+### Teorema 2.1: Criterio di Condensazione di Cauchy
+>[!important] Enunciato
+>Sia $(a_n)_{n \in \mathbb{N}}$ decrescente e positiva ($a_n \ge a_{n+1} \ge 0$). Allora le serie $\sum_{n=1}^{+\infty} a_n$ e $\sum_{n=0}^{+\infty} 2^n a_{2^n}$ hanno lo stesso carattere e vale:
+>$$\frac{1}{2} \sum_{n=0}^{+\infty} 2^n a_{2^n} \le \sum_{n=1}^{+\infty} a_n \le \sum_{n=0}^{+\infty} 2^n a_{2^n}$$
+
+**Dimostrazione:**
+Raggruppiamo i termini della serie $\sum_{n=1}^{+\infty} a_n$ in blocchi diadici tra le potenze consecutive di $2$:
+- Blocco 0: $a_1 \le a_1 = 2^0 a_{2^0}$
+- Blocco 1: $a_2 + a_3 \le a_2 + a_2 = 2 a_2 = 2^1 a_{2^1}$
+- Blocco 2: $a_4 + a_5 + a_6 + a_7 \le 4 a_4 = 2^2 a_{2^2}$
+In generale, per ogni $k \in \mathbb{N}$:
+$$\sum_{i=2^k}^{2^{k+1}-1} a_i \le 2^k a_{2^k}$$
+Sommando per $k$ da $0$ a $n$, otteniamo la maggiorazione:
+$$\sum_{i=1}^{2^{n+1}-1} a_i \le \sum_{k=0}^n 2^k a_{2^k}$$
+D'altra parte, minorando ciascun blocco con il termine successivo:
+- Blocco 1: $a_2 + a_3 \ge 2 a_4 = 2 \cdot a_{2^2}$
+- Blocco 2: $a_4 + a_5 + a_6 + a_7 \ge 4 a_8 = 4 a_{2^3}$
+In generale:
+$$\sum_{i=2^{k-1}+1}^{2^k} a_i \ge 2^{k-1} a_{2^k} = \frac{1}{2} \cdot 2^k a_{2^k}$$
+Sommando per $k$ da $1$ a $n+1$:
+$$\sum_{i=2}^{2^{n+1}} a_i \ge \frac{1}{2} \sum_{k=1}^{n+1} 2^k a_{2^k}$$
+Aggiungendo $a_1$, per il Teorema del confronto le due serie convergono o divergono simultaneamente, e passando al limite per $n \to +\infty$ discendono le stime bilaterali enunciate.
+
+$$\blacksquare$$
+
+### Teorema 3.1: Proprietà dei Prodotti Infiniti
+>[!important] Enunciato
+>Sia $(a_k)_{k \ge 1}$ con $a_k > 0$.
+>1. Se il prodotto $\prod_{k=1}^{+\infty} a_k$ converge a un valore finito $\ne 0$, allora $\lim_{k \to +\infty} a_k = 1$.
+>2. Se $a_k > 1$ per ogni $k$, allora $\prod_{k=1}^{+\infty} a_k$ e $\sum_{k=1}^{+\infty} (a_k - 1)$ hanno esattamente lo stesso carattere.
+
+**Dimostrazione:**
+1. Posto $p_n = \prod_{k=1}^n a_k$, se $\lim_{n \to +\infty} p_n = P \in ]0, +\infty[$, allora per ogni $n \ge 2$:
+$$a_n = \frac{p_n}{p_{n-1}} \implies \lim_{n \to +\infty} a_n = \frac{\lim p_n}{\lim p_{n-1}} = \frac{P}{P} = 1$$
+2. Passando ai logaritmi: $\ln p_n = \sum_{k=1}^n \ln a_k$.
+   Poiché $a_k > 1$, poniamo $x_k = a_k - 1 > 0$. Dalle disuguaglianze notevoli del logaritmo:
+$$\frac{x_k}{1 + x_k} < \ln(1 + x_k) < x_k \iff \frac{a_k - 1}{a_k} < \ln a_k < a_k - 1$$
+   Per il Criterio del confronto asintotico, la serie $\sum \ln a_k$ ha lo stesso carattere della serie $\sum (a_k - 1)$.
+   Poiché la funzione esponenziale $t \mapsto e^t$ è continua e strettamente crescente, $\lim p_n = e^{\lim \sum \ln a_k}$ esiste finito e non nullo se e solo se la serie converge, e diverge a $+\infty$ se e solo se la serie diverge.
+
+$$\blacksquare$$
+
+### Teorema 3.2: Formula del Prodotto di Eulero per la Funzione Zeta
+>[!important] Enunciato
+>Per ogni $x > 1$:
+>$$\zeta(x) = \sum_{n=1}^{+\infty} \frac{1}{n^x} = \prod_{k=1}^{+\infty} \frac{1}{1 - p_k^{-x}}$$
+>dove $(p_k)_{k \ge 1}$ è la successione di tutti i numeri primi.
+
+**Dimostrazione:**
+Sia $\zeta(x) = \sum_{n=1}^{+\infty} \frac{1}{n^x}$.
+Moltiplichiamo per $\frac{1}{p_1^x} = \frac{1}{2^x}$:
+$$\frac{1}{p_1^x} \zeta(x) = \sum_{n=1}^{+\infty} \frac{1}{(p_1 n)^x} = \sum_{n \in M(p_1)} \frac{1}{n^x}$$
+Sottraendo dalla serie iniziale:
+$$\left(1 - \frac{1}{p_1^x}\right) \zeta(x) = \sum_{n \notin M(p_1)} \frac{1}{n^x} = 1 + \frac{1}{3^x} + \frac{1}{5^x} + \frac{1}{7^x} + \dots$$
+Eliminiamo analogamente i multipli del secondo numero primo $p_2 = 3$:
+$$\left(1 - \frac{1}{p_2^x}\right) \left(1 - \frac{1}{p_1^x}\right) \zeta(x) = \sum_{n \notin M(p_1) \cup M(p_2)} \frac{1}{n^x} = 1 + \frac{1}{5^x} + \frac{1}{7^x} + \frac{1}{11^x} + \dots$$
+Iterando il procedimento per i primi $k$ numeri primi:
+$$\left[ \prod_{i=1}^k \left(1 - \frac{1}{p_i^x}\right) \right] \zeta(x) = 1 + \sum_{n \in S_k} \frac{1}{n^x}$$
+dove $S_k$ è l'insieme dei numeri naturali $> 1$ che non hanno alcun fattore primo tra $p_1, \dots, p_k$.
+Per il Teorema fondamentale dell'aritmetica, il più piccolo elemento di $S_k$ è $p_{k+1}$. Ne consegue:
+$$\sum_{n \in S_k} \frac{1}{n^x} \le \sum_{n=p_{k+1}}^{+\infty} \frac{1}{n^x} = R_{p_{k+1}-1}$$
+Poiché per $x > 1$ la serie $\sum 1/n^x$ converge, per la Proposizione 1.1 della Lezione 25 la coda tende a zero per $k \to +\infty$:
+$$\lim_{k \to +\infty} R_{p_{k+1}-1} = 0$$
+Dunque:
+$$\lim_{k \to +\infty} \left[ \prod_{i=1}^k \left(1 - \frac{1}{p_i^x}\right) \right] \zeta(x) = 1 \implies \zeta(x) = \lim_{k \to +\infty} \prod_{i=1}^k \frac{1}{1 - p_i^{-x}} = \prod_{i=1}^{+\infty} \frac{1}{1 - p_i^{-x}}$$
+
+$$\blacksquare$$
+
+### Corollario 3.3: Divergenza della Serie dei Reciproci dei Primi
+>[!important] Enunciato
+>La serie dei reciproci dei numeri primi è divergente:
+>$$\sum_{k=1}^{+\infty} \frac{1}{p_k} = +\infty$$
+
+**Dimostrazione:**
+Dalla formula del prodotto di Eulero per $x \to 1^+$:
+$$\lim_{x \to 1^+} \zeta(x) = \sum_{n=1}^{+\infty} \frac{1}{n} = +\infty$$
+Ne segue che il prodotto infinito diverge a $+\infty$:
+$$\prod_{k=1}^{+\infty} \frac{1}{1 - p_k^{-1}} = +\infty$$
+Posto $a_k = \frac{1}{1 - p_k^{-1}} > 1$, per il Teorema 3.1 il prodotto infinito ha lo stesso carattere della serie $\sum (a_k - 1)$:
+$$a_k - 1 = \frac{1}{1 - \frac{1}{p_k}} - 1 = \frac{\frac{1}{p_k}}{1 - \frac{1}{p_k}} = \frac{1}{p_k - 1}$$
+Dunque la serie $\sum_{k=1}^{+\infty} \frac{1}{p_k - 1}$ è divergente.
+Poiché $\lim_{k \to +\infty} \frac{1/(p_k - 1)}{1/p_k} = \lim_{k \to +\infty} \frac{p_k}{p_k - 1} = 1$, per il criterio del confronto asintotico:
+$$\sum_{k=1}^{+\infty} \frac{1}{p_k} = +\infty$$
+
+$$\blacksquare$$
+
+
+---
+
+## Lezione 27: Serie Numeriche IV - Criterio di Leibniz, Convergenza Assoluta e Serie Esponenziale
+
+### Teorema 1.2: Criterio di Leibniz per Serie a Segno Alterno
+>[!important] Enunciato
+>Sia $(a_n)_{n \in \mathbb{N}}$ una successione a termini positivi soddisfacente:
+>- (a) $\lim_{n \to +\infty} a_n = 0$;
+>- (b) $a_{n+1} \le a_n$ per ogni $n \in \mathbb{N}$ (monotona decrescente).
+>Allora la serie $\sum_{n=0}^{+\infty} (-1)^n a_n$ converge a una somma $s \in \mathbb{R}$.
+>Inoltre le somme parziali pari e dispari soddisfano $s_{2n+1} \le s \le s_{2n}$ e vale la stima del resto:
+>$$|s - s_n| \le a_{n+1}$$
+
+**Dimostrazione:**
+Sia $s_n = \sum_{k=0}^n (-1)^k a_k$.
+1. **Analisi della sottosuccessione pari $(s_{2n})$:**
+$$s_{2n+2} = s_{2n} - a_{2n+1} + a_{2n+2} = s_{2n} - (a_{2n+1} - a_{2n+2})$$
+   Poiché $(a_n)$ è decrescente, $a_{2n+1} - a_{2n+2} \ge 0$, dunque $s_{2n+2} \le s_{2n}$.
+   La successione delle somme parziali pari $(s_{2n})$ è monotona decrescente.
+2. **Analisi della sottosuccessione dispari $(s_{2n+1})$:**
+$$s_{2n+3} = s_{2n+1} + a_{2n+2} - a_{2n+3} = s_{2n+1} + (a_{2n+2} - a_{2n+3})$$
+   Essendo $a_{2n+2} - a_{2n+3} \ge 0$, risulta $s_{2n+3} \ge s_{2n+1}$.
+   La successione delle somme parziali dispari $(s_{2n+1})$ è monotona crescente.
+3. **Confronto e limitatezza:**
+$$s_{2n} - s_{2n+1} = a_{2n+1} \ge 0 \implies s_{2n+1} \le s_{2n}$$
+   Inoltre per ogni $n, m \in \mathbb{N}$, si prova facilmente che $s_{2n+1} \le s_{2m}$.
+   Dunque $(s_{2n})$ è decrescente e inferiormente limitata (da $s_1$), mentre $(s_{2n+1})$ è crescente e superiormente limitata (da $s_0$).
+   Per il Teorema sui limiti delle funzioni monotone, entrambe convergono:
+$$s_{2n} \to s_{\text{pari}} \in \mathbb{R}, \qquad s_{2n+1} \to s_{\text{dispari}} \in \mathbb{R}$$
+4. **Coincidenza dei limiti:**
+$$s_{\text{pari}} - s_{\text{dispari}} = \lim_{n \to +\infty} (s_{2n} - s_{2n+1}) = \lim_{n \to +\infty} a_{2n+1} = 0 \implies s_{\text{pari}} = s_{\text{dispari}} = s$$
+   Poiché sia la sottosuccessione dei termini pari sia quella dei termini dispari convergono allo stesso valore $s$, l'intera successione delle somme parziali converge: $\lim_{n \to +\infty} s_n = s$.
+5. **Stima del resto:** Poiché $s_{2k+1} \le s \le s_{2k}$, si ha:
+$$0 \le s_{2k} - s \le s_{2k} - s_{2k+1} = a_{2k+1}$$
+$$0 \le s - s_{2k-1} \le s_{2k} - s_{2k-1} = a_{2k}$$
+   In generale, per ogni $n \in \mathbb{N}$:
+$$|s - s_n| \le a_{n+1}$$
+
+$$\blacksquare$$
+
+### Teorema 2.2: La Convergenza Assoluta Implica la Semplice
+>[!important] Enunciato
+>Se $\sum_{n=0}^{+\infty} |a_n| < +\infty$, allora la serie $\sum_{n=0}^{+\infty} a_n$ è convergente in $\mathbb{R}$ e vale:
+>$$\left| \sum_{n=0}^{+\infty} a_n \right| \le \sum_{n=0}^{+\infty} |a_n|$$
+
+**Dimostrazione:**
+Definiamo la parte positiva e la parte negativa del termine $n$-esimo:
+$$a_n^+ = \max(a_n, 0) \ge 0, \qquad a_n^- = \max(-a_n, 0) \ge 0$$
+Valgono le relazioni:
+$$a_n = a_n^+ - a_n^-, \qquad |a_n| = a_n^+ + a_n^-$$
+Poiché $a_n^+ \le |a_n|$ e $a_n^- \le |a_n|$ per ogni $n$, per il Criterio del confronto (Teorema 3.1 della Lezione 25), essendo $\sum |a_n|$ convergente, entrambe le serie a termini positivi $\sum a_n^+$ e $\sum a_n^-$ sono convergenti in $\mathbb{R}$.
+Posto $s^+ = \sum_{n=0}^{+\infty} a_n^+ < +\infty$ e $s^- = \sum_{n=0}^{+\infty} a_n^- < +\infty$, per la linearità della somma di serie convergenti (Proposizione 3.1 della Lezione 24):
+$$\sum_{n=0}^{+\infty} a_n = \sum_{n=0}^{+\infty} (a_n^+ - a_n^-) = \sum_{n=0}^{+\infty} a_n^+ - \sum_{n=0}^{+\infty} a_n^- = s^+ - s^- \in \mathbb{R}$$
+Infine, applicando la disuguaglianza triangolare alle somme parziali finite:
+$$\left| \sum_{k=0}^n a_k \right| \le \sum_{k=0}^n |a_k|$$
+Passando al limite per $n \to +\infty$ per il teorema di prolungamento delle disuguaglianze:
+$$\left| \sum_{n=0}^{+\infty} a_n \right| \le \sum_{n=0}^{+\infty} |a_n|$$
+
+$$\blacksquare$$
+
+### Teorema 3.1: Stima dell'Errore di Troncamento per il Numero di Nepero
+>[!important] Enunciato
+>Per ogni $n \in \mathbb{N}^*$:
+>$$0 < e - \sum_{k=0}^n \frac{1}{k!} < \frac{1}{n \cdot n!}$$
+
+**Dimostrazione:**
+Ricordiamo che $e = \sum_{k=0}^{+\infty} \frac{1}{k!}$.
+Scrivendo la serie resto di ordine $n$:
+$$R_n = e - \sum_{k=0}^n \frac{1}{k!} = \sum_{k=n+1}^{+\infty} \frac{1}{k!} = \sum_{j=1}^{+\infty} \frac{1}{(n+j)!} > 0$$
+Valutiamo il fattoriale per $j \ge 1$:
+$$(n+j)! = (n+j)(n+j-1)\dots(n+1) \cdot n! \ge (n+1)^j \cdot n!$$
+con disuguaglianza stretta per ogni $j \ge 2$. Sostituendo nella somma resto:
+$$R_n < \frac{1}{n!} \sum_{j=1}^{+\infty} \frac{1}{(n+1)^j} = \frac{1}{n!} \cdot \frac{\frac{1}{n+1}}{1 - \frac{1}{n+1}} = \frac{1}{n!} \cdot \frac{\frac{1}{n+1}}{\frac{n}{n+1}} = \frac{1}{n \cdot n!}$$
+Dunque $0 < e - s_n < \frac{1}{n \cdot n!}$.
+
+$$\blacksquare$$
+
+### Corollario 3.2: Irrazionalità del Numero $e$
+>[!important] Enunciato
+>Il numero di Nepero $e$ è un numero irrazionale ($e \in \mathbb{R} \setminus \mathbb{Q}$).
+
+**Dimostrazione:**
+Supponiamo per assurdo che $e \in \mathbb{Q}$, ovvero che esistano due interi positivi $p, q \in \mathbb{N}^*$ tali che $e = \frac{p}{q}$.
+Prendiamo $n = q$ nella disuguaglianza del Teorema 3.1:
+$$0 < e - \sum_{k=0}^q \frac{1}{k!} < \frac{1}{q \cdot q!}$$
+Sostituendo $e = p/q$:
+$$0 < \frac{p}{q} - \sum_{k=0}^q \frac{1}{k!} < \frac{1}{q \cdot q!}$$
+Moltiplichiamo tutti i membri per $q!$:
+$$0 < q! \frac{p}{q} - \sum_{k=0}^q \frac{q!}{k!} < \frac{q!}{q \cdot q!} = \frac{1}{q}$$
+Osserviamo che:
+- $q! \frac{p}{q} = p (q-1)!$ è un numero intero positivo.
+- Per ogni $k \le q$, $\frac{q!}{k!} = q(q-1)\dots(k+1)$ è un numero intero positivo, quindi $\sum_{k=0}^q \frac{q!}{k!}$ è un intero.
+Di conseguenza la quantità centrale:
+$$N = p(q-1)! - \sum_{k=0}^q \frac{q!}{k!}$$
+è un **numero intero**.
+Ma la disuguaglianza stabilisce che:
+$$0 < N < \frac{1}{q} \le 1$$
+Non esistono numeri interi strettamente compresi tra $0$ e $1$. L'assurdo prova che $e$ non può essere razionale.
+
+$$\blacksquare$$
+
+### Teorema 3.4: Teorema di Mertens sul Prodotto di Cauchy per Serie Assolutamente Convergenti
+>[!important] Enunciato
+>Siano $\sum a_n$ e $\sum b_n$ due serie assolutamente convergenti con somme $A$ e $B$. Allora la serie prodotto alla Cauchy $\sum c_n$ con $c_n = \sum_{k=0}^n a_k b_{n-k}$ è assolutamente convergente e:
+>$$\sum_{n=0}^{+\infty} c_n = \left(\sum_{n=0}^{+\infty} a_n\right) \left(\sum_{n=0}^{+\infty} b_n\right) = A \cdot B$$
+
+**Dimostrazione:**
+1. **Convergenza assoluta:** Applicando la disuguaglianza triangolare e la formula di Cauchy per serie positive (Teorema 5.4):
+$$\sum_{n=0}^{+\infty} |c_n| = \sum_{n=0}^{+\infty} \left| \sum_{k=0}^n a_k b_{n-k} \right| \le \sum_{n=0}^{+\infty} \sum_{k=0}^n |a_k| |b_{n-k}| = \left(\sum_{n=0}^{+\infty} |a_n|\right) \left(\sum_{n=0}^{+\infty} |b_n|\right) < +\infty$$
+   Dunque la serie $\sum c_n$ è assolutamente convergente.
+2. **Identità delle somme:** Decomponendo i termini nelle parti positiva e negativa:
+$$a_n = a_n^+ - a_n^-, \qquad b_n = b_n^+ - b_n^-$$
+   Ponendo $s^+ = \sum a_n^+$, $s^- = \sum a_n^-$, $t^+ = \sum b_n^+$, $t^- = \sum b_n^-$, si ha $A = s^+ - s^-$ e $B = t^+ - t^-$.
+   Espandendo il termine convolutivo:
+$$c_n = \sum_{k=0}^n (a_k^+ - a_k^-)(b_{n-k}^+ - b_{n-k}^-) = \sum_{k=0}^n a_k^+ b_{n-k}^+ - \sum_{k=0}^n a_k^+ b_{n-k}^- - \sum_{k=0}^n a_k^- b_{n-k}^+ + \sum_{k=0}^n a_k^- b_{n-k}^-$$
+   Sommando per $n \to +\infty$ e applicando il teorema di Cauchy per le quattro serie a termini positivi:
+$$\sum_{n=0}^{+\infty} c_n = s^+ t^+ - s^+ t^- - s^- t^+ + s^- t^- = (s^+ - s^-)(t^+ - t^-) = A \cdot B$$
+
+$$\blacksquare$$
+
+### Proposizione 3.5: Proprietà Omomorfica della Funzione Esponenziale
+>[!important] Enunciato
+>Sia $\exp: \mathbb{R} \to \mathbb{R}$ definita da $\exp(x) = \sum_{n=0}^{+\infty} \frac{x^n}{n!}$. Allora per ogni $x, y \in \mathbb{R}$:
+>$$\exp(x + y) = \exp(x) \exp(y)$$
+
+**Dimostrazione:**
+Fissati $x, y \in \mathbb{R}$, consideriamo le due serie $\sum_{n=0}^{+\infty} \frac{x^n}{n!}$ e $\sum_{n=0}^{+\infty} \frac{y^n}{n!}$.
+Entrambe le serie sono assolutamente convergenti per il criterio del rapporto:
+$$\lim_{n \to +\infty} \frac{|x|^{n+1}}{(n+1)!} \frac{n!}{|x|^n} = \lim_{n \to +\infty} \frac{|x|}{n+1} = 0 < 1$$
+Possiamo dunque applicare il Teorema di Mertens (Teorema 3.4) sul prodotto alla Cauchy:
+$$\exp(x) \exp(y) = \left( \sum_{n=0}^{+\infty} \frac{x^n}{n!} \right) \left( \sum_{n=0}^{+\infty} \frac{y^n}{n!} \right) = \sum_{n=0}^{+\infty} c_n$$
+dove il termine convolutivo $n$-esimo è dato da:
+$$c_n = \sum_{k=0}^n \frac{x^k}{k!} \frac{y^{n-k}}{(n-k)!} = \frac{1}{n!} \sum_{k=0}^n \frac{n!}{k!(n-k)!} x^k y^{n-k} = \frac{1}{n!} \sum_{k=0}^n \binom{n}{k} x^k y^{n-k}$$
+Per la Formula del binomio di Newton:
+$$\sum_{k=0}^n \binom{n}{k} x^k y^{n-k} = (x + y)^n$$
+Sostituendo nell'espressione di $c_n$:
+$$c_n = \frac{(x + y)^n}{n!}$$
+Ne consegue:
+$$\exp(x) \exp(y) = \sum_{n=0}^{+\infty} \frac{(x + y)^n}{n!} = \exp(x + y)$$
 
 $$\blacksquare$$

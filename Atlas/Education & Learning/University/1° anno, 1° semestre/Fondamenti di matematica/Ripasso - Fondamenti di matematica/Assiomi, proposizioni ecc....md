@@ -2,20 +2,20 @@
 status: permanent
 type: summary
 area: education
-related: ["[[Lezione 1 - Logica delle Proposizioni e dei Predicati]]", "[[Lezione 2 - Teoria Assiomatica degli Insiemi]]", "[[Lezione 3 - Relazioni e Funzioni I]]", "[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lezione 5 - i Numeri Reali e Assioma di Completezza]]", "[[Lezione 6 - Valore Assoluto e Numeri Naturali]]", "[[Lezione 7 - Insiemi Numerici N Z e Q]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]", "[[Lezione 9 - Funzioni Reali ed Estremi]]", "[[Lezione 10 - Funzioni Reali II e Funzioni Elementari I]]", "[[Lezione 11 - Funzioni Reali Elementari II]]", "[[Lezione 12 - Limiti I Retta Reale Ampliata e Definizione]]", "[[Lezione 13 - Limiti II Restrizioni Limiti Laterali e Successioni]]", "[[Lezione 14 - Limiti di Successioni e Proprieta Locali]]", "[[Lezione 15 - Proprieta dei Limiti]]", "[[Lezione 17 - Limiti delle Funzioni Composte e Confronto Locale]]", "[[Lezione 18 - Gerarchie di Infiniti e Infinitesimi e Continuita I]]", "[[Lezione 19 - Funzioni Continue e Punti di Discontinuita]]", "[[Lezione 20 - Continuita delle Funzioni Monotone e Limiti Notevoli]]", "[[Dimostrazioni]]", "[[University]]"]
+related: ["[[Lezione 1 - Logica delle Proposizioni e dei Predicati]]", "[[Lezione 2 - Teoria Assiomatica degli Insiemi]]", "[[Lezione 3 - Relazioni e Funzioni I]]", "[[Lezione 4 - Funzioni II Proprieta e Invertibilita]]", "[[Lezione 5 - i Numeri Reali e Assioma di Completezza]]", "[[Lezione 6 - Valore Assoluto e Numeri Naturali]]", "[[Lezione 7 - Insiemi Numerici N Z e Q]]", "[[Lezione 8 - Densita Sommatorie e Teorema del Binomio]]", "[[Lezione 9 - Funzioni Reali ed Estremi]]", "[[Lezione 10 - Funzioni Reali II e Funzioni Elementari I]]", "[[Lezione 11 - Funzioni Reali Elementari II]]", "[[Lezione 12 - Limiti I Retta Reale Ampliata e Definizione]]", "[[Lezione 13 - Limiti II Restrizioni Limiti Laterali e Successioni]]", "[[Lezione 14 - Limiti di Successioni e Proprieta Locali]]", "[[Lezione 15 - Proprieta dei Limiti]]", "[[Lezione 17 - Limiti delle Funzioni Composte e Confronto Locale]]", "[[Lezione 18 - Gerarchie di Infiniti e Infinitesimi e Continuita I]]", "[[Lezione 19 - Funzioni Continue e Punti di Discontinuita]]", "[[Lezione 20 - Continuita delle Funzioni Monotone e Limiti Notevoli]]", "[[Lezione 21 - Teoremi di Bolzano e Proprieta Topologiche per Successioni]]", "[[Lezione 22 - Valori Intermedi Punti Fissi e Teorema di Bolzano-Weierstrass]]", "[[Lezione 23 - Insiemi Compatti Teorema di Weierstrass e Successioni per Ricorrenza]]", "[[Lezione 24 - Serie Numeriche I Definizioni Proprieta e Serie Geometrica]]", "[[Lezione 25 - Serie Numeriche II Serie Resto e Criteri di Confronto]]", "[[Lezione 26 - Serie Numeriche III Criteri della Radice e del Rapporto e Condensazione di Cauchy]]", "[[Lezione 27 - Serie Numeriche IV Criterio di Leibniz Convergenza Assoluta e Serie Esponenziale]]", "[[Dimostrazioni]]", "[[University]]"]
 aliases: ["Assiomi, proposizioni ecc...", "Assiomi, Proposizioni ecc...", "Assiomi Proposizioni Definizioni", "Assiomi, proposizioni ecc...."]
-source: ["Lezione 1.pdf", "Lezione 2.pdf", "Lezione 3.pdf", "Lezione 4.pdf", "Lezione 5.pdf", "Lezione 6.pdf", "Lezione 7.pdf", "Lezione 8.pdf", "Lezione 9.pdf", "Lezione 10.pdf", "Lezione 11.pdf", "Lezione 12.pdf", "Lezione 13.pdf", "Lezione 14.pdf", "Lezione 15.pdf", "Lezione 17.pdf", "Lezione 18.pdf", "Lezione 19.pdf", "Lezione 20.pdf"]
+source: ["Lezione 1.pdf", "Lezione 2.pdf", "Lezione 3.pdf", "Lezione 4.pdf", "Lezione 5.pdf", "Lezione 6.pdf", "Lezione 7.pdf", "Lezione 8.pdf", "Lezione 9.pdf", "Lezione 10.pdf", "Lezione 11.pdf", "Lezione 12.pdf", "Lezione 13.pdf", "Lezione 14.pdf", "Lezione 15.pdf", "Lezione 17.pdf", "Lezione 18.pdf", "Lezione 19.pdf", "Lezione 20.pdf", "Lezione 21.pdf", "Lezione 22.pdf", "Lezione 23.pdf", "Lezione 24.pdf", "Lezione 25.pdf", "Lezione 26.pdf", "Lezione 27.pdf"]
 title: "Assiomi, Proposizioni, Definizioni e Teoremi"
 date: '2026-10-15'
-updated: '2026-10-28T22:15'
+updated: '2026-11-08T01:15'
 tags: [education/university, education/matematica, education/teoria]
-summary: "Repertorio sistematico di tutti gli assiomi, definizioni, proposizioni, teoremi, lemmi e corollari trattati nel corso di Fondamenti di Matematica dalla Lezione 1 alla Lezione 20."
+summary: "Repertorio sistematico di tutti gli assiomi, definizioni, proposizioni, teoremi, lemmi e corollari trattati nel corso di Fondamenti di Matematica dalla Lezione 1 alla Lezione 27."
 ---
 [[Home MOC|Home]] / [[Education & Learning]] / [[University]] / [[Assiomi, proposizioni ecc...]]
 
 # Assiomi, Proposizioni, Definizioni e Teoremi
 
-Quadro teorico integrale dei concetti primitivi, degli assiomi fondativi, delle definizioni formali, dei teoremi, delle proposizioni, dei lemmi e dei corollari svolti nelle Lezioni da 1 a 20 del corso di Fondamenti di Matematica.
+Quadro teorico integrale dei concetti primitivi, degli assiomi fondativi, delle definizioni formali, dei teoremi, delle proposizioni, dei lemmi e dei corollari svolti nelle Lezioni da 1 a 27 del corso di Fondamenti di Matematica.
 
 ---
 
@@ -789,3 +789,147 @@ $$\lim_{x \to 0} \frac{1 - \cos x}{x^2} = \frac{1}{2} \qquad \text{e} \qquad \li
 
 - <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Tavola delle Equivalenze Asintotiche per $x \to 0$:</b></font></mark>
 $$\sin x \sim x, \quad \tan x \sim x, \quad 1 - \cos x \sim \frac{1}{2} x^2, \quad \ln(1 + x) \sim x, \quad e^x - 1 \sim x, \quad (1 + x)^\alpha - 1 \sim \alpha x$$
+
+
+---
+
+## Lezione 21: Teoremi di Bolzano e Proprietà Topologiche per Successioni
+
+### Definizioni
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione 1.1 (Punto Aderente e Chiusura):</b></font></mark> Sia $A \subset \mathbb{R}$ e $x \in \mathbb{R}$. Il punto $x$ si dice *aderente* ad $A$ se per ogni intorno $U \in \mathcal{U}(x)$ si ha $U \cap A \neq \emptyset$. L'insieme dei punti di aderenza si indica con $\overline{A}$ ed è denominato *chiusura* o *aderenza* di $A$. Risulta $\overline{A} = A \cup D_r(A)$, dove $D_r(A)$ è l'insieme dei punti di accumulazione finiti di $A$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione 1.5 (Insieme Chiuso):</b></font></mark> Un insieme $A \subset \mathbb{R}$ si dice *chiuso* se coincide con la propria chiusura: $A = \overline{A}$, ovvero se contiene tutti i propri punti di accumulazione al finito ($D_r(A) \subset A$).
+
+### Teoremi e Proposizioni
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Proposizione 1.6 (Proprietà di Minimo della Chiusura):</b></font></mark> L'aderenza $\overline{A}$ è un insieme chiuso ed è il più piccolo insieme chiuso contenente $A$ (cioè $\overline{\overline{A}} = \overline{A}$).
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.1 (Caratterizzazione dei Limiti mediante Successioni — Teorema Ponte):</b></font></mark> Siano $f: A \to \mathbb{R}$, $\ell \in \overline{\mathbb{R}}$ e $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $A$. Allora $\lim_{x \to x_0} f(x) = \ell$ se e solo se per ogni successione $(a_n)_{n \in \mathbb{N}}$ in $A \setminus \{x_0\}$ con $a_n \to x_0$ si ha $\lim_{n \to +\infty} f(a_n) = \ell$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.2 (Caratterizzazione della Continuità mediante Successioni):</b></font></mark> Siano $f: A \to \mathbb{R}$ e $x_0 \in A$. La funzione $f$ è continua in $x_0$ se e solo se per ogni successione $(a_n)_{n \in \mathbb{N}}$ a valori in $A$ tale che $a_n \to x_0$, si ha $f(a_n) \to f(x_0)$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Proposizione 2.3 (Caratterizzazione Sequenziale della Chiusura):</b></font></mark> Sia $A \subset \mathbb{R}$ e $x \in \mathbb{R}$. Allora $x \in \overline{A} \iff \exists (a_n)_{n \in \mathbb{N}} \in A^{\mathbb{N}} : a_n \to x$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Proposizione 2.4 (Caratterizzazione Sequenziale degli Insiemi Chiusi):</b></font></mark> Sia $A \subset \mathbb{R}$. $A$ è chiuso se e solo se per ogni successione convergente $(a_n)_{n \in \mathbb{N}}$ di elementi di $A$, il limite appartiene ad $A$ ($a_n \to x \implies x \in A$).
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 3.1 (Degli Zeri di Bolzano):</b></font></mark> Sia $I$ un intervallo di $\mathbb{R}$ e $f: I \to \mathbb{R}$ continua. Siano $a, b \in I$ con $a < b$ tali che $f(a)f(b) < 0$. Allora esiste almeno un punto $x_0 \in ]a, b[$ tale che $f(x_0) = 0$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Osservazione 3.2 (Stima a Priori dell'Errore del Metodo di Bisezione):</b></font></mark> Al passo $n$-esimo del metodo di bisezione, l'approssimazione $c_n = (a_n + b_n)/2$ dello zero $x_0$ soddisfa $|x_0 - c_n| \le \frac{b - a}{2^{n+1}}$. Per raggiungere una tolleranza $\varepsilon > 0$, il numero minimo di iterazioni necessarie è $n = \lfloor \log_2((b-a)/\varepsilon) \rfloor + 1$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 4.1 (Forma Variazionale con Estremo Superiore):</b></font></mark> Sia $f: [a, b] \to \mathbb{R}$ continua con $f(a) < 0 < f(b)$. Allora $x_0 = \sup \{x \in [a, b] \mid f(x) < 0\} \in ]a, b[$ soddisfa $f(x_0) = 0$.
+
+---
+
+## Lezione 22: Valori Intermedi, Punti Fissi e Teorema di Bolzano-Weierstrass
+
+### Definizioni
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione (Indice di Picco):</b></font></mark> Data una successione reale $(a_n)_{n \in \mathbb{N}}$, un indice $n \in \mathbb{N}$ si dice *indice di picco* se per ogni $m \ge n$ si ha $a_n \ge a_m$ (il termine $a_n$ domina tutti i termini che lo seguono).
+
+### Teoremi e Proposizioni
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 1.1 (Dei Valori Intermedi di Bolzano — 1° Forma):</b></font></mark> Sia $f: I \to \mathbb{R}$ continua su un intervallo $I \subset \mathbb{R}$. Siano $a, b \in I$ con $f(a) < f(b)$. Allora $[f(a), f(b)] \subset f(I)$. Inoltre, posti $m = \inf_I f$ e $M = \sup_I f$, risulta $]m, M[ \subset f(I)$ (la funzione assume tutti i valori intermedi).
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 1.3 (Dei Valori Intermedi — 2° Forma Topologica):</b></font></mark> Sia $f: I \to \mathbb{R}$ continua su un intervallo $I \subset \mathbb{R}$. Allora l'immagine $f(I)$ è un intervallo di $\mathbb{R}$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Corollario 1.4 (Esistenza ed Unicità della Radice $n$-esima):</b></font></mark> Per ogni $n \in \mathbb{N}^*$ e ogni $y \in \mathbb{R}^+$, esiste un unico $x \in \mathbb{R}^+$ tale che $x^n = y$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.1 (Del Punto Fisso per Intervalli Compatti):</b></font></mark> Sia $g: [a, b] \to [a, b]$ continua. Allora esiste almeno un punto $x_0 \in [a, b]$ tale che $g(x_0) = x_0$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.2 (Equivalenza tra Iniettività e Stretta Monotonia):</b></font></mark> Sia $I \subset \mathbb{R}$ un intervallo e $f: I \to \mathbb{R}$ continua. Allora $f$ è iniettiva se e solo se $f$ è strettamente monotona.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.4 (Continuità delle Funzioni Inverse):</b></font></mark> Sia $f: I \to \mathbb{R}$ continua, iniettiva e definita in un intervallo $I$. Allora la funzione inversa $f^{-1}: f(I) \to \mathbb{R}$ è continua su tutto il suo dominio $f(I)$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 3.1 (Di Bolzano-Weierstrass per Successioni):</b></font></mark> Da ogni successione reale limitata $(a_n)_{n \in \mathbb{N}}$ si può estrarre una sottosuccessione monotona convergente.
+
+---
+
+## Lezione 23: Insiemi Compatti, Teorema di Weierstrass e Successioni per Ricorrenza
+
+### Definizioni
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione 1.1 (Insieme Compatto per Successioni):</b></font></mark> Un sottoinsieme $A \subset \mathbb{R}$ si dice *compatto* se da ogni successione $(a_n)_{n \in \mathbb{N}} \in A^{\mathbb{N}}$ è possibile estrarre una sottosuccessione $(a_{n_k})_{k \in \mathbb{N}}$ convergente a un elemento $x_0 \in A$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione (Massimo e Punto di Massimo Assoluto):</b></font></mark> Sia $f: A \to \mathbb{R}$. $f$ ammette massimo se esiste $\max f(A) \in \mathbb{R}$; in tal caso si pone $\max_A f := \max f(A)$ e ogni $x_0 \in A$ tale che $f(x_0) = \max_A f$ si dice *punto di massimo assoluto*.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione (Successione Massimizzante):</b></font></mark> Data $f: A \to \mathbb{R}$ con $M = \sup_{x \in A} f(x)$, una successione $(a_n)_{n \in \mathbb{N}} \in A^{\mathbb{N}}$ si dice massimizzante se $\lim_{n \to +\infty} f(a_n) = M$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione (Successione Definita per Ricorrenza / Iterata di Picard):</b></font></mark> Data una mappa $f: A \to A$ e $x_0 \in A$, la relazione $a_0 = x_0$, $a_{n+1} = f(a_n)$ definisce la successione delle iterate $a_n = f^{(n)}(x_0)$.
+
+### Teoremi e Proposizioni
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 1.2 (Di Heine-Borel in $\mathbb{R}$):</b></font></mark> Sia $A \subset \mathbb{R}$. $A$ è compatto per successioni se e solo se $A$ è chiuso e limitato.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.1 (Di Weierstrass sui Massimi e Minimi):</b></font></mark> Sia $A \subset \mathbb{R}$ compatto e sia $f: A \to \mathbb{R}$ continua. Allora $f$ ammette massimo e minimo assoluti su $A$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Proposizione 3.1 (Convergenza delle Ricorrenze a Punti Fissi):</b></font></mark> Sia $f: A \to A$ continua e sia $(a_n)$ generata da $a_{n+1} = f(a_n)$. Se $a_n \to \overline{x} \in A$, allora $\overline{x}$ è un punto fisso di $f$, ovvero $f(\overline{x}) = \overline{x}$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema (Convergenza del Metodo di Erone):</b></font></mark> Sia $b > 0$. Scelto $a_0 > 0$, la successione $a_{n+1} = \frac{1}{2}(a_n + b/a_n)$ soddisfa $a_n \ge \sqrt{b}$ per ogni $n \ge 1$, è monotona decrescente per $n \ge 1$ e converge a $\lim_{n \to +\infty} a_n = \sqrt{b}$.
+
+---
+
+## Lezione 24: Serie Numeriche I - Definizioni, Proprietà e Serie Geometrica
+
+### Definizioni
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione 1.1 (Serie Numerica e Somma):</b></font></mark> Data $(a_n)_{n \in \mathbb{N}}$, la serie numerica $\sum_{n=0}^{+\infty} a_n$ è la coppia costituita da $(a_n)$ e dalla successione delle somme parziali $s_n = \sum_{k=0}^n a_k$. Se esiste $\lim_{n \to +\infty} s_n \in \overline{\mathbb{R}}$, tale limite si chiama *somma della serie*.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione (Tassonomia del Carattere):</b></font></mark> Una serie si dice:
+  - *Convergente:* se $\lim s_n = s \in \mathbb{R}$ (somma finita);
+  - *Divergente:* se $\lim s_n = +\infty$ oppure $-\infty$;
+  - *Indeterminata (od oscillante):* se il limite $\lim s_n$ non esiste.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione (Serie Geometrica):</b></font></mark> Si chiama serie geometrica la serie $\sum_{n=0}^{+\infty} q^n$ con parametro $q \in \mathbb{R}$ detto *ragione*.
+
+### Teoremi e Proposizioni
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.1 (Carattere e Somma della Serie Geometrica):</b></font></mark>
+$$\sum_{n=0}^{+\infty} q^n = \begin{cases} \frac{1}{1 - q} & \text{se } |q| < 1 \quad \text{(convergente)} \\ +\infty & \text{se } q \ge 1 \quad \text{(divergente a } +\infty) \\ \text{non esiste} & \text{se } q \le -1 \quad \text{(indeterminata)} \end{cases}$$
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema (Serie Telescopica di Mengoli):</b></font></mark> La serie $\sum_{n=1}^{+\infty} \frac{1}{n(n+1)}$ è convergente e la sua somma vale esattamente $1$:
+$$\sum_{n=1}^{+\infty} \frac{1}{n(n+1)} = \lim_{n \to +\infty} \left(1 - \frac{1}{n+1}\right) = 1$$
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Proposizione 3.1 (Linearità della Somma di Serie):</b></font></mark> Se $\sum a_n$ e $\sum b_n$ sono convergenti, allora $\sum (a_n + b_n) = \sum a_n + \sum b_n$ e per ogni $\lambda \in \mathbb{R}$, $\sum (\lambda a_n) = \lambda \sum a_n$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 3.2 (Condizione Necessaria di Convergenza):</b></font></mark> Se la serie $\sum a_n$ è convergente, allora il suo termine generale è infinitesimo:
+$$\sum_{n=0}^{+\infty} a_n \text{ converge} \implies \lim_{n \to +\infty} a_n = 0$$
+*(La condizione $a_n \to 0$ è necessaria ma NON sufficiente, come provato dalle serie divergenti $\sum 1/\sqrt{n}$ e $\sum 1/n$).*
+
+---
+
+## Lezione 25: Serie Numeriche II - Serie Resto, Proprietà Associativa e Criteri di Confronto
+
+### Definizioni
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione 1.1 (Serie Resto di Ordine $m$):</b></font></mark> Data $\sum a_n$, per ogni $m \in \mathbb{N}$ si dice *serie resto* o *coda* di ordine $m$ la serie $R_m = \sum_{n=m+1}^{+\infty} a_n$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione 2.1 (Serie a Termini Positivi):</b></font></mark> Una serie $\sum a_n$ si dice a termini positivi se $a_n \ge 0$ per ogni $n \in \mathbb{N}$.
+
+### Teoremi e Proposizioni
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Proposizione 1.1 (Invarianza del Carattere del Resto):</b></font></mark> La serie $\sum a_n$ e la serie resto $R_m$ hanno esattamente lo stesso carattere. Se sono convergenti, il resto tende a zero: $\lim_{m \to +\infty} R_m = 0$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Proposizione 1.2 (Stabilità del Carattere):</b></font></mark> Il carattere di una serie non si altera modificando, aggiungendo o eliminando un numero finito di termini.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 1.3 (Proprietà Associativa per Serie Regolari):</b></font></mark> Se $\sum a_n$ è regolare (convergente o divergente), associando i termini mediante parentesi in blocchi finiti disgiunti la nuova serie mantiene lo stesso carattere e la medesima somma.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.2 (Regolarità delle Serie a Termini Positivi):</b></font></mark> Ogni serie a termini positivi è **sempre regolare**: ammette sempre limite $\sum_{n=0}^{+\infty} a_n \in [0, +\infty]$, dunque è convergente o divergente a $+\infty$ (non può mai oscillare).
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.3 (Divergenza della Serie Armonica di Oresme):</b></font></mark> La serie armonica $\sum_{n=1}^{+\infty} \frac{1}{n}$ è divergente positivamente a $+\infty$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 3.1 (Criterio del Confronto):</b></font></mark> Siano $\sum a_n$ e $\sum b_n$ a termini positivi con $a_n \le b_n$ definitivamente. Allora:
+  - $\sum b_n$ convergente $\implies \sum a_n$ convergente;
+  - $\sum a_n$ divergente $\implies \sum b_n$ divergente.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 3.2 (Criterio del Confronto Asintotico):</b></font></mark> Siano $a_n, b_n > 0$ con $\lim_{n \to +\infty} \frac{a_n}{b_n} = \ell \in [0, +\infty]$.
+  - Se $\ell \in ]0, +\infty[$: $\sum a_n$ e $\sum b_n$ hanno lo stesso carattere;
+  - Se $\ell = 0$: $\sum b_n$ convergente $\implies \sum a_n$ convergente;
+  - Se $\ell = +\infty$: $\sum b_n$ divergente $\implies \sum a_n$ divergente.
+
+---
+
+## Lezione 26: Serie Numeriche III - Criteri della Radice, del Rapporto, Condensazione di Cauchy e Prodotto di Eulero
+
+### Definizioni
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione (Serie Armonica Generalizzata):</b></font></mark> Si chiama serie armonica generalizzata la serie $\sum_{n=1}^{+\infty} \frac{1}{n^\alpha}$ al variare del parametro reale $\alpha \in \mathbb{R}$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione (Serie Condensata di Cauchy):</b></font></mark> Data la serie $\sum a_n$, si definisce serie condensata la serie $\sum_{n=0}^{+\infty} 2^n a_{2^n}$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione (Prodotto Infinito):</b></font></mark> Data la successione $(a_k)_{k \ge 1}$ con $a_k > 0$, il prodotto infinito $\prod_{k=1}^{+\infty} a_k$ è definito dal limite della successione dei prodotti parziali $p_n = \prod_{k=1}^n a_k$.
+
+### Teoremi e Proposizioni
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 1.1 (Criterio della Radice di Cauchy):</b></font></mark> Sia $a_n \ge 0$ e $\lim_{n \to +\infty} \sqrt[n]{a_n} = \ell \in [0, +\infty]$. Se $\ell < 1$ la serie converge; se $\ell > 1$ la serie diverge a $+\infty$; se $\ell = 1$ il criterio è inconcludente.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 1.2 (Criterio del Rapporto di d'Alembert):</b></font></mark> Sia $a_n > 0$ e $\lim_{n \to +\infty} \frac{a_{n+1}}{a_n} = \ell \in [0, +\infty]$. Se $\ell < 1$ la serie converge; se $\ell > 1$ la serie diverge a $+\infty$; se $\ell = 1$ il criterio è inconcludente.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.1 (Criterio di Condensazione di Cauchy):</b></font></mark> Sia $(a_n)$ decrescente e positiva ($a_n \ge a_{n+1} \ge 0$). Allora $\sum_{n=1}^{+\infty} a_n$ e $\sum_{n=0}^{+\infty} 2^n a_{2^n}$ hanno esattamente lo stesso carattere e vale:
+$$\frac{1}{2} \sum_{n=0}^{+\infty} 2^n a_{2^n} \le \sum_{n=1}^{+\infty} a_n \le \sum_{n=0}^{+\infty} 2^n a_{2^n}$$
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.2 (Comportamento della Serie Armonica Generalizzata):</b></font></mark>
+$$\sum_{n=1}^{+\infty} \frac{1}{n^\alpha} = \begin{cases} \text{Convergente} & \text{se } \alpha > 1 \\ \text{Divergente a } +\infty & \text{se } \alpha \le 1 \end{cases}$$
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 3.1 (Condizione Necessaria ed Equivalenza per Prodotti Infiniti):</b></font></mark> Se $\prod_{k=1}^{+\infty} a_k$ converge a valore non nullo, allora $a_k \to 1$. Se $a_k > 1$ per ogni $k$, allora $\prod_{k=1}^{+\infty} a_k$ e $\sum_{k=1}^{+\infty} (a_k - 1)$ hanno lo stesso carattere.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 3.2 (Formula del Prodotto di Eulero per la Funzione Zeta):</b></font></mark> Per ogni $x > 1$:
+$$\zeta(x) = \sum_{n=1}^{+\infty} \frac{1}{n^x} = \prod_{k=1}^{+\infty} \frac{1}{1 - p_k^{-x}}$$
+dove $p_k$ indica la successione dei numeri primi.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Corollario 3.3 (Divergenza della Serie dei Reciproci dei Primi):</b></font></mark> La serie dei reciproci dei numeri primi è divergente: $\sum_{k=1}^{+\infty} \frac{1}{p_k} = +\infty$.
+
+---
+
+## Lezione 27: Serie Numeriche IV - Criterio di Leibniz, Convergenza Assoluta e Serie Esponenziale
+
+### Definizioni
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione 1.1 (Serie a Segno Alterno):</b></font></mark> Sia $a_n \ge 0$. Una serie del tipo $\sum_{n=0}^{+\infty} (-1)^n a_n = a_0 - a_1 + a_2 - a_3 + \dots$ si dice *serie a segno alterno*.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione 2.1 (Convergenza Assoluta):</b></font></mark> Una serie numerica reale $\sum a_n$ si dice *assolutamente convergente* se converge la serie dei moduli $\sum |a_n| < +\infty$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione (Parti Positiva e Negativa):</b></font></mark> Per ogni termine $a_n$ si pongono $a_n^+ = \max(a_n, 0) \ge 0$ e $a_n^- = \max(-a_n, 0) \ge 0$, da cui $a_n = a_n^+ - a_n^-$ e $|a_n| = a_n^+ + a_n^-$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione (Prodotto Convolutivo alla Cauchy):</b></font></mark> Date $\sum a_n$ e $\sum b_n$, si dice serie prodotto alla Cauchy la serie $\sum c_n$ con $c_n = \sum_{k=0}^n a_k b_{n-k}$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Definizione (Funzione Esponenziale per Serie):</b></font></mark> Per ogni $x \in \mathbb{R}$, la funzione esponenziale reale è definita analiticamente da $\exp(x) = \sum_{n=0}^{+\infty} \frac{x^n}{n!}$.
+
+### Teoremi e Proposizioni
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 1.2 (Criterio di Leibniz):</b></font></mark> Sia $a_n \ge 0$. Se (a) $\lim a_n = 0$ e (b) $a_{n+1} \le a_n$ per ogni $n \in \mathbb{N}$, allora $\sum_{n=0}^{+\infty} (-1)^n a_n$ converge a una somma $s \in \mathbb{R}$. Inoltre $s_{2n+1} \le s \le s_{2n}$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Proprietà (Stima del Resto di Troncamento di Leibniz):</b></font></mark> L'errore commesso arrestando la somma al termine $n$-esimo è maggiorato dal modulo del primo termine trascurato:
+$$|s - s_n| \le a_{n+1}$$
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 2.2 (La Convergenza Assoluta Implica la Semplice):</b></font></mark> Se $\sum |a_n| < +\infty$, allora $\sum a_n$ converge semplicemente in $\mathbb{R}$ e vale $|\sum_{n=0}^{+\infty} a_n| \le \sum_{n=0}^{+\infty} |a_n|$. Inoltre $\sum |a_n| < +\infty \iff (\sum a_n^+ < +\infty \land \sum a_n^- < +\infty)$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 3.1 (Stima del Resto del Numero di Nepero):</b></font></mark> Per ogni $n \in \mathbb{N}^*$, vale la stima stretta:
+$$0 < e - \sum_{k=0}^n \frac{1}{k!} < \frac{1}{n \cdot n!}$$
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Corollario 3.2 (Irrazionalità del Numero $e$):</b></font></mark> Il numero $e$ di Nepero è irrazionale ($e \in \mathbb{R} \setminus \mathbb{Q}$).
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 3.3 (Prodotto alla Cauchy per Serie Positive):</b></font></mark> Siano $\sum a_n$ e $\sum b_n$ a termini positivi. Posto $c_n = \sum_{k=0}^n a_k b_{n-k}$, si ha $\sum_{n=0}^{+\infty} c_n = (\sum_{n=0}^{+\infty} a_n)(\sum_{n=0}^{+\infty} b_n)$.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Teorema 3.4 (Di Mertens sul Prodotto di Serie Assolutamente Convergenti):</b></font></mark> Se $\sum a_n$ e $\sum b_n$ sono assolutamente convergenti, la loro serie prodotto alla Cauchy $\sum c_n$ è assolutamente convergente e la sua somma è uguale al prodotto delle somme.
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Proposizione 3.5 (Proprietà della Funzione Esponenziale):</b></font></mark> La serie $\sum_{n=0}^{+\infty} \frac{x^n}{n!}$ converge assolutamente per ogni $x \in \mathbb{R}$ e verifica:
+  1. $\exp(x+y) = \exp(x)\exp(y)$ per ogni $x, y \in \mathbb{R}$;
+  2. $\exp(x) > 0$ e $\exp(-x) = 1/\exp(x)$;
+  3. $\exp(1) = e$;
+  4. $\exp$ è strettamente crescente, con $\lim_{x \to +\infty} \exp(x) = +\infty$ e $\lim_{x \to -\infty} \exp(x) = 0$.
