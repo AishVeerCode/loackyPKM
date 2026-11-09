@@ -2,15 +2,16 @@
 status: permanent
 type: reference
 area: education
-related: ["[[Lezione 1 - Introduzione a Python ed Espressioni Numeriche]]", "[[Lezione 2 - Variabili Assegnazione Input e Output]]", "[[Lezione 3 - Stringhe Metodi e Slicing]]", "[[Lezione 4 - Ciclo For Sequenze e Variabili Accumulatore]]", "[[Lezione 5 - Condizioni e Istruzione If]]", "[[Lezione 6 - Funzioni Parametri Scope ed Esercizi Algoritmici]]", "[[Lezione 7 - Ciclo While Iterazioni Indefinite e Sentinella]]", "[[Teoria di programmazione]]", "[[University]]"]
-aliases: ["Comandi", "Comandi Python", "Prontuario Sintassi Lezioni 1-7"]
-source: ["Lezione 1 - Introduzione.ipynb", "Lezione 2 - Variabili.ipynb", "Lezione 3 - Stringhe.ipynb", "Lezione 4 - Ciclo 'for'.ipynb", "Lezione 5 - Commandi if.ipynb", "Lezione 6 - Funzioni.ipynb", "Lezione 7 - Ciclo 'while'.ipynb"]
+related: ["[[Lezione 1 - Introduzione a Python ed Espressioni Numeriche]]", "[[Lezione 2 - Variabili Assegnazione Input e Output]]", "[[Lezione 3 - Stringhe Metodi e Slicing]]", "[[Lezione 4 - Ciclo For Sequenze e Variabili Accumulatore]]", "[[Lezione 5 - Condizioni e Istruzione If]]", "[[Lezione 6 - Funzioni Parametri Scope ed Esercizi Algoritmici]]", "[[Lezione 7 - Ciclo While Iterazioni Indefinite e Sentinella]]", "[[Lezione 8.1 - Istruzioni Break e Continue nei Cicli]]", "[[Lezione 8.2 - Tipologie ed Individuazione degli Errori]]", "[[Lezione 9 - Liste Sequenze Mutabili e Operazioni]]", "[[Lezione 10 - Modello di Memoria Stack Heap e Oggetti Mutabili]]", "[[Teoria di programmazione]]", "[[University]]"]
+aliases: ["Comandi", "Comandi Python", "Prontuario Sintassi Lezioni 1-10"]
+source: ["Lezione 1 - Introduzione.ipynb", "Lezione 2 - Variabili.ipynb", "Lezione 3 - Stringhe.ipynb", "Lezione 4 - Ciclo 'for'.ipynb", "Lezione 5 - Commandi if.ipynb", "Lezione 6 - Funzioni.ipynb", "Lezione 7 - Ciclo 'while'.ipynb", "Lezione 8.1 - Break and Continue.ipynb", "Lezione 8.2 - Error Correction.ipynb", "Lezione 9 - Liste.ipynb", "Lezione 10 - Memoria Notebook.ipynb"]
 title: "Comandi"
 date: '2026-10-15'
-updated: '2026-10-21T00:34'
+updated: '2026-11-09T19:30'
 tags: [education/university, education/programmazione, education/comandi]
-summary: "Prontuario del codice, della sintassi e dei comandi Python utilizzati nelle lezioni da 1 a 7 senza commenti esplicativi."
+summary: "Prontuario del codice, della sintassi e dei comandi Python utilizzati nelle lezioni da 1 a 10 senza commenti esplicativi."
 ---
+
 [[Home MOC|Home]] / [[Education & Learning]] / [[University]] / [[Comandi]]
 
 # Comandi
@@ -735,4 +736,749 @@ def bin2int(s):
     for c in s:
         valore = valore * 2 + int(c)
     return valore
+```
+---
+
+## Lezione 8.1
+
+```python
+n = int(input("Inserire un numero naturale maggiore di 1: "))
+i = 2
+limite = n // 2
+while i <= limite:
+    if n % i == 0:
+        print('numero non primo')
+        break
+    i += 1
+if i > limite:
+    print('numero primo')
+```
+
+```python
+n = int(input("Inserire un numero naturale maggiore di 1: "))
+primo = True
+i = 2
+limite = n // 2
+while i <= limite and primo:
+    if n % i == 0:
+        primo = False
+    i += 1
+if primo:
+    print('numero primo')
+else:
+    print('numero non primo')
+```
+
+```python
+var = 10
+while var > 0:
+    var = var - 1
+    if var == 5:
+        continue
+    print("valore variabile corrente:", var)
+print("fine!")
+```
+
+```python
+var = 0
+while var < 51:
+    var = var + 1
+    if var % 3 != 0:
+        continue
+    print("valore variabile corrente:", var)
+print("fine!")
+```
+
+```python
+var = 0
+while var < 51:
+    var = var + 1
+    if var % 3 == 0:
+        print("valore variabile corrente:", var)
+print("fine!")
+```
+
+```python
+n = int(input('Inserire un numero naturale maggiore di 1: '))
+primo = True
+for i in range(2, (n // 2) + 1):
+    if n % i == 0:
+        primo = False
+        break
+if primo:
+    print('numero primo')
+else:
+    print('numero non primo')
+```
+
+```python
+k = 1000
+divisioni = 0
+primi = 0
+for n in range(2, k + 1):
+    primo = True
+    limite = n // 2
+    for i in range(2, limite + 1):
+        divisioni += 1
+        if n % i == 0:
+            primo = False
+    if primo:
+        print(n, end=' ')
+        primi += 1
+print('\ndivisioni=', divisioni)
+print('numeri primi=', primi)
+```
+
+```python
+k = 1000
+divisioni = 0
+primi = 1
+print(2, '', end='')
+for n in range(3, k + 1, 2):
+    primo = True
+    limite = n // 2
+    for i in range(2, limite + 1):
+        divisioni += 1
+        if n % i == 0:
+            primo = False
+            break
+    if primo:
+        print(n, '', end='')
+        primi += 1
+print('\ndivisioni=', divisioni)
+print('numeri primi=', primi)
+```
+
+```python
+finito = False
+while not finito:
+    base = input("inserisci la base (2..16): ")
+    if not (base.isdecimal() and (2 <= int(base) <= 16)):
+        print('inserito un input errato per la base')
+        continue
+    base = int(base)
+    s = input("numerale in base " + str(base) + ": ")
+    valore = 0
+    potenza = len(s) - 1
+    errore = False
+    for c in s:
+        if not (c.isdecimal() or c in "ABCDEF"):
+            print('inserito un numerale errato per le basi')
+            errore = True
+            break
+        if c in "ABCDEF":
+            c = ord(c) - ord("A") + 10
+        else:
+            c = int(c)
+        if not (0 <= c < base):
+            print('inserito un numerale errato per la base')
+            errore = True
+            break
+        valore = valore + c * base ** potenza
+        potenza = potenza - 1
+    if not errore:
+        print(s, "vale", valore)
+    s1 = input("----Finisco (si/no)? ")
+    finito = s1.lower() == "si"
+```
+
+```python
+s = input("Inserisci una stringa: ")
+n = int(input("Inserisci un intero positivo n: "))
+trovato = False
+for c in s:
+    if ord(c) % n == 0:
+        print(c)
+        trovato = True
+        break
+```
+
+```python
+a = int(input("Inserisci a: "))
+b = int(input("Inserisci b: "))
+mcd = 1
+for d in range(min(a, b), 0, -1):
+    if a % d == 0 and b % d == 0:
+        mcd = d
+        break
+print(mcd)
+```
+
+```python
+s = input("Inserisci una stringa: ")
+ha_doppia = False
+for i in range(len(s) - 1):
+    if s[i].isalpha() and s[i] == s[i + 1]:
+        ha_doppia = True
+        break
+if ha_doppia:
+    print("SI")
+else:
+    print("NO")
+```
+
+---
+
+## Lezione 8.2
+
+```python
+s = int(input("Inserisci un intero"))
+print("hai inserito l'intero", s)
+```
+
+```python
+n = int(input("Inserisci un intero"))
+if n > 0:
+    print("positivo")
+```
+
+```python
+n = int(input("Inserisci un intero: "))
+if n > 0:
+    print("intero positivo")
+    print("radice quadrata di n=", n ** 0.5)
+else:
+    print("radice immaginaria")
+```
+
+```python
+sommaMultipliDin = 0
+n = 4
+x = -100
+y = 100
+i = x
+while i < y:
+    if i % n == 0:
+        sommaMultipliDin += i
+    i = i + 1
+print('somma=', sommaMultipliDin)
+```
+
+```python
+s = input("Inserisci un intero  (* per terminare) ")
+m = 1
+while s != "*":
+    if len(s) > 0 and (s.isdecimal() or (s[0] in "+-" and s[1:].isdecimal())):
+        s_val = int(s)
+        m = m * s_val
+    s = input("Inserisci un intero  (* per terminare) ")
+print("totale = ", m)
+```
+
+```python
+c = input("Inserisci un carattere: ")
+conteggio = 0
+s = input("Inserisci una stringa: ")
+while s != "":
+    if c.lower() in s and c.upper() in s:
+        conteggio += 1
+    s = input("Inserisci una stringa: ")
+print(conteggio)
+```
+
+```python
+def maxdivisore(n):
+    for d in range(n // 2, 0, -1):
+        if n % d == 0:
+            return d
+    return 1
+```
+
+```python
+def maxfreq(s):
+    if len(s) == 0:
+        return ""
+    max_c = s[0]
+    max_cnt = 0
+    for c in s:
+        cnt = s.count(c)
+        if cnt > max_cnt:
+            max_cnt = cnt
+            max_c = c
+    return max_c
+```
+
+```python
+def collegaNoRipetizioni(s1, s2):
+    ris = ""
+    for c in s1 + s2:
+        if c not in ris:
+            ris += c
+    return ris
+```
+
+```python
+def maxlung(s):
+    if len(s) == 0:
+        return 0
+    max_len = 0
+    cur_len = 0
+    for c in s:
+        if c != " ":
+            cur_len += 1
+            if cur_len > max_len:
+                max_len = cur_len
+        else:
+            cur_len = 0
+    return max_len
+```
+
+```python
+def sostituisci(s, c1, c2, count=None):
+    if c1 == "":
+        return s
+    ris = ""
+    i = 0
+    sost = 0
+    while i < len(s):
+        if s[i:i + len(c1)] == c1 and (count is None or sost < count):
+            ris += c2
+            i += len(c1)
+            sost += 1
+        else:
+            ris += s[i]
+            i += 1
+    return ris
+```
+
+---
+
+## Lezione 9
+
+```python
+L1 = [2, 4, 6, 7]
+L2 = ['casa', 'palla', 'strada']
+L3 = ['casa', -7.5, 'a', 33]
+```
+
+```python
+print(len(L3))
+```
+
+```python
+for elem in L3:
+    print(elem)
+```
+
+```python
+for i in range(len(L3)):
+    print(i, L3[i])
+```
+
+```python
+x = 2
+y = -5
+L = [x, y ** 2 + 1, x == 3]
+print(L)
+```
+
+```python
+LL1 = [1, 2, 'pippo']
+LL2 = [1, 2, 'pippo']
+print(LL1 == LL2)
+```
+
+```python
+LL1 = [1, 2, 'pippo']
+LL2 = [1, 1 + 1, 'pippo']
+print(LL1 == LL2)
+```
+
+```python
+LL1 = [1, 2, 'pippo']
+LL2 = [1.0, 2, 'pippo']
+print(LL1 == LL2)
+```
+
+```python
+LL1 = [1, 2, 'pippo']
+LL2 = ['1', 2, 'pippo']
+print(LL1 == LL2)
+```
+
+```python
+LL1 = [1, 2, 'pippo']
+LL2 = [1.0, 2, 'pippo']
+print(LL1 + LL2)
+```
+
+```python
+lista = ['casa', -7.5, 'a', 33]
+lista[1] = 99
+print(lista)
+```
+
+```python
+print(lista[1:3])
+```
+
+```python
+LL1 = [1, 2, 'pippo']
+LL2 = LL1
+LL2[0] = 'ciao'
+print(LL1)
+print(LL2)
+```
+
+```python
+LL1 = [1, 2, 'pippo']
+LL2 = LL1.copy()
+LL2[0] = 'ciao'
+print(LL1)
+print(LL2)
+```
+
+```python
+LL1 = [1, 2, 'pippo']
+LL2 = LL1[:]
+LL2[0] = 'ciao'
+print(LL1)
+print(LL2)
+```
+
+```python
+import copy
+LL1 = [1, 2, ['a', 'b']]
+LL2 = copy.deepcopy(LL1)
+LL2[2][0] = 'z'
+print(LL1)
+print(LL2)
+```
+
+```python
+l = [1, 2, 3]
+min(l)
+max(l)
+sum(l)
+```
+
+```python
+l = [1, 2, 3]
+l.append(4)
+print(l)
+```
+
+```python
+l = [1, 2, 3]
+l.insert(1, 'pippo')
+print(l)
+```
+
+```python
+l = [1, 2, 3]
+l.extend([4, 5, 6])
+print(l)
+```
+
+```python
+l = [1, 2, 3, 4]
+elem = l.pop(2)
+print(elem)
+print(l)
+```
+
+```python
+l = ['a', 'b', 'c', 'b']
+l.remove('b')
+print(l)
+```
+
+```python
+l = ['a', 'b', 'c']
+print(l.index('b'))
+```
+
+```python
+l = ['a', 'b', 'a', 'a']
+print(l.count('a'))
+```
+
+```python
+l = [3, 1, 4, 1, 5, 9]
+l.sort()
+print(l)
+```
+
+```python
+l = [3, 1, 4, 1, 5, 9]
+l.reverse()
+print(l)
+```
+
+```python
+LL1 = [1, 2, 3]
+print(2 in LL1)
+print(4 in LL1)
+```
+
+```python
+n = 10
+l = [0] * n
+print(l)
+```
+
+```python
+s = "buonasera a tutti"
+distinti = []
+for c in s:
+    if c not in distinti:
+        distinti.append(c)
+print(distinti)
+```
+
+```python
+s = 'mamma'
+l = list(s)
+print(l)
+```
+
+```python
+def ordinaStringa(s):
+    l = list(s)
+    l.sort()
+    ris = ''
+    for i in l:
+        ris += i
+    return ris
+
+print(ordinaStringa('mamma'))
+```
+
+```python
+def maxfrequenza(l):
+    ris = l[0]
+    maxfreq = l.count(l[0])
+    for el in l:
+        if l.count(el) > maxfreq:
+            ris = el
+            maxfreq = l.count(el)
+    return ris
+```
+
+```python
+def listaContiene(l, s):
+    ris = []
+    for el in l:
+        if s in el:
+            ris.append(el)
+    ris.sort()
+    return ris
+```
+
+```python
+def listaSelezioni(ls, ln):
+    ris = []
+    for el in ln:
+        if -len(ls) <= el < len(ls):
+            ris.append(ls[el])
+    return ris
+```
+
+```python
+def contaIniziali(l1, l2):
+    ris = 0
+    for i in range(min(len(l1), len(l2))):
+        if l1[i] != "" and l2[i] != "" and l1[i][0] == l2[i][0]:
+            ris += 1
+    return ris
+```
+
+---
+
+## Lezione 10
+
+```python
+def aggiungi1(l, n):
+    l.append(n)
+
+def aggiungi2(l, n):
+    l2 = l.copy()
+    l2.append(n)
+    return l2
+
+lista = [2, 4, 5]
+n = 7
+aggiungi1(lista, n)
+print(lista)
+lista2 = aggiungi2(lista, 99)
+print(lista)
+print(lista2)
+```
+
+```python
+def raddoppiaValore(a):
+    a = a * 2
+
+n = 5
+raddoppiaValore(n)
+print(n)
+```
+
+```python
+def raddoppiaElementi(l):
+    for i in range(len(l)):
+        l[i] = l[i] * 2
+
+lista = [1, 2, 3]
+raddoppiaElementi(lista)
+print(lista)
+```
+
+```python
+def svuotaLista(l):
+    while len(l) > 0:
+        l.pop()
+
+lista = [1, 2, 3]
+svuotaLista(lista)
+print(lista)
+```
+
+```python
+def rimuovi(l, el):
+    if el in l:
+        l.remove(el)
+        return True
+    return False
+
+k = ['nel', 'mezzo', 'cammino', 'mezzo']
+print(rimuovi(k, 'mezzo'))
+print(k)
+```
+
+```python
+def rimuoviTutti(l, el):
+    rimosso = el in l
+    while el in l:
+        l.remove(el)
+    return rimosso
+
+k = ['nel', 'mezzo', 'cammino', 'mezzo', 'giorno']
+print(rimuoviTutti(k, 'mezzo'))
+print(k)
+```
+
+```python
+l = [1, 2, 3]
+l.append(4)
+print(l)
+print(id(l))
+
+l = [1, 2, 3]
+l = l + [4]
+print(l)
+print(id(l))
+```
+
+```python
+def raddoppiaUltimo(ls):
+    if len(ls) > 0:
+        ls = ls + [ls[-1]]
+
+l = [2, 4, 5]
+raddoppiaUltimo(l)
+print(l)
+```
+
+```python
+l = [2, 4, 5]
+l[len(l):] = [6]
+print(l)
+```
+
+```python
+l = [3, 2, 4, 5, 1]
+l.sort()
+print(l)
+```
+
+```python
+l = [3, 2, 4, 5, 1]
+print(sorted(l))
+print(l)
+```
+
+```python
+def sommaVettori(v1, v2):
+    length = len(v1)
+    l = [0 for _ in range(length)]
+    for j in range(length):
+        l[j] = v1[j] + v2[j]
+    return l
+```
+
+```python
+def stringaMax(l):
+    if len(l) == 0:
+        return 0
+    max_len = 0
+    for s in l:
+        if len(s) > max_len:
+            max_len = len(s)
+    return max_len
+```
+
+```python
+def ultimoPos(l):
+    for i in range(len(l) - 1, -1, -1):
+        if l[i] >= 0:
+            return i
+    return -1
+```
+
+```python
+def inserisciStringa(l, s):
+    len_s = len(s)
+    inserito = False
+    for i in range(len(l)):
+        if len_s <= len(l[i]):
+            l.insert(i, s)
+            inserito = True
+            break
+    if not inserito:
+        l.append(s)
+    return l
+```
+
+```python
+def somma(l):
+    totale = 0
+    for elem in l:
+        if type(elem) == int:
+            totale += elem
+    return totale
+```
+
+```python
+def eliminaStringhe(l, i):
+    idx = 0
+    while idx < len(l):
+        if len(l[idx]) > i:
+            l.pop(idx)
+        else:
+            idx += 1
+    return l
+```
+
+```python
+def merge(l1, l2):
+    ris = []
+    i = 0
+    j = 0
+    n1 = len(l1)
+    n2 = len(l2)
+    while i < n1 and j < n2:
+        if len(l2[j]) <= len(l1[i]):
+            ris.append(l2[j])
+            j += 1
+        else:
+            ris.append(l1[i])
+            i += 1
+    while i < n1:
+        ris.append(l1[i])
+        i += 1
+    while j < n2:
+        ris.append(l2[j])
+        j += 1
+    return ris
 ```
