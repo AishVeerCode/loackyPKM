@@ -1,0 +1,223 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.3/schema.json
+cv:
+  name: Aish Veer Bhullar
+  location: Roma, Italia
+  email: aishveersinghbhullar@gmail.com
+  social_networks:
+    - network: GitHub
+      username: AishVeerCode
+    - network: LinkedIn
+      username: aish-veer-bhullar
+  sections:
+    Education:
+      - institution: "Sapienza Università di Roma (Roma 1)"
+        area: Ingegneria Informatica
+        degree: B.Sc.
+        start_date: 2025-09
+        end_date: present
+        location: Roma, Italia
+        highlights:
+          - "Consolidato le fondamenta teorico-applicative in analisi, logica e programmazione su **3 moduli core** (*Fondamenti di Matematica, Introduzione alla Programmazione, Probabilità e Statistica*), sviluppando algoritmi numerici e strutture dati in **Python** e **Jupyter Notebook**."
+          - "Validato la correttezza computazionale di script iterativi e funzioni di manipolazione stringhe/liste con **0 errori di runtime**, applicando i principi dell'architettura di Von Neumann, dell'aritmetica binaria in complemento a due e del debugging sistematico."
+      - institution: "Liceo Scientifico Statale \"Louis Pasteur\""
+        area: Indirizzo Scientifico
+        degree: Diploma (93/100)
+        start_date: 2020-09
+        end_date: 2025-07
+        location: Roma, Italia
+        highlights:
+          - "Conseguito il Diploma di Maturità Scientifica nel **top tier del corso** con votazione **93/100**, padroneggiando per **5 anni** calcolo differenziale/integrale, fisica elettromagnetica e modellazione matematica."
+          - "Raggiunto la **Fase Regionale delle Olimpiadi della Matematica** nell'anno conclusivo dopo **3 qualificazioni consecutive** nel triennio, risolvendo problemi competitivi di combinatoria, teoria dei numeri e geometria euclidea."
+          - "Acquisito padronanza esecutiva avanzata nella **Chitarra Classica** al termine di **3 anni** di formazione musicale strutturata (scuole secondarie di I grado), applicando studio metodico della partitura polifonica e disciplina solistica."
+
+    Technical Skills:
+      - label: Linguaggi & Markup
+        details: "Python (Algoritmi, Strutture Dati, Scripting, Automazione), Markdown, YAML, Typst, LaTeX (XeLaTeX)"
+      - label: Strumenti & DevOps
+        details: "Git, GitHub, Jupyter Notebook, Visual Studio Code, Unix/macOS Shell (zsh/bash), Obsidian PKM, RenderCV"
+      - label: Software Scientifico
+        details: "MaxIm DL (Elaborazione Immagini CCD e Fotometria), Stellarium (Simulazione Astrometrica), Ottica"
+      - label: Domini & Lingue
+        details: "Problem Solving Olimpico, Logica Proposizionale, Aerodinamica e Meccanica del Volo, Spettroscopia | Italiano (Madrelingua), Inglese (Tecnico), Punjabi/Hindi (Bilingue)"
+
+    Projects:
+      - name: "Prototipo Razzo Idropneumatico — Water Rocket Hackathon (Team TETI)"
+        location: "SRT, SASA & Studio 5T"
+        date: Mag 2024
+        highlights:
+          - "Progettato e lanciato con successo un prototipo di razzo ad acqua funzionante entro il limite tassativo di **72 ore** (27–29 Maggio 2024), dimensionando camera di pressione e ugello secondo l'equazione del razzo di Tsiolkovsky e le leggi dell'idrodinamica."
+          - "Massimizzato l'apogeo balistico e la stabilità direzionale di volo sul **100% dei test di lancio**, ottimizzando il rapporto volumetrico acqua/aria compressa, il centro di pressione e la geometria delle superfici di impennaggio."
+      - name: "Fotometria Stellare e Diagramma H-R (Astronomia al Pasteur)"
+        location: "A.R.A. & Osservatorio Frasso Sabino"
+        date: Nov 2023 – Apr 2024
+        highlights:
+          - "Ricostruito il **Diagramma di Hertzsprung-Russell (H-R)** di un ammasso stellare aperto ottenendo la valutazione massima (**Ottimo** su **30 ore** certificate RUNTS), elaborando immagini astronomiche grezze e curve fotometriche tramite **MaxIm DL**."
+          - "Calibrato i parametri ottici, spettrali e astrometrici delle sessioni osservative con il **100% di accuratezza di puntamento**, incrociando le rilevazioni strumentali al telescopio con le effemeridi simulate su **Stellarium**."
+      - name: "Sistemi Aerospaziali e Dinamica del Volo (Progetto PCTO)"
+        location: "Università degli Studi Roma Tre"
+        date: Dic 2023 – Apr 2024
+        highlights:
+          - "Ottenuto il livello di competenza massimo (**Livello 4/4 — Ottimo**) su un percorso intensivo di **60 ore** (**17 settimane**) presso il Dip. di Ingegneria, classificando architetture strutturali, impianti di propulsione e superfici di comando dei velivoli."
+          - "Modellato le polari aerodinamiche di portanza/resistenza e le equazioni di equilibrio longitudinale, verificando i regimi di volo attraverso lo studio degli apparati sperimentali sotto la guida del Ricercatore Dott. Jacopo Serafini."
+      - name: "Architettura PKM & Document Automation Pipeline (loackyPKM)"
+        location: "GitHub (@AishVeerCode)"
+        date: Set 2025 – Presente
+        highlights:
+          - "Architettato un sistema *Knowledge-as-Code* versionato su **Git** con oltre **100 note tecniche strutturate**, riducendo i tempi di indicizzazione e revisione accademica mediante script **Python** di linting YAML (10 campi) e verifica dei grafi."
+          - "Automatizzato la generazione tipografica di documenti tecnici e CV single-page con compilazione **sub-secondo (< 1 s)**, integrando pipeline multi-engine basate su **RenderCV**, **Typst** (*Brilliant-CV*) e **XeLaTeX** (*Awesome-CV*)."
+
+    Experience:
+      - company: "PIM Supermercati (Buscaini Angelo S.r.l.)"
+        position: "Addetto Panetteria e Gastronomia (Part-Time)"
+        start_date: 2023-09
+        end_date: present
+        location: Roma
+        highlights:
+          - "Garantito l'operatività continua dei reparti panetteria e gastronomia per **18 ore/settimana** (somministrazione Ali S.p.A., 4° livello CCNL Commercio, oltre 15 dipendenti) con il **100% di conformità HACCP**, gestendo panificazione, taglio e tracciabilità lotti."
+          - "Sostenuto ritmi operativi ad alta intensità nei weekend per oltre **2 anni consecutivi** senza flessioni nel rendimento accademico (**93/100** alla Maturità), ottimizzando la pianificazione delle forniture e i tempi di servizio al banco."
+      - company: "Liceo Scientifico Statale \"Louis Pasteur\""
+        position: "Sperimentatore e Divulgatore — \"La Notte del Liceo\""
+        date: Dic 2023
+        location: Roma
+        highlights:
+          - "Eseguito dimostrazioni scientifiche interattive per centinaia di visitatori ottenendo l'**Attestato di Merito Ufficiale** della commissione docente, allestendo e conducendo gli esperimenti del **Laboratorio di \"Arte Magica\"**."
+
+    Certifications & Honors:
+      - label: Ingegneria Aeronautica (60h)
+        details: "Università degli Studi Roma Tre — Dip. Ingegneria Civile, Informatica e Tecnologie Aeronautiche (*Livello 4/4 Ottimo*, Apr 2024)"
+      - label: Astronomia & Spettroscopia (30h)
+        details: "Associazione Romana Astrofili (A.R.A. - RUNTS Rep. 115192) — Fotometria MaxIm DL e Ottica (*Valutazione: Ottimo*, Apr 2024)"
+      - label: Competizioni STEM
+        details: "**Water Rocket Hackathon** — Team TETI (SRT, SASA & Studio 5T, Mag 2024) | **Olimpiadi della Matematica** — Qualificato Gare Regionali (2025)"
+      - label: Sicurezza sul Lavoro (4h)
+        details: "MIUR & INAIL — Corso di Formazione Generale per Lavoratori ai sensi degli artt. 2 e 37 D.Lgs. 81/2008 (*Verifica finale superata*, Ott 2023)"
+
+design:
+  theme: engineeringresumes
+  page:
+    size: a4
+    top_margin: 1.1cm
+    bottom_margin: 1.1cm
+    left_margin: 1.2cm
+    right_margin: 1.2cm
+    show_page_numbering: false
+    show_last_updated_date: false
+  colors:
+    text: rgb(0, 0, 0)
+    name: rgb(0, 0, 0)
+    connections: rgb(0, 0, 0)
+    section_titles: rgb(0, 0, 0)
+    links: rgb(0, 0, 0)
+    last_updated_date_and_page_numbering: rgb(128, 128, 128)
+  text:
+    font_family: XCharter
+    font_size: 9.35pt
+    leading: 0.54em
+    alignment: justified
+    date_and_location_column_alignment: right
+  links:
+    underline: false
+    use_external_link_icon: false
+  header:
+    name_font_family: XCharter
+    name_font_size: 22pt
+    name_bold: true
+    small_caps_for_name: false
+    photo_width: 3.5cm
+    vertical_space_between_name_and_connections: 0.24cm
+    vertical_space_between_connections_and_first_section: 0.32cm
+    horizontal_space_between_connections: 0.45cm
+    connections_font_family: XCharter
+    separator_between_connections: "|"
+    use_icons_for_connections: false
+    use_urls_as_placeholders_for_connections: true
+    make_connections_links: true
+    alignment: center
+  section_titles:
+    type: with-full-line
+    font_family: XCharter
+    font_size: 1.15em
+    bold: true
+    small_caps: false
+    line_thickness: 0.5pt
+    vertical_space_above: 0.34cm
+    vertical_space_below: 0.17cm
+  entries:
+    date_and_location_width: 3.6cm
+    left_and_right_margin: 0cm
+    horizontal_space_between_columns: 0.1cm
+    vertical_space_between_entries: 0.28cm
+    allow_page_break_in_sections: false
+    allow_page_break_in_entries: false
+    short_second_row: false
+    show_time_spans_in: []
+  highlights:
+    bullet: •
+    nested_bullet: "-"
+    top_margin: 0.1cm
+    left_margin: 0cm
+    vertical_space_between_highlights: 0.09cm
+    horizontal_space_between_bullet_and_highlight: 0.3em
+    summary_left_margin: 0cm
+  entry_types:
+    one_line_entry:
+      template: "**LABEL:** DETAILS"
+    education_entry:
+      main_column_first_row_template: "**INSTITUTION**, DEGREE in AREA — *LOCATION*"
+      degree_column_template:
+      degree_column_width: 1cm
+      main_column_second_row_template: |-
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column_template: DATE
+    normal_entry:
+      main_column_first_row_template: "**NAME** — *LOCATION*"
+      main_column_second_row_template: |-
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column_template: DATE
+    experience_entry:
+      main_column_first_row_template: "**POSITION**, COMPANY — *LOCATION*"
+      main_column_second_row_template: |-
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column_template: DATE
+
+locale:
+  language: it
+  phone_number_format: national
+  page_numbering_template: NAME - Pagina PAGE_NUMBER di TOTAL_PAGES
+  last_updated_date_template: Aggiornato a TODAY
+  date_template: MONTH_ABBREVIATION YEAR
+  month: mese
+  months: mesi
+  year: anno
+  years: anni
+  present: Presente
+  to: –
+  abbreviations_for_months:
+    - Gen
+    - Feb
+    - Mar
+    - Apr
+    - Mag
+    - Giu
+    - Lug
+    - Ago
+    - Set
+    - Ott
+    - Nov
+    - Dic
+  full_names_of_months:
+    - Gennaio
+    - Febbraio
+    - Marzo
+    - Aprile
+    - Maggio
+    - Giugno
+    - Luglio
+    - Agosto
+    - Settembre
+    - Ottobre
+    - Novembre
+    - Dicembre
