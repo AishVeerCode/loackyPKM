@@ -196,6 +196,11 @@
       "hash": "acca14d4fb7ec6e76ad27f5a596485fa20401305dafe66ce6b3a426c10b09965",
       "processed_at": "2026-11-09T19:33:09.330704",
       "size": 34105
+    },
+    "Von Neumann.pdf": {
+      "hash": "bde98395fd6e93ab755925e623ef432bd0c9cd123be7cf06ac3de5720df3086c",
+      "processed_at": "2026-11-09T19:46:51.357288",
+      "size": 2683779
     }
   }
 }

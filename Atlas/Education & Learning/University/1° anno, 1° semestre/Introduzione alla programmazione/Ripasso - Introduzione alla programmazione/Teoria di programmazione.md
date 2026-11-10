@@ -2,12 +2,12 @@
 status: permanent
 type: summary
 area: education
-related: ["[[Lezione 0.1 - Rappresentazione dei Caratteri e Dati Multimediali]]", "[[Lezione 0.2 - Sistemi di Numerazione Binaria e Interi con Segno]]", "[[Comandi]]", "[[University]]"]
+related: ["[[Lezione 0.1 - Rappresentazione dei Caratteri e Dati Multimediali]]", "[[Lezione 0.2 - Sistemi di Numerazione Binaria e Interi con Segno]]", "[[Lezione 0.3 - Architettura di Von Neumann e Storia dei Calcolatori]]", "[[Comandi]]", "[[University]]"]
 aliases: ["Teoria di programmazione", "Teoria di Programmazione", "Sintesi PDF Teoria Programmazione"]
-source: ["RappresentazioneCaratteri.pdf", "Numeri Binari Interi.pdf"]
+source: ["RappresentazioneCaratteri.pdf", "Numeri Binari Interi.pdf", "Von Neumann.pdf"]
 title: "Teoria di Programmazione"
 date: '2026-10-15'
-updated: '2026-10-15T19:00'
+updated: '2026-11-09T19:45'
 tags: [education/university, education/programmazione, education/teoria]
 summary: "Sintesi concisa ed essenziale dei concetti teorici fondamentali estratti esclusivamente dai documenti PDF della cartella Introduzione alla programmazione."
 ---
@@ -15,7 +15,7 @@ summary: "Sintesi concisa ed essenziale dei concetti teorici fondamentali estrat
 
 # Teoria di Programmazione
 
-Sintesi compatta e schematica dei contenuti teorici estratti esclusivamente dai file `.pdf` del corso: *Rappresentazione dei Caratteri e Dati Multimediali* e *Sistemi di Numerazione Binaria e Interi con Segno*.
+Sintesi compatta e schematica dei contenuti teorici estratti esclusivamente dai file `.pdf` del corso: *Rappresentazione dei Caratteri e Dati Multimediali*, *Sistemi di Numerazione Binaria e Interi con Segno* e *Breve Storia dei Calcolatori ed Architettura di Von Neumann*.
 
 ---
 
@@ -58,35 +58,26 @@ Sintesi compatta e schematica dei contenuti teorici estratti esclusivamente dai 
   - **Modello RGB (True Color, 24 bit):** Ogni pixel memorizza 3 canali di colore da 8 bit (Rosso, Verde, Blu), consentendo $256 \times 256 \times 256 \approx 16.7$ milioni di colori.
   - Formato elementare PPM: intestazione testuale seguita dai valori RGB dei singoli pixel.
 - <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Compressione:</b></font></mark>
-  - *Lossless (senza perdita):* Preserva fedelmente l'informazione originaria (es. PNG, FLAC, ZIP).
-  - *Lossy (con perdita):* Scarta le frequenze visive o sonore impercettibili all'essere umano per abbattere drasticamente le dimensioni (es. JPEG, MP3).
-- <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Immagini Vettoriali:</b></font></mark>
-  - Memorizzano formule e primitive geometriche matematiche (punti, rette, poligoni, curve di Bézier). Vantaggio cardine: ingrandimento e riscalatura infiniti senza perdita di definizione (nessun effetto sgranato).
+  - *Lossless (senza perdita):* Decompressione identica al bit originale (es. PNG, ZIP, FLAC, Run-Length Encoding).
+  - *Lossy (con perdita):* Scarta dettagli impercettibili alla fisiologia umana (es. JPEG, MP3).
+- <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Grafica Vettoriale:</b></font></mark>
+  - Descrizione geometrica ad alto livello tramite primitive matematiche (punti, linee, poligoni, curve di Bézier). Risoluzione infinita e scalabilità priva di sgranatura (es. formato SVG, font tipografici).
 
 ---
 
 ## 2. Sistemi di Numerazione Binaria e Interi con Segno
 *Fonte: `Numeri Binari Interi.pdf`*
 
-### Sistemi Posizionali e Basi Numeriche
-- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Notazione Posizionale Pesata:</b></font></mark>
-  Un numero espresso nella base $b$ con cifre $(c_{n-1} c_{n-2} \dots c_1 c_0)_b$ rappresenta la quantità:
-$$\sum_{i=0}^{n-1} c_i \cdot b^i = c_{n-1} b^{n-1} + \dots + c_1 b^1 + c_0 b^0$$
-- **Basi di Calcolo Principali:**
-  - Base 2 (Binaria): cifre $\{0, 1\}$.
-  - Base 10 (Decimale): cifre $\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}$.
-  - Base 16 (Esadecimale): cifre $\{0, \dots, 9, A, B, C, D, E, F\}$ (dove $A=10, B=11, C=12, D=13, E=14, F=15$).
-  - *Relazione Binario-Esadecimale:* Poiché $16 = 2^4$, ogni cifra esadecimale corrisponde esattamente e univocamente a un blocco di 4 bit (*nibble*).
-- **Ordini di Grandezza Binari:**
-  - $1\text{ KibiByte (KiB)} = 2^{10} = 1.024\text{ byte}$
-  - $1\text{ MebiByte (MiB)} = 2^{20} = 1.048.576\text{ byte}$
-  - $1\text{ GibiByte (GiB)} = 2^{30} \approx 1.07 \times 10^9\text{ byte}$
-- **Intervallo Numeri Senza Segno (Unsigned):** Con $n$ bit si rappresentano $2^n$ interi distinti:
-$$[0, \, 2^n - 1]$$
-  *(Es. con 8 bit: $[0, 255]$; con 16 bit: $[0, 65.535]$)*.
-- **Conversione Decimale $\to$ Binario:** Algoritmo delle divisioni successive per 2 con lettura dei resti in ordine inverso (dall'ultimo all'iniziale).
+### Notazione Posizionale e Conversioni
+- **Sistema Binario Posizionale:** Ogni cifra binaria $b_i \in \{0, 1\}$ ha peso $2^i$:
+$$N = \sum_{i=0}^{n-1} b_i \cdot 2^i$$
+- Con $n$ bit si rappresentano $2^n$ configurazioni distinte (intervallo $[0, 2^n - 1]$).
+- **Algoritmo di Conversione Decimale $\to$ Binario:** Metodo delle divisioni intere successive per 2: i resti raccolti in ordine inverso (dall'ultimo al primo) costituiscono le cifre binarie dal bit più significativo (MSB) a quello meno significativo (LSB).
+- **Sistemi Ottale (base 8) ed Esadecimale (base 16):**
+  - Ottale: raggruppamento di 3 bit binari per cifra ($2^3 = 8$).
+  - Esadecimale: raggruppamento di 4 bit binari per cifra ($2^4 = 16$, cifre `0`..`9`, `'A'`=10 .. `'F'`=15).
 
-### Rappresentazione degli Interi Relativi (con Segno) su $n$ Bit
+### Rappresentazione degli Interi Relativi (con Segno)
 Tre schemi fondamentali:
 
 | Metodo | Bit di Segno | Intervallo di Rappresentazione | Trattamento dello Zero | Svantaggi / Vantaggi |
@@ -116,3 +107,50 @@ $$\operatorname{Val}(b_{n-1} b_{n-2} \dots b_0) = - b_{n-1} \cdot 2^{n-1} + \sum
 - I calcolatori tradizionali a livello hardware operano con registri a dimensione fissa (a 32 o 64 bit).
 - **Precisione Arbitraria di Python:** Python gestisce gli interi (`int`) senza vincoli rigidi di dimensione minima/massima prefissata (*bignum*).
 - Gli interi vengono spezzati e memorizzati internamente in blocchi a 30 bit (base $2^{30}$). Le operazioni aritmetiche gestiscono automaticamente l'allocazione dinamica della memoria, rendendo impossibile l'overflow numerico degli interi finché è disponibile memoria RAM.
+
+---
+
+## 3. Breve Storia dei Calcolatori ed Architettura di Von Neumann
+*Fonte: `Von Neumann.pdf`*
+
+### Precursori Storici e Nascita del Computer
+- **Precursori:** Abaco (4000 anni fa), calcolatrici meccaniche di Schickard (1623), Pascalina (Pascal, 1642, addizioni/sottrazioni a ruote dentate) e Stepped Reckoner (Leibniz, 1671, moltiplicazioni/divisioni a tamburo scanalato).
+- **Charles Babbage (1791–1871):** Progetta la *Difference Engine* (calcolo tabelle polinomiali) e la rivoluzionaria *Analytical Engine* (1830–40, programmabile con schede perforate tessili di Jacquard), anticipando la separazione tra unità di calcolo (*mill*), memoria (*store*) e I/O.
+- **Ada Lovelace (1815–1852):** Prima programmatrice della storia; elabora l'algoritmo per il calcolo dei numeri di Bernoulli e intuisce la computazione simbolica e multimediale generale.
+- **Seconda Guerra Mondiale (1939–1946):** Zuse Z3 (Germania, 1941, primo calcolatore a relè programmabile), Colossus (UK, 1943–44, Turing, decifrazione codici Lorenz a valvole), Harvard Mark 1 (Aiken, 1944, relè elettromeccanici; da una falena nel relè del Mark II nasce il termine *bug*).
+- **ENIAC (1946):** Primo calcolatore elettronico general-purpose (Eckert & Mauchly, 18.000 valvole, 27 tonnellate, 150 kW, 5000 op/s), privo di programma memorizzato (riprogrammato tramite riconfigurazione manuale di 6.000 interruttori e cavi).
+
+### Architettura di Von Neumann e Memoria Centrale
+- <mark style="background:rgba(255, 193, 69, 0.32)"><font color="#cc8800"><b>Principio del Programma Memorizzato:</b></font></mark> Dati e istruzioni di programma condividono lo stesso spazio di memoria centrale e sono codificati entrambi come valori binari numerici.
+- <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Blocchi Funzionali CPU:</b></font></mark>
+  - **CU (Unità di Controllo):** Coordina il calcolatore, decodifica le istruzioni e invia i segnali di sincronizzazione.
+  - **ALU (Unità Aritmetico-Logica):** Esegue operazioni aritmetiche elementari (+, -, *, /) e confronti logici.
+  - **Registri Interni:**
+    - **PC (Program Counter):** Contiene l'indirizzo in memoria della *prossima* istruzione da eseguire.
+    - **IR (Instruction Register):** Conserva l'istruzione attualmente in corso di decodifica ed esecuzione.
+    - **Registri Generali (R1..R4):** Memorizzazione rapida di operandi e risultati intermedi.
+- <mark style="background:rgba(181, 113, 255, 0.36)"><font color="#9a54c1"><b>Sottosistema di Memoria:</b></font></mark>
+  - Celle numerate con **Indirizzo** fisso e **Contenuto** variabile.
+  - **MAR (Memory Address Register):** Registro dell'indirizzo a cui accedere.
+  - **MDR (Memory Data Register):** Registro per il transito dei dati in lettura o scrittura.
+  - *Lettura (Load):* MAR $\leftarrow$ ind, comando Read, MDR riceve dato.
+  - *Scrittura (Store):* MAR $\leftarrow$ ind, MDR $\leftarrow$ dato, comando Write.
+
+### Ciclo Macchina Fetch-Decode-Execute
+- Sequenza dei passi elementari della CPU:
+  1. **Fetch:** Prelievo istruzione dalla RAM: MAR $\leftarrow$ PC, MDR $\leftarrow$ Mem[MAR], IR $\leftarrow$ MDR.
+  2. **Incremento:** Aggiornamento del Program Counter: $\text{PC} \leftarrow \text{PC} + 1$.
+  3. **Decode:** Decodifica del codice operativo (OpCode) da parte della Control Unit.
+  4. **Operand Fetch:** Calcolo e caricamento eventuale di operandi dalla RAM ai registri.
+  5. **Execute:** Esecuzione del calcolo (ALU) o trasferimento.
+  6. **Ripetizione:** Ritorno al passo 1 fino all'istruzione `HALT`.
+- **Istruzioni di Salto (Jump):** Alterano la sequenzialità lineare scrivendo direttamente un nuovo valore nel Program Counter (`PC = nuovo_indirizzo`).
+
+### Legge di Moore, Limiti Fisici e Sistemi Moderni
+- **Legge di Moore (1965):** Il numero di transistor per mm² raddoppia ogni 18–24 mesi.
+- **I Tre Limiti Fisici Invalicabili del Silicio:**
+  1. *Dimensione Atomica:* Transistor $< 3\text{ nm}$ causano perdite per tunneling quantistico (molecola silicio $\approx 0.2\text{ nm}$).
+  2. *Velocità della Luce ($c = 300.000\text{ km/s}$):* A 3 GHz la luce percorre solo 10 cm per ciclo; a decine di GHz il segnale non attraversa il chip.
+  3. *Densità Termica (Power Wall):* Dissipazione termica per $\text{cm}^2$ incompatibile con frequenze superiori a 4–5 GHz.
+- **Transizione Multicore:** Passaggio dall'incremento della frequenza all'integrazione di più core indipendenti sullo stesso die (dual, quad, many-core).
+- **Sistemi Embedded & MicroPython:** Informatica diffusa in automotive e IoT; schede didattiche come **Arduino** (nate a Ivrea) e microcontrollori moderni programmati in **MicroPython**.
