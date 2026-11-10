@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "rendercv": {
+      "source": "rendercv/rendercv-skill",
+      "sourceType": "github",
+      "skillPath": "skills/rendercv/SKILL.md",
+      "computedHash": "67dc790a46f6a5f44fa7a00ffc38096288064913731fda597d090236b70afdfc"
+    },
+    "typst": {
+      "source": "lucifer1004/claude-skill-typst",
+      "sourceType": "github",
+      "skillPath": "skills/typst/SKILL.md",
+      "computedHash": "cf925df2024136fab29660bd34976dc98d25fe010fc45a098692c741bdcdd3fa"
+    }
+  }
+}
