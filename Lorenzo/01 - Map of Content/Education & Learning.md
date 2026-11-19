@@ -43,6 +43,7 @@ Repertorio teorico, principi strategici e analisi tattica delle aperture con il 
 - [[The Vienna Game]] — `1.e4 e5 2.Nc3` (Punire il gioco passivo, apertura della colonna `f`, attacchi sul lato di Re, ELO `750 – 1800`)
 - [[The Queen's Gambit]] — `1.d4 d5 2.c4` (Pressione posizionale, Attacco di Minoranza, strutture IQP, ELO `1200 – 2000+`)
 - [[The Ruy Lopez]] — `1.e4 e5 2.Nf3 Nc6 3.Bb5` (Manovre a lungo termine, profilassi, grande strategia multifase, ELO `1500 – 2000+`)
+- [[The King's Indian Attack]] — `Nf3, g3, Bg2, O-O, d3, Nbd2, e4` (Sistema universale ipermoderno, attacco di Fischer su case scure, giro `Nd2-f1-h2-g4`, ELO `1000 – 2600+`)
 
 Repertorio teorico, difese classiche/ipermoderne e contrattacchi con il Nero (`Atlas/Education & Learning/Chess/Openings/Black`):
 
@@ -51,6 +52,7 @@ Repertorio teorico, difese classiche/ipermoderne e contrattacchi con il Nero (`A
 - [[The Sicilian Defense]] — `1.e4 c5` (Contrattacchi asimmetrici, combattere per la vittoria col Nero, ELO `1300 – 2000+`)
 - [[Queen's Gambit Declined]] — `1.d4 d5 2.c4 e6` (Ancore centrali, rotture liberatorie `...c5`, difesa classica, ELO `750 – 2000+`)
 - [[Nimzo - Bogo-Indian]] — `1.d4 Nf6 2.c4 e6` (Controllo ipermoderno, inchiodare per paralizzare, danno strutturale, ELO `1400 – 2000+`)
+- [[The King's Indian Defense]] — `1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6` (Contrattacco ipermoderno, Mar del Plata, sacrificio `...Bxh3!`, Sämisch e 4 Pedoni, ELO `1300 – 2800+`)
 
 ---
 
